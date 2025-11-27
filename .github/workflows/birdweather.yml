@@ -1,0 +1,41 @@
+name: BirdWeather daily metadata
+
+on:
+  schedule:
+    # Runs every day at 01:05 UTC
+    - cron: "5 1 * * *"
+  # Allow manual run from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install R packages
+        run: |
+          Rscript -e 'install.packages(c("httr","jsonlite","dplyr","lubridate"), repos="https://cloud.r-project.org")'
+
+      - name: Run daily BirdWeather script
+        env:
+          BW_API_KEY: ${{ secrets.BW_API_KEY }}
+          BW_DEVICE_ID: ${{ secrets.BW_DEVICE_ID }}
+        run: |
+          Rscript scripts/birdweather_daily.R
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data || echo "Nothing to add"
+          git commit -m "Daily data update" || echo "Nothing to commit"
+          git push
