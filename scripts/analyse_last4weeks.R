@@ -25,9 +25,13 @@ if (!file.exists(path_master) || file.info(path_master)$size == 0) {
 df_raw <- read_csv(path_master, show_col_types = FALSE)
 
 # Try to auto-detect species and time columns
-species_candidates <- c("species", "common_name", "commonName",
-                        "scientific_name", "scientificName")
-time_candidates    <- c("timestamp", "created_at", "time", "datetime")
+species_candidates <- c(
+  "species", "common_name", "commonName",
+  "scientific_name", "scientificName",
+  "species.commonName", "species.scientificName"
+)
+
+time_candidates <- c("timestamp", "created_at", "time", "datetime")
 
 species_col <- intersect(species_candidates, names(df_raw))[1]
 time_col    <- intersect(time_candidates,    names(df_raw))[1]
@@ -47,7 +51,9 @@ cat("Using time column   :", time_col, "\n")
 df <- df_raw %>%
   mutate(
     species  = .data[[species_col]],
-    ts_utc   = ymd_hms(.data[[time_col]], tz = "UTC", quiet = TRUE),
+    ts_utc   = ymd_hms(.data[[time_col]], quiet = TRUE),
+    # timestamps in your file already have an offset (+01:00 etc.),
+    # ymd_hms() respects that; we then convert to local tz:
     ts_local = with_tz(ts_utc, tz_local),
     date     = as_date(ts_local),
     hour     = hour(ts_local)
