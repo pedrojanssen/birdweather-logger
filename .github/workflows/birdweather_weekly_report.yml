@@ -60,6 +60,7 @@ jobs:
           # Mailgun SMTP server
           server_address: smtp-relay.brevo.com
           server_port: 587
+          secure: false 
 
           # SMTP auth from GitHub secrets
           username: ${{ secrets.MAILGUN_SMTP_LOGIN }}
