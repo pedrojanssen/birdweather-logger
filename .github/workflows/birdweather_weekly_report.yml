@@ -4,7 +4,7 @@ on:
   # runs automatically every Monday 06:00 UTC
   schedule:
     - cron: "0 6 * * 1"
-  # and can be triggered manually
+  # and can be triggered manually from the Actions tab
   workflow_dispatch:
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
 
-      - name: Install system libs for curl (if other scripts need it)
+      - name: Install system libs for curl
         run: |
           sudo apt-get update
           sudo apt-get install -y libcurl4-openssl-dev
@@ -47,16 +47,21 @@ jobs:
           name: weekly-report
           path: ${{ steps.find_report.outputs.report_file }}
 
+      # ---- MAILER STEP (UPDATED) ----
       - name: Send report by email
         uses: dawidd6/action-send-mail@v3
         with:
-server_address: smtp-relay.brevo.com
-server_port: 587
-username: ${{ secrets.MAIL_USERNAME }}
-password: ${{ secrets.MAIL_PASSWORD }}
+          # For Brevo / Sendinblue SMTP; change if you use another provider
+          server_address: smtp-relay.brevo.com
+          server_port: 587
+
+          # Secrets you set in the repo settings
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+
           subject: "PUC Weekly Bird Report"
           from: "PUC Report Bot <${{ secrets.MAIL_USERNAME }}>"
           to: "pedrojanssen5@gmail.com"
-          body: "Attached is your PUC weekly bird report."
+          body: "Attached is your PUC weekly bird report (last 7 days)."
           secure: true
           attachments: ${{ steps.find_report.outputs.report_file }}
