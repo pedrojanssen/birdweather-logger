@@ -4,7 +4,7 @@ on:
   # runs automatically every Monday 06:00 UTC
   schedule:
     - cron: "0 6 * * 1"
-  # can also be triggered manually from the Actions tab
+  # and can be triggered manually from the Actions tab
   workflow_dispatch:
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
 
-      # NEW: install pandoc so rmarkdown can render PDFs
+      # pandoc is needed for rmarkdown::render to make PDFs
       - name: Set up pandoc
         uses: r-lib/actions/setup-pandoc@v2
         with:
@@ -46,32 +46,20 @@ jobs:
         run: |
           FILE=$(ls reports/PUC_weekly_report_*.pdf | sort | tail -n 1)
           echo "report_file=$FILE" >> $GITHUB_OUTPUT
+          echo "Found report: $FILE"
 
+      # optional: upload as build artifact in Actions
       - name: Upload report as artifact
         uses: actions/upload-artifact@v4
         with:
           name: weekly-report
           path: ${{ steps.find_report.outputs.report_file }}
 
-      # ---- MAILER STEP USING MAILGUN SMTP ----
-      - name: Send report by email
-        uses: dawidd6/action-send-mail@v3
-        with:
-          # Mailgun SMTP server
-          server_address: smtp-relay.brevo.com
-          server_port: 587
-          secure: false 
-
-          # SMTP auth from GitHub secrets
-          username: ${{ secrets.MAILGUN_SMTP_LOGIN }}
-          password: ${{ secrets.MAILGUN_SMTP_PASSWORD }}
-
-          # From address MUST be on your Mailgun domain
-          from: "PUC Report Bot <pedrojanssen5@gmail.com>"
-
-          # Destination
-          to: "pedrojanssen5@gmail.com"
-
-          subject: "PUC Weekly Bird Report"
-          body: "Attached is your PUC weekly bird report (last 7 days)."
-          attachments: ${{ steps.find_report.outputs.report_file }}
+      # commit the PDF into the repo
+      - name: Commit and push weekly report
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports || echo "Nothing to add"
+          git commit -m "Update weekly bird report" || echo "Nothing to commit"
+          git push
