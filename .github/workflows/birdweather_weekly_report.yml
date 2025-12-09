@@ -50,10 +50,10 @@ jobs:
       - name: Send report by email
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.gmail.com
-          server_port: 587
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
+server_address: smtp-relay.brevo.com
+server_port: 587
+username: ${{ secrets.MAIL_USERNAME }}
+password: ${{ secrets.MAIL_PASSWORD }}
           subject: "PUC Weekly Bird Report"
           from: "PUC Report Bot <${{ secrets.MAIL_USERNAME }}>"
           to: "pedrojanssen5@gmail.com"
