@@ -1,0 +1,121 @@
+---
+title: "PUC Weekly Bird Report"
+author: "BirdWeather / PUC"
+output:
+  pdf_document:
+    toc: false
+    number_sections: false
+fontsize: 11pt
+geometry: margin=1in
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(readr)
+library(dplyr)
+library(lubridate)
+library(ggplot2)
+library(forcats)
+
+path_master <- "data/master_detections.csv"
+tz_local    <- "Europe/Amsterdam"   # adjust if needed
+
+if (!file.exists(path_master) || file.info(path_master)$size == 0) {
+  stop("Master file missing or empty.")
+}
+
+df_raw <- read_csv(path_master, show_col_types = FALSE)
+
+# auto-detect species + time
+species_col <- intersect(
+  c("species.commonName","species.scientificName","species","commonName"),
+  names(df_raw)
+)[1]
+time_col <- intersect(c("timestamp","datetime","created_at"), names(df_raw))[1]
+
+if (is.na(species_col) | is.na(time_col)) {
+  stop("Could not detect species/time columns. Got: ",
+       paste(names(df_raw), collapse = ", "))
+}
+
+df <- df_raw %>%
+  mutate(
+    species  = .data[[species_col]],
+    ts_utc   = ymd_hms(.data[[time_col]], quiet = TRUE),
+    ts_local = with_tz(ts_utc, tz_local),
+    date     = as_date(ts_local),
+    hour     = hour(ts_local)
+  ) %>%
+  filter(!is.na(species), !is.na(ts_local))
+
+# define last 7 days window
+end_date   <- today(tz_local)
+start_date <- end_date - days(6)
+
+df7 <- df %>% filter(date >= start_date & date <= end_date)
+
+if (nrow(df7) == 0) stop("No detections in the last 7 days.")
+
+# global weekly metrics
+total_detections <- nrow(df7)
+unique_species   <- n_distinct(df7$species)
+
+most_common <- df7 %>%
+  count(species, sort = TRUE) %>%
+  slice(1)
+
+# confidence column (from your PUC data)
+conf_col <- intersect(c("confidence","score","probability"), names(df7))[1]
+avg_conf <- if (!is.na(conf_col)) {
+  mean(df7[[conf_col]], na.rm = TRUE)
+} else NA_real_
+
+# Top 10 species
+top10 <- df7 %>%
+  count(species, sort = TRUE) %>%
+  slice_head(n = 10) %>%
+  mutate(species = fct_reorder(species, n))
+
+# BirdNET-Go–style palette
+birdnet_colors <- c(
+  "#4e79a7","#59a14f","#f28e2c","#e15759","#76b7b2",
+  "#edc949","#af7aa1","#ff9da7","#9c755f","#bab0ab"
+)
+
+# Time-of-day categories
+df7_periods <- df7 %>%
+  mutate(period = case_when(
+    hour >= 0  & hour <= 4  ~ "Night (0–4)",
+    hour >= 5  & hour <= 8  ~ "Dawn (5–8)",
+    hour >= 9  & hour <= 11 ~ "Morning (9–11)",
+    hour >= 12 & hour <= 16 ~ "Afternoon (12–16)",
+    hour >= 17 & hour <= 19 ~ "Evening (17–19)",
+    hour >= 20 & hour <= 23 ~ "Night (20–23)"
+  ))
+
+tod <- df7_periods %>%
+  count(period) %>%
+  mutate(period = factor(period, levels = c(
+    "Night (0–4)", "Dawn (5–8)", "Morning (9–11)",
+    "Afternoon (12–16)", "Evening (17–19)", "Night (20–23)"
+  )))
+
+# daily detection trends
+daily_trend <- df7 %>%
+  count(date) %>%
+  arrange(date)
+
+# new species in this period: first appearance in full dataset falls in [start_date, end_date]
+first_all <- df %>%
+  group_by(species) %>%
+  summarise(first_date = min(date), .groups = "drop")
+
+new_this_week <- first_all %>%
+  filter(first_date >= start_date & first_date <= end_date) %>%
+  left_join(
+    df7 %>% count(species, name = "detections_this_week"),
+    by = "species"
+  ) %>%
+  arrange(first_date)
+
