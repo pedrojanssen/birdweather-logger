@@ -1,7 +1,6 @@
-```r
 ---
 title: "PUC Weekly Bird Report"
-author: "BirdWeather / PUC"
+author: "Jos"
 output:
   pdf_document:
     toc: false
@@ -10,9 +9,14 @@ fontsize: 11pt
 geometry: margin=1in
 ---
 
-```{r setup}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
+
+## Detection specifics
+
+```{r birdtable1, echo=FALSE, message = FALSE, warning = FALSE}
 library(readr)
 library(dplyr)
 library(lubridate)
@@ -183,6 +187,11 @@ sep = ""
 
 knitr::kable(summary_tbl, align = c("l","r"))
 }
+```
+
+## Number of detections per species
+
+```{r birdgraph1, echo=FALSE, message = FALSE, warning = FALSE}
 
 if (!no_data) {
 ggplot(top10, aes(x = species, y = n, fill = species)) +
@@ -196,6 +205,12 @@ y = "Detections"
 theme_minimal(base_size = 11) +
 theme(legend.position = "none")
 }
+```
+
+
+## Number of detections per day part
+
+```{r birdgraph2, echo=FALSE, message = FALSE, warning = FALSE}
 
 if (!no_data) {
 ggplot(tod, aes(x = period, y = n, fill = period)) +
@@ -208,6 +223,12 @@ y = "Detections"
 theme_minimal(base_size = 11) +
 theme(legend.position = "none")
 }
+```
+
+
+## Number of detections per day
+
+```{r birdgraph3, echo=FALSE, message = FALSE, warning = FALSE}
 
 if (!no_data) {
 ggplot(daily_trend, aes(x = date, y = n)) +
@@ -219,7 +240,12 @@ y = "Detections per day"
 ) +
 theme_minimal(base_size = 11)
 }
+```
 
+
+## New detections
+
+```{r birdtable2, echo=FALSE, message = FALSE, warning = FALSE}
 if (no_data) {
 cat("No data available.")
 } else {
@@ -234,3 +260,7 @@ align = c("l","c","r")
 )
 }
 }
+
+```
+
+[End]
