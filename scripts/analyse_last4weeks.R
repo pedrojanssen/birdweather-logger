@@ -12,7 +12,7 @@ library(suncalc)
 
 path_master <- "data/master_detections.csv"
 
-tz_local   <- "Europe/Amsterdam"  # adjust if needed
+tz_local   <- "America/Costa_Rica"
 output_dir <- "output"
 
 # Approximate coordinates of your main site (for sunrise)

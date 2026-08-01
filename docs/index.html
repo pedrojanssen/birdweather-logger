@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A privacy-limited view of aggregated BirdWeather observations."
+    />
+    <meta name="theme-color" content="#0f2e28" />
+    <title>BirdWeather Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="BirdWeather dashboard home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <path
+              d="M12 41c13-2 18-13 19-25 7 9 11 18 25 18-5 5-12 8-20 8-6 8-15 10-24 7 4-2 7-5 9-8-3 1-6 1-9 0Z"
+            />
+          </svg>
+        </span>
+        <span>BirdWeather</span>
+      </a>
+      <div class="freshness" aria-live="polite">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="freshness-label">Loading daily update…</span>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Passive acoustic monitoring</p>
+          <h1>The daily rhythm of birdlife</h1>
+          <p class="hero-intro">
+            An aggregate view of detections, species diversity and activity
+            through the day—reported in Costa Rica time.
+          </p>
+        </div>
+        <div class="period-picker" aria-label="Dashboard period">
+          <button type="button" data-period="7d" class="is-active">
+            7 days
+          </button>
+          <button type="button" data-period="30d">30 days</button>
+          <button type="button" data-period="all">All data</button>
+        </div>
+      </section>
+
+      <div id="error-message" class="error-message" role="alert" hidden></div>
+
+      <section class="metric-grid" aria-label="Key metrics">
+        <article class="metric-card metric-card--primary">
+          <p>Detections</p>
+          <strong id="metric-detections">—</strong>
+          <span>acoustic classifications</span>
+        </article>
+        <article class="metric-card">
+          <p>Species</p>
+          <strong id="metric-species">—</strong>
+          <span>distinct species detected</span>
+        </article>
+        <article class="metric-card">
+          <p>Active days</p>
+          <strong id="metric-days">—</strong>
+          <span id="metric-period">within the selected period</span>
+        </article>
+        <article class="metric-card">
+          <p>Mean confidence</p>
+          <strong id="metric-confidence">—</strong>
+          <span>across valid detections</span>
+        </article>
+      </section>
+
+      <section class="chart-grid">
+        <article class="panel panel--wide">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Day by day</p>
+              <h2>Detection activity</h2>
+            </div>
+            <p id="daily-range" class="panel-meta"></p>
+          </div>
+          <div
+            id="daily-chart"
+            class="chart"
+            role="img"
+            aria-label="Daily detection activity chart"
+          ></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Costa Rica time</p>
+              <h2>Hourly pattern</h2>
+            </div>
+          </div>
+          <div
+            id="hourly-chart"
+            class="hourly-chart"
+            role="img"
+            aria-label="Detections by hour of day"
+          ></div>
+          <div class="hour-labels" aria-hidden="true">
+            <span>00</span><span>06</span><span>12</span><span>18</span
+            ><span>23</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="species-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Most frequently heard</p>
+            <h2>Top species</h2>
+          </div>
+          <p>
+            BirdWeather species imagery · hourly bars run from midnight to
+            midnight
+          </p>
+        </div>
+        <div id="top-species" class="species-grid"></div>
+      </section>
+
+      <section class="panel species-table-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Complete list</p>
+            <h2>All detected species</h2>
+          </div>
+          <label class="search-label">
+            <span class="sr-only">Filter species</span>
+            <input
+              id="species-search"
+              type="search"
+              placeholder="Filter species"
+            />
+          </label>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Species</th>
+                <th scope="col">Detections</th>
+                <th scope="col">Active days</th>
+                <th scope="col">Mean confidence</th>
+              </tr>
+            </thead>
+            <tbody id="species-table"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <aside class="privacy-note">
+        <div class="privacy-icon" aria-hidden="true">◎</div>
+        <div>
+          <h2>Designed for public sharing</h2>
+          <p>
+            This dashboard contains aggregate counts only. Coordinates, audio
+            links, detection identifiers and exact detection times are excluded
+            from the published dataset. Counts represent classifications, not
+            individual birds.
+          </p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        Automatically updated from BirdWeather ·
+        <span id="footer-timezone">America/Costa_Rica</span>
+      </p>
+    </footer>
+    <noscript
+      >This dashboard requires JavaScript to display the aggregate
+      dataset.</noscript
+    >
+  </body>
+</html>
