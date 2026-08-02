@@ -401,10 +401,14 @@ function render() {
 
 async function initialise() {
   try {
-    const response = await fetch("data/dashboard.json", { cache: "no-store" });
+    const response = await fetch("data/dashboard.json?schema=2", {
+      cache: "no-store",
+    });
     if (!response.ok)
       throw new Error(`Dashboard data returned ${response.status}`);
     state.dashboard = await response.json();
+    if (state.dashboard.schema_version !== 2)
+      throw new Error("Dashboard data schema is still updating");
     state.periodKey = state.dashboard.default_period;
     render();
   } catch (error) {
