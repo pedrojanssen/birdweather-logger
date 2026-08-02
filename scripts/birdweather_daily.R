@@ -15,14 +15,18 @@ if (station_token == "") {
 }
 
 base_dir <- "data"
+tz_local <- "America/Costa_Rica"
 
-# ---- TIME RANGE: previous UTC day ----
+# ---- TIME RANGE: previous local calendar day ----
 
-yesterday   <- Sys.Date() - 1
-from_time   <- paste0(yesterday, "T00:00:00Z")
-to_time     <- paste0(yesterday, "T23:59:59Z")
+today_local <- as_date(with_tz(Sys.time(), tz_local))
+target_date <- today_local - days(1)
+from_local  <- as.POSIXct(paste(target_date, "00:00:00"), tz = tz_local)
+to_local    <- as.POSIXct(paste(target_date, "23:59:59"), tz = tz_local)
+from_time   <- format(with_tz(from_local, "UTC"), "%Y-%m-%dT%H:%M:%SZ")
+to_time     <- format(with_tz(to_local, "UTC"), "%Y-%m-%dT%H:%M:%SZ")
 
-day_dir     <- file.path(base_dir, as.character(yesterday))
+day_dir     <- file.path(base_dir, as.character(target_date))
 daily_file  <- file.path(day_dir, "detections.csv")
 master_file <- file.path(base_dir, "master_detections.csv")
 
@@ -36,7 +40,7 @@ base_url <- sprintf(
   station_token
 )
 
-cat("Requesting detections for UTC day", yesterday, "...\n")
+cat("Requesting detections for local day", target_date, "in", tz_local, "...\n")
 cat("From:", from_time, " To:", to_time, "\n")
 
 all_pages <- list()
@@ -108,20 +112,20 @@ if (http_error(res)) {
 
 # Combine pages
 if (length(all_pages) == 0) {
-  cat("No detections found for that UTC day.\n")
+  cat("No detections found for that local day.\n")
   daily_df <- tibble()
 } else {
   all_det <- bind_rows(all_pages)
 
-  # Extra safety: filter to exactly 'yesterday' (UTC date) based on timestamp
+  # Extra safety: keep exactly the requested Costa Rica calendar day.
   if ("timestamp" %in% names(all_det)) {
     all_det <- all_det %>%
       mutate(
-        ts = ymd_hms(timestamp, quiet = TRUE),
-        date_utc = as.Date(ts)
+        ts_utc = ymd_hms(timestamp, quiet = TRUE, tz = "UTC"),
+        date_local = as_date(with_tz(ts_utc, tz_local))
       ) %>%
-      filter(date_utc == yesterday) %>%
-      select(-ts, -date_utc)
+      filter(date_local == target_date) %>%
+      select(-ts_utc, -date_local)
   }
 
   daily_df <- all_det

@@ -1,18 +1,27 @@
 name: BirdWeather analysis (last 4 weeks)
 
 on:
-  workflow_dispatch:   # only runs when you manually trigger it
+  workflow_dispatch: # only runs when you manually trigger it
 
 permissions:
   contents: write
 
+concurrency:
+  group: birdweather-content-writes
+  cancel-in-progress: false
+
 jobs:
   analyse:
     runs-on: ubuntu-latest
+    env:
+      TZ: America/Costa_Rica
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          ref: main
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
@@ -34,6 +43,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add output || echo "Nothing to add"
-          git commit -m "Update analysis (last 4 weeks)" || echo "Nothing to commit"
-          git push
+          git add output
+          if git diff --cached --quiet; then
+            echo "No analysis changes to commit"
+            exit 0
+          fi
+          git commit -m "Update analysis (last 4 weeks)"
+          git pull --rebase origin main
+          git push origin HEAD:main

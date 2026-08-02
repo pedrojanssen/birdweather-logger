@@ -4,7 +4,7 @@
 library(rmarkdown)
 library(lubridate)
 
-tz_local    <- "Europe/Amsterdam"
+tz_local    <- "America/Costa_Rica"
 today_local <- today(tz_local)
 
 # Ensure reports/ exists
