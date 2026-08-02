@@ -27,7 +27,9 @@ from zoneinfo import ZoneInfo
 DEFAULT_TIMEZONE = "America/Costa_Rica"
 DEFAULT_INPUT = Path("data/master_detections.csv")
 DEFAULT_OUTPUT = Path("docs/data/dashboard.json")
-TOP_SPECIES_LIMIT = 10
+TOP_SPECIES_LIMIT = 12
+NEW_SPECIES_LIMIT = 12
+REVIEW_CANDIDATE_LIMIT = 8
 
 FORBIDDEN_KEYS = {
     "id",
@@ -55,7 +57,7 @@ class SpeciesBucket:
     confidence_sum: float = 0.0
     confidence_count: int = 0
     hourly: list[int] = field(default_factory=lambda: [0] * 24)
-    photo_url: str | None = None
+    photo_urls: list[str] = field(default_factory=list)
 
 
 @dataclass
@@ -99,9 +101,10 @@ def parse_confidence(value: str) -> float | None:
     return confidence
 
 
-def birdweather_photo(row: dict[str, str]) -> str | None:
-    """Return only a BirdWeather-hosted species image, never a soundscape URL."""
+def birdweather_photos(row: dict[str, str]) -> list[str]:
+    """Return only BirdWeather-hosted species images, never soundscape URLs."""
 
+    photos: list[str] = []
     for column in ("species.imageUrl", "species.pngUrl", "species.thumbnailUrl"):
         candidate = (row.get(column) or "").strip()
         if not candidate:
@@ -112,8 +115,8 @@ def birdweather_photo(row: dict[str, str]) -> str | None:
             and parsed.netloc == "media.birdweather.com"
             and parsed.path.startswith("/species/")
         ):
-            return candidate
-    return None
+            photos.append(candidate)
+    return list(dict.fromkeys(photos))
 
 
 def read_aggregates(
@@ -157,8 +160,8 @@ def read_aggregates(
                 species_bucket.confidence_sum += confidence
                 species_bucket.confidence_count += 1
 
-            if species_bucket.photo_url is None:
-                species_bucket.photo_url = birdweather_photo(row)
+            if not species_bucket.photo_urls:
+                species_bucket.photo_urls = birdweather_photos(row)
 
     return days, invalid_rows
 
@@ -167,10 +170,18 @@ def mean_confidence(total: float, count: int) -> float | None:
     return round(total / count, 3) if count else None
 
 
-def hourly_rows(counts: Iterable[int]) -> list[dict[str, int]]:
+def hourly_rows(
+    counts: Iterable[int], species_counts: Iterable[int] | None = None
+) -> list[dict[str, int]]:
+    detections = list(counts)
+    diversity = list(species_counts) if species_counts is not None else None
     return [
-        {"hour": hour, "detections": detections}
-        for hour, detections in enumerate(counts)
+        {
+            "hour": hour,
+            "detections": detection_count,
+            **({"species_count": diversity[hour]} if diversity is not None else {}),
+        }
+        for hour, detection_count in enumerate(detections)
     ]
 
 
@@ -196,6 +207,7 @@ def build_period(
     days: dict[date, DayBucket],
     first_date: date,
     last_date: date,
+    first_seen: dict[tuple[str, str], date],
 ) -> dict[str, Any]:
     selected_dates = period_dates(period_key, first_date, last_date)
     period_hourly = [0] * 24
@@ -234,8 +246,27 @@ def build_period(
             aggregate.confidence_count += bucket.confidence_count
             aggregate.hourly = [a + b for a, b in zip(aggregate.hourly, bucket.hourly)]
             aggregate.active_days += 1
-            if aggregate.photo_url is None and bucket.photo_url:
-                aggregate.photo_url = bucket.photo_url
+            if not aggregate.photo_urls and bucket.photo_urls:
+                aggregate.photo_urls = bucket.photo_urls
+
+    previous_species: dict[tuple[str, str], int] = defaultdict(int)
+    previous_total = 0
+    if period_key != "all":
+        previous_end = selected_dates[0] - timedelta(days=1)
+        previous_start = previous_end - timedelta(days=len(selected_dates) - 1)
+        for observed_date in (
+            previous_start + timedelta(days=offset)
+            for offset in range(len(selected_dates))
+        ):
+            day_bucket = days.get(observed_date)
+            if day_bucket is None:
+                continue
+            previous_total += day_bucket.detections
+            for species_key, bucket in day_bucket.species.items():
+                previous_species[species_key] += bucket.detections
+    else:
+        previous_start = None
+        previous_end = None
 
     ranked_species = sorted(
         species_totals.items(),
@@ -251,12 +282,14 @@ def build_period(
             "average_confidence": mean_confidence(
                 aggregate.confidence_sum, aggregate.confidence_count
             ),
+            "first_seen_date": first_seen[(common_name, scientific_name)].isoformat(),
         }
         for (common_name, scientific_name), aggregate in ranked_species
     ]
 
-    top_species = []
+    top_species: list[dict[str, Any]] = []
     for (common_name, scientific_name), aggregate in ranked_species[:TOP_SPECIES_LIMIT]:
+        previous_detections = previous_species.get((common_name, scientific_name), 0)
         top_species.append(
             {
                 "common_name": common_name,
@@ -266,10 +299,93 @@ def build_period(
                 "average_confidence": mean_confidence(
                     aggregate.confidence_sum, aggregate.confidence_count
                 ),
-                "photo_url": aggregate.photo_url,
+                "photo_url": aggregate.photo_urls[0] if aggregate.photo_urls else None,
+                "photo_urls": aggregate.photo_urls,
                 "hourly_activity": hourly_rows(aggregate.hourly),
+                "change_percent": (
+                    round(
+                        (aggregate.detections - previous_detections)
+                        / previous_detections
+                        * 100,
+                        1,
+                    )
+                    if previous_detections
+                    else None
+                ),
             }
         )
+
+    new_species_ranked = [
+        (species_key, aggregate)
+        for species_key, aggregate in ranked_species
+        if selected_dates[0] <= first_seen[species_key] <= selected_dates[-1]
+    ]
+    new_species = [
+        {
+            "common_name": common_name,
+            "scientific_name": scientific_name or None,
+            "detections": aggregate.detections,
+            "first_seen_date": first_seen[(common_name, scientific_name)].isoformat(),
+            "average_confidence": mean_confidence(
+                aggregate.confidence_sum, aggregate.confidence_count
+            ),
+            "photo_url": aggregate.photo_urls[0] if aggregate.photo_urls else None,
+            "photo_urls": aggregate.photo_urls,
+        }
+        for (common_name, scientific_name), aggregate in new_species_ranked[
+            :NEW_SPECIES_LIMIT
+        ]
+    ]
+
+    review_ranked = sorted(
+        (
+            (species_key, aggregate)
+            for species_key, aggregate in ranked_species
+            if aggregate.confidence_count
+            and (
+                mean_confidence(aggregate.confidence_sum, aggregate.confidence_count)
+                < 0.75
+                or aggregate.detections <= 3
+            )
+        ),
+        key=lambda item: (
+            mean_confidence(item[1].confidence_sum, item[1].confidence_count),
+            item[1].detections,
+            item[0][0].casefold(),
+        ),
+    )
+    review_candidates = [
+        {
+            "common_name": common_name,
+            "scientific_name": scientific_name or None,
+            "detections": aggregate.detections,
+            "average_confidence": mean_confidence(
+                aggregate.confidence_sum, aggregate.confidence_count
+            ),
+            "reason": (
+                "Lower aggregate confidence"
+                if mean_confidence(
+                    aggregate.confidence_sum, aggregate.confidence_count
+                )
+                < 0.75
+                else "Rare in this period"
+            ),
+        }
+        for (common_name, scientific_name), aggregate in review_ranked[
+            :REVIEW_CANDIDATE_LIMIT
+        ]
+    ]
+
+    period_species_hourly = [
+        sum(1 for aggregate in species_totals.values() if aggregate.hourly[hour])
+        for hour in range(24)
+    ]
+    peak_hour = max(range(24), key=lambda hour: period_hourly[hour])
+    detection_change = (
+        round((total_detections - previous_total) / previous_total * 100, 1)
+        if previous_total
+        else None
+    )
 
     return {
         "label": label,
@@ -280,7 +396,23 @@ def build_period(
         "active_days": active_days,
         "average_confidence": mean_confidence(confidence_sum, confidence_count),
         "daily_activity": daily_activity,
-        "hourly_activity": hourly_rows(period_hourly),
+        "hourly_activity": hourly_rows(period_hourly, period_species_hourly),
+        "peak_hour": {"hour": peak_hour, "detections": period_hourly[peak_hour]},
+        "comparison": {
+            "previous_start_date": previous_start.isoformat()
+            if previous_start
+            else None,
+            "previous_end_date": previous_end.isoformat() if previous_end else None,
+            "previous_detections": previous_total if previous_start else None,
+            "detection_change_percent": detection_change,
+            "previous_species_count": len(previous_species) if previous_start else None,
+            "species_change": (
+                len(species_totals) - len(previous_species) if previous_start else None
+            ),
+        },
+        "new_species_count": len(new_species_ranked),
+        "new_species": new_species,
+        "review_candidates": review_candidates,
         "top_species": top_species,
         "species": species_summary,
     }
@@ -321,11 +453,15 @@ def build_dashboard(
 
     first_date = min(days)
     last_date = max(days)
+    first_seen: dict[tuple[str, str], date] = {}
+    for observed_date in sorted(days):
+        for species_key in days[observed_date].species:
+            first_seen.setdefault(species_key, observed_date)
     generated_date = generated_date or datetime.now(local_timezone).date()
     period_labels = {"7d": "Last 7 days", "30d": "Last 30 days", "all": "All data"}
 
     payload = {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_date": generated_date.isoformat(),
         "timezone": timezone_name,
         "latest_observation_date": last_date.isoformat(),
@@ -341,7 +477,7 @@ def build_dashboard(
         },
         "quality": {"rows_skipped": invalid_rows},
         "periods": {
-            key: build_period(key, label, days, first_date, last_date)
+            key: build_period(key, label, days, first_date, last_date, first_seen)
             for key, label in period_labels.items()
         },
     }
