@@ -15,8 +15,11 @@ The public dataset is `docs/data/dashboard.json`. It contains:
 
 - daily detection and species totals;
 - counts and average confidence by species;
-- aggregate activity for each hour of the day;
-- BirdWeather species photos for the ten most frequently detected species; and
+- period-over-period trends, peak hour and first-seen species;
+- aggregate detection and species-diversity patterns for each hour of the day;
+- a species-by-hour heatmap and aggregate review candidates;
+- BirdWeather species photos with safe fallbacks for the twelve most frequently
+  detected species; and
 - 7-day, 30-day and all-data views.
 
 The generator uses an allowlist rather than removing sensitive fields after the

@@ -91,9 +91,17 @@ class DashboardJsonTest(unittest.TestCase):
         self.assertEqual(period["hourly_activity"][0]["detections"], 1)
         self.assertEqual(period["hourly_activity"][1]["detections"], 1)
         self.assertEqual(period["hourly_activity"][5]["detections"], 1)
+        self.assertEqual(period["hourly_activity"][0]["species_count"], 1)
+        self.assertEqual(period["peak_hour"], {"hour": 0, "detections": 1})
+        self.assertEqual(period["new_species_count"], 2)
+        self.assertEqual(period["comparison"]["previous_detections"], 0)
         self.assertEqual(
             period["top_species"][0]["photo_url"],
             "https://media.birdweather.com/species/547/thrush.jpg",
+        )
+        self.assertEqual(
+            period["top_species"][0]["photo_urls"],
+            ["https://media.birdweather.com/species/547/thrush.jpg"],
         )
 
         serialised = self.output_path.read_text(encoding="utf-8")
@@ -119,6 +127,36 @@ class DashboardJsonTest(unittest.TestCase):
             with self.subTest(payload=payload):
                 with self.assertRaises(ValueError):
                     validate_public_payload(payload)
+
+    def test_builds_period_comparison_without_exposing_rows(self):
+        with self.input_path.open("r", encoding="utf-8", newline="") as handle:
+            fieldnames = csv.DictReader(handle).fieldnames
+        with self.input_path.open("a", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=fieldnames)
+            writer.writerow(
+                {
+                    "id": "older-secret-detection",
+                    "timestamp": "2026-07-24T12:00:00Z",
+                    "confidence": "0.75",
+                    "species.commonName": "Older visitor",
+                    "species.scientificName": "Avis prior",
+                }
+            )
+
+        period = build_dashboard(
+            self.input_path,
+            self.output_path,
+            generated_date=date(2026, 8, 1),
+        )["periods"]["7d"]
+
+        self.assertEqual(period["total_detections"], 3)
+        self.assertEqual(period["comparison"]["previous_detections"], 1)
+        self.assertEqual(period["comparison"]["detection_change_percent"], 200.0)
+        self.assertEqual(period["comparison"]["species_change"], 1)
+        self.assertNotIn(
+            "older-secret-detection",
+            self.output_path.read_text(encoding="utf-8"),
+        )
 
 
 if __name__ == "__main__":
