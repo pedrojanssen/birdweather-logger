@@ -31,6 +31,29 @@ TOP_SPECIES_LIMIT = 12
 NEW_SPECIES_LIMIT = 12
 REVIEW_CANDIDATE_LIMIT = 8
 
+# Locations are separated by date only. Coordinates from the sensitive source
+# are deliberately never needed for, or copied into, the public dashboard.
+LOCATION_RANGES = (
+    {
+        "key": "guapiles",
+        "label": "Guápiles, Limón",
+        "start_date": date(2026, 8, 11),
+        "end_date": None,
+    },
+    {
+        "key": "santo_domingo",
+        "label": "Santo Domingo, Heredia",
+        "start_date": date(2026, 5, 28),
+        "end_date": date(2026, 7, 31),
+    },
+    {
+        "key": "wageningen",
+        "label": "Wageningen, Netherlands",
+        "start_date": None,
+        "end_date": date(2026, 5, 11),
+    },
+)
+
 FORBIDDEN_KEYS = {
     "id",
     "detection_id",
@@ -119,49 +142,88 @@ def birdweather_photos(row: dict[str, str]) -> list[str]:
     return list(dict.fromkeys(photos))
 
 
+def row_identity(row: dict[str, str]) -> tuple[str, ...] | None:
+    """Return a transient identity used only to avoid double counting inputs."""
+
+    for column in ("id", "detectionId", "detection_id"):
+        value = (row.get(column) or "").strip()
+        if value:
+            return (column, value)
+
+    timestamp = (row.get("timestamp") or "").strip()
+    common_name = (row.get("species.commonName") or "").strip()
+    if timestamp and common_name:
+        return (
+            "fallback",
+            timestamp,
+            common_name,
+            (row.get("confidence") or "").strip(),
+        )
+    return None
+
+
 def read_aggregates(
-    input_path: Path, local_timezone: ZoneInfo
+    input_paths: Iterable[Path], local_timezone: ZoneInfo
 ) -> tuple[dict[date, DayBucket], int]:
-    """Read sensitive rows and retain aggregate counters only."""
+    """Read sensitive rows and retain aggregate counters only.
+
+    Multiple inputs allow the near-live workflow to combine the committed history
+    with a temporary current-day download. Detection identities are retained only
+    in memory long enough to de-duplicate overlapping inputs and never enter the
+    public payload.
+    """
 
     days: dict[date, DayBucket] = {}
     invalid_rows = 0
+    seen_rows: set[tuple[str, ...]] = set()
 
-    with input_path.open("r", encoding="utf-8-sig", newline="") as handle:
-        reader = csv.DictReader(handle)
-        required = {"timestamp", "species.commonName"}
-        missing = required.difference(reader.fieldnames or [])
-        if missing:
-            raise ValueError(f"Missing required CSV columns: {', '.join(sorted(missing))}")
+    for input_path in input_paths:
+        with input_path.open("r", encoding="utf-8-sig", newline="") as handle:
+            reader = csv.DictReader(handle)
+            required = {"timestamp", "species.commonName"}
+            missing = required.difference(reader.fieldnames or [])
+            if missing:
+                raise ValueError(
+                    f"Missing required CSV columns in {input_path}: "
+                    f"{', '.join(sorted(missing))}"
+                )
 
-        for row in reader:
-            observed_at = parse_timestamp(row.get("timestamp", ""), local_timezone)
-            common_name = (row.get("species.commonName") or "").strip()
-            scientific_name = (row.get("species.scientificName") or "").strip()
-            if observed_at is None or not common_name:
-                invalid_rows += 1
-                continue
+            for row in reader:
+                identity = row_identity(row)
+                if identity is not None and identity in seen_rows:
+                    continue
+                if identity is not None:
+                    seen_rows.add(identity)
 
-            confidence = parse_confidence(row.get("confidence", ""))
-            observed_date = observed_at.date()
-            hour = observed_at.hour
-            day_bucket = days.setdefault(observed_date, DayBucket())
-            species_key = (common_name, scientific_name)
-            species_bucket = day_bucket.species.setdefault(species_key, SpeciesBucket())
+                observed_at = parse_timestamp(row.get("timestamp", ""), local_timezone)
+                common_name = (row.get("species.commonName") or "").strip()
+                scientific_name = (row.get("species.scientificName") or "").strip()
+                if observed_at is None or not common_name:
+                    invalid_rows += 1
+                    continue
 
-            day_bucket.detections += 1
-            day_bucket.hourly[hour] += 1
-            species_bucket.detections += 1
-            species_bucket.hourly[hour] += 1
+                confidence = parse_confidence(row.get("confidence", ""))
+                observed_date = observed_at.date()
+                hour = observed_at.hour
+                day_bucket = days.setdefault(observed_date, DayBucket())
+                species_key = (common_name, scientific_name)
+                species_bucket = day_bucket.species.setdefault(
+                    species_key, SpeciesBucket()
+                )
 
-            if confidence is not None:
-                day_bucket.confidence_sum += confidence
-                day_bucket.confidence_count += 1
-                species_bucket.confidence_sum += confidence
-                species_bucket.confidence_count += 1
+                day_bucket.detections += 1
+                day_bucket.hourly[hour] += 1
+                species_bucket.detections += 1
+                species_bucket.hourly[hour] += 1
 
-            if not species_bucket.photo_urls:
-                species_bucket.photo_urls = birdweather_photos(row)
+                if confidence is not None:
+                    day_bucket.confidence_sum += confidence
+                    day_bucket.confidence_count += 1
+                    species_bucket.confidence_sum += confidence
+                    species_bucket.confidence_count += 1
+
+                if not species_bucket.photo_urls:
+                    species_bucket.photo_urls = birdweather_photos(row)
 
     return days, invalid_rows
 
@@ -445,9 +507,11 @@ def build_dashboard(
     output_path: Path,
     timezone_name: str = DEFAULT_TIMEZONE,
     generated_date: date | None = None,
+    additional_input_paths: Iterable[Path] | None = None,
 ) -> dict[str, Any]:
     local_timezone = ZoneInfo(timezone_name)
-    days, invalid_rows = read_aggregates(input_path, local_timezone)
+    input_paths = [input_path, *(additional_input_paths or [])]
+    days, invalid_rows = read_aggregates(input_paths, local_timezone)
     if not days:
         raise ValueError("No valid detections found in the master CSV")
 
@@ -457,15 +521,76 @@ def build_dashboard(
     for observed_date in sorted(days):
         for species_key in days[observed_date].species:
             first_seen.setdefault(species_key, observed_date)
-    generated_date = generated_date or datetime.now(local_timezone).date()
+    generated_now = datetime.now(local_timezone)
+    generated_date = generated_date or generated_now.date()
     period_labels = {"7d": "Last 7 days", "30d": "Last 30 days", "all": "All data"}
+
+    def build_periods(
+        location_days: dict[date, DayBucket],
+    ) -> dict[str, dict[str, Any]]:
+        location_first = min(location_days)
+        location_last = max(location_days)
+        location_first_seen: dict[tuple[str, str], date] = {}
+        for observed_date in sorted(location_days):
+            for species_key in location_days[observed_date].species:
+                location_first_seen.setdefault(species_key, observed_date)
+        return {
+            key: build_period(
+                key,
+                label,
+                location_days,
+                location_first,
+                location_last,
+                location_first_seen,
+            )
+            for key, label in period_labels.items()
+        }
+
+    all_periods = {
+        key: build_period(key, label, days, first_date, last_date, first_seen)
+        for key, label in period_labels.items()
+    }
+    locations: dict[str, dict[str, Any]] = {
+        "all": {
+            "label": "All locations",
+            "first_observation_date": first_date.isoformat(),
+            "latest_observation_date": last_date.isoformat(),
+            "periods": all_periods,
+        }
+    }
+    for location in LOCATION_RANGES:
+        location_days = {
+            observed_date: bucket
+            for observed_date, bucket in days.items()
+            if (location["start_date"] is None or observed_date >= location["start_date"])
+            and (location["end_date"] is None or observed_date <= location["end_date"])
+        }
+        if not location_days:
+            continue
+        locations[location["key"]] = {
+            "label": location["label"],
+            "first_observation_date": min(location_days).isoformat(),
+            "latest_observation_date": max(location_days).isoformat(),
+            "periods": build_periods(location_days),
+        }
+
+    default_location = next(
+        (
+            location["key"]
+            for location in LOCATION_RANGES
+            if location["key"] in locations
+        ),
+        "all",
+    )
 
     payload = {
         "schema_version": 2,
         "generated_date": generated_date.isoformat(),
+        "generated_hour": generated_now.hour,
         "timezone": timezone_name,
         "latest_observation_date": last_date.isoformat(),
         "default_period": "7d",
+        "default_location": default_location,
         "privacy": {
             "aggregation": "daily and hourly totals only",
             "excluded": [
@@ -476,10 +601,8 @@ def build_dashboard(
             ],
         },
         "quality": {"rows_skipped": invalid_rows},
-        "periods": {
-            key: build_period(key, label, days, first_date, last_date, first_seen)
-            for key, label in period_labels.items()
-        },
+        "periods": all_periods,
+        "locations": locations,
     }
 
     validate_public_payload(payload)
@@ -499,9 +622,21 @@ def main() -> None:
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--timezone", default=DEFAULT_TIMEZONE)
+    parser.add_argument(
+        "--additional-input",
+        action="append",
+        type=Path,
+        default=[],
+        help="Additional detection CSV to aggregate and de-duplicate in memory",
+    )
     args = parser.parse_args()
 
-    payload = build_dashboard(args.input, args.output, args.timezone)
+    payload = build_dashboard(
+        args.input,
+        args.output,
+        args.timezone,
+        additional_input_paths=args.additional_input,
+    )
     default = payload["periods"][payload["default_period"]]
     print(
         f"Wrote {args.output}: {default['total_detections']} detections, "

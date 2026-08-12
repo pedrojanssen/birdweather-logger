@@ -9,8 +9,8 @@
     />
     <meta name="theme-color" content="#07111f" />
     <title>BirdWeather Observatory</title>
-    <link rel="stylesheet" href="styles.css?v=2" />
-    <script src="app.js?v=2" defer></script>
+    <link rel="stylesheet" href="styles.css?v=3" />
+    <script src="app.js?v=3" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -24,7 +24,7 @@
             <path d="M2 13c5-10 9 10 14 0s9 10 14 0 9 10 14 0" />
             <path d="M2 19c5-7 9 7 14 0s9 7 14 0 9 7 14 0" />
           </svg>
-          <span>BirdWeather <b>· Costa Rica</b></span>
+          <span>BirdWeather <b>· Field Observatory</b></span>
         </a>
         <nav aria-label="Dashboard sections">
           <a class="is-active" href="#overview">Overview</a>
@@ -47,13 +47,17 @@
     <main id="overview">
       <section class="signal-hero">
         <div>
-          <p class="eyebrow">Weekly field signal</p>
+          <p id="hero-eyebrow" class="eyebrow">Weekly field signal</p>
           <h1 id="hero-title">Listening to the week</h1>
           <p id="hero-summary" class="hero-summary">
             Loading the latest aggregate observations in Costa Rica time.
           </p>
         </div>
         <div class="hero-controls">
+          <label class="location-picker" for="location-picker">
+            <span>Listening site</span>
+            <select id="location-picker" aria-label="Listening site"></select>
+          </label>
           <a class="hero-link" href="#new-visitors"
             >Explore new visitors <span>↓</span></a
           >
@@ -278,7 +282,7 @@
             </div>
             <div>
               <dt>Refresh</dt>
-              <dd>Every day after 01:05</dd>
+              <dd>Near-live, approximately every 15 minutes</dd>
             </div>
             <div>
               <dt>Weekly report</dt>
@@ -294,8 +298,7 @@
         <path d="M2 13c5-10 9 10 14 0s9 10 14 0 9 10 14 0" />
       </svg>
       <p>
-        BirdWeather Observatory · Automatically refreshed from privacy-limited
-        data
+        BirdWeather Observatory · Near-live from privacy-limited data
       </p>
       <span id="footer-updated"></span>
     </footer>

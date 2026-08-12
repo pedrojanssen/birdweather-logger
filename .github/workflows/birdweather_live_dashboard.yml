@@ -1,0 +1,58 @@
+name: BirdWeather near-live dashboard
+
+on:
+  # Avoid the busiest start-of-hour scheduling window. GitHub schedules can be
+  # delayed, so the browser also checks the published file once per minute.
+  schedule:
+    - cron: "7,22,37,52 * * * *"
+      timezone: "America/Costa_Rica"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: birdweather-content-writes
+  cancel-in-progress: false
+
+jobs:
+  refresh_dashboard:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Costa_Rica
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Download current-day detections to temporary storage
+        env:
+          BW_DEVICE_ID: ${{ secrets.BW_DEVICE_ID }}
+        run: |
+          python3 scripts/fetch_live_detections.py \
+            --output "${RUNNER_TEMP}/birdweather-live.csv"
+
+      - name: Build privacy-limited near-live JSON
+        run: |
+          python3 scripts/build_dashboard_json.py \
+            --additional-input "${RUNNER_TEMP}/birdweather-live.csv"
+
+      - name: Test generator and privacy guard
+        run: |
+          python3 -m unittest discover -s tests -v
+
+      - name: Publish dashboard data only
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/dashboard.json
+          if git diff --cached --quiet; then
+            echo "No aggregate dashboard changes to publish"
+            exit 0
+          fi
+          git commit -m "Refresh near-live dashboard"
+          git pull --rebase origin main
+          git push origin HEAD:main
