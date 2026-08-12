@@ -219,6 +219,33 @@ h1 {
   justify-items: end;
   gap: 16px;
 }
+.location-picker {
+  display: grid;
+  justify-items: end;
+  gap: 6px;
+}
+.location-picker span {
+  color: var(--muted);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.location-picker select {
+  min-width: 220px;
+  padding: 9px 34px 9px 13px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--text);
+  background: var(--panel-soft);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.location-picker select:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
 .hero-link {
   padding: 10px 16px;
   border: 1px solid var(--line-strong);
@@ -1142,6 +1169,13 @@ footer span {
   .hero-controls {
     width: 100%;
     justify-items: start;
+  }
+  .location-picker {
+    width: 100%;
+    justify-items: start;
+  }
+  .location-picker select {
+    width: 100%;
   }
   .period-picker {
     width: 100%;

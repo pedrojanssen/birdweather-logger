@@ -1,15 +1,16 @@
 # BirdWeather logger and public dashboard
 
-This repository downloads one local calendar day of BirdWeather detections every
-night and builds a static dashboard from aggregate data. Dates and hours use
-`America/Costa_Rica` throughout.
+This repository archives one local calendar day of BirdWeather detections every
+night and refreshes a near-live dashboard from aggregate data approximately every
+15 minutes. Dates and hours use `America/Costa_Rica` throughout.
 
 ## Dashboard
 
 The site files live in `docs/`. To publish them with GitHub Pages, configure the
 repository's Pages source as **Deploy from a branch**, select `main`, and select
-the `/docs` folder. After that one-time setting, the daily commit automatically
-updates both the dashboard and its public JSON.
+the `/docs` folder. After that one-time setting, aggregate JSON commits update the
+dashboard automatically. An open browser checks for a newly published file once
+per minute.
 
 The public dataset is `docs/data/dashboard.json`. It contains:
 
@@ -21,6 +22,13 @@ The public dataset is `docs/data/dashboard.json`. It contains:
 - BirdWeather species photos with safe fallbacks for the twelve most frequently
   detected species; and
 - 7-day, 30-day and all-data views.
+
+The dashboard separates observations into date-bounded listening sites without
+using or publishing source coordinates:
+
+- Wageningen through 11 May 2026;
+- Santo Domingo, Heredia from 28 May through 31 July 2026; and
+- Guápiles, Limón from 11 August 2026 onward.
 
 The generator uses an allowlist rather than removing sensitive fields after the
 fact. It never publishes detection rows, coordinates, audio links, detection or
@@ -43,6 +51,11 @@ Then open `http://localhost:8000`.
 
 ## Automation
 
+- `.github/workflows/birdweather_live_dashboard.yml` runs approximately every 15
+  minutes. It downloads the current Costa Rica day to temporary runner storage,
+  combines it with the committed history in memory, and commits only the
+  privacy-limited dashboard JSON. The temporary detection rows are never
+  published as part of this job.
 - `.github/workflows/birdweather.yml` runs daily at 01:05 Costa Rica time,
   downloads the previous local day, rebuilds the public JSON, tests it, and
   commits both data and JSON.

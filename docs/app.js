@@ -13,10 +13,15 @@ const shortDateFormat = new Intl.DateTimeFormat("en-US", {
 
 const state = {
   dashboard: null,
+  locationKey: "all",
   periodKey: "7d",
   activityMode: "detections",
   showAllSpecies: false,
+  responseValidator: null,
 };
+
+const DATA_URL = "data/dashboard.json?schema=2&live=1";
+const REFRESH_INTERVAL_MS = 60_000;
 
 const byId = (id) => document.getElementById(id);
 const escapeHtml = (value) =>
@@ -52,6 +57,18 @@ function scaledHeight(value, maximum, minimum = 2) {
   return Math.max(minimum, Math.round((value / maximum) * 100));
 }
 
+function selectedLocation() {
+  return state.dashboard.locations?.[state.locationKey] || {
+    label: "All locations",
+    latest_observation_date: state.dashboard.latest_observation_date,
+    periods: state.dashboard.periods,
+  };
+}
+
+function selectedPeriod() {
+  return selectedLocation().periods[state.periodKey];
+}
+
 function renderSparkline(id, values, coral = false) {
   const container = byId(id);
   if (!values.length) {
@@ -77,6 +94,8 @@ function renderSparkline(id, values, coral = false) {
 }
 
 function renderHero(period) {
+  const location = selectedLocation();
+  byId("hero-eyebrow").textContent = `${location.label} · field signal`;
   const change = period.comparison.detection_change_percent;
   const periodName = state.periodKey === "7d" ? "week" : "period";
   let lead = `A steady ${periodName}`;
@@ -120,7 +139,7 @@ function renderMetrics(period) {
   byId("metric-peak-calls").textContent =
     `${numberFormat.format(period.peak_hour.detections)} calls`;
   byId("metric-all-species").textContent =
-    `${numberFormat.format(state.dashboard.periods.all.species_count)} heard all-time`;
+    `${numberFormat.format(selectedLocation().periods.all.species_count)} heard ${state.locationKey === "all" ? "across all sites" : "at this site"}`;
 
   renderSparkline(
     "spark-detections",
@@ -369,7 +388,8 @@ function renderReviewCandidates(rows) {
 
 function render() {
   const dashboard = state.dashboard;
-  const period = dashboard.periods[state.periodKey];
+  const location = selectedLocation();
+  const period = selectedPeriod();
   renderHero(period);
   renderMetrics(period);
   renderTopSpecies(period.top_species);
@@ -383,10 +403,10 @@ function render() {
   byId("daily-range").textContent =
     `${formatDate(period.start_date)} — ${formatDate(period.end_date)}`;
   byId("freshness-label").textContent =
-    `Through ${formatDate(dashboard.latest_observation_date)}`;
+    `Near live · Through ${formatDate(location.latest_observation_date)}`;
   byId("footer-timezone").textContent = dashboard.timezone;
   byId("footer-updated").textContent =
-    `Updated ${formatDate(dashboard.generated_date)}`;
+    `Updated ${formatDate(dashboard.generated_date)} · ${hourLabel(dashboard.generated_hour)}`;
   document.querySelectorAll("[data-period]").forEach((button) => {
     const active = button.dataset.period === state.periodKey;
     button.classList.toggle("is-active", active);
@@ -399,9 +419,46 @@ function render() {
   });
 }
 
-async function initialise() {
+function responseValidator(response) {
+  return [
+    response.headers.get("etag"),
+    response.headers.get("last-modified"),
+    response.headers.get("content-length"),
+  ]
+    .filter(Boolean)
+    .join("|");
+}
+
+function populateLocations() {
+  const picker = byId("location-picker");
+  const preferredOrder = ["guapiles", "santo_domingo", "wageningen", "all"];
+  const available = state.dashboard.locations || {
+    all: {
+      label: "All locations",
+      periods: state.dashboard.periods,
+    },
+  };
+  picker.innerHTML = preferredOrder
+    .filter((key) => available[key])
+    .map(
+      (key) =>
+        `<option value="${key}">${escapeHtml(available[key].label)}</option>`,
+    )
+    .join("");
+  picker.value = state.locationKey;
+}
+
+async function loadDashboard({ initial = false } = {}) {
   try {
-    const response = await fetch("data/dashboard.json?schema=2", {
+    if (!initial && state.dashboard) {
+      const head = await fetch(DATA_URL, { method: "HEAD", cache: "no-store" });
+      if (head.ok) {
+        const validator = responseValidator(head);
+        if (validator && validator === state.responseValidator) return;
+      }
+    }
+
+    const response = await fetch(DATA_URL, {
       cache: "no-store",
     });
     if (!response.ok)
@@ -409,7 +466,17 @@ async function initialise() {
     state.dashboard = await response.json();
     if (state.dashboard.schema_version !== 2)
       throw new Error("Dashboard data schema is still updating");
-    state.periodKey = state.dashboard.default_period;
+    state.responseValidator = responseValidator(response);
+    const availableLocations = state.dashboard.locations || {};
+    if (initial || !availableLocations[state.locationKey]) {
+      state.locationKey = state.dashboard.default_location || "all";
+    }
+    const periods = selectedLocation().periods;
+    if (initial || !periods[state.periodKey]) {
+      state.periodKey = state.dashboard.default_period;
+    }
+    populateLocations();
+    byId("error-message").hidden = true;
     render();
   } catch (error) {
     const message = byId("error-message");
@@ -420,9 +487,14 @@ async function initialise() {
   }
 }
 
+async function initialise() {
+  await loadDashboard({ initial: true });
+  window.setInterval(() => loadDashboard(), REFRESH_INTERVAL_MS);
+}
+
 document.querySelectorAll("[data-period]").forEach((button) => {
   button.addEventListener("click", () => {
-    if (!state.dashboard || !state.dashboard.periods[button.dataset.period])
+    if (!state.dashboard || !selectedLocation().periods[button.dataset.period])
       return;
     state.periodKey = button.dataset.period;
     state.showAllSpecies = false;
@@ -434,7 +506,7 @@ document.querySelectorAll("[data-activity-mode]").forEach((button) => {
   button.addEventListener("click", () => {
     state.activityMode = button.dataset.activityMode;
     if (state.dashboard)
-      renderHourlyActivity(state.dashboard.periods[state.periodKey]);
+      renderHourlyActivity(selectedPeriod());
     document
       .querySelectorAll("[data-activity-mode]")
       .forEach((item) => item.classList.toggle("is-active", item === button));
@@ -442,11 +514,22 @@ document.querySelectorAll("[data-activity-mode]").forEach((button) => {
 });
 byId("species-search").addEventListener("input", () => {
   if (state.dashboard)
-    renderSpeciesTable(state.dashboard.periods[state.periodKey].species);
+    renderSpeciesTable(selectedPeriod().species);
 });
 byId("show-all-species").addEventListener("click", () => {
   state.showAllSpecies = !state.showAllSpecies;
-  renderSpeciesTable(state.dashboard.periods[state.periodKey].species);
+  renderSpeciesTable(selectedPeriod().species);
 });
+byId("location-picker").addEventListener("change", (event) => {
+  if (!state.dashboard.locations?.[event.target.value]) return;
+  state.locationKey = event.target.value;
+  state.showAllSpecies = false;
+  byId("species-search").value = "";
+  render();
+});
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") loadDashboard();
+});
+window.addEventListener("online", () => loadDashboard());
 
 initialise();

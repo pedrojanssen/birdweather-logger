@@ -85,6 +85,12 @@ class DashboardJsonTest(unittest.TestCase):
         period = payload["periods"]["7d"]
 
         self.assertEqual(payload["timezone"], "America/Costa_Rica")
+        self.assertEqual(payload["schema_version"], 2)
+        self.assertEqual(payload["default_location"], "santo_domingo")
+        self.assertEqual(
+            payload["locations"]["santo_domingo"]["label"],
+            "Santo Domingo, Heredia",
+        )
         self.assertEqual(period["total_detections"], 3)
         self.assertEqual(period["species_count"], 2)
         self.assertEqual(period["average_confidence"], 0.767)
@@ -157,6 +163,58 @@ class DashboardJsonTest(unittest.TestCase):
             "older-secret-detection",
             self.output_path.read_text(encoding="utf-8"),
         )
+
+    def test_combines_live_input_without_duplicates_and_separates_sites(self):
+        live_path = self.root / "live.csv"
+        with self.input_path.open("r", encoding="utf-8", newline="") as handle:
+            fieldnames = csv.DictReader(handle).fieldnames
+        with live_path.open("w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerow(
+                {
+                    "id": "detect-secret-123",
+                    "timestamp": "2026-07-31T06:30:00Z",
+                    "confidence": "0.8",
+                    "species.commonName": "Clay-colored Thrush",
+                    "species.scientificName": "Turdus grayi",
+                }
+            )
+            writer.writerow(
+                {
+                    "id": "live-secret-guapiles",
+                    "timestamp": "2026-08-11T12:15:00Z",
+                    "confidence": "0.91",
+                    "lat": "private-coordinate",
+                    "species.commonName": "Rufous-tailed Hummingbird",
+                    "species.scientificName": "Amazilia tzacatl",
+                }
+            )
+
+        payload = build_dashboard(
+            self.input_path,
+            self.output_path,
+            generated_date=date(2026, 8, 11),
+            additional_input_paths=[live_path],
+        )
+
+        self.assertEqual(payload["periods"]["all"]["total_detections"], 4)
+        self.assertEqual(payload["default_location"], "guapiles")
+        self.assertEqual(
+            payload["locations"]["guapiles"]["periods"]["all"][
+                "total_detections"
+            ],
+            1,
+        )
+        self.assertEqual(
+            payload["locations"]["santo_domingo"]["periods"]["all"][
+                "total_detections"
+            ],
+            3,
+        )
+        serialised = self.output_path.read_text(encoding="utf-8")
+        self.assertNotIn("live-secret-guapiles", serialised)
+        self.assertNotIn("private-coordinate", serialised)
 
 
 if __name__ == "__main__":
