@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "generated_date": "2026-08-12",
-  "generated_hour": 8,
+  "generated_hour": 9,
   "timezone": "America/Costa_Rica",
   "latest_observation_date": "2026-08-12",
   "default_period": "7d",
@@ -23,10 +23,10 @@
       "label": "Last 7 days",
       "start_date": "2026-08-06",
       "end_date": "2026-08-12",
-      "total_detections": 39,
-      "species_count": 8,
+      "total_detections": 64,
+      "species_count": 9,
       "active_days": 1,
-      "average_confidence": 0.814,
+      "average_confidence": 0.842,
       "daily_activity": [
         {
           "date": "2026-08-06",
@@ -60,8 +60,8 @@
         },
         {
           "date": "2026-08-12",
-          "detections": 39,
-          "species_count": 8
+          "detections": 64,
+          "species_count": 9
         }
       ],
       "hourly_activity": [
@@ -107,8 +107,8 @@
         },
         {
           "hour": 8,
-          "detections": 0,
-          "species_count": 0
+          "detections": 25,
+          "species_count": 3
         },
         {
           "hour": 9,
@@ -187,8 +187,8 @@
         }
       ],
       "peak_hour": {
-        "hour": 6,
-        "detections": 23
+        "hour": 8,
+        "detections": 25
       },
       "comparison": {
         "previous_start_date": "2026-07-30",
@@ -196,16 +196,16 @@
         "previous_detections": 0,
         "detection_change_percent": null,
         "previous_species_count": 0,
-        "species_change": 8
+        "species_change": 9
       },
       "new_species_count": 1,
       "new_species": [
         {
           "common_name": "Ruddy Ground Dove",
           "scientific_name": "Columbina talpacoti",
-          "detections": 9,
+          "detections": 25,
           "first_seen_date": "2026-08-12",
-          "average_confidence": 0.844,
+          "average_confidence": 0.864,
           "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
@@ -230,6 +230,13 @@
           "reason": "Lower aggregate confidence"
         },
         {
+          "common_name": "Tropical Mockingbird",
+          "scientific_name": "Mimus gilvus",
+          "detections": 1,
+          "average_confidence": 0.798,
+          "reason": "Rare in this period"
+        },
+        {
           "common_name": "White-winged Dove",
           "scientific_name": "Zenaida asiatica",
           "detections": 2,
@@ -246,16 +253,16 @@
       ],
       "top_species": [
         {
-          "common_name": "Great Kiskadee",
-          "scientific_name": "Pitangus sulphuratus",
-          "detections": 9,
+          "common_name": "Ruddy Ground Dove",
+          "scientific_name": "Columbina talpacoti",
+          "detections": 25,
           "active_days": 1,
-          "average_confidence": 0.8,
-          "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+          "average_confidence": 0.864,
+          "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
           "photo_urls": [
-            "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
-            "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
-            "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
+            "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+            "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
+            "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
           ],
           "hourly_activity": [
             {
@@ -280,11 +287,11 @@
             },
             {
               "hour": 5,
-              "detections": 8
+              "detections": 0
             },
             {
               "hour": 6,
-              "detections": 1
+              "detections": 9
             },
             {
               "hour": 7,
@@ -292,7 +299,7 @@
             },
             {
               "hour": 8,
-              "detections": 0
+              "detections": 16
             },
             {
               "hour": 9,
@@ -358,16 +365,16 @@
           "change_percent": null
         },
         {
-          "common_name": "Ruddy Ground Dove",
-          "scientific_name": "Columbina talpacoti",
-          "detections": 9,
+          "common_name": "Great Kiskadee",
+          "scientific_name": "Pitangus sulphuratus",
+          "detections": 17,
           "active_days": 1,
-          "average_confidence": 0.844,
-          "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+          "average_confidence": 0.855,
+          "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
           "photo_urls": [
-            "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
-            "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
-            "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
+            "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+            "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
+            "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
           ],
           "hourly_activity": [
             {
@@ -392,11 +399,11 @@
             },
             {
               "hour": 5,
-              "detections": 0
+              "detections": 8
             },
             {
               "hour": 6,
-              "detections": 9
+              "detections": 1
             },
             {
               "hour": 7,
@@ -404,7 +411,7 @@
             },
             {
               "hour": 8,
-              "detections": 0
+              "detections": 8
             },
             {
               "hour": 9,
@@ -1140,24 +1147,136 @@
             }
           ],
           "change_percent": null
+        },
+        {
+          "common_name": "Tropical Mockingbird",
+          "scientific_name": "Mimus gilvus",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.798,
+          "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+          "photo_urls": [
+            "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+            "https://media.birdweather.com/species/603/TropicalMockingbird-png200-9e94d27578943cfad1e7923fe23d2300.png",
+            "https://media.birdweather.com/species/603/TropicalMockingbird-thumbnail-4f6417f6928c80a2cb70eb341f54fd79.jpg"
+          ],
+          "hourly_activity": [
+            {
+              "hour": 0,
+              "detections": 0
+            },
+            {
+              "hour": 1,
+              "detections": 0
+            },
+            {
+              "hour": 2,
+              "detections": 0
+            },
+            {
+              "hour": 3,
+              "detections": 0
+            },
+            {
+              "hour": 4,
+              "detections": 0
+            },
+            {
+              "hour": 5,
+              "detections": 0
+            },
+            {
+              "hour": 6,
+              "detections": 0
+            },
+            {
+              "hour": 7,
+              "detections": 0
+            },
+            {
+              "hour": 8,
+              "detections": 1
+            },
+            {
+              "hour": 9,
+              "detections": 0
+            },
+            {
+              "hour": 10,
+              "detections": 0
+            },
+            {
+              "hour": 11,
+              "detections": 0
+            },
+            {
+              "hour": 12,
+              "detections": 0
+            },
+            {
+              "hour": 13,
+              "detections": 0
+            },
+            {
+              "hour": 14,
+              "detections": 0
+            },
+            {
+              "hour": 15,
+              "detections": 0
+            },
+            {
+              "hour": 16,
+              "detections": 0
+            },
+            {
+              "hour": 17,
+              "detections": 0
+            },
+            {
+              "hour": 18,
+              "detections": 0
+            },
+            {
+              "hour": 19,
+              "detections": 0
+            },
+            {
+              "hour": 20,
+              "detections": 0
+            },
+            {
+              "hour": 21,
+              "detections": 0
+            },
+            {
+              "hour": 22,
+              "detections": 0
+            },
+            {
+              "hour": 23,
+              "detections": 0
+            }
+          ],
+          "change_percent": null
         }
       ],
       "species": [
         {
-          "common_name": "Great Kiskadee",
-          "scientific_name": "Pitangus sulphuratus",
-          "detections": 9,
-          "active_days": 1,
-          "average_confidence": 0.8,
-          "first_seen_date": "2026-05-30"
-        },
-        {
           "common_name": "Ruddy Ground Dove",
           "scientific_name": "Columbina talpacoti",
-          "detections": 9,
+          "detections": 25,
           "active_days": 1,
-          "average_confidence": 0.844,
+          "average_confidence": 0.864,
           "first_seen_date": "2026-08-12"
+        },
+        {
+          "common_name": "Great Kiskadee",
+          "scientific_name": "Pitangus sulphuratus",
+          "detections": 17,
+          "active_days": 1,
+          "average_confidence": 0.855,
+          "first_seen_date": "2026-05-30"
         },
         {
           "common_name": "Social Flycatcher",
@@ -1206,6 +1325,14 @@
           "active_days": 1,
           "average_confidence": 0.878,
           "first_seen_date": "2026-05-29"
+        },
+        {
+          "common_name": "Tropical Mockingbird",
+          "scientific_name": "Mimus gilvus",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.798,
+          "first_seen_date": "2026-07-23"
         }
       ]
     },
@@ -1213,7 +1340,7 @@
       "label": "Last 30 days",
       "start_date": "2026-07-14",
       "end_date": "2026-08-12",
-      "total_detections": 3162,
+      "total_detections": 3187,
       "species_count": 70,
       "active_days": 16,
       "average_confidence": 0.852,
@@ -1365,8 +1492,8 @@
         },
         {
           "date": "2026-08-12",
-          "detections": 39,
-          "species_count": 8
+          "detections": 64,
+          "species_count": 9
         }
       ],
       "hourly_activity": [
@@ -1412,8 +1539,8 @@
         },
         {
           "hour": 8,
-          "detections": 394,
-          "species_count": 29
+          "detections": 419,
+          "species_count": 31
         },
         {
           "hour": 9,
@@ -1499,18 +1626,31 @@
         "previous_start_date": "2026-06-14",
         "previous_end_date": "2026-07-13",
         "previous_detections": 10421,
-        "detection_change_percent": -69.7,
+        "detection_change_percent": -69.4,
         "previous_species_count": 81,
         "species_change": -11
       },
       "new_species_count": 13,
       "new_species": [
         {
+          "common_name": "Ruddy Ground Dove",
+          "scientific_name": "Columbina talpacoti",
+          "detections": 25,
+          "first_seen_date": "2026-08-12",
+          "average_confidence": 0.864,
+          "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+          "photo_urls": [
+            "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+            "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
+            "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
+          ]
+        },
+        {
           "common_name": "Tropical Mockingbird",
           "scientific_name": "Mimus gilvus",
-          "detections": 19,
+          "detections": 20,
           "first_seen_date": "2026-07-23",
-          "average_confidence": 0.873,
+          "average_confidence": 0.87,
           "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -1529,19 +1669,6 @@
             "https://media.birdweather.com/species/244/MontezumaOropendola-standard-c1f6622e2d5b34ccfcb59ef61fe6946d.jpg",
             "https://media.birdweather.com/species/244/MontezumaOropendola-png200-2a6b9f3a04ad3735705c952ef4041bb6.png",
             "https://media.birdweather.com/species/244/MontezumaOropendola-thumbnail-bf91394c0865fb38fcc82de87c79e049.jpg"
-          ]
-        },
-        {
-          "common_name": "Ruddy Ground Dove",
-          "scientific_name": "Columbina talpacoti",
-          "detections": 9,
-          "first_seen_date": "2026-08-12",
-          "average_confidence": 0.844,
-          "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
-          "photo_urls": [
-            "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
-            "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
-            "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
           ]
         },
         {
@@ -2284,9 +2411,9 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 206,
+          "detections": 214,
           "active_days": 15,
-          "average_confidence": 0.872,
+          "average_confidence": 0.874,
           "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -2328,7 +2455,7 @@
             },
             {
               "hour": 8,
-              "detections": 4
+              "detections": 12
             },
             {
               "hour": 9,
@@ -2391,7 +2518,7 @@
               "detections": 0
             }
           ],
-          "change_percent": 232.3
+          "change_percent": 245.2
         },
         {
           "common_name": "Clay-colored Thrush",
@@ -3110,9 +3237,9 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 206,
+          "detections": 214,
           "active_days": 15,
-          "average_confidence": 0.872,
+          "average_confidence": 0.874,
           "first_seen_date": "2026-05-30"
         },
         {
@@ -3212,6 +3339,14 @@
           "first_seen_date": "2026-05-29"
         },
         {
+          "common_name": "Ruddy Ground Dove",
+          "scientific_name": "Columbina talpacoti",
+          "detections": 25,
+          "active_days": 1,
+          "average_confidence": 0.864,
+          "first_seen_date": "2026-08-12"
+        },
+        {
           "common_name": "Brown Jay",
           "scientific_name": "Psilorhinus morio",
           "detections": 22,
@@ -3230,9 +3365,9 @@
         {
           "common_name": "Tropical Mockingbird",
           "scientific_name": "Mimus gilvus",
-          "detections": 19,
-          "active_days": 3,
-          "average_confidence": 0.873,
+          "detections": 20,
+          "active_days": 4,
+          "average_confidence": 0.87,
           "first_seen_date": "2026-07-23"
         },
         {
@@ -3290,14 +3425,6 @@
           "active_days": 8,
           "average_confidence": 0.85,
           "first_seen_date": "2026-05-29"
-        },
-        {
-          "common_name": "Ruddy Ground Dove",
-          "scientific_name": "Columbina talpacoti",
-          "detections": 9,
-          "active_days": 1,
-          "average_confidence": 0.844,
-          "first_seen_date": "2026-08-12"
         },
         {
           "common_name": "Red-billed Pigeon",
@@ -3633,7 +3760,7 @@
       "label": "All data",
       "start_date": "2025-12-03",
       "end_date": "2026-08-12",
-      "total_detections": 122153,
+      "total_detections": 122178,
       "species_count": 244,
       "active_days": 223,
       "average_confidence": 0.825,
@@ -4900,8 +5027,8 @@
         },
         {
           "date": "2026-08-12",
-          "detections": 39,
-          "species_count": 8
+          "detections": 64,
+          "species_count": 9
         }
       ],
       "hourly_activity": [
@@ -4947,8 +5074,8 @@
         },
         {
           "hour": 8,
-          "detections": 5225,
-          "species_count": 116
+          "detections": 5250,
+          "species_count": 118
         },
         {
           "hour": 9,
@@ -6811,20 +6938,20 @@
           "first_seen_date": "2025-12-04"
         },
         {
+          "common_name": "Great Kiskadee",
+          "scientific_name": "Pitangus sulphuratus",
+          "detections": 318,
+          "active_days": 33,
+          "average_confidence": 0.877,
+          "first_seen_date": "2026-05-30"
+        },
+        {
           "common_name": "Black-headed Gull",
           "scientific_name": "Chroicocephalus ridibundus",
           "detections": 317,
           "active_days": 68,
           "average_confidence": 0.779,
           "first_seen_date": "2025-12-04"
-        },
-        {
-          "common_name": "Great Kiskadee",
-          "scientific_name": "Pitangus sulphuratus",
-          "detections": 310,
-          "active_days": 33,
-          "average_confidence": 0.876,
-          "first_seen_date": "2026-05-30"
         },
         {
           "common_name": "Greater White-fronted Goose",
@@ -7363,6 +7490,14 @@
           "first_seen_date": "2026-02-04"
         },
         {
+          "common_name": "Ruddy Ground Dove",
+          "scientific_name": "Columbina talpacoti",
+          "detections": 25,
+          "active_days": 1,
+          "average_confidence": 0.864,
+          "first_seen_date": "2026-08-12"
+        },
+        {
           "common_name": "Whimbrel",
           "scientific_name": "Numenius phaeopus",
           "detections": 25,
@@ -7443,20 +7578,20 @@
           "first_seen_date": "2026-05-31"
         },
         {
+          "common_name": "Tropical Mockingbird",
+          "scientific_name": "Mimus gilvus",
+          "detections": 20,
+          "active_days": 4,
+          "average_confidence": 0.87,
+          "first_seen_date": "2026-07-23"
+        },
+        {
           "common_name": "Western Yellow Wagtail",
           "scientific_name": "Motacilla flava",
           "detections": 20,
           "active_days": 11,
           "average_confidence": 0.686,
           "first_seen_date": "2026-03-20"
-        },
-        {
-          "common_name": "Tropical Mockingbird",
-          "scientific_name": "Mimus gilvus",
-          "detections": 19,
-          "active_days": 3,
-          "average_confidence": 0.873,
-          "first_seen_date": "2026-07-23"
         },
         {
           "common_name": "Eurasian Treecreeper",
@@ -7657,14 +7792,6 @@
           "active_days": 9,
           "average_confidence": 0.724,
           "first_seen_date": "2025-12-26"
-        },
-        {
-          "common_name": "Ruddy Ground Dove",
-          "scientific_name": "Columbina talpacoti",
-          "detections": 9,
-          "active_days": 1,
-          "average_confidence": 0.844,
-          "first_seen_date": "2026-08-12"
         },
         {
           "common_name": "Rufous-naped Wren",
@@ -8567,10 +8694,10 @@
           "label": "Last 7 days",
           "start_date": "2026-08-06",
           "end_date": "2026-08-12",
-          "total_detections": 39,
-          "species_count": 8,
+          "total_detections": 64,
+          "species_count": 9,
           "active_days": 1,
-          "average_confidence": 0.814,
+          "average_confidence": 0.842,
           "daily_activity": [
             {
               "date": "2026-08-06",
@@ -8604,8 +8731,8 @@
             },
             {
               "date": "2026-08-12",
-              "detections": 39,
-              "species_count": 8
+              "detections": 64,
+              "species_count": 9
             }
           ],
           "hourly_activity": [
@@ -8651,8 +8778,8 @@
             },
             {
               "hour": 8,
-              "detections": 0,
-              "species_count": 0
+              "detections": 25,
+              "species_count": 3
             },
             {
               "hour": 9,
@@ -8731,8 +8858,8 @@
             }
           ],
           "peak_hour": {
-            "hour": 6,
-            "detections": 23
+            "hour": 8,
+            "detections": 25
           },
           "comparison": {
             "previous_start_date": "2026-07-30",
@@ -8740,16 +8867,16 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 8
+            "species_change": 9
           },
           "new_species_count": 1,
           "new_species": [
             {
               "common_name": "Ruddy Ground Dove",
               "scientific_name": "Columbina talpacoti",
-              "detections": 9,
+              "detections": 25,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.844,
+              "average_confidence": 0.864,
               "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
@@ -8774,6 +8901,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "average_confidence": 0.798,
+              "reason": "Rare in this period"
+            },
+            {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
               "detections": 2,
@@ -8790,16 +8924,16 @@
           ],
           "top_species": [
             {
-              "common_name": "Great Kiskadee",
-              "scientific_name": "Pitangus sulphuratus",
-              "detections": 9,
+              "common_name": "Ruddy Ground Dove",
+              "scientific_name": "Columbina talpacoti",
+              "detections": 25,
               "active_days": 1,
-              "average_confidence": 0.8,
-              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+              "average_confidence": 0.864,
+              "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
               "photo_urls": [
-                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
-                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
-                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
+                "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+                "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
+                "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
               ],
               "hourly_activity": [
                 {
@@ -8824,11 +8958,11 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 8
+                  "detections": 0
                 },
                 {
                   "hour": 6,
-                  "detections": 1
+                  "detections": 9
                 },
                 {
                   "hour": 7,
@@ -8836,7 +8970,7 @@
                 },
                 {
                   "hour": 8,
-                  "detections": 0
+                  "detections": 16
                 },
                 {
                   "hour": 9,
@@ -8902,16 +9036,16 @@
               "change_percent": null
             },
             {
-              "common_name": "Ruddy Ground Dove",
-              "scientific_name": "Columbina talpacoti",
-              "detections": 9,
+              "common_name": "Great Kiskadee",
+              "scientific_name": "Pitangus sulphuratus",
+              "detections": 17,
               "active_days": 1,
-              "average_confidence": 0.844,
-              "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+              "average_confidence": 0.855,
+              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
-                "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
-                "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
-                "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
+                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
+                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
               ],
               "hourly_activity": [
                 {
@@ -8936,11 +9070,11 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 0
+                  "detections": 8
                 },
                 {
                   "hour": 6,
-                  "detections": 9
+                  "detections": 1
                 },
                 {
                   "hour": 7,
@@ -8948,7 +9082,7 @@
                 },
                 {
                   "hour": 8,
-                  "detections": 0
+                  "detections": 8
                 },
                 {
                   "hour": 9,
@@ -9684,24 +9818,136 @@
                 }
               ],
               "change_percent": null
+            },
+            {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.798,
+              "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-png200-9e94d27578943cfad1e7923fe23d2300.png",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-thumbnail-4f6417f6928c80a2cb70eb341f54fd79.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 0
+                },
+                {
+                  "hour": 6,
+                  "detections": 0
+                },
+                {
+                  "hour": 7,
+                  "detections": 0
+                },
+                {
+                  "hour": 8,
+                  "detections": 1
+                },
+                {
+                  "hour": 9,
+                  "detections": 0
+                },
+                {
+                  "hour": 10,
+                  "detections": 0
+                },
+                {
+                  "hour": 11,
+                  "detections": 0
+                },
+                {
+                  "hour": 12,
+                  "detections": 0
+                },
+                {
+                  "hour": 13,
+                  "detections": 0
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 0
+                },
+                {
+                  "hour": 16,
+                  "detections": 0
+                },
+                {
+                  "hour": 17,
+                  "detections": 0
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": null
             }
           ],
           "species": [
             {
-              "common_name": "Great Kiskadee",
-              "scientific_name": "Pitangus sulphuratus",
-              "detections": 9,
-              "active_days": 1,
-              "average_confidence": 0.8,
-              "first_seen_date": "2026-05-30"
-            },
-            {
               "common_name": "Ruddy Ground Dove",
               "scientific_name": "Columbina talpacoti",
-              "detections": 9,
+              "detections": 25,
               "active_days": 1,
-              "average_confidence": 0.844,
+              "average_confidence": 0.864,
               "first_seen_date": "2026-08-12"
+            },
+            {
+              "common_name": "Great Kiskadee",
+              "scientific_name": "Pitangus sulphuratus",
+              "detections": 17,
+              "active_days": 1,
+              "average_confidence": 0.855,
+              "first_seen_date": "2026-05-30"
             },
             {
               "common_name": "Social Flycatcher",
@@ -9750,6 +9996,14 @@
               "active_days": 1,
               "average_confidence": 0.878,
               "first_seen_date": "2026-05-29"
+            },
+            {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.798,
+              "first_seen_date": "2026-07-23"
             }
           ]
         },
@@ -9757,7 +10011,7 @@
           "label": "Last 30 days",
           "start_date": "2026-07-14",
           "end_date": "2026-08-12",
-          "total_detections": 3162,
+          "total_detections": 3187,
           "species_count": 70,
           "active_days": 16,
           "average_confidence": 0.852,
@@ -9909,8 +10163,8 @@
             },
             {
               "date": "2026-08-12",
-              "detections": 39,
-              "species_count": 8
+              "detections": 64,
+              "species_count": 9
             }
           ],
           "hourly_activity": [
@@ -9956,8 +10210,8 @@
             },
             {
               "hour": 8,
-              "detections": 394,
-              "species_count": 29
+              "detections": 419,
+              "species_count": 31
             },
             {
               "hour": 9,
@@ -10043,18 +10297,31 @@
             "previous_start_date": "2026-06-14",
             "previous_end_date": "2026-07-13",
             "previous_detections": 10421,
-            "detection_change_percent": -69.7,
+            "detection_change_percent": -69.4,
             "previous_species_count": 81,
             "species_change": -11
           },
           "new_species_count": 13,
           "new_species": [
             {
+              "common_name": "Ruddy Ground Dove",
+              "scientific_name": "Columbina talpacoti",
+              "detections": 25,
+              "first_seen_date": "2026-08-12",
+              "average_confidence": 0.864,
+              "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+                "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
+                "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
+              ]
+            },
+            {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 19,
+              "detections": 20,
               "first_seen_date": "2026-07-23",
-              "average_confidence": 0.873,
+              "average_confidence": 0.87,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -10073,19 +10340,6 @@
                 "https://media.birdweather.com/species/244/MontezumaOropendola-standard-c1f6622e2d5b34ccfcb59ef61fe6946d.jpg",
                 "https://media.birdweather.com/species/244/MontezumaOropendola-png200-2a6b9f3a04ad3735705c952ef4041bb6.png",
                 "https://media.birdweather.com/species/244/MontezumaOropendola-thumbnail-bf91394c0865fb38fcc82de87c79e049.jpg"
-              ]
-            },
-            {
-              "common_name": "Ruddy Ground Dove",
-              "scientific_name": "Columbina talpacoti",
-              "detections": 9,
-              "first_seen_date": "2026-08-12",
-              "average_confidence": 0.844,
-              "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
-                "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
-                "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
               ]
             },
             {
@@ -10828,9 +11082,9 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 206,
+              "detections": 214,
               "active_days": 15,
-              "average_confidence": 0.872,
+              "average_confidence": 0.874,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -10872,7 +11126,7 @@
                 },
                 {
                   "hour": 8,
-                  "detections": 4
+                  "detections": 12
                 },
                 {
                   "hour": 9,
@@ -10935,7 +11189,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 232.3
+              "change_percent": 245.2
             },
             {
               "common_name": "Clay-colored Thrush",
@@ -11654,9 +11908,9 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 206,
+              "detections": 214,
               "active_days": 15,
-              "average_confidence": 0.872,
+              "average_confidence": 0.874,
               "first_seen_date": "2026-05-30"
             },
             {
@@ -11756,6 +12010,14 @@
               "first_seen_date": "2026-05-29"
             },
             {
+              "common_name": "Ruddy Ground Dove",
+              "scientific_name": "Columbina talpacoti",
+              "detections": 25,
+              "active_days": 1,
+              "average_confidence": 0.864,
+              "first_seen_date": "2026-08-12"
+            },
+            {
               "common_name": "Brown Jay",
               "scientific_name": "Psilorhinus morio",
               "detections": 22,
@@ -11774,9 +12036,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 19,
-              "active_days": 3,
-              "average_confidence": 0.873,
+              "detections": 20,
+              "active_days": 4,
+              "average_confidence": 0.87,
               "first_seen_date": "2026-07-23"
             },
             {
@@ -11834,14 +12096,6 @@
               "active_days": 8,
               "average_confidence": 0.85,
               "first_seen_date": "2026-05-29"
-            },
-            {
-              "common_name": "Ruddy Ground Dove",
-              "scientific_name": "Columbina talpacoti",
-              "detections": 9,
-              "active_days": 1,
-              "average_confidence": 0.844,
-              "first_seen_date": "2026-08-12"
             },
             {
               "common_name": "Red-billed Pigeon",
@@ -12177,7 +12431,7 @@
           "label": "All data",
           "start_date": "2025-12-03",
           "end_date": "2026-08-12",
-          "total_detections": 122153,
+          "total_detections": 122178,
           "species_count": 244,
           "active_days": 223,
           "average_confidence": 0.825,
@@ -13444,8 +13698,8 @@
             },
             {
               "date": "2026-08-12",
-              "detections": 39,
-              "species_count": 8
+              "detections": 64,
+              "species_count": 9
             }
           ],
           "hourly_activity": [
@@ -13491,8 +13745,8 @@
             },
             {
               "hour": 8,
-              "detections": 5225,
-              "species_count": 116
+              "detections": 5250,
+              "species_count": 118
             },
             {
               "hour": 9,
@@ -15355,20 +15609,20 @@
               "first_seen_date": "2025-12-04"
             },
             {
+              "common_name": "Great Kiskadee",
+              "scientific_name": "Pitangus sulphuratus",
+              "detections": 318,
+              "active_days": 33,
+              "average_confidence": 0.877,
+              "first_seen_date": "2026-05-30"
+            },
+            {
               "common_name": "Black-headed Gull",
               "scientific_name": "Chroicocephalus ridibundus",
               "detections": 317,
               "active_days": 68,
               "average_confidence": 0.779,
               "first_seen_date": "2025-12-04"
-            },
-            {
-              "common_name": "Great Kiskadee",
-              "scientific_name": "Pitangus sulphuratus",
-              "detections": 310,
-              "active_days": 33,
-              "average_confidence": 0.876,
-              "first_seen_date": "2026-05-30"
             },
             {
               "common_name": "Greater White-fronted Goose",
@@ -15907,6 +16161,14 @@
               "first_seen_date": "2026-02-04"
             },
             {
+              "common_name": "Ruddy Ground Dove",
+              "scientific_name": "Columbina talpacoti",
+              "detections": 25,
+              "active_days": 1,
+              "average_confidence": 0.864,
+              "first_seen_date": "2026-08-12"
+            },
+            {
               "common_name": "Whimbrel",
               "scientific_name": "Numenius phaeopus",
               "detections": 25,
@@ -15987,20 +16249,20 @@
               "first_seen_date": "2026-05-31"
             },
             {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 20,
+              "active_days": 4,
+              "average_confidence": 0.87,
+              "first_seen_date": "2026-07-23"
+            },
+            {
               "common_name": "Western Yellow Wagtail",
               "scientific_name": "Motacilla flava",
               "detections": 20,
               "active_days": 11,
               "average_confidence": 0.686,
               "first_seen_date": "2026-03-20"
-            },
-            {
-              "common_name": "Tropical Mockingbird",
-              "scientific_name": "Mimus gilvus",
-              "detections": 19,
-              "active_days": 3,
-              "average_confidence": 0.873,
-              "first_seen_date": "2026-07-23"
             },
             {
               "common_name": "Eurasian Treecreeper",
@@ -16201,14 +16463,6 @@
               "active_days": 9,
               "average_confidence": 0.724,
               "first_seen_date": "2025-12-26"
-            },
-            {
-              "common_name": "Ruddy Ground Dove",
-              "scientific_name": "Columbina talpacoti",
-              "detections": 9,
-              "active_days": 1,
-              "average_confidence": 0.844,
-              "first_seen_date": "2026-08-12"
             },
             {
               "common_name": "Rufous-naped Wren",
@@ -17111,15 +17365,15 @@
           "label": "Last 7 days",
           "start_date": "2026-08-12",
           "end_date": "2026-08-12",
-          "total_detections": 39,
-          "species_count": 8,
+          "total_detections": 64,
+          "species_count": 9,
           "active_days": 1,
-          "average_confidence": 0.814,
+          "average_confidence": 0.842,
           "daily_activity": [
             {
               "date": "2026-08-12",
-              "detections": 39,
-              "species_count": 8
+              "detections": 64,
+              "species_count": 9
             }
           ],
           "hourly_activity": [
@@ -17165,8 +17419,8 @@
             },
             {
               "hour": 8,
-              "detections": 0,
-              "species_count": 0
+              "detections": 25,
+              "species_count": 3
             },
             {
               "hour": 9,
@@ -17245,8 +17499,8 @@
             }
           ],
           "peak_hour": {
-            "hour": 6,
-            "detections": 23
+            "hour": 8,
+            "detections": 25
           },
           "comparison": {
             "previous_start_date": "2026-08-11",
@@ -17254,34 +17508,34 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 8
+            "species_change": 9
           },
-          "new_species_count": 8,
+          "new_species_count": 9,
           "new_species": [
-            {
-              "common_name": "Great Kiskadee",
-              "scientific_name": "Pitangus sulphuratus",
-              "detections": 9,
-              "first_seen_date": "2026-08-12",
-              "average_confidence": 0.8,
-              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
-                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
-                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
-              ]
-            },
             {
               "common_name": "Ruddy Ground Dove",
               "scientific_name": "Columbina talpacoti",
-              "detections": 9,
+              "detections": 25,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.844,
+              "average_confidence": 0.864,
               "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
                 "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
                 "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
+              ]
+            },
+            {
+              "common_name": "Great Kiskadee",
+              "scientific_name": "Pitangus sulphuratus",
+              "detections": 17,
+              "first_seen_date": "2026-08-12",
+              "average_confidence": 0.855,
+              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
+                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
               ]
             },
             {
@@ -17361,6 +17615,19 @@
                 "https://media.birdweather.com/species/321/PalmTanager-png200-100c123f8e9a99aad801e3e79a865873.png",
                 "https://media.birdweather.com/species/321/PalmTanager-thumbnail-66ffacacc3b9c5f5dad0cf97c949e40f.jpg"
               ]
+            },
+            {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "first_seen_date": "2026-08-12",
+              "average_confidence": 0.798,
+              "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-png200-9e94d27578943cfad1e7923fe23d2300.png",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-thumbnail-4f6417f6928c80a2cb70eb341f54fd79.jpg"
+              ]
             }
           ],
           "review_candidates": [
@@ -17379,6 +17646,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "average_confidence": 0.798,
+              "reason": "Rare in this period"
+            },
+            {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
               "detections": 2,
@@ -17395,16 +17669,16 @@
           ],
           "top_species": [
             {
-              "common_name": "Great Kiskadee",
-              "scientific_name": "Pitangus sulphuratus",
-              "detections": 9,
+              "common_name": "Ruddy Ground Dove",
+              "scientific_name": "Columbina talpacoti",
+              "detections": 25,
               "active_days": 1,
-              "average_confidence": 0.8,
-              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+              "average_confidence": 0.864,
+              "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
               "photo_urls": [
-                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
-                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
-                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
+                "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+                "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
+                "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
               ],
               "hourly_activity": [
                 {
@@ -17429,11 +17703,11 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 8
+                  "detections": 0
                 },
                 {
                   "hour": 6,
-                  "detections": 1
+                  "detections": 9
                 },
                 {
                   "hour": 7,
@@ -17441,7 +17715,7 @@
                 },
                 {
                   "hour": 8,
-                  "detections": 0
+                  "detections": 16
                 },
                 {
                   "hour": 9,
@@ -17507,16 +17781,16 @@
               "change_percent": null
             },
             {
-              "common_name": "Ruddy Ground Dove",
-              "scientific_name": "Columbina talpacoti",
-              "detections": 9,
+              "common_name": "Great Kiskadee",
+              "scientific_name": "Pitangus sulphuratus",
+              "detections": 17,
               "active_days": 1,
-              "average_confidence": 0.844,
-              "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+              "average_confidence": 0.855,
+              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
-                "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
-                "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
-                "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
+                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
+                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
               ],
               "hourly_activity": [
                 {
@@ -17541,11 +17815,11 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 0
+                  "detections": 8
                 },
                 {
                   "hour": 6,
-                  "detections": 9
+                  "detections": 1
                 },
                 {
                   "hour": 7,
@@ -17553,7 +17827,7 @@
                 },
                 {
                   "hour": 8,
-                  "detections": 0
+                  "detections": 8
                 },
                 {
                   "hour": 9,
@@ -18289,23 +18563,135 @@
                 }
               ],
               "change_percent": null
+            },
+            {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.798,
+              "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-png200-9e94d27578943cfad1e7923fe23d2300.png",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-thumbnail-4f6417f6928c80a2cb70eb341f54fd79.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 0
+                },
+                {
+                  "hour": 6,
+                  "detections": 0
+                },
+                {
+                  "hour": 7,
+                  "detections": 0
+                },
+                {
+                  "hour": 8,
+                  "detections": 1
+                },
+                {
+                  "hour": 9,
+                  "detections": 0
+                },
+                {
+                  "hour": 10,
+                  "detections": 0
+                },
+                {
+                  "hour": 11,
+                  "detections": 0
+                },
+                {
+                  "hour": 12,
+                  "detections": 0
+                },
+                {
+                  "hour": 13,
+                  "detections": 0
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 0
+                },
+                {
+                  "hour": 16,
+                  "detections": 0
+                },
+                {
+                  "hour": 17,
+                  "detections": 0
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": null
             }
           ],
           "species": [
             {
-              "common_name": "Great Kiskadee",
-              "scientific_name": "Pitangus sulphuratus",
-              "detections": 9,
+              "common_name": "Ruddy Ground Dove",
+              "scientific_name": "Columbina talpacoti",
+              "detections": 25,
               "active_days": 1,
-              "average_confidence": 0.8,
+              "average_confidence": 0.864,
               "first_seen_date": "2026-08-12"
             },
             {
-              "common_name": "Ruddy Ground Dove",
-              "scientific_name": "Columbina talpacoti",
-              "detections": 9,
+              "common_name": "Great Kiskadee",
+              "scientific_name": "Pitangus sulphuratus",
+              "detections": 17,
               "active_days": 1,
-              "average_confidence": 0.844,
+              "average_confidence": 0.855,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -18354,6 +18740,14 @@
               "detections": 1,
               "active_days": 1,
               "average_confidence": 0.878,
+              "first_seen_date": "2026-08-12"
+            },
+            {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.798,
               "first_seen_date": "2026-08-12"
             }
           ]
@@ -18362,15 +18756,15 @@
           "label": "Last 30 days",
           "start_date": "2026-08-12",
           "end_date": "2026-08-12",
-          "total_detections": 39,
-          "species_count": 8,
+          "total_detections": 64,
+          "species_count": 9,
           "active_days": 1,
-          "average_confidence": 0.814,
+          "average_confidence": 0.842,
           "daily_activity": [
             {
               "date": "2026-08-12",
-              "detections": 39,
-              "species_count": 8
+              "detections": 64,
+              "species_count": 9
             }
           ],
           "hourly_activity": [
@@ -18416,8 +18810,8 @@
             },
             {
               "hour": 8,
-              "detections": 0,
-              "species_count": 0
+              "detections": 25,
+              "species_count": 3
             },
             {
               "hour": 9,
@@ -18496,8 +18890,8 @@
             }
           ],
           "peak_hour": {
-            "hour": 6,
-            "detections": 23
+            "hour": 8,
+            "detections": 25
           },
           "comparison": {
             "previous_start_date": "2026-08-11",
@@ -18505,34 +18899,34 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 8
+            "species_change": 9
           },
-          "new_species_count": 8,
+          "new_species_count": 9,
           "new_species": [
-            {
-              "common_name": "Great Kiskadee",
-              "scientific_name": "Pitangus sulphuratus",
-              "detections": 9,
-              "first_seen_date": "2026-08-12",
-              "average_confidence": 0.8,
-              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
-                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
-                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
-              ]
-            },
             {
               "common_name": "Ruddy Ground Dove",
               "scientific_name": "Columbina talpacoti",
-              "detections": 9,
+              "detections": 25,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.844,
+              "average_confidence": 0.864,
               "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
                 "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
                 "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
+              ]
+            },
+            {
+              "common_name": "Great Kiskadee",
+              "scientific_name": "Pitangus sulphuratus",
+              "detections": 17,
+              "first_seen_date": "2026-08-12",
+              "average_confidence": 0.855,
+              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
+                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
               ]
             },
             {
@@ -18612,6 +19006,19 @@
                 "https://media.birdweather.com/species/321/PalmTanager-png200-100c123f8e9a99aad801e3e79a865873.png",
                 "https://media.birdweather.com/species/321/PalmTanager-thumbnail-66ffacacc3b9c5f5dad0cf97c949e40f.jpg"
               ]
+            },
+            {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "first_seen_date": "2026-08-12",
+              "average_confidence": 0.798,
+              "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-png200-9e94d27578943cfad1e7923fe23d2300.png",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-thumbnail-4f6417f6928c80a2cb70eb341f54fd79.jpg"
+              ]
             }
           ],
           "review_candidates": [
@@ -18630,6 +19037,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "average_confidence": 0.798,
+              "reason": "Rare in this period"
+            },
+            {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
               "detections": 2,
@@ -18646,16 +19060,16 @@
           ],
           "top_species": [
             {
-              "common_name": "Great Kiskadee",
-              "scientific_name": "Pitangus sulphuratus",
-              "detections": 9,
+              "common_name": "Ruddy Ground Dove",
+              "scientific_name": "Columbina talpacoti",
+              "detections": 25,
               "active_days": 1,
-              "average_confidence": 0.8,
-              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+              "average_confidence": 0.864,
+              "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
               "photo_urls": [
-                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
-                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
-                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
+                "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+                "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
+                "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
               ],
               "hourly_activity": [
                 {
@@ -18680,11 +19094,11 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 8
+                  "detections": 0
                 },
                 {
                   "hour": 6,
-                  "detections": 1
+                  "detections": 9
                 },
                 {
                   "hour": 7,
@@ -18692,7 +19106,7 @@
                 },
                 {
                   "hour": 8,
-                  "detections": 0
+                  "detections": 16
                 },
                 {
                   "hour": 9,
@@ -18758,16 +19172,16 @@
               "change_percent": null
             },
             {
-              "common_name": "Ruddy Ground Dove",
-              "scientific_name": "Columbina talpacoti",
-              "detections": 9,
+              "common_name": "Great Kiskadee",
+              "scientific_name": "Pitangus sulphuratus",
+              "detections": 17,
               "active_days": 1,
-              "average_confidence": 0.844,
-              "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+              "average_confidence": 0.855,
+              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
-                "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
-                "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
-                "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
+                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
+                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
               ],
               "hourly_activity": [
                 {
@@ -18792,11 +19206,11 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 0
+                  "detections": 8
                 },
                 {
                   "hour": 6,
-                  "detections": 9
+                  "detections": 1
                 },
                 {
                   "hour": 7,
@@ -18804,7 +19218,7 @@
                 },
                 {
                   "hour": 8,
-                  "detections": 0
+                  "detections": 8
                 },
                 {
                   "hour": 9,
@@ -19540,23 +19954,135 @@
                 }
               ],
               "change_percent": null
+            },
+            {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.798,
+              "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-png200-9e94d27578943cfad1e7923fe23d2300.png",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-thumbnail-4f6417f6928c80a2cb70eb341f54fd79.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 0
+                },
+                {
+                  "hour": 6,
+                  "detections": 0
+                },
+                {
+                  "hour": 7,
+                  "detections": 0
+                },
+                {
+                  "hour": 8,
+                  "detections": 1
+                },
+                {
+                  "hour": 9,
+                  "detections": 0
+                },
+                {
+                  "hour": 10,
+                  "detections": 0
+                },
+                {
+                  "hour": 11,
+                  "detections": 0
+                },
+                {
+                  "hour": 12,
+                  "detections": 0
+                },
+                {
+                  "hour": 13,
+                  "detections": 0
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 0
+                },
+                {
+                  "hour": 16,
+                  "detections": 0
+                },
+                {
+                  "hour": 17,
+                  "detections": 0
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": null
             }
           ],
           "species": [
             {
-              "common_name": "Great Kiskadee",
-              "scientific_name": "Pitangus sulphuratus",
-              "detections": 9,
+              "common_name": "Ruddy Ground Dove",
+              "scientific_name": "Columbina talpacoti",
+              "detections": 25,
               "active_days": 1,
-              "average_confidence": 0.8,
+              "average_confidence": 0.864,
               "first_seen_date": "2026-08-12"
             },
             {
-              "common_name": "Ruddy Ground Dove",
-              "scientific_name": "Columbina talpacoti",
-              "detections": 9,
+              "common_name": "Great Kiskadee",
+              "scientific_name": "Pitangus sulphuratus",
+              "detections": 17,
               "active_days": 1,
-              "average_confidence": 0.844,
+              "average_confidence": 0.855,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -19606,6 +20132,14 @@
               "active_days": 1,
               "average_confidence": 0.878,
               "first_seen_date": "2026-08-12"
+            },
+            {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.798,
+              "first_seen_date": "2026-08-12"
             }
           ]
         },
@@ -19613,15 +20147,15 @@
           "label": "All data",
           "start_date": "2026-08-12",
           "end_date": "2026-08-12",
-          "total_detections": 39,
-          "species_count": 8,
+          "total_detections": 64,
+          "species_count": 9,
           "active_days": 1,
-          "average_confidence": 0.814,
+          "average_confidence": 0.842,
           "daily_activity": [
             {
               "date": "2026-08-12",
-              "detections": 39,
-              "species_count": 8
+              "detections": 64,
+              "species_count": 9
             }
           ],
           "hourly_activity": [
@@ -19667,8 +20201,8 @@
             },
             {
               "hour": 8,
-              "detections": 0,
-              "species_count": 0
+              "detections": 25,
+              "species_count": 3
             },
             {
               "hour": 9,
@@ -19747,8 +20281,8 @@
             }
           ],
           "peak_hour": {
-            "hour": 6,
-            "detections": 23
+            "hour": 8,
+            "detections": 25
           },
           "comparison": {
             "previous_start_date": null,
@@ -19758,32 +20292,32 @@
             "previous_species_count": null,
             "species_change": null
           },
-          "new_species_count": 8,
+          "new_species_count": 9,
           "new_species": [
-            {
-              "common_name": "Great Kiskadee",
-              "scientific_name": "Pitangus sulphuratus",
-              "detections": 9,
-              "first_seen_date": "2026-08-12",
-              "average_confidence": 0.8,
-              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
-                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
-                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
-              ]
-            },
             {
               "common_name": "Ruddy Ground Dove",
               "scientific_name": "Columbina talpacoti",
-              "detections": 9,
+              "detections": 25,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.844,
+              "average_confidence": 0.864,
               "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
                 "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
                 "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
+              ]
+            },
+            {
+              "common_name": "Great Kiskadee",
+              "scientific_name": "Pitangus sulphuratus",
+              "detections": 17,
+              "first_seen_date": "2026-08-12",
+              "average_confidence": 0.855,
+              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
+                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
               ]
             },
             {
@@ -19863,6 +20397,19 @@
                 "https://media.birdweather.com/species/321/PalmTanager-png200-100c123f8e9a99aad801e3e79a865873.png",
                 "https://media.birdweather.com/species/321/PalmTanager-thumbnail-66ffacacc3b9c5f5dad0cf97c949e40f.jpg"
               ]
+            },
+            {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "first_seen_date": "2026-08-12",
+              "average_confidence": 0.798,
+              "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-png200-9e94d27578943cfad1e7923fe23d2300.png",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-thumbnail-4f6417f6928c80a2cb70eb341f54fd79.jpg"
+              ]
             }
           ],
           "review_candidates": [
@@ -19881,6 +20428,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "average_confidence": 0.798,
+              "reason": "Rare in this period"
+            },
+            {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
               "detections": 2,
@@ -19897,16 +20451,16 @@
           ],
           "top_species": [
             {
-              "common_name": "Great Kiskadee",
-              "scientific_name": "Pitangus sulphuratus",
-              "detections": 9,
+              "common_name": "Ruddy Ground Dove",
+              "scientific_name": "Columbina talpacoti",
+              "detections": 25,
               "active_days": 1,
-              "average_confidence": 0.8,
-              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+              "average_confidence": 0.864,
+              "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
               "photo_urls": [
-                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
-                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
-                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
+                "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+                "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
+                "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
               ],
               "hourly_activity": [
                 {
@@ -19931,11 +20485,11 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 8
+                  "detections": 0
                 },
                 {
                   "hour": 6,
-                  "detections": 1
+                  "detections": 9
                 },
                 {
                   "hour": 7,
@@ -19943,7 +20497,7 @@
                 },
                 {
                   "hour": 8,
-                  "detections": 0
+                  "detections": 16
                 },
                 {
                   "hour": 9,
@@ -20009,16 +20563,16 @@
               "change_percent": null
             },
             {
-              "common_name": "Ruddy Ground Dove",
-              "scientific_name": "Columbina talpacoti",
-              "detections": 9,
+              "common_name": "Great Kiskadee",
+              "scientific_name": "Pitangus sulphuratus",
+              "detections": 17,
               "active_days": 1,
-              "average_confidence": 0.844,
-              "photo_url": "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
+              "average_confidence": 0.855,
+              "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
-                "https://media.birdweather.com/species/205/RuddyGroundDove-standard-53ff31bb086a0bdfee231e383a62179c.jpg",
-                "https://media.birdweather.com/species/205/RuddyGroundDove-png200-f0c3dd93639067047ad97e6d51181cc0.png",
-                "https://media.birdweather.com/species/205/RuddyGroundDove-thumbnail-d67b5868d1bb1d2bfe15c5ab85a0860b.jpg"
+                "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
+                "https://media.birdweather.com/species/229/GreatKiskadee-png200-003973af4f863deb00a4ce9b6f10e59c.png",
+                "https://media.birdweather.com/species/229/GreatKiskadee-thumbnail-b2749ed2442fb322cf3c4cb72f9c97f6.jpg"
               ],
               "hourly_activity": [
                 {
@@ -20043,11 +20597,11 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 0
+                  "detections": 8
                 },
                 {
                   "hour": 6,
-                  "detections": 9
+                  "detections": 1
                 },
                 {
                   "hour": 7,
@@ -20055,7 +20609,7 @@
                 },
                 {
                   "hour": 8,
-                  "detections": 0
+                  "detections": 8
                 },
                 {
                   "hour": 9,
@@ -20791,23 +21345,135 @@
                 }
               ],
               "change_percent": null
+            },
+            {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.798,
+              "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-png200-9e94d27578943cfad1e7923fe23d2300.png",
+                "https://media.birdweather.com/species/603/TropicalMockingbird-thumbnail-4f6417f6928c80a2cb70eb341f54fd79.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 0
+                },
+                {
+                  "hour": 6,
+                  "detections": 0
+                },
+                {
+                  "hour": 7,
+                  "detections": 0
+                },
+                {
+                  "hour": 8,
+                  "detections": 1
+                },
+                {
+                  "hour": 9,
+                  "detections": 0
+                },
+                {
+                  "hour": 10,
+                  "detections": 0
+                },
+                {
+                  "hour": 11,
+                  "detections": 0
+                },
+                {
+                  "hour": 12,
+                  "detections": 0
+                },
+                {
+                  "hour": 13,
+                  "detections": 0
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 0
+                },
+                {
+                  "hour": 16,
+                  "detections": 0
+                },
+                {
+                  "hour": 17,
+                  "detections": 0
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": null
             }
           ],
           "species": [
             {
-              "common_name": "Great Kiskadee",
-              "scientific_name": "Pitangus sulphuratus",
-              "detections": 9,
+              "common_name": "Ruddy Ground Dove",
+              "scientific_name": "Columbina talpacoti",
+              "detections": 25,
               "active_days": 1,
-              "average_confidence": 0.8,
+              "average_confidence": 0.864,
               "first_seen_date": "2026-08-12"
             },
             {
-              "common_name": "Ruddy Ground Dove",
-              "scientific_name": "Columbina talpacoti",
-              "detections": 9,
+              "common_name": "Great Kiskadee",
+              "scientific_name": "Pitangus sulphuratus",
+              "detections": 17,
               "active_days": 1,
-              "average_confidence": 0.844,
+              "average_confidence": 0.855,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -20856,6 +21522,14 @@
               "detections": 1,
               "active_days": 1,
               "average_confidence": 0.878,
+              "first_seen_date": "2026-08-12"
+            },
+            {
+              "common_name": "Tropical Mockingbird",
+              "scientific_name": "Mimus gilvus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.798,
               "first_seen_date": "2026-08-12"
             }
           ]
