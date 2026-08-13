@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "generated_date": "2026-08-13",
-  "generated_hour": 4,
+  "generated_hour": 5,
   "timezone": "America/Costa_Rica",
   "latest_observation_date": "2026-08-13",
   "default_period": "7d",
@@ -23,10 +23,10 @@
       "label": "Last 7 days",
       "start_date": "2026-08-07",
       "end_date": "2026-08-13",
-      "total_detections": 182,
-      "species_count": 16,
+      "total_detections": 185,
+      "species_count": 17,
       "active_days": 2,
-      "average_confidence": 0.867,
+      "average_confidence": 0.866,
       "daily_activity": [
         {
           "date": "2026-08-07",
@@ -60,8 +60,8 @@
         },
         {
           "date": "2026-08-13",
-          "detections": 3,
-          "species_count": 1
+          "detections": 6,
+          "species_count": 4
         }
       ],
       "hourly_activity": [
@@ -92,8 +92,8 @@
         },
         {
           "hour": 5,
-          "detections": 8,
-          "species_count": 1
+          "detections": 11,
+          "species_count": 3
         },
         {
           "hour": 6,
@@ -196,7 +196,7 @@
         "previous_detections": 0,
         "detection_change_percent": null,
         "previous_species_count": 0,
-        "species_change": 16
+        "species_change": 17
       },
       "new_species_count": 4,
       "new_species": [
@@ -255,6 +255,13 @@
       ],
       "review_candidates": [
         {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 1,
+          "average_confidence": 0.741,
+          "reason": "Lower aggregate confidence"
+        },
+        {
           "common_name": "Great-tailed Grackle",
           "scientific_name": "Quiscalus mexicanus",
           "detections": 2,
@@ -302,22 +309,15 @@
           "detections": 2,
           "average_confidence": 0.843,
           "reason": "Rare in this period"
-        },
-        {
-          "common_name": "Black Phoebe",
-          "scientific_name": "Sayornis nigricans",
-          "detections": 1,
-          "average_confidence": 0.873,
-          "reason": "Rare in this period"
         }
       ],
       "top_species": [
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 94,
-          "active_days": 1,
-          "average_confidence": 0.904,
+          "detections": 95,
+          "active_days": 2,
+          "average_confidence": 0.903,
           "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -347,7 +347,7 @@
             },
             {
               "hour": 5,
-              "detections": 8
+              "detections": 9
             },
             {
               "hour": 6,
@@ -875,9 +875,9 @@
         {
           "common_name": "Southern Lapwing",
           "scientific_name": "Vanellus chilensis",
-          "detections": 5,
-          "active_days": 1,
-          "average_confidence": 0.834,
+          "detections": 6,
+          "active_days": 2,
+          "average_confidence": 0.855,
           "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
@@ -907,7 +907,7 @@
             },
             {
               "hour": 5,
-              "detections": 0
+              "detections": 1
             },
             {
               "hour": 6,
@@ -1661,9 +1661,9 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 94,
-          "active_days": 1,
-          "average_confidence": 0.904,
+          "detections": 95,
+          "active_days": 2,
+          "average_confidence": 0.903,
           "first_seen_date": "2026-05-30"
         },
         {
@@ -1701,9 +1701,9 @@
         {
           "common_name": "Southern Lapwing",
           "scientific_name": "Vanellus chilensis",
-          "detections": 5,
-          "active_days": 1,
-          "average_confidence": 0.834,
+          "detections": 6,
+          "active_days": 2,
+          "average_confidence": 0.855,
           "first_seen_date": "2026-05-31"
         },
         {
@@ -1785,6 +1785,14 @@
           "active_days": 1,
           "average_confidence": 0.905,
           "first_seen_date": "2026-08-12"
+        },
+        {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.741,
+          "first_seen_date": "2026-06-02"
         }
       ]
     },
@@ -1792,8 +1800,8 @@
       "label": "Last 30 days",
       "start_date": "2026-07-15",
       "end_date": "2026-08-13",
-      "total_detections": 3077,
-      "species_count": 72,
+      "total_detections": 3080,
+      "species_count": 73,
       "active_days": 16,
       "average_confidence": 0.854,
       "daily_activity": [
@@ -1944,8 +1952,8 @@
         },
         {
           "date": "2026-08-13",
-          "detections": 3,
-          "species_count": 1
+          "detections": 6,
+          "species_count": 4
         }
       ],
       "hourly_activity": [
@@ -1976,8 +1984,8 @@
         },
         {
           "hour": 5,
-          "detections": 381,
-          "species_count": 23
+          "detections": 384,
+          "species_count": 25
         },
         {
           "hour": 6,
@@ -2080,7 +2088,7 @@
         "previous_detections": 9993,
         "detection_change_percent": -69.2,
         "previous_species_count": 79,
-        "species_change": -7
+        "species_change": -6
       },
       "new_species_count": 16,
       "new_species": [
@@ -2292,10 +2300,10 @@
           "reason": "Lower aggregate confidence"
         },
         {
-          "common_name": "Smooth-billed Ani",
-          "scientific_name": "Crotophaga ani",
-          "detections": 2,
-          "average_confidence": 0.747,
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 1,
+          "average_confidence": 0.741,
           "reason": "Lower aggregate confidence"
         }
       ],
@@ -2527,9 +2535,9 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 285,
-          "active_days": 14,
-          "average_confidence": 0.884,
+          "detections": 286,
+          "active_days": 15,
+          "average_confidence": 0.883,
           "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -2559,7 +2567,7 @@
             },
             {
               "hour": 5,
-              "detections": 32
+              "detections": 33
             },
             {
               "hour": 6,
@@ -2634,7 +2642,7 @@
               "detections": 0
             }
           ],
-          "change_percent": 345.3
+          "change_percent": 346.9
         },
         {
           "common_name": "White-winged Dove",
@@ -3665,9 +3673,9 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 285,
-          "active_days": 14,
-          "average_confidence": 0.884,
+          "detections": 286,
+          "active_days": 15,
+          "average_confidence": 0.883,
           "first_seen_date": "2026-05-30"
         },
         {
@@ -3825,9 +3833,9 @@
         {
           "common_name": "Southern Lapwing",
           "scientific_name": "Vanellus chilensis",
-          "detections": 16,
-          "active_days": 4,
-          "average_confidence": 0.807,
+          "detections": 17,
+          "active_days": 5,
+          "average_confidence": 0.816,
           "first_seen_date": "2026-05-31"
         },
         {
@@ -4183,6 +4191,14 @@
           "first_seen_date": "2026-07-28"
         },
         {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.741,
+          "first_seen_date": "2026-06-02"
+        },
+        {
           "common_name": "Scrub Euphonia",
           "scientific_name": "Euphonia affinis",
           "detections": 1,
@@ -4228,7 +4244,7 @@
       "label": "All data",
       "start_date": "2025-12-03",
       "end_date": "2026-08-13",
-      "total_detections": 122296,
+      "total_detections": 122299,
       "species_count": 247,
       "active_days": 224,
       "average_confidence": 0.825,
@@ -5500,8 +5516,8 @@
         },
         {
           "date": "2026-08-13",
-          "detections": 3,
-          "species_count": 1
+          "detections": 6,
+          "species_count": 4
         }
       ],
       "hourly_activity": [
@@ -5532,7 +5548,7 @@
         },
         {
           "hour": 5,
-          "detections": 8550,
+          "detections": 8553,
           "species_count": 117
         },
         {
@@ -7405,9 +7421,9 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 395,
-          "active_days": 33,
-          "average_confidence": 0.885,
+          "detections": 396,
+          "active_days": 34,
+          "average_confidence": 0.884,
           "first_seen_date": "2026-05-30"
         },
         {
@@ -7757,9 +7773,9 @@
         {
           "common_name": "Southern Lapwing",
           "scientific_name": "Vanellus chilensis",
-          "detections": 69,
-          "active_days": 13,
-          "average_confidence": 0.853,
+          "detections": 70,
+          "active_days": 14,
+          "average_confidence": 0.855,
           "first_seen_date": "2026-05-31"
         },
         {
@@ -8011,6 +8027,14 @@
           "first_seen_date": "2025-12-05"
         },
         {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 23,
+          "active_days": 13,
+          "average_confidence": 0.803,
+          "first_seen_date": "2026-06-02"
+        },
+        {
           "common_name": "Eurasian Jay",
           "scientific_name": "Garrulus glandarius",
           "detections": 22,
@@ -8025,14 +8049,6 @@
           "active_days": 17,
           "average_confidence": 0.721,
           "first_seen_date": "2025-12-15"
-        },
-        {
-          "common_name": "Rufous-tailed Hummingbird",
-          "scientific_name": "Amazilia tzacatl",
-          "detections": 22,
-          "active_days": 12,
-          "average_confidence": 0.805,
-          "first_seen_date": "2026-06-02"
         },
         {
           "common_name": "Wood Lark",
@@ -9191,10 +9207,10 @@
           "label": "Last 7 days",
           "start_date": "2026-08-07",
           "end_date": "2026-08-13",
-          "total_detections": 182,
-          "species_count": 16,
+          "total_detections": 185,
+          "species_count": 17,
           "active_days": 2,
-          "average_confidence": 0.867,
+          "average_confidence": 0.866,
           "daily_activity": [
             {
               "date": "2026-08-07",
@@ -9228,8 +9244,8 @@
             },
             {
               "date": "2026-08-13",
-              "detections": 3,
-              "species_count": 1
+              "detections": 6,
+              "species_count": 4
             }
           ],
           "hourly_activity": [
@@ -9260,8 +9276,8 @@
             },
             {
               "hour": 5,
-              "detections": 8,
-              "species_count": 1
+              "detections": 11,
+              "species_count": 3
             },
             {
               "hour": 6,
@@ -9364,7 +9380,7 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 16
+            "species_change": 17
           },
           "new_species_count": 4,
           "new_species": [
@@ -9423,6 +9439,13 @@
           ],
           "review_candidates": [
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 1,
+              "average_confidence": 0.741,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Great-tailed Grackle",
               "scientific_name": "Quiscalus mexicanus",
               "detections": 2,
@@ -9470,22 +9493,15 @@
               "detections": 2,
               "average_confidence": 0.843,
               "reason": "Rare in this period"
-            },
-            {
-              "common_name": "Black Phoebe",
-              "scientific_name": "Sayornis nigricans",
-              "detections": 1,
-              "average_confidence": 0.873,
-              "reason": "Rare in this period"
             }
           ],
           "top_species": [
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 94,
-              "active_days": 1,
-              "average_confidence": 0.904,
+              "detections": 95,
+              "active_days": 2,
+              "average_confidence": 0.903,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -9515,7 +9531,7 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 8
+                  "detections": 9
                 },
                 {
                   "hour": 6,
@@ -10043,9 +10059,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 5,
-              "active_days": 1,
-              "average_confidence": 0.834,
+              "detections": 6,
+              "active_days": 2,
+              "average_confidence": 0.855,
               "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
@@ -10075,7 +10091,7 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 6,
@@ -10829,9 +10845,9 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 94,
-              "active_days": 1,
-              "average_confidence": 0.904,
+              "detections": 95,
+              "active_days": 2,
+              "average_confidence": 0.903,
               "first_seen_date": "2026-05-30"
             },
             {
@@ -10869,9 +10885,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 5,
-              "active_days": 1,
-              "average_confidence": 0.834,
+              "detections": 6,
+              "active_days": 2,
+              "average_confidence": 0.855,
               "first_seen_date": "2026-05-31"
             },
             {
@@ -10953,6 +10969,14 @@
               "active_days": 1,
               "average_confidence": 0.905,
               "first_seen_date": "2026-08-12"
+            },
+            {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.741,
+              "first_seen_date": "2026-06-02"
             }
           ]
         },
@@ -10960,8 +10984,8 @@
           "label": "Last 30 days",
           "start_date": "2026-07-15",
           "end_date": "2026-08-13",
-          "total_detections": 3077,
-          "species_count": 72,
+          "total_detections": 3080,
+          "species_count": 73,
           "active_days": 16,
           "average_confidence": 0.854,
           "daily_activity": [
@@ -11112,8 +11136,8 @@
             },
             {
               "date": "2026-08-13",
-              "detections": 3,
-              "species_count": 1
+              "detections": 6,
+              "species_count": 4
             }
           ],
           "hourly_activity": [
@@ -11144,8 +11168,8 @@
             },
             {
               "hour": 5,
-              "detections": 381,
-              "species_count": 23
+              "detections": 384,
+              "species_count": 25
             },
             {
               "hour": 6,
@@ -11248,7 +11272,7 @@
             "previous_detections": 9993,
             "detection_change_percent": -69.2,
             "previous_species_count": 79,
-            "species_change": -7
+            "species_change": -6
           },
           "new_species_count": 16,
           "new_species": [
@@ -11460,10 +11484,10 @@
               "reason": "Lower aggregate confidence"
             },
             {
-              "common_name": "Smooth-billed Ani",
-              "scientific_name": "Crotophaga ani",
-              "detections": 2,
-              "average_confidence": 0.747,
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 1,
+              "average_confidence": 0.741,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -11695,9 +11719,9 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 285,
-              "active_days": 14,
-              "average_confidence": 0.884,
+              "detections": 286,
+              "active_days": 15,
+              "average_confidence": 0.883,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -11727,7 +11751,7 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 32
+                  "detections": 33
                 },
                 {
                   "hour": 6,
@@ -11802,7 +11826,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 345.3
+              "change_percent": 346.9
             },
             {
               "common_name": "White-winged Dove",
@@ -12833,9 +12857,9 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 285,
-              "active_days": 14,
-              "average_confidence": 0.884,
+              "detections": 286,
+              "active_days": 15,
+              "average_confidence": 0.883,
               "first_seen_date": "2026-05-30"
             },
             {
@@ -12993,9 +13017,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 16,
-              "active_days": 4,
-              "average_confidence": 0.807,
+              "detections": 17,
+              "active_days": 5,
+              "average_confidence": 0.816,
               "first_seen_date": "2026-05-31"
             },
             {
@@ -13351,6 +13375,14 @@
               "first_seen_date": "2026-07-28"
             },
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.741,
+              "first_seen_date": "2026-06-02"
+            },
+            {
               "common_name": "Scrub Euphonia",
               "scientific_name": "Euphonia affinis",
               "detections": 1,
@@ -13396,7 +13428,7 @@
           "label": "All data",
           "start_date": "2025-12-03",
           "end_date": "2026-08-13",
-          "total_detections": 122296,
+          "total_detections": 122299,
           "species_count": 247,
           "active_days": 224,
           "average_confidence": 0.825,
@@ -14668,8 +14700,8 @@
             },
             {
               "date": "2026-08-13",
-              "detections": 3,
-              "species_count": 1
+              "detections": 6,
+              "species_count": 4
             }
           ],
           "hourly_activity": [
@@ -14700,7 +14732,7 @@
             },
             {
               "hour": 5,
-              "detections": 8550,
+              "detections": 8553,
               "species_count": 117
             },
             {
@@ -16573,9 +16605,9 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 395,
-              "active_days": 33,
-              "average_confidence": 0.885,
+              "detections": 396,
+              "active_days": 34,
+              "average_confidence": 0.884,
               "first_seen_date": "2026-05-30"
             },
             {
@@ -16925,9 +16957,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 69,
-              "active_days": 13,
-              "average_confidence": 0.853,
+              "detections": 70,
+              "active_days": 14,
+              "average_confidence": 0.855,
               "first_seen_date": "2026-05-31"
             },
             {
@@ -17179,6 +17211,14 @@
               "first_seen_date": "2025-12-05"
             },
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 23,
+              "active_days": 13,
+              "average_confidence": 0.803,
+              "first_seen_date": "2026-06-02"
+            },
+            {
               "common_name": "Eurasian Jay",
               "scientific_name": "Garrulus glandarius",
               "detections": 22,
@@ -17193,14 +17233,6 @@
               "active_days": 17,
               "average_confidence": 0.721,
               "first_seen_date": "2025-12-15"
-            },
-            {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 22,
-              "active_days": 12,
-              "average_confidence": 0.805,
-              "first_seen_date": "2026-06-02"
             },
             {
               "common_name": "Wood Lark",
@@ -18359,10 +18391,10 @@
           "label": "Last 7 days",
           "start_date": "2026-08-12",
           "end_date": "2026-08-13",
-          "total_detections": 182,
-          "species_count": 16,
+          "total_detections": 185,
+          "species_count": 17,
           "active_days": 2,
-          "average_confidence": 0.867,
+          "average_confidence": 0.866,
           "daily_activity": [
             {
               "date": "2026-08-12",
@@ -18371,8 +18403,8 @@
             },
             {
               "date": "2026-08-13",
-              "detections": 3,
-              "species_count": 1
+              "detections": 6,
+              "species_count": 4
             }
           ],
           "hourly_activity": [
@@ -18403,8 +18435,8 @@
             },
             {
               "hour": 5,
-              "detections": 8,
-              "species_count": 1
+              "detections": 11,
+              "species_count": 3
             },
             {
               "hour": 6,
@@ -18507,16 +18539,16 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 16
+            "species_change": 17
           },
-          "new_species_count": 16,
+          "new_species_count": 17,
           "new_species": [
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 94,
+              "detections": 95,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.904,
+              "average_confidence": 0.903,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -18579,9 +18611,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 5,
+              "detections": 6,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.834,
+              "average_confidence": 0.855,
               "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
@@ -18670,6 +18702,13 @@
           ],
           "review_candidates": [
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 1,
+              "average_confidence": 0.741,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Great-tailed Grackle",
               "scientific_name": "Quiscalus mexicanus",
               "detections": 2,
@@ -18717,22 +18756,15 @@
               "detections": 2,
               "average_confidence": 0.843,
               "reason": "Rare in this period"
-            },
-            {
-              "common_name": "Black Phoebe",
-              "scientific_name": "Sayornis nigricans",
-              "detections": 1,
-              "average_confidence": 0.873,
-              "reason": "Rare in this period"
             }
           ],
           "top_species": [
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 94,
-              "active_days": 1,
-              "average_confidence": 0.904,
+              "detections": 95,
+              "active_days": 2,
+              "average_confidence": 0.903,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -18762,7 +18794,7 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 8
+                  "detections": 9
                 },
                 {
                   "hour": 6,
@@ -19290,9 +19322,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 5,
-              "active_days": 1,
-              "average_confidence": 0.834,
+              "detections": 6,
+              "active_days": 2,
+              "average_confidence": 0.855,
               "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
@@ -19322,7 +19354,7 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 6,
@@ -20076,9 +20108,9 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 94,
-              "active_days": 1,
-              "average_confidence": 0.904,
+              "detections": 95,
+              "active_days": 2,
+              "average_confidence": 0.903,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -20116,9 +20148,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 5,
-              "active_days": 1,
-              "average_confidence": 0.834,
+              "detections": 6,
+              "active_days": 2,
+              "average_confidence": 0.855,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -20200,6 +20232,14 @@
               "active_days": 1,
               "average_confidence": 0.905,
               "first_seen_date": "2026-08-12"
+            },
+            {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.741,
+              "first_seen_date": "2026-08-13"
             }
           ]
         },
@@ -20207,10 +20247,10 @@
           "label": "Last 30 days",
           "start_date": "2026-08-12",
           "end_date": "2026-08-13",
-          "total_detections": 182,
-          "species_count": 16,
+          "total_detections": 185,
+          "species_count": 17,
           "active_days": 2,
-          "average_confidence": 0.867,
+          "average_confidence": 0.866,
           "daily_activity": [
             {
               "date": "2026-08-12",
@@ -20219,8 +20259,8 @@
             },
             {
               "date": "2026-08-13",
-              "detections": 3,
-              "species_count": 1
+              "detections": 6,
+              "species_count": 4
             }
           ],
           "hourly_activity": [
@@ -20251,8 +20291,8 @@
             },
             {
               "hour": 5,
-              "detections": 8,
-              "species_count": 1
+              "detections": 11,
+              "species_count": 3
             },
             {
               "hour": 6,
@@ -20355,16 +20395,16 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 16
+            "species_change": 17
           },
-          "new_species_count": 16,
+          "new_species_count": 17,
           "new_species": [
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 94,
+              "detections": 95,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.904,
+              "average_confidence": 0.903,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -20427,9 +20467,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 5,
+              "detections": 6,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.834,
+              "average_confidence": 0.855,
               "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
@@ -20518,6 +20558,13 @@
           ],
           "review_candidates": [
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 1,
+              "average_confidence": 0.741,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Great-tailed Grackle",
               "scientific_name": "Quiscalus mexicanus",
               "detections": 2,
@@ -20565,22 +20612,15 @@
               "detections": 2,
               "average_confidence": 0.843,
               "reason": "Rare in this period"
-            },
-            {
-              "common_name": "Black Phoebe",
-              "scientific_name": "Sayornis nigricans",
-              "detections": 1,
-              "average_confidence": 0.873,
-              "reason": "Rare in this period"
             }
           ],
           "top_species": [
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 94,
-              "active_days": 1,
-              "average_confidence": 0.904,
+              "detections": 95,
+              "active_days": 2,
+              "average_confidence": 0.903,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -20610,7 +20650,7 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 8
+                  "detections": 9
                 },
                 {
                   "hour": 6,
@@ -21138,9 +21178,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 5,
-              "active_days": 1,
-              "average_confidence": 0.834,
+              "detections": 6,
+              "active_days": 2,
+              "average_confidence": 0.855,
               "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
@@ -21170,7 +21210,7 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 6,
@@ -21924,9 +21964,9 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 94,
-              "active_days": 1,
-              "average_confidence": 0.904,
+              "detections": 95,
+              "active_days": 2,
+              "average_confidence": 0.903,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -21964,9 +22004,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 5,
-              "active_days": 1,
-              "average_confidence": 0.834,
+              "detections": 6,
+              "active_days": 2,
+              "average_confidence": 0.855,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -22048,6 +22088,14 @@
               "active_days": 1,
               "average_confidence": 0.905,
               "first_seen_date": "2026-08-12"
+            },
+            {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.741,
+              "first_seen_date": "2026-08-13"
             }
           ]
         },
@@ -22055,10 +22103,10 @@
           "label": "All data",
           "start_date": "2026-08-12",
           "end_date": "2026-08-13",
-          "total_detections": 182,
-          "species_count": 16,
+          "total_detections": 185,
+          "species_count": 17,
           "active_days": 2,
-          "average_confidence": 0.867,
+          "average_confidence": 0.866,
           "daily_activity": [
             {
               "date": "2026-08-12",
@@ -22067,8 +22115,8 @@
             },
             {
               "date": "2026-08-13",
-              "detections": 3,
-              "species_count": 1
+              "detections": 6,
+              "species_count": 4
             }
           ],
           "hourly_activity": [
@@ -22099,8 +22147,8 @@
             },
             {
               "hour": 5,
-              "detections": 8,
-              "species_count": 1
+              "detections": 11,
+              "species_count": 3
             },
             {
               "hour": 6,
@@ -22205,14 +22253,14 @@
             "previous_species_count": null,
             "species_change": null
           },
-          "new_species_count": 16,
+          "new_species_count": 17,
           "new_species": [
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 94,
+              "detections": 95,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.904,
+              "average_confidence": 0.903,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -22275,9 +22323,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 5,
+              "detections": 6,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.834,
+              "average_confidence": 0.855,
               "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
@@ -22366,6 +22414,13 @@
           ],
           "review_candidates": [
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 1,
+              "average_confidence": 0.741,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Great-tailed Grackle",
               "scientific_name": "Quiscalus mexicanus",
               "detections": 2,
@@ -22413,22 +22468,15 @@
               "detections": 2,
               "average_confidence": 0.843,
               "reason": "Rare in this period"
-            },
-            {
-              "common_name": "Black Phoebe",
-              "scientific_name": "Sayornis nigricans",
-              "detections": 1,
-              "average_confidence": 0.873,
-              "reason": "Rare in this period"
             }
           ],
           "top_species": [
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 94,
-              "active_days": 1,
-              "average_confidence": 0.904,
+              "detections": 95,
+              "active_days": 2,
+              "average_confidence": 0.903,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -22458,7 +22506,7 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 8
+                  "detections": 9
                 },
                 {
                   "hour": 6,
@@ -22986,9 +23034,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 5,
-              "active_days": 1,
-              "average_confidence": 0.834,
+              "detections": 6,
+              "active_days": 2,
+              "average_confidence": 0.855,
               "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
@@ -23018,7 +23066,7 @@
                 },
                 {
                   "hour": 5,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 6,
@@ -23772,9 +23820,9 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 94,
-              "active_days": 1,
-              "average_confidence": 0.904,
+              "detections": 95,
+              "active_days": 2,
+              "average_confidence": 0.903,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -23812,9 +23860,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 5,
-              "active_days": 1,
-              "average_confidence": 0.834,
+              "detections": 6,
+              "active_days": 2,
+              "average_confidence": 0.855,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -23896,6 +23944,14 @@
               "active_days": 1,
               "average_confidence": 0.905,
               "first_seen_date": "2026-08-12"
+            },
+            {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.741,
+              "first_seen_date": "2026-08-13"
             }
           ]
         }
