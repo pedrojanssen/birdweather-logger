@@ -8,7 +8,12 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
-from build_dashboard_json import build_dashboard, validate_public_payload  # noqa: E402
+from build_dashboard_json import (  # noqa: E402
+    build_dashboard,
+    build_expected_arrivals,
+    seasonal_week_index,
+    validate_public_payload,
+)
 
 
 class DashboardJsonTest(unittest.TestCase):
@@ -215,6 +220,85 @@ class DashboardJsonTest(unittest.TestCase):
         serialised = self.output_path.read_text(encoding="utf-8")
         self.assertNotIn("live-secret-guapiles", serialised)
         self.assertNotIn("private-coordinate", serialised)
+
+    def test_adds_privacy_safe_expected_arrivals_for_current_location(self):
+        with self.input_path.open("r", encoding="utf-8", newline="") as handle:
+            fieldnames = csv.DictReader(handle).fieldnames
+        with self.input_path.open("a", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=fieldnames)
+            writer.writerow(
+                {
+                    "id": "private-current-detection",
+                    "stationId": "private-station-reference",
+                    "timestamp": "2026-08-11T12:15:00Z",
+                    "confidence": "0.91",
+                    "species.commonName": "Current resident",
+                    "species.scientificName": "Avis resident",
+                }
+            )
+
+        weeks = [0.02] * 48
+        weeks[37] = 0.4
+        probabilities_path = self.root / "probabilities.json"
+        probabilities_path.write_text(
+            json.dumps(
+                {
+                    "timezone": "America/Costa_Rica",
+                    "species": [
+                        {
+                            "common_name": "Expected migrant",
+                            "scientific_name": "Avis migratoria",
+                            "photo_urls": [
+                                "https://media.birdweather.com/species/42/migrant.jpg"
+                            ],
+                            "weeks": weeks,
+                        }
+                    ],
+                }
+            ),
+            encoding="utf-8",
+        )
+
+        payload = build_dashboard(
+            self.input_path,
+            self.output_path,
+            generated_date=date(2026, 8, 14),
+            probabilities_input_path=probabilities_path,
+        )
+        outlook = payload["locations"]["guapiles"]
+        expected = outlook["expected_arrivals"][0]
+
+        self.assertEqual(outlook["outlook_status"], "available")
+        self.assertEqual(expected["common_name"], "Expected migrant")
+        self.assertEqual(expected["current_probability"], 0.02)
+        self.assertEqual(expected["projected_probability"], 0.4)
+        self.assertEqual(expected["peak_in_weeks"], 8)
+        self.assertEqual(len(expected["weekly_probability"]), 13)
+        self.assertEqual(
+            payload["locations"]["santo_domingo"]["outlook_status"],
+            "historical_location",
+        )
+
+        serialised = self.output_path.read_text(encoding="utf-8")
+        self.assertNotIn("private-current-detection", serialised)
+        self.assertNotIn("private-station-reference", serialised)
+        validate_public_payload(json.loads(serialised))
+
+    def test_48_week_calendar_and_arrival_thresholds(self):
+        self.assertEqual(seasonal_week_index(date(2026, 1, 1)), 0)
+        self.assertEqual(seasonal_week_index(date(2026, 8, 14)), 29)
+        self.assertEqual(seasonal_week_index(date(2026, 12, 31)), 47)
+
+        rising = [0.01] * 48
+        rising[0] = 0.3
+        flat = [0.04] * 48
+        rows = [
+            {"common_name": "Rising bird", "weeks": rising},
+            {"common_name": "Flat bird", "weeks": flat},
+        ]
+        expected = build_expected_arrivals(rows, date(2026, 12, 31))
+        self.assertEqual([row["common_name"] for row in expected], ["Rising bird"])
+        self.assertEqual(expected[0]["peak_in_weeks"], 1)
 
 
 if __name__ == "__main__":

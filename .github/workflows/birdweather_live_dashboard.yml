@@ -35,10 +35,18 @@ jobs:
           python3 scripts/fetch_live_detections.py \
             --output "${RUNNER_TEMP}/birdweather-live.csv"
 
+      - name: Download BirdNET seasonal probabilities to temporary storage
+        run: |
+          python3 scripts/fetch_seasonal_probabilities.py \
+            --input data/master_detections.csv \
+            --input "${RUNNER_TEMP}/birdweather-live.csv" \
+            --output "${RUNNER_TEMP}/seasonal-probabilities.json"
+
       - name: Build privacy-limited near-live JSON
         run: |
           python3 scripts/build_dashboard_json.py \
-            --additional-input "${RUNNER_TEMP}/birdweather-live.csv"
+            --additional-input "${RUNNER_TEMP}/birdweather-live.csv" \
+            --probabilities-input "${RUNNER_TEMP}/seasonal-probabilities.json"
 
       - name: Test generator and privacy guard
         run: |

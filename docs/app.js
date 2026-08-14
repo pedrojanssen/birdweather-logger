@@ -43,6 +43,12 @@ function formatConfidence(value) {
   return value == null ? "n/a" : `${Math.round(value * 100)}%`;
 }
 
+function formatProbability(value) {
+  if (value == null) return "n/a";
+  const percent = value * 100;
+  return `${percent < 10 ? percent.toFixed(1) : Math.round(percent)}%`;
+}
+
 function hourLabel(hour) {
   return `${String(hour).padStart(2, "0")}:00`;
 }
@@ -343,6 +349,81 @@ function renderNewSpecies(period) {
   attachPhotoFallbacks(container);
 }
 
+function probabilityTrendMarkup(species) {
+  const values = (species.weekly_probability || []).map(
+    (point) => point.probability,
+  );
+  if (!values.length) return "";
+  const width = 180;
+  const height = 58;
+  const maximum = Math.max(...values, 0.01);
+  const peakIndex = Math.min(
+    Math.max(Number(species.peak_in_weeks) || 0, 0),
+    values.length - 1,
+  );
+  const peakX = (peakIndex / Math.max(values.length - 1, 1)) * width;
+  const peakY = height - 5 - (values[peakIndex] / maximum) * (height - 12);
+  const points = values
+    .map((value, index) => {
+      const x = (index / Math.max(values.length - 1, 1)) * width;
+      const y = height - 5 - (value / maximum) * (height - 12);
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    })
+    .join(" ");
+  return `<svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" aria-hidden="true">
+    <polyline points="${points}"></polyline>
+    <circle cx="0" cy="${(height - 5 - (values[0] / maximum) * (height - 12)).toFixed(1)}" r="2.5"></circle>
+    <circle class="trend-peak" cx="${peakX.toFixed(1)}" cy="${peakY.toFixed(1)}" r="2.5"></circle>
+  </svg>`;
+}
+
+function renderExpectedArrivals(location) {
+  const container = byId("expected-arrivals");
+  const status = location.outlook_status || "unavailable";
+  const rows = location.expected_arrivals || [];
+  const model = state.dashboard.seasonal_outlook || {};
+
+  if (status !== "available" || !rows.length) {
+    const message =
+      status === "historical_location"
+        ? "This is a historical listening site. The outlook follows the PUC at its current location in Guápiles."
+        : status === "select_current_location"
+          ? "Select Guápiles to see the outlook for the PUC's current listening location."
+          : "Seasonal probability data is not available yet. It will be added by the next dashboard refresh.";
+    byId("outlook-note").textContent = "Current PUC location only";
+    container.innerHTML = `<p class="empty-state outlook-empty">${escapeHtml(message)}</p>`;
+    byId("outlook-method").textContent = "";
+    return;
+  }
+
+  byId("outlook-note").textContent =
+    `${rows.length} low-probability species rising most over the next ${model.forecast_horizon_weeks || 12} weeks`;
+  container.innerHTML = rows
+    .map((species) => {
+      const peakLabel =
+        species.peak_in_weeks === 1
+          ? "next week"
+          : `in ${species.peak_in_weeks} weeks`;
+      return `<article class="outlook-card panel">
+        <div class="outlook-card-heading">
+          ${photoMarkup(species, "outlook-photo")}
+          <div><h3>${escapeHtml(species.common_name)}</h3><p>${escapeHtml(species.scientific_name || "Scientific name unavailable")}</p></div>
+        </div>
+        <div class="probability-rise">
+          <div><span>Now</span><strong>${formatProbability(species.current_probability)}</strong></div>
+          <i aria-hidden="true">→</i>
+          <div><span>Seasonal peak · ${escapeHtml(peakLabel)}</span><strong>${formatProbability(species.projected_probability)}</strong></div>
+        </div>
+        <div class="probability-trend">${probabilityTrendMarkup(species)}</div>
+        <p class="rise-label">+${species.increase_percentage_points.toFixed(1)} percentage points</p>
+      </article>`;
+    })
+    .join("");
+  byId("outlook-method").textContent =
+    `${model.source || "BirdWeather / BirdNET seasonal probability"} · ${model.basis || "historical occurrence likelihood"}. This is a seasonal signal, not a guaranteed arrival or a detection.`;
+  attachPhotoFallbacks(container);
+}
+
 function renderSpeciesTable(speciesRows) {
   const query = byId("species-search").value.trim().toLocaleLowerCase();
   const filtered = speciesRows.filter((species) =>
@@ -396,6 +477,7 @@ function render() {
   renderHourlyActivity(period);
   renderDailyChart(period.daily_activity);
   renderHeatmap(period.top_species);
+  renderExpectedArrivals(location);
   renderNewSpecies(period);
   renderSpeciesTable(period.species);
   renderReviewCandidates(period.review_candidates);

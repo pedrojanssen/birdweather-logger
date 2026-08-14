@@ -9,8 +9,8 @@
     />
     <meta name="theme-color" content="#07111f" />
     <title>BirdWeather Observatory</title>
-    <link rel="stylesheet" href="styles.css?v=3" />
-    <script src="app.js?v=3" defer></script>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <script src="app.js?v=4" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -28,6 +28,7 @@
         </a>
         <nav aria-label="Dashboard sections">
           <a class="is-active" href="#overview">Overview</a>
+          <a href="#outlook">Outlook</a>
           <a href="#species">Species</a>
           <a href="#activity">Activity</a>
           <a href="#reports">Reports</a>
@@ -161,6 +162,18 @@
           </div>
           <p id="rhythm-note" class="panel-note"></p>
         </article>
+      </section>
+
+      <section id="outlook" class="section-block outlook-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow--coral">Seasonal movement</p>
+            <h2>Expected arrivals</h2>
+          </div>
+          <p id="outlook-note">Loading the seasonal outlook…</p>
+        </div>
+        <div id="expected-arrivals" class="outlook-grid"></div>
+        <p id="outlook-method" class="outlook-method"></p>
       </section>
 
       <section id="activity" class="section-block">
