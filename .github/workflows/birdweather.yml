@@ -46,9 +46,16 @@ jobs:
         run: |
           Rscript scripts/birdweather_daily.R
 
+      - name: Download BirdNET seasonal probabilities to temporary storage
+        run: |
+          python3 scripts/fetch_seasonal_probabilities.py \
+            --input data/master_detections.csv \
+            --output "${RUNNER_TEMP}/seasonal-probabilities.json"
+
       - name: Build privacy-limited dashboard JSON
         run: |
-          python3 scripts/build_dashboard_json.py
+          python3 scripts/build_dashboard_json.py \
+            --probabilities-input "${RUNNER_TEMP}/seasonal-probabilities.json"
 
       - name: Test dashboard generator and privacy guard
         run: |

@@ -20,7 +20,9 @@ The public dataset is `docs/data/dashboard.json`. It contains:
 - aggregate detection and species-diversity patterns for each hour of the day;
 - a species-by-hour heatmap and aggregate review candidates;
 - BirdWeather species photos with safe fallbacks for the twelve most frequently
-  detected species; and
+  detected species;
+- an expected-arrivals outlook for the current PUC location, ranked from the
+  BirdWeather/BirdNET 48-week seasonal probability curves; and
 - 7-day, 30-day and all-data views.
 
 The dashboard separates observations into date-bounded listening sites without
@@ -53,9 +55,10 @@ Then open `http://localhost:8000`.
 
 - `.github/workflows/birdweather_live_dashboard.yml` runs approximately every 15
   minutes. It downloads the current Costa Rica day to temporary runner storage,
-  combines it with the committed history in memory, and commits only the
-  privacy-limited dashboard JSON. The temporary detection rows are never
-  published as part of this job.
+  fetches the current station's seasonal probability curves, combines detections
+  with the committed history in memory, and commits only the privacy-limited
+  dashboard JSON. The temporary detection rows, station reference and full
+  probability response are never published as part of this job.
 - `.github/workflows/birdweather.yml` runs daily at 01:05 Costa Rica time,
   downloads the previous local day, rebuilds the public JSON, tests it, and
   commits both data and JSON.

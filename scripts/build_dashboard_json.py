@@ -30,6 +30,13 @@ DEFAULT_OUTPUT = Path("docs/data/dashboard.json")
 TOP_SPECIES_LIMIT = 12
 NEW_SPECIES_LIMIT = 12
 REVIEW_CANDIDATE_LIMIT = 8
+EXPECTED_ARRIVAL_LIMIT = 8
+SEASONAL_WEEK_COUNT = 48
+OUTLOOK_HORIZON_WEEKS = 12
+MAX_CURRENT_PROBABILITY = 0.15
+MIN_FUTURE_PROBABILITY = 0.08
+MIN_ABSOLUTE_RISE = 0.08
+MIN_RISE_RATIO = 2.0
 
 # Locations are separated by date only. Coordinates from the sensitive source
 # are deliberately never needed for, or copied into, the public dashboard.
@@ -502,12 +509,116 @@ def validate_public_payload(payload: Any) -> None:
     walk(payload)
 
 
+def seasonal_week_index(value: date) -> int:
+    """Map a date to BirdNET's 48-week calendar (four weeks per month)."""
+
+    week_in_month = min((value.day - 1) // 7, 3)
+    return (value.month - 1) * 4 + week_in_month
+
+
+def read_probability_input(input_path: Path | None) -> list[dict[str, Any]]:
+    """Read the privacy-safe intermediate seasonal probability response."""
+
+    if input_path is None:
+        return []
+    with input_path.open("r", encoding="utf-8") as handle:
+        payload = json.load(handle)
+    rows = payload.get("species") if isinstance(payload, dict) else None
+    if not isinstance(rows, list):
+        raise ValueError("Seasonal probability input has no species list")
+    return [row for row in rows if isinstance(row, dict)]
+
+
+def build_expected_arrivals(
+    probability_rows: Iterable[dict[str, Any]],
+    reference_date: date,
+) -> list[dict[str, Any]]:
+    """Rank species that are unlikely now but rise strongly within 12 weeks."""
+
+    current_week = seasonal_week_index(reference_date)
+    candidates: list[tuple[float, float, int, str, dict[str, Any]]] = []
+    for row in probability_rows:
+        common_name = str(row.get("common_name") or "").strip()
+        scientific_name = str(row.get("scientific_name") or "").strip()
+        weeks = row.get("weeks")
+        if not common_name or not isinstance(weeks, list) or len(weeks) != SEASONAL_WEEK_COUNT:
+            continue
+        try:
+            values = [float(value) for value in weeks]
+        except (TypeError, ValueError):
+            continue
+        if any(not math.isfinite(value) or not 0 <= value <= 1 for value in values):
+            continue
+
+        current_probability = values[current_week]
+        future = [
+            values[(current_week + offset) % SEASONAL_WEEK_COUNT]
+            for offset in range(1, OUTLOOK_HORIZON_WEEKS + 1)
+        ]
+        projected_probability = max(future)
+        peak_in_weeks = future.index(projected_probability) + 1
+        absolute_rise = projected_probability - current_probability
+        rises_enough = (
+            current_probability <= 0.01
+            or projected_probability / current_probability >= MIN_RISE_RATIO
+        )
+        if not (
+            current_probability <= MAX_CURRENT_PROBABILITY
+            and projected_probability >= MIN_FUTURE_PROBABILITY
+            and absolute_rise >= MIN_ABSOLUTE_RISE
+            and rises_enough
+        ):
+            continue
+
+        photo_urls = [
+            photo
+            for photo in row.get("photo_urls") or []
+            if isinstance(photo, str)
+            and (parsed := urlparse(photo)).scheme == "https"
+            and parsed.netloc == "media.birdweather.com"
+            and parsed.path.startswith("/species/")
+        ]
+        trend = [
+            {
+                "weeks_ahead": offset,
+                "probability": round(
+                    values[(current_week + offset) % SEASONAL_WEEK_COUNT], 4
+                ),
+            }
+            for offset in range(OUTLOOK_HORIZON_WEEKS + 1)
+        ]
+        public_row = {
+            "common_name": common_name,
+            "scientific_name": scientific_name or None,
+            "photo_url": photo_urls[0] if photo_urls else None,
+            "photo_urls": list(dict.fromkeys(photo_urls)),
+            "current_probability": round(current_probability, 4),
+            "projected_probability": round(projected_probability, 4),
+            "increase_percentage_points": round(absolute_rise * 100, 1),
+            "peak_in_weeks": peak_in_weeks,
+            "weekly_probability": trend,
+        }
+        candidates.append(
+            (
+                absolute_rise,
+                projected_probability,
+                -peak_in_weeks,
+                common_name.casefold(),
+                public_row,
+            )
+        )
+
+    candidates.sort(key=lambda item: (-item[0], -item[1], -item[2], item[3]))
+    return [item[-1] for item in candidates[:EXPECTED_ARRIVAL_LIMIT]]
+
+
 def build_dashboard(
     input_path: Path,
     output_path: Path,
     timezone_name: str = DEFAULT_TIMEZONE,
     generated_date: date | None = None,
     additional_input_paths: Iterable[Path] | None = None,
+    probabilities_input_path: Path | None = None,
 ) -> dict[str, Any]:
     local_timezone = ZoneInfo(timezone_name)
     input_paths = [input_path, *(additional_input_paths or [])]
@@ -523,6 +634,8 @@ def build_dashboard(
             first_seen.setdefault(species_key, observed_date)
     generated_now = datetime.now(local_timezone)
     generated_date = generated_date or generated_now.date()
+    probability_rows = read_probability_input(probabilities_input_path)
+    expected_arrivals = build_expected_arrivals(probability_rows, generated_date)
     period_labels = {"7d": "Last 7 days", "30d": "Last 30 days", "all": "All data"}
 
     def build_periods(
@@ -555,6 +668,8 @@ def build_dashboard(
             "label": "All locations",
             "first_observation_date": first_date.isoformat(),
             "latest_observation_date": last_date.isoformat(),
+            "outlook_status": "select_current_location",
+            "expected_arrivals": [],
             "periods": all_periods,
         }
     }
@@ -571,6 +686,16 @@ def build_dashboard(
             "label": location["label"],
             "first_observation_date": min(location_days).isoformat(),
             "latest_observation_date": max(location_days).isoformat(),
+            "outlook_status": (
+                "available"
+                if location["key"] == "guapiles" and probability_rows
+                else "historical_location"
+                if location["end_date"] is not None
+                else "unavailable"
+            ),
+            "expected_arrivals": (
+                expected_arrivals if location["key"] == "guapiles" else []
+            ),
             "periods": build_periods(location_days),
         }
 
@@ -591,6 +716,12 @@ def build_dashboard(
         "latest_observation_date": last_date.isoformat(),
         "default_period": "7d",
         "default_location": default_location,
+        "seasonal_outlook": {
+            "source": "BirdWeather / BirdNET seasonal probability",
+            "basis": "Historical eBird occurrence likelihood by week",
+            "forecast_horizon_weeks": OUTLOOK_HORIZON_WEEKS,
+            "current_seasonal_week": seasonal_week_index(generated_date) + 1,
+        },
         "privacy": {
             "aggregation": "daily and hourly totals only",
             "excluded": [
@@ -629,6 +760,11 @@ def main() -> None:
         default=[],
         help="Additional detection CSV to aggregate and de-duplicate in memory",
     )
+    parser.add_argument(
+        "--probabilities-input",
+        type=Path,
+        help="Intermediate BirdWeather 48-week probability JSON",
+    )
     args = parser.parse_args()
 
     payload = build_dashboard(
@@ -636,6 +772,7 @@ def main() -> None:
         args.output,
         args.timezone,
         additional_input_paths=args.additional_input,
+        probabilities_input_path=args.probabilities_input,
     )
     default = payload["periods"][payload["default_period"]]
     print(
