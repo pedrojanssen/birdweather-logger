@@ -29,8 +29,8 @@
       "label": "Last 7 days",
       "start_date": "2026-08-10",
       "end_date": "2026-08-16",
-      "total_detections": 1616,
-      "species_count": 43,
+      "total_detections": 1620,
+      "species_count": 44,
       "active_days": 5,
       "average_confidence": 0.861,
       "daily_activity": [
@@ -66,8 +66,8 @@
         },
         {
           "date": "2026-08-16",
-          "detections": 49,
-          "species_count": 10
+          "detections": 53,
+          "species_count": 11
         }
       ],
       "hourly_activity": [
@@ -153,8 +153,8 @@
         },
         {
           "hour": 16,
-          "detections": 133,
-          "species_count": 6
+          "detections": 137,
+          "species_count": 9
         },
         {
           "hour": 17,
@@ -202,9 +202,9 @@
         "previous_detections": 0,
         "detection_change_percent": null,
         "previous_species_count": 0,
-        "species_change": 43
+        "species_change": 44
       },
-      "new_species_count": 15,
+      "new_species_count": 16,
       "new_species": [
         {
           "common_name": "Ruddy Ground Dove",
@@ -311,6 +311,19 @@
           ]
         },
         {
+          "common_name": "White-crowned Parrot",
+          "scientific_name": "Pionus senilis",
+          "detections": 2,
+          "first_seen_date": "2026-08-16",
+          "average_confidence": 0.907,
+          "photo_url": "https://media.birdweather.com/species/1150/White-crownedParrot-standard-fba8664704e4670f70917d29327f1cab.jpg",
+          "photo_urls": [
+            "https://media.birdweather.com/species/1150/White-crownedParrot-standard-fba8664704e4670f70917d29327f1cab.jpg",
+            "https://media.birdweather.com/species/1150/White-crownedParrot-png200-10c1d695926bb0180cd3384503985495.png",
+            "https://media.birdweather.com/species/1150/White-crownedParrot-thumbnail-2e09ce5903724db35096c93f72eb7b4c.jpg"
+          ]
+        },
+        {
           "common_name": "Belted Kingfisher",
           "scientific_name": "Megaceryle alcyon",
           "detections": 1,
@@ -347,19 +360,6 @@
             "https://media.birdweather.com/species/1045/Gray-breastedMartin-standard-22ee4101f9bfa256e56f9fd0e09b410c.jpg",
             "https://media.birdweather.com/species/1045/Gray-breastedMartin-png200-8dfff29ab9ffdf1850128e693bc784f3.png",
             "https://media.birdweather.com/species/1045/Gray-breastedMartin-thumbnail-f7cfca396a84e9778de9bd9ebbd5fc95.jpg"
-          ]
-        },
-        {
-          "common_name": "Green Heron",
-          "scientific_name": "Butorides virescens",
-          "detections": 1,
-          "first_seen_date": "2026-08-12",
-          "average_confidence": 0.905,
-          "photo_url": "https://media.birdweather.com/species/441/GreenHeron-standard-a6b39a5594bcdcc44c2b71461dab985b.jpg",
-          "photo_urls": [
-            "https://media.birdweather.com/species/441/GreenHeron-standard-a6b39a5594bcdcc44c2b71461dab985b.jpg",
-            "https://media.birdweather.com/species/441/GreenHeron-png200-61f59173496cb5e939e9e24941307c45.png",
-            "https://media.birdweather.com/species/441/GreenHeron-thumbnail-d63ca186d1799f75983a703e9a65b5a3.jpg"
           ]
         }
       ],
@@ -407,17 +407,17 @@
           "reason": "Lower aggregate confidence"
         },
         {
-          "common_name": "Rufous-tailed Hummingbird",
-          "scientific_name": "Amazilia tzacatl",
-          "detections": 4,
-          "average_confidence": 0.735,
-          "reason": "Lower aggregate confidence"
-        },
-        {
           "common_name": "Crimson-fronted Parakeet",
           "scientific_name": "Psittacara finschi",
           "detections": 1,
           "average_confidence": 0.738,
+          "reason": "Lower aggregate confidence"
+        },
+        {
+          "common_name": "Fork-tailed Flycatcher",
+          "scientific_name": "Tyrannus savana",
+          "detections": 2,
+          "average_confidence": 0.742,
           "reason": "Lower aggregate confidence"
         }
       ],
@@ -873,7 +873,7 @@
         {
           "common_name": "Orange-chinned Parakeet",
           "scientific_name": "Brotogeris jugularis",
-          "detections": 69,
+          "detections": 70,
           "active_days": 5,
           "average_confidence": 0.906,
           "photo_url": "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
@@ -949,7 +949,7 @@
             },
             {
               "hour": 16,
-              "detections": 0
+              "detections": 1
             },
             {
               "hour": 17,
@@ -1803,7 +1803,7 @@
         {
           "common_name": "Orange-chinned Parakeet",
           "scientific_name": "Brotogeris jugularis",
-          "detections": 69,
+          "detections": 70,
           "active_days": 5,
           "average_confidence": 0.906,
           "first_seen_date": "2026-05-30"
@@ -1891,9 +1891,9 @@
         {
           "common_name": "Rufous-tailed Hummingbird",
           "scientific_name": "Amazilia tzacatl",
-          "detections": 4,
+          "detections": 5,
           "active_days": 3,
-          "average_confidence": 0.735,
+          "average_confidence": 0.753,
           "first_seen_date": "2026-06-02"
         },
         {
@@ -1951,6 +1951,14 @@
           "active_days": 1,
           "average_confidence": 0.982,
           "first_seen_date": "2026-05-29"
+        },
+        {
+          "common_name": "White-crowned Parrot",
+          "scientific_name": "Pionus senilis",
+          "detections": 2,
+          "active_days": 1,
+          "average_confidence": 0.907,
+          "first_seen_date": "2026-08-16"
         },
         {
           "common_name": "White-throated Thrush",
@@ -2118,8 +2126,8 @@
       "label": "Last 30 days",
       "start_date": "2026-07-18",
       "end_date": "2026-08-16",
-      "total_detections": 3974,
-      "species_count": 83,
+      "total_detections": 3978,
+      "species_count": 84,
       "active_days": 16,
       "average_confidence": 0.858,
       "daily_activity": [
@@ -2270,8 +2278,8 @@
         },
         {
           "date": "2026-08-16",
-          "detections": 49,
-          "species_count": 10
+          "detections": 53,
+          "species_count": 11
         }
       ],
       "hourly_activity": [
@@ -2357,8 +2365,8 @@
         },
         {
           "hour": 16,
-          "detections": 203,
-          "species_count": 22
+          "detections": 207,
+          "species_count": 25
         },
         {
           "hour": 17,
@@ -2406,9 +2414,9 @@
         "previous_detections": 8950,
         "detection_change_percent": -55.6,
         "previous_species_count": 81,
-        "species_change": 2
+        "species_change": 3
       },
-      "new_species_count": 26,
+      "new_species_count": 27,
       "new_species": [
         {
           "common_name": "Tropical Mockingbird",
@@ -2554,16 +2562,16 @@
           ]
         },
         {
-          "common_name": "Bare-crowned Antbird",
-          "scientific_name": "Gymnocichla nudiceps",
-          "detections": 1,
-          "first_seen_date": "2026-07-20",
-          "average_confidence": 0.801,
-          "photo_url": "https://media.birdweather.com/species/1910/Bare-crownedAntbird-standard-f22068042724f10ecbd95d8023b3da53.jpg",
+          "common_name": "White-crowned Parrot",
+          "scientific_name": "Pionus senilis",
+          "detections": 2,
+          "first_seen_date": "2026-08-16",
+          "average_confidence": 0.907,
+          "photo_url": "https://media.birdweather.com/species/1150/White-crownedParrot-standard-fba8664704e4670f70917d29327f1cab.jpg",
           "photo_urls": [
-            "https://media.birdweather.com/species/1910/Bare-crownedAntbird-standard-f22068042724f10ecbd95d8023b3da53.jpg",
-            "https://media.birdweather.com/species/1910/Bare-crownedAntbird-png200-431cdd6981e08433bfed9ee3fa523623.png",
-            "https://media.birdweather.com/species/1910/Bare-crownedAntbird-thumbnail-dc32db2e5a8c3d98f8033813d5bbb7dc.jpg"
+            "https://media.birdweather.com/species/1150/White-crownedParrot-standard-fba8664704e4670f70917d29327f1cab.jpg",
+            "https://media.birdweather.com/species/1150/White-crownedParrot-png200-10c1d695926bb0180cd3384503985495.png",
+            "https://media.birdweather.com/species/1150/White-crownedParrot-thumbnail-2e09ce5903724db35096c93f72eb7b4c.jpg"
           ]
         }
       ],
@@ -3749,7 +3757,7 @@
         {
           "common_name": "Orange-chinned Parakeet",
           "scientific_name": "Brotogeris jugularis",
-          "detections": 83,
+          "detections": 84,
           "active_days": 9,
           "average_confidence": 0.897,
           "photo_url": "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
@@ -3825,7 +3833,7 @@
             },
             {
               "hour": 16,
-              "detections": 0
+              "detections": 1
             },
             {
               "hour": 17,
@@ -3856,7 +3864,7 @@
               "detections": 0
             }
           ],
-          "change_percent": -51.7
+          "change_percent": -51.2
         },
         {
           "common_name": "Piratic Flycatcher",
@@ -4055,7 +4063,7 @@
         {
           "common_name": "Orange-chinned Parakeet",
           "scientific_name": "Brotogeris jugularis",
-          "detections": 83,
+          "detections": 84,
           "active_days": 9,
           "average_confidence": 0.897,
           "first_seen_date": "2026-05-30"
@@ -4269,6 +4277,14 @@
           "first_seen_date": "2026-05-29"
         },
         {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 5,
+          "active_days": 3,
+          "average_confidence": 0.753,
+          "first_seen_date": "2026-06-02"
+        },
+        {
           "common_name": "Barn Swallow",
           "scientific_name": "Hirundo rustica",
           "detections": 4,
@@ -4291,14 +4307,6 @@
           "active_days": 4,
           "average_confidence": 0.749,
           "first_seen_date": "2026-06-23"
-        },
-        {
-          "common_name": "Rufous-tailed Hummingbird",
-          "scientific_name": "Amazilia tzacatl",
-          "detections": 4,
-          "active_days": 3,
-          "average_confidence": 0.735,
-          "first_seen_date": "2026-06-02"
         },
         {
           "common_name": "Band-backed Wren",
@@ -4403,6 +4411,14 @@
           "active_days": 1,
           "average_confidence": 0.891,
           "first_seen_date": "2026-05-29"
+        },
+        {
+          "common_name": "White-crowned Parrot",
+          "scientific_name": "Pionus senilis",
+          "detections": 2,
+          "active_days": 1,
+          "average_confidence": 0.907,
+          "first_seen_date": "2026-08-16"
         },
         {
           "common_name": "White-throated Thrush",
@@ -4642,8 +4658,8 @@
       "label": "All data",
       "start_date": "2025-12-03",
       "end_date": "2026-08-16",
-      "total_detections": 123730,
-      "species_count": 258,
+      "total_detections": 123734,
+      "species_count": 259,
       "active_days": 227,
       "average_confidence": 0.825,
       "daily_activity": [
@@ -5929,8 +5945,8 @@
         },
         {
           "date": "2026-08-16",
-          "detections": 49,
-          "species_count": 10
+          "detections": 53,
+          "species_count": 11
         }
       ],
       "hourly_activity": [
@@ -6016,8 +6032,8 @@
         },
         {
           "hour": 16,
-          "detections": 2057,
-          "species_count": 79
+          "detections": 2061,
+          "species_count": 81
         },
         {
           "hour": 17,
@@ -6067,7 +6083,7 @@
         "previous_species_count": null,
         "species_change": null
       },
-      "new_species_count": 258,
+      "new_species_count": 259,
       "new_species": [
         {
           "common_name": "European Robin",
@@ -7866,7 +7882,7 @@
         {
           "common_name": "Orange-chinned Parakeet",
           "scientific_name": "Brotogeris jugularis",
-          "detections": 283,
+          "detections": 284,
           "active_days": 46,
           "average_confidence": 0.854,
           "first_seen_date": "2026-05-30"
@@ -8384,6 +8400,14 @@
           "first_seen_date": "2025-12-19"
         },
         {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 27,
+          "active_days": 15,
+          "average_confidence": 0.796,
+          "first_seen_date": "2026-06-02"
+        },
+        {
           "common_name": "Black Phoebe",
           "scientific_name": "Sayornis nigricans",
           "detections": 26,
@@ -8406,14 +8430,6 @@
           "active_days": 14,
           "average_confidence": 0.825,
           "first_seen_date": "2026-01-19"
-        },
-        {
-          "common_name": "Rufous-tailed Hummingbird",
-          "scientific_name": "Amazilia tzacatl",
-          "detections": 26,
-          "active_days": 15,
-          "average_confidence": 0.795,
-          "first_seen_date": "2026-06-02"
         },
         {
           "common_name": "Black-bellied Plover",
@@ -9264,6 +9280,14 @@
           "first_seen_date": "2026-07-10"
         },
         {
+          "common_name": "White-crowned Parrot",
+          "scientific_name": "Pionus senilis",
+          "detections": 2,
+          "active_days": 1,
+          "average_confidence": 0.907,
+          "first_seen_date": "2026-08-16"
+        },
+        {
           "common_name": "White-fronted Parrot",
           "scientific_name": "Amazona albifrons",
           "detections": 2,
@@ -9710,8 +9734,8 @@
           "label": "Last 7 days",
           "start_date": "2026-08-10",
           "end_date": "2026-08-16",
-          "total_detections": 1616,
-          "species_count": 43,
+          "total_detections": 1620,
+          "species_count": 44,
           "active_days": 5,
           "average_confidence": 0.861,
           "daily_activity": [
@@ -9747,8 +9771,8 @@
             },
             {
               "date": "2026-08-16",
-              "detections": 49,
-              "species_count": 10
+              "detections": 53,
+              "species_count": 11
             }
           ],
           "hourly_activity": [
@@ -9834,8 +9858,8 @@
             },
             {
               "hour": 16,
-              "detections": 133,
-              "species_count": 6
+              "detections": 137,
+              "species_count": 9
             },
             {
               "hour": 17,
@@ -9883,9 +9907,9 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 43
+            "species_change": 44
           },
-          "new_species_count": 15,
+          "new_species_count": 16,
           "new_species": [
             {
               "common_name": "Ruddy Ground Dove",
@@ -9992,6 +10016,19 @@
               ]
             },
             {
+              "common_name": "White-crowned Parrot",
+              "scientific_name": "Pionus senilis",
+              "detections": 2,
+              "first_seen_date": "2026-08-16",
+              "average_confidence": 0.907,
+              "photo_url": "https://media.birdweather.com/species/1150/White-crownedParrot-standard-fba8664704e4670f70917d29327f1cab.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/1150/White-crownedParrot-standard-fba8664704e4670f70917d29327f1cab.jpg",
+                "https://media.birdweather.com/species/1150/White-crownedParrot-png200-10c1d695926bb0180cd3384503985495.png",
+                "https://media.birdweather.com/species/1150/White-crownedParrot-thumbnail-2e09ce5903724db35096c93f72eb7b4c.jpg"
+              ]
+            },
+            {
               "common_name": "Belted Kingfisher",
               "scientific_name": "Megaceryle alcyon",
               "detections": 1,
@@ -10028,19 +10065,6 @@
                 "https://media.birdweather.com/species/1045/Gray-breastedMartin-standard-22ee4101f9bfa256e56f9fd0e09b410c.jpg",
                 "https://media.birdweather.com/species/1045/Gray-breastedMartin-png200-8dfff29ab9ffdf1850128e693bc784f3.png",
                 "https://media.birdweather.com/species/1045/Gray-breastedMartin-thumbnail-f7cfca396a84e9778de9bd9ebbd5fc95.jpg"
-              ]
-            },
-            {
-              "common_name": "Green Heron",
-              "scientific_name": "Butorides virescens",
-              "detections": 1,
-              "first_seen_date": "2026-08-12",
-              "average_confidence": 0.905,
-              "photo_url": "https://media.birdweather.com/species/441/GreenHeron-standard-a6b39a5594bcdcc44c2b71461dab985b.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/441/GreenHeron-standard-a6b39a5594bcdcc44c2b71461dab985b.jpg",
-                "https://media.birdweather.com/species/441/GreenHeron-png200-61f59173496cb5e939e9e24941307c45.png",
-                "https://media.birdweather.com/species/441/GreenHeron-thumbnail-d63ca186d1799f75983a703e9a65b5a3.jpg"
               ]
             }
           ],
@@ -10088,17 +10112,17 @@
               "reason": "Lower aggregate confidence"
             },
             {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 4,
-              "average_confidence": 0.735,
-              "reason": "Lower aggregate confidence"
-            },
-            {
               "common_name": "Crimson-fronted Parakeet",
               "scientific_name": "Psittacara finschi",
               "detections": 1,
               "average_confidence": 0.738,
+              "reason": "Lower aggregate confidence"
+            },
+            {
+              "common_name": "Fork-tailed Flycatcher",
+              "scientific_name": "Tyrannus savana",
+              "detections": 2,
+              "average_confidence": 0.742,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -10554,7 +10578,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 69,
+              "detections": 70,
               "active_days": 5,
               "average_confidence": 0.906,
               "photo_url": "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
@@ -10630,7 +10654,7 @@
                 },
                 {
                   "hour": 16,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 17,
@@ -11484,7 +11508,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 69,
+              "detections": 70,
               "active_days": 5,
               "average_confidence": 0.906,
               "first_seen_date": "2026-05-30"
@@ -11572,9 +11596,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 4,
+              "detections": 5,
               "active_days": 3,
-              "average_confidence": 0.735,
+              "average_confidence": 0.753,
               "first_seen_date": "2026-06-02"
             },
             {
@@ -11632,6 +11656,14 @@
               "active_days": 1,
               "average_confidence": 0.982,
               "first_seen_date": "2026-05-29"
+            },
+            {
+              "common_name": "White-crowned Parrot",
+              "scientific_name": "Pionus senilis",
+              "detections": 2,
+              "active_days": 1,
+              "average_confidence": 0.907,
+              "first_seen_date": "2026-08-16"
             },
             {
               "common_name": "White-throated Thrush",
@@ -11799,8 +11831,8 @@
           "label": "Last 30 days",
           "start_date": "2026-07-18",
           "end_date": "2026-08-16",
-          "total_detections": 3974,
-          "species_count": 83,
+          "total_detections": 3978,
+          "species_count": 84,
           "active_days": 16,
           "average_confidence": 0.858,
           "daily_activity": [
@@ -11951,8 +11983,8 @@
             },
             {
               "date": "2026-08-16",
-              "detections": 49,
-              "species_count": 10
+              "detections": 53,
+              "species_count": 11
             }
           ],
           "hourly_activity": [
@@ -12038,8 +12070,8 @@
             },
             {
               "hour": 16,
-              "detections": 203,
-              "species_count": 22
+              "detections": 207,
+              "species_count": 25
             },
             {
               "hour": 17,
@@ -12087,9 +12119,9 @@
             "previous_detections": 8950,
             "detection_change_percent": -55.6,
             "previous_species_count": 81,
-            "species_change": 2
+            "species_change": 3
           },
-          "new_species_count": 26,
+          "new_species_count": 27,
           "new_species": [
             {
               "common_name": "Tropical Mockingbird",
@@ -12235,16 +12267,16 @@
               ]
             },
             {
-              "common_name": "Bare-crowned Antbird",
-              "scientific_name": "Gymnocichla nudiceps",
-              "detections": 1,
-              "first_seen_date": "2026-07-20",
-              "average_confidence": 0.801,
-              "photo_url": "https://media.birdweather.com/species/1910/Bare-crownedAntbird-standard-f22068042724f10ecbd95d8023b3da53.jpg",
+              "common_name": "White-crowned Parrot",
+              "scientific_name": "Pionus senilis",
+              "detections": 2,
+              "first_seen_date": "2026-08-16",
+              "average_confidence": 0.907,
+              "photo_url": "https://media.birdweather.com/species/1150/White-crownedParrot-standard-fba8664704e4670f70917d29327f1cab.jpg",
               "photo_urls": [
-                "https://media.birdweather.com/species/1910/Bare-crownedAntbird-standard-f22068042724f10ecbd95d8023b3da53.jpg",
-                "https://media.birdweather.com/species/1910/Bare-crownedAntbird-png200-431cdd6981e08433bfed9ee3fa523623.png",
-                "https://media.birdweather.com/species/1910/Bare-crownedAntbird-thumbnail-dc32db2e5a8c3d98f8033813d5bbb7dc.jpg"
+                "https://media.birdweather.com/species/1150/White-crownedParrot-standard-fba8664704e4670f70917d29327f1cab.jpg",
+                "https://media.birdweather.com/species/1150/White-crownedParrot-png200-10c1d695926bb0180cd3384503985495.png",
+                "https://media.birdweather.com/species/1150/White-crownedParrot-thumbnail-2e09ce5903724db35096c93f72eb7b4c.jpg"
               ]
             }
           ],
@@ -13430,7 +13462,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 83,
+              "detections": 84,
               "active_days": 9,
               "average_confidence": 0.897,
               "photo_url": "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
@@ -13506,7 +13538,7 @@
                 },
                 {
                   "hour": 16,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 17,
@@ -13537,7 +13569,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -51.7
+              "change_percent": -51.2
             },
             {
               "common_name": "Piratic Flycatcher",
@@ -13736,7 +13768,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 83,
+              "detections": 84,
               "active_days": 9,
               "average_confidence": 0.897,
               "first_seen_date": "2026-05-30"
@@ -13950,6 +13982,14 @@
               "first_seen_date": "2026-05-29"
             },
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 5,
+              "active_days": 3,
+              "average_confidence": 0.753,
+              "first_seen_date": "2026-06-02"
+            },
+            {
               "common_name": "Barn Swallow",
               "scientific_name": "Hirundo rustica",
               "detections": 4,
@@ -13972,14 +14012,6 @@
               "active_days": 4,
               "average_confidence": 0.749,
               "first_seen_date": "2026-06-23"
-            },
-            {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 4,
-              "active_days": 3,
-              "average_confidence": 0.735,
-              "first_seen_date": "2026-06-02"
             },
             {
               "common_name": "Band-backed Wren",
@@ -14084,6 +14116,14 @@
               "active_days": 1,
               "average_confidence": 0.891,
               "first_seen_date": "2026-05-29"
+            },
+            {
+              "common_name": "White-crowned Parrot",
+              "scientific_name": "Pionus senilis",
+              "detections": 2,
+              "active_days": 1,
+              "average_confidence": 0.907,
+              "first_seen_date": "2026-08-16"
             },
             {
               "common_name": "White-throated Thrush",
@@ -14323,8 +14363,8 @@
           "label": "All data",
           "start_date": "2025-12-03",
           "end_date": "2026-08-16",
-          "total_detections": 123730,
-          "species_count": 258,
+          "total_detections": 123734,
+          "species_count": 259,
           "active_days": 227,
           "average_confidence": 0.825,
           "daily_activity": [
@@ -15610,8 +15650,8 @@
             },
             {
               "date": "2026-08-16",
-              "detections": 49,
-              "species_count": 10
+              "detections": 53,
+              "species_count": 11
             }
           ],
           "hourly_activity": [
@@ -15697,8 +15737,8 @@
             },
             {
               "hour": 16,
-              "detections": 2057,
-              "species_count": 79
+              "detections": 2061,
+              "species_count": 81
             },
             {
               "hour": 17,
@@ -15748,7 +15788,7 @@
             "previous_species_count": null,
             "species_change": null
           },
-          "new_species_count": 258,
+          "new_species_count": 259,
           "new_species": [
             {
               "common_name": "European Robin",
@@ -17547,7 +17587,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 283,
+              "detections": 284,
               "active_days": 46,
               "average_confidence": 0.854,
               "first_seen_date": "2026-05-30"
@@ -18065,6 +18105,14 @@
               "first_seen_date": "2025-12-19"
             },
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 27,
+              "active_days": 15,
+              "average_confidence": 0.796,
+              "first_seen_date": "2026-06-02"
+            },
+            {
               "common_name": "Black Phoebe",
               "scientific_name": "Sayornis nigricans",
               "detections": 26,
@@ -18087,14 +18135,6 @@
               "active_days": 14,
               "average_confidence": 0.825,
               "first_seen_date": "2026-01-19"
-            },
-            {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 26,
-              "active_days": 15,
-              "average_confidence": 0.795,
-              "first_seen_date": "2026-06-02"
             },
             {
               "common_name": "Black-bellied Plover",
@@ -18943,6 +18983,14 @@
               "active_days": 2,
               "average_confidence": 0.862,
               "first_seen_date": "2026-07-10"
+            },
+            {
+              "common_name": "White-crowned Parrot",
+              "scientific_name": "Pionus senilis",
+              "detections": 2,
+              "active_days": 1,
+              "average_confidence": 0.907,
+              "first_seen_date": "2026-08-16"
             },
             {
               "common_name": "White-fronted Parrot",
@@ -19928,8 +19976,8 @@
           "label": "Last 7 days",
           "start_date": "2026-08-12",
           "end_date": "2026-08-16",
-          "total_detections": 1616,
-          "species_count": 43,
+          "total_detections": 1620,
+          "species_count": 44,
           "active_days": 5,
           "average_confidence": 0.861,
           "daily_activity": [
@@ -19955,8 +20003,8 @@
             },
             {
               "date": "2026-08-16",
-              "detections": 49,
-              "species_count": 10
+              "detections": 53,
+              "species_count": 11
             }
           ],
           "hourly_activity": [
@@ -20042,8 +20090,8 @@
             },
             {
               "hour": 16,
-              "detections": 133,
-              "species_count": 6
+              "detections": 137,
+              "species_count": 9
             },
             {
               "hour": 17,
@@ -20091,9 +20139,9 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 43
+            "species_change": 44
           },
-          "new_species_count": 43,
+          "new_species_count": 44,
           "new_species": [
             {
               "common_name": "White-winged Dove",
@@ -20150,7 +20198,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 69,
+              "detections": 70,
               "first_seen_date": "2026-08-12",
               "average_confidence": 0.906,
               "photo_url": "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
@@ -20296,17 +20344,17 @@
               "reason": "Lower aggregate confidence"
             },
             {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 4,
-              "average_confidence": 0.735,
-              "reason": "Lower aggregate confidence"
-            },
-            {
               "common_name": "Crimson-fronted Parakeet",
               "scientific_name": "Psittacara finschi",
               "detections": 1,
               "average_confidence": 0.738,
+              "reason": "Lower aggregate confidence"
+            },
+            {
+              "common_name": "Fork-tailed Flycatcher",
+              "scientific_name": "Tyrannus savana",
+              "detections": 2,
+              "average_confidence": 0.742,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -20762,7 +20810,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 69,
+              "detections": 70,
               "active_days": 5,
               "average_confidence": 0.906,
               "photo_url": "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
@@ -20838,7 +20886,7 @@
                 },
                 {
                   "hour": 16,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 17,
@@ -21692,7 +21740,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 69,
+              "detections": 70,
               "active_days": 5,
               "average_confidence": 0.906,
               "first_seen_date": "2026-08-12"
@@ -21780,9 +21828,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 4,
+              "detections": 5,
               "active_days": 3,
-              "average_confidence": 0.735,
+              "average_confidence": 0.753,
               "first_seen_date": "2026-08-13"
             },
             {
@@ -21840,6 +21888,14 @@
               "active_days": 1,
               "average_confidence": 0.982,
               "first_seen_date": "2026-08-14"
+            },
+            {
+              "common_name": "White-crowned Parrot",
+              "scientific_name": "Pionus senilis",
+              "detections": 2,
+              "active_days": 1,
+              "average_confidence": 0.907,
+              "first_seen_date": "2026-08-16"
             },
             {
               "common_name": "White-throated Thrush",
@@ -22007,8 +22063,8 @@
           "label": "Last 30 days",
           "start_date": "2026-08-12",
           "end_date": "2026-08-16",
-          "total_detections": 1616,
-          "species_count": 43,
+          "total_detections": 1620,
+          "species_count": 44,
           "active_days": 5,
           "average_confidence": 0.861,
           "daily_activity": [
@@ -22034,8 +22090,8 @@
             },
             {
               "date": "2026-08-16",
-              "detections": 49,
-              "species_count": 10
+              "detections": 53,
+              "species_count": 11
             }
           ],
           "hourly_activity": [
@@ -22121,8 +22177,8 @@
             },
             {
               "hour": 16,
-              "detections": 133,
-              "species_count": 6
+              "detections": 137,
+              "species_count": 9
             },
             {
               "hour": 17,
@@ -22170,9 +22226,9 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 43
+            "species_change": 44
           },
-          "new_species_count": 43,
+          "new_species_count": 44,
           "new_species": [
             {
               "common_name": "White-winged Dove",
@@ -22229,7 +22285,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 69,
+              "detections": 70,
               "first_seen_date": "2026-08-12",
               "average_confidence": 0.906,
               "photo_url": "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
@@ -22375,17 +22431,17 @@
               "reason": "Lower aggregate confidence"
             },
             {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 4,
-              "average_confidence": 0.735,
-              "reason": "Lower aggregate confidence"
-            },
-            {
               "common_name": "Crimson-fronted Parakeet",
               "scientific_name": "Psittacara finschi",
               "detections": 1,
               "average_confidence": 0.738,
+              "reason": "Lower aggregate confidence"
+            },
+            {
+              "common_name": "Fork-tailed Flycatcher",
+              "scientific_name": "Tyrannus savana",
+              "detections": 2,
+              "average_confidence": 0.742,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -22841,7 +22897,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 69,
+              "detections": 70,
               "active_days": 5,
               "average_confidence": 0.906,
               "photo_url": "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
@@ -22917,7 +22973,7 @@
                 },
                 {
                   "hour": 16,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 17,
@@ -23771,7 +23827,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 69,
+              "detections": 70,
               "active_days": 5,
               "average_confidence": 0.906,
               "first_seen_date": "2026-08-12"
@@ -23859,9 +23915,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 4,
+              "detections": 5,
               "active_days": 3,
-              "average_confidence": 0.735,
+              "average_confidence": 0.753,
               "first_seen_date": "2026-08-13"
             },
             {
@@ -23919,6 +23975,14 @@
               "active_days": 1,
               "average_confidence": 0.982,
               "first_seen_date": "2026-08-14"
+            },
+            {
+              "common_name": "White-crowned Parrot",
+              "scientific_name": "Pionus senilis",
+              "detections": 2,
+              "active_days": 1,
+              "average_confidence": 0.907,
+              "first_seen_date": "2026-08-16"
             },
             {
               "common_name": "White-throated Thrush",
@@ -24086,8 +24150,8 @@
           "label": "All data",
           "start_date": "2026-08-12",
           "end_date": "2026-08-16",
-          "total_detections": 1616,
-          "species_count": 43,
+          "total_detections": 1620,
+          "species_count": 44,
           "active_days": 5,
           "average_confidence": 0.861,
           "daily_activity": [
@@ -24113,8 +24177,8 @@
             },
             {
               "date": "2026-08-16",
-              "detections": 49,
-              "species_count": 10
+              "detections": 53,
+              "species_count": 11
             }
           ],
           "hourly_activity": [
@@ -24200,8 +24264,8 @@
             },
             {
               "hour": 16,
-              "detections": 133,
-              "species_count": 6
+              "detections": 137,
+              "species_count": 9
             },
             {
               "hour": 17,
@@ -24251,7 +24315,7 @@
             "previous_species_count": null,
             "species_change": null
           },
-          "new_species_count": 43,
+          "new_species_count": 44,
           "new_species": [
             {
               "common_name": "White-winged Dove",
@@ -24308,7 +24372,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 69,
+              "detections": 70,
               "first_seen_date": "2026-08-12",
               "average_confidence": 0.906,
               "photo_url": "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
@@ -24454,17 +24518,17 @@
               "reason": "Lower aggregate confidence"
             },
             {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 4,
-              "average_confidence": 0.735,
-              "reason": "Lower aggregate confidence"
-            },
-            {
               "common_name": "Crimson-fronted Parakeet",
               "scientific_name": "Psittacara finschi",
               "detections": 1,
               "average_confidence": 0.738,
+              "reason": "Lower aggregate confidence"
+            },
+            {
+              "common_name": "Fork-tailed Flycatcher",
+              "scientific_name": "Tyrannus savana",
+              "detections": 2,
+              "average_confidence": 0.742,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -24920,7 +24984,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 69,
+              "detections": 70,
               "active_days": 5,
               "average_confidence": 0.906,
               "photo_url": "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
@@ -24996,7 +25060,7 @@
                 },
                 {
                   "hour": 16,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 17,
@@ -25850,7 +25914,7 @@
             {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
-              "detections": 69,
+              "detections": 70,
               "active_days": 5,
               "average_confidence": 0.906,
               "first_seen_date": "2026-08-12"
@@ -25938,9 +26002,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 4,
+              "detections": 5,
               "active_days": 3,
-              "average_confidence": 0.735,
+              "average_confidence": 0.753,
               "first_seen_date": "2026-08-13"
             },
             {
@@ -25998,6 +26062,14 @@
               "active_days": 1,
               "average_confidence": 0.982,
               "first_seen_date": "2026-08-14"
+            },
+            {
+              "common_name": "White-crowned Parrot",
+              "scientific_name": "Pionus senilis",
+              "detections": 2,
+              "active_days": 1,
+              "average_confidence": 0.907,
+              "first_seen_date": "2026-08-16"
             },
             {
               "common_name": "White-throated Thrush",
