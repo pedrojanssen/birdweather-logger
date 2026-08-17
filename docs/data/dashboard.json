@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "generated_date": "2026-08-17",
-  "generated_hour": 11,
+  "generated_hour": 12,
   "timezone": "America/Costa_Rica",
   "latest_observation_date": "2026-08-17",
   "default_period": "7d",
@@ -29,10 +29,10 @@
       "label": "Last 7 days",
       "start_date": "2026-08-11",
       "end_date": "2026-08-17",
-      "total_detections": 1766,
-      "species_count": 47,
+      "total_detections": 1803,
+      "species_count": 48,
       "active_days": 6,
-      "average_confidence": 0.861,
+      "average_confidence": 0.86,
       "daily_activity": [
         {
           "date": "2026-08-11",
@@ -66,8 +66,8 @@
         },
         {
           "date": "2026-08-17",
-          "detections": 145,
-          "species_count": 13
+          "detections": 182,
+          "species_count": 15
         }
       ],
       "hourly_activity": [
@@ -128,13 +128,13 @@
         },
         {
           "hour": 11,
-          "detections": 27,
-          "species_count": 6
+          "detections": 35,
+          "species_count": 7
         },
         {
           "hour": 12,
-          "detections": 48,
-          "species_count": 9
+          "detections": 77,
+          "species_count": 11
         },
         {
           "hour": 13,
@@ -202,7 +202,7 @@
         "previous_detections": 0,
         "detection_change_percent": null,
         "previous_species_count": 0,
-        "species_change": 47
+        "species_change": 48
       },
       "new_species_count": 17,
       "new_species": [
@@ -379,6 +379,13 @@
           "reason": "Lower aggregate confidence"
         },
         {
+          "common_name": "Rufous-collared Sparrow",
+          "scientific_name": "Zonotrichia capensis",
+          "detections": 1,
+          "average_confidence": 0.709,
+          "reason": "Lower aggregate confidence"
+        },
+        {
           "common_name": "Belted Kingfisher",
           "scientific_name": "Megaceryle alcyon",
           "detections": 1,
@@ -411,13 +418,6 @@
           "scientific_name": "Nycticorax nycticorax",
           "detections": 1,
           "average_confidence": 0.733,
-          "reason": "Lower aggregate confidence"
-        },
-        {
-          "common_name": "Crimson-fronted Parakeet",
-          "scientific_name": "Psittacara finschi",
-          "detections": 1,
-          "average_confidence": 0.738,
           "reason": "Lower aggregate confidence"
         }
       ],
@@ -871,6 +871,118 @@
           "change_percent": null
         },
         {
+          "common_name": "Social Flycatcher",
+          "scientific_name": "Myiozetetes similis",
+          "detections": 83,
+          "active_days": 5,
+          "average_confidence": 0.859,
+          "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+          "photo_urls": [
+            "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+            "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
+            "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
+          ],
+          "hourly_activity": [
+            {
+              "hour": 0,
+              "detections": 0
+            },
+            {
+              "hour": 1,
+              "detections": 0
+            },
+            {
+              "hour": 2,
+              "detections": 0
+            },
+            {
+              "hour": 3,
+              "detections": 0
+            },
+            {
+              "hour": 4,
+              "detections": 0
+            },
+            {
+              "hour": 5,
+              "detections": 6
+            },
+            {
+              "hour": 6,
+              "detections": 12
+            },
+            {
+              "hour": 7,
+              "detections": 14
+            },
+            {
+              "hour": 8,
+              "detections": 0
+            },
+            {
+              "hour": 9,
+              "detections": 2
+            },
+            {
+              "hour": 10,
+              "detections": 2
+            },
+            {
+              "hour": 11,
+              "detections": 14
+            },
+            {
+              "hour": 12,
+              "detections": 28
+            },
+            {
+              "hour": 13,
+              "detections": 0
+            },
+            {
+              "hour": 14,
+              "detections": 3
+            },
+            {
+              "hour": 15,
+              "detections": 0
+            },
+            {
+              "hour": 16,
+              "detections": 0
+            },
+            {
+              "hour": 17,
+              "detections": 2
+            },
+            {
+              "hour": 18,
+              "detections": 0
+            },
+            {
+              "hour": 19,
+              "detections": 0
+            },
+            {
+              "hour": 20,
+              "detections": 0
+            },
+            {
+              "hour": 21,
+              "detections": 0
+            },
+            {
+              "hour": 22,
+              "detections": 0
+            },
+            {
+              "hour": 23,
+              "detections": 0
+            }
+          ],
+          "change_percent": null
+        },
+        {
           "common_name": "Orange-chinned Parakeet",
           "scientific_name": "Brotogeris jugularis",
           "detections": 70,
@@ -954,118 +1066,6 @@
             {
               "hour": 17,
               "detections": 0
-            },
-            {
-              "hour": 18,
-              "detections": 0
-            },
-            {
-              "hour": 19,
-              "detections": 0
-            },
-            {
-              "hour": 20,
-              "detections": 0
-            },
-            {
-              "hour": 21,
-              "detections": 0
-            },
-            {
-              "hour": 22,
-              "detections": 0
-            },
-            {
-              "hour": 23,
-              "detections": 0
-            }
-          ],
-          "change_percent": null
-        },
-        {
-          "common_name": "Social Flycatcher",
-          "scientific_name": "Myiozetetes similis",
-          "detections": 50,
-          "active_days": 5,
-          "average_confidence": 0.866,
-          "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-          "photo_urls": [
-            "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-            "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
-            "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
-          ],
-          "hourly_activity": [
-            {
-              "hour": 0,
-              "detections": 0
-            },
-            {
-              "hour": 1,
-              "detections": 0
-            },
-            {
-              "hour": 2,
-              "detections": 0
-            },
-            {
-              "hour": 3,
-              "detections": 0
-            },
-            {
-              "hour": 4,
-              "detections": 0
-            },
-            {
-              "hour": 5,
-              "detections": 6
-            },
-            {
-              "hour": 6,
-              "detections": 12
-            },
-            {
-              "hour": 7,
-              "detections": 14
-            },
-            {
-              "hour": 8,
-              "detections": 0
-            },
-            {
-              "hour": 9,
-              "detections": 2
-            },
-            {
-              "hour": 10,
-              "detections": 2
-            },
-            {
-              "hour": 11,
-              "detections": 7
-            },
-            {
-              "hour": 12,
-              "detections": 2
-            },
-            {
-              "hour": 13,
-              "detections": 0
-            },
-            {
-              "hour": 14,
-              "detections": 3
-            },
-            {
-              "hour": 15,
-              "detections": 0
-            },
-            {
-              "hour": 16,
-              "detections": 0
-            },
-            {
-              "hour": 17,
-              "detections": 2
             },
             {
               "hour": 18,
@@ -1801,20 +1801,20 @@
           "first_seen_date": "2026-08-12"
         },
         {
+          "common_name": "Social Flycatcher",
+          "scientific_name": "Myiozetetes similis",
+          "detections": 83,
+          "active_days": 5,
+          "average_confidence": 0.859,
+          "first_seen_date": "2026-05-28"
+        },
+        {
           "common_name": "Orange-chinned Parakeet",
           "scientific_name": "Brotogeris jugularis",
           "detections": 70,
           "active_days": 5,
           "average_confidence": 0.906,
           "first_seen_date": "2026-05-30"
-        },
-        {
-          "common_name": "Social Flycatcher",
-          "scientific_name": "Myiozetetes similis",
-          "detections": 50,
-          "active_days": 5,
-          "average_confidence": 0.866,
-          "first_seen_date": "2026-05-28"
         },
         {
           "common_name": "Cinnamon-bellied Saltator",
@@ -1891,9 +1891,9 @@
         {
           "common_name": "Rufous-tailed Hummingbird",
           "scientific_name": "Amazilia tzacatl",
-          "detections": 7,
+          "detections": 8,
           "active_days": 4,
-          "average_confidence": 0.809,
+          "average_confidence": 0.826,
           "first_seen_date": "2026-06-02"
         },
         {
@@ -1911,6 +1911,14 @@
           "active_days": 2,
           "average_confidence": 0.895,
           "first_seen_date": "2025-12-11"
+        },
+        {
+          "common_name": "Crimson-fronted Parakeet",
+          "scientific_name": "Psittacara finschi",
+          "detections": 3,
+          "active_days": 2,
+          "average_confidence": 0.796,
+          "first_seen_date": "2026-05-29"
         },
         {
           "common_name": "Olive-throated Parakeet",
@@ -2033,14 +2041,6 @@
           "first_seen_date": "2026-08-15"
         },
         {
-          "common_name": "Crimson-fronted Parakeet",
-          "scientific_name": "Psittacara finschi",
-          "detections": 1,
-          "active_days": 1,
-          "average_confidence": 0.738,
-          "first_seen_date": "2026-05-29"
-        },
-        {
           "common_name": "Gray-breasted Martin",
           "scientific_name": "Progne chalybea",
           "detections": 1,
@@ -2121,6 +2121,14 @@
           "first_seen_date": "2026-07-28"
         },
         {
+          "common_name": "Rufous-collared Sparrow",
+          "scientific_name": "Zonotrichia capensis",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.709,
+          "first_seen_date": "2026-05-30"
+        },
+        {
           "common_name": "White-throated Magpie-Jay",
           "scientific_name": "Calocitta formosa",
           "detections": 1,
@@ -2150,8 +2158,8 @@
       "label": "Last 30 days",
       "start_date": "2026-07-19",
       "end_date": "2026-08-17",
-      "total_detections": 3708,
-      "species_count": 84,
+      "total_detections": 3745,
+      "species_count": 85,
       "active_days": 16,
       "average_confidence": 0.857,
       "daily_activity": [
@@ -2302,8 +2310,8 @@
         },
         {
           "date": "2026-08-17",
-          "detections": 145,
-          "species_count": 13
+          "detections": 182,
+          "species_count": 15
         }
       ],
       "hourly_activity": [
@@ -2364,13 +2372,13 @@
         },
         {
           "hour": 11,
-          "detections": 127,
-          "species_count": 16
+          "detections": 135,
+          "species_count": 17
         },
         {
           "hour": 12,
-          "detections": 271,
-          "species_count": 23
+          "detections": 300,
+          "species_count": 25
         },
         {
           "hour": 13,
@@ -2436,9 +2444,9 @@
         "previous_start_date": "2026-06-19",
         "previous_end_date": "2026-07-18",
         "previous_detections": 9085,
-        "detection_change_percent": -59.2,
+        "detection_change_percent": -58.8,
         "previous_species_count": 82,
-        "species_change": 2
+        "species_change": 3
       },
       "new_species_count": 27,
       "new_species": [
@@ -2622,6 +2630,13 @@
           "reason": "Lower aggregate confidence"
         },
         {
+          "common_name": "Rufous-collared Sparrow",
+          "scientific_name": "Zonotrichia capensis",
+          "detections": 1,
+          "average_confidence": 0.709,
+          "reason": "Lower aggregate confidence"
+        },
+        {
           "common_name": "Belted Kingfisher",
           "scientific_name": "Megaceryle alcyon",
           "detections": 1,
@@ -2647,13 +2662,6 @@
           "scientific_name": "Eupsittula nana",
           "detections": 3,
           "average_confidence": 0.731,
-          "reason": "Lower aggregate confidence"
-        },
-        {
-          "common_name": "Black-crowned Night-Heron",
-          "scientific_name": "Nycticorax nycticorax",
-          "detections": 1,
-          "average_confidence": 0.733,
           "reason": "Lower aggregate confidence"
         }
       ],
@@ -2885,9 +2893,9 @@
         {
           "common_name": "Social Flycatcher",
           "scientific_name": "Myiozetetes similis",
-          "detections": 415,
+          "detections": 448,
           "active_days": 15,
-          "average_confidence": 0.87,
+          "average_confidence": 0.868,
           "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
@@ -2941,11 +2949,11 @@
             },
             {
               "hour": 11,
-              "detections": 30
+              "detections": 37
             },
             {
               "hour": 12,
-              "detections": 48
+              "detections": 74
             },
             {
               "hour": 13,
@@ -2992,7 +3000,7 @@
               "detections": 0
             }
           ],
-          "change_percent": -60.7
+          "change_percent": -57.6
         },
         {
           "common_name": "Blue-gray Tanager",
@@ -4023,9 +4031,9 @@
         {
           "common_name": "Social Flycatcher",
           "scientific_name": "Myiozetetes similis",
-          "detections": 415,
+          "detections": 448,
           "active_days": 15,
-          "average_confidence": 0.87,
+          "average_confidence": 0.868,
           "first_seen_date": "2026-05-28"
         },
         {
@@ -4157,20 +4165,20 @@
           "first_seen_date": "2026-08-13"
         },
         {
+          "common_name": "Crimson-fronted Parakeet",
+          "scientific_name": "Psittacara finschi",
+          "detections": 22,
+          "active_days": 10,
+          "average_confidence": 0.792,
+          "first_seen_date": "2026-05-29"
+        },
+        {
           "common_name": "Piratic Flycatcher",
           "scientific_name": "Legatus leucophaius",
           "detections": 22,
           "active_days": 1,
           "average_confidence": 0.902,
           "first_seen_date": "2026-05-28"
-        },
-        {
-          "common_name": "Crimson-fronted Parakeet",
-          "scientific_name": "Psittacara finschi",
-          "detections": 20,
-          "active_days": 9,
-          "average_confidence": 0.789,
-          "first_seen_date": "2026-05-29"
         },
         {
           "common_name": "Inca Dove",
@@ -4237,20 +4245,20 @@
           "first_seen_date": "2026-07-12"
         },
         {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 8,
+          "active_days": 4,
+          "average_confidence": 0.826,
+          "first_seen_date": "2026-06-02"
+        },
+        {
           "common_name": "Eastern Kingbird",
           "scientific_name": "Tyrannus tyrannus",
           "detections": 7,
           "active_days": 4,
           "average_confidence": 0.758,
           "first_seen_date": "2026-06-05"
-        },
-        {
-          "common_name": "Rufous-tailed Hummingbird",
-          "scientific_name": "Amazilia tzacatl",
-          "detections": 7,
-          "active_days": 4,
-          "average_confidence": 0.809,
-          "first_seen_date": "2026-06-02"
         },
         {
           "common_name": "Barn Owl",
@@ -4621,6 +4629,14 @@
           "first_seen_date": "2026-07-26"
         },
         {
+          "common_name": "Rufous-collared Sparrow",
+          "scientific_name": "Zonotrichia capensis",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.709,
+          "first_seen_date": "2026-05-30"
+        },
+        {
           "common_name": "Scrub Euphonia",
           "scientific_name": "Euphonia affinis",
           "detections": 1,
@@ -4682,7 +4698,7 @@
       "label": "All data",
       "start_date": "2025-12-03",
       "end_date": "2026-08-17",
-      "total_detections": 123880,
+      "total_detections": 123917,
       "species_count": 260,
       "active_days": 228,
       "average_confidence": 0.825,
@@ -5974,8 +5990,8 @@
         },
         {
           "date": "2026-08-17",
-          "detections": 145,
-          "species_count": 13
+          "detections": 182,
+          "species_count": 15
         }
       ],
       "hourly_activity": [
@@ -6036,13 +6052,13 @@
         },
         {
           "hour": 11,
-          "detections": 3938,
-          "species_count": 118
+          "detections": 3946,
+          "species_count": 119
         },
         {
           "hour": 12,
-          "detections": 2789,
-          "species_count": 105
+          "detections": 2818,
+          "species_count": 106
         },
         {
           "hour": 13,
@@ -6234,7 +6250,7 @@
         {
           "common_name": "Social Flycatcher",
           "scientific_name": "Myiozetetes similis",
-          "detections": 1952,
+          "detections": 1985,
           "first_seen_date": "2026-05-28",
           "average_confidence": 0.847,
           "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
@@ -7341,7 +7357,7 @@
         {
           "common_name": "Social Flycatcher",
           "scientific_name": "Myiozetetes similis",
-          "detections": 1952,
+          "detections": 1985,
           "active_days": 67,
           "average_confidence": 0.847,
           "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
@@ -7397,11 +7413,11 @@
             },
             {
               "hour": 11,
-              "detections": 94
+              "detections": 101
             },
             {
               "hour": 12,
-              "detections": 116
+              "detections": 142
             },
             {
               "hour": 13,
@@ -7751,7 +7767,7 @@
         {
           "common_name": "Social Flycatcher",
           "scientific_name": "Myiozetetes similis",
-          "detections": 1952,
+          "detections": 1985,
           "active_days": 67,
           "average_confidence": 0.847,
           "first_seen_date": "2026-05-28"
@@ -8013,20 +8029,20 @@
           "first_seen_date": "2026-01-15"
         },
         {
+          "common_name": "Crimson-fronted Parakeet",
+          "scientific_name": "Psittacara finschi",
+          "detections": 183,
+          "active_days": 55,
+          "average_confidence": 0.799,
+          "first_seen_date": "2026-05-29"
+        },
+        {
           "common_name": "Osprey",
           "scientific_name": "Pandion haliaetus",
           "detections": 183,
           "active_days": 21,
           "average_confidence": 0.838,
           "first_seen_date": "2026-03-10"
-        },
-        {
-          "common_name": "Crimson-fronted Parakeet",
-          "scientific_name": "Psittacara finschi",
-          "detections": 181,
-          "active_days": 54,
-          "average_confidence": 0.799,
-          "first_seen_date": "2026-05-29"
         },
         {
           "common_name": "Coal Tit",
@@ -8405,20 +8421,20 @@
           "first_seen_date": "2025-12-12"
         },
         {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 30,
+          "active_days": 16,
+          "average_confidence": 0.811,
+          "first_seen_date": "2026-06-02"
+        },
+        {
           "common_name": "Black-crowned Night-Heron",
           "scientific_name": "Nycticorax nycticorax",
           "detections": 29,
           "active_days": 18,
           "average_confidence": 0.857,
           "first_seen_date": "2026-05-01"
-        },
-        {
-          "common_name": "Rufous-tailed Hummingbird",
-          "scientific_name": "Amazilia tzacatl",
-          "detections": 29,
-          "active_days": 16,
-          "average_confidence": 0.806,
-          "first_seen_date": "2026-06-02"
         },
         {
           "common_name": "Common Ringed Plover",
@@ -8805,6 +8821,14 @@
           "first_seen_date": "2026-07-02"
         },
         {
+          "common_name": "Rufous-collared Sparrow",
+          "scientific_name": "Zonotrichia capensis",
+          "detections": 8,
+          "active_days": 4,
+          "average_confidence": 0.75,
+          "first_seen_date": "2026-05-30"
+        },
+        {
           "common_name": "Tropical Screech-Owl",
           "scientific_name": "Megascops choliba",
           "detections": 8,
@@ -8827,14 +8851,6 @@
           "active_days": 5,
           "average_confidence": 0.764,
           "first_seen_date": "2026-05-29"
-        },
-        {
-          "common_name": "Rufous-collared Sparrow",
-          "scientific_name": "Zonotrichia capensis",
-          "detections": 7,
-          "active_days": 3,
-          "average_confidence": 0.756,
-          "first_seen_date": "2026-05-30"
         },
         {
           "common_name": "Black-capped Pygmy-Tyrant",
@@ -9771,10 +9787,10 @@
           "label": "Last 7 days",
           "start_date": "2026-08-11",
           "end_date": "2026-08-17",
-          "total_detections": 1766,
-          "species_count": 47,
+          "total_detections": 1803,
+          "species_count": 48,
           "active_days": 6,
-          "average_confidence": 0.861,
+          "average_confidence": 0.86,
           "daily_activity": [
             {
               "date": "2026-08-11",
@@ -9808,8 +9824,8 @@
             },
             {
               "date": "2026-08-17",
-              "detections": 145,
-              "species_count": 13
+              "detections": 182,
+              "species_count": 15
             }
           ],
           "hourly_activity": [
@@ -9870,13 +9886,13 @@
             },
             {
               "hour": 11,
-              "detections": 27,
-              "species_count": 6
+              "detections": 35,
+              "species_count": 7
             },
             {
               "hour": 12,
-              "detections": 48,
-              "species_count": 9
+              "detections": 77,
+              "species_count": 11
             },
             {
               "hour": 13,
@@ -9944,7 +9960,7 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 47
+            "species_change": 48
           },
           "new_species_count": 17,
           "new_species": [
@@ -10121,6 +10137,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "average_confidence": 0.709,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Belted Kingfisher",
               "scientific_name": "Megaceryle alcyon",
               "detections": 1,
@@ -10153,13 +10176,6 @@
               "scientific_name": "Nycticorax nycticorax",
               "detections": 1,
               "average_confidence": 0.733,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Crimson-fronted Parakeet",
-              "scientific_name": "Psittacara finschi",
-              "detections": 1,
-              "average_confidence": 0.738,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -10613,6 +10629,118 @@
               "change_percent": null
             },
             {
+              "common_name": "Social Flycatcher",
+              "scientific_name": "Myiozetetes similis",
+              "detections": 83,
+              "active_days": 5,
+              "average_confidence": 0.859,
+              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 6
+                },
+                {
+                  "hour": 6,
+                  "detections": 12
+                },
+                {
+                  "hour": 7,
+                  "detections": 14
+                },
+                {
+                  "hour": 8,
+                  "detections": 0
+                },
+                {
+                  "hour": 9,
+                  "detections": 2
+                },
+                {
+                  "hour": 10,
+                  "detections": 2
+                },
+                {
+                  "hour": 11,
+                  "detections": 14
+                },
+                {
+                  "hour": 12,
+                  "detections": 28
+                },
+                {
+                  "hour": 13,
+                  "detections": 0
+                },
+                {
+                  "hour": 14,
+                  "detections": 3
+                },
+                {
+                  "hour": 15,
+                  "detections": 0
+                },
+                {
+                  "hour": 16,
+                  "detections": 0
+                },
+                {
+                  "hour": 17,
+                  "detections": 2
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": null
+            },
+            {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
               "detections": 70,
@@ -10696,118 +10824,6 @@
                 {
                   "hour": 17,
                   "detections": 0
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": null
-            },
-            {
-              "common_name": "Social Flycatcher",
-              "scientific_name": "Myiozetetes similis",
-              "detections": 50,
-              "active_days": 5,
-              "average_confidence": 0.866,
-              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 6
-                },
-                {
-                  "hour": 6,
-                  "detections": 12
-                },
-                {
-                  "hour": 7,
-                  "detections": 14
-                },
-                {
-                  "hour": 8,
-                  "detections": 0
-                },
-                {
-                  "hour": 9,
-                  "detections": 2
-                },
-                {
-                  "hour": 10,
-                  "detections": 2
-                },
-                {
-                  "hour": 11,
-                  "detections": 7
-                },
-                {
-                  "hour": 12,
-                  "detections": 2
-                },
-                {
-                  "hour": 13,
-                  "detections": 0
-                },
-                {
-                  "hour": 14,
-                  "detections": 3
-                },
-                {
-                  "hour": 15,
-                  "detections": 0
-                },
-                {
-                  "hour": 16,
-                  "detections": 0
-                },
-                {
-                  "hour": 17,
-                  "detections": 2
                 },
                 {
                   "hour": 18,
@@ -11543,20 +11559,20 @@
               "first_seen_date": "2026-08-12"
             },
             {
+              "common_name": "Social Flycatcher",
+              "scientific_name": "Myiozetetes similis",
+              "detections": 83,
+              "active_days": 5,
+              "average_confidence": 0.859,
+              "first_seen_date": "2026-05-28"
+            },
+            {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
               "detections": 70,
               "active_days": 5,
               "average_confidence": 0.906,
               "first_seen_date": "2026-05-30"
-            },
-            {
-              "common_name": "Social Flycatcher",
-              "scientific_name": "Myiozetetes similis",
-              "detections": 50,
-              "active_days": 5,
-              "average_confidence": 0.866,
-              "first_seen_date": "2026-05-28"
             },
             {
               "common_name": "Cinnamon-bellied Saltator",
@@ -11633,9 +11649,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 7,
+              "detections": 8,
               "active_days": 4,
-              "average_confidence": 0.809,
+              "average_confidence": 0.826,
               "first_seen_date": "2026-06-02"
             },
             {
@@ -11653,6 +11669,14 @@
               "active_days": 2,
               "average_confidence": 0.895,
               "first_seen_date": "2025-12-11"
+            },
+            {
+              "common_name": "Crimson-fronted Parakeet",
+              "scientific_name": "Psittacara finschi",
+              "detections": 3,
+              "active_days": 2,
+              "average_confidence": 0.796,
+              "first_seen_date": "2026-05-29"
             },
             {
               "common_name": "Olive-throated Parakeet",
@@ -11775,14 +11799,6 @@
               "first_seen_date": "2026-08-15"
             },
             {
-              "common_name": "Crimson-fronted Parakeet",
-              "scientific_name": "Psittacara finschi",
-              "detections": 1,
-              "active_days": 1,
-              "average_confidence": 0.738,
-              "first_seen_date": "2026-05-29"
-            },
-            {
               "common_name": "Gray-breasted Martin",
               "scientific_name": "Progne chalybea",
               "detections": 1,
@@ -11863,6 +11879,14 @@
               "first_seen_date": "2026-07-28"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.709,
+              "first_seen_date": "2026-05-30"
+            },
+            {
               "common_name": "White-throated Magpie-Jay",
               "scientific_name": "Calocitta formosa",
               "detections": 1,
@@ -11892,8 +11916,8 @@
           "label": "Last 30 days",
           "start_date": "2026-07-19",
           "end_date": "2026-08-17",
-          "total_detections": 3708,
-          "species_count": 84,
+          "total_detections": 3745,
+          "species_count": 85,
           "active_days": 16,
           "average_confidence": 0.857,
           "daily_activity": [
@@ -12044,8 +12068,8 @@
             },
             {
               "date": "2026-08-17",
-              "detections": 145,
-              "species_count": 13
+              "detections": 182,
+              "species_count": 15
             }
           ],
           "hourly_activity": [
@@ -12106,13 +12130,13 @@
             },
             {
               "hour": 11,
-              "detections": 127,
-              "species_count": 16
+              "detections": 135,
+              "species_count": 17
             },
             {
               "hour": 12,
-              "detections": 271,
-              "species_count": 23
+              "detections": 300,
+              "species_count": 25
             },
             {
               "hour": 13,
@@ -12178,9 +12202,9 @@
             "previous_start_date": "2026-06-19",
             "previous_end_date": "2026-07-18",
             "previous_detections": 9085,
-            "detection_change_percent": -59.2,
+            "detection_change_percent": -58.8,
             "previous_species_count": 82,
-            "species_change": 2
+            "species_change": 3
           },
           "new_species_count": 27,
           "new_species": [
@@ -12364,6 +12388,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "average_confidence": 0.709,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Belted Kingfisher",
               "scientific_name": "Megaceryle alcyon",
               "detections": 1,
@@ -12389,13 +12420,6 @@
               "scientific_name": "Eupsittula nana",
               "detections": 3,
               "average_confidence": 0.731,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Black-crowned Night-Heron",
-              "scientific_name": "Nycticorax nycticorax",
-              "detections": 1,
-              "average_confidence": 0.733,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -12627,9 +12651,9 @@
             {
               "common_name": "Social Flycatcher",
               "scientific_name": "Myiozetetes similis",
-              "detections": 415,
+              "detections": 448,
               "active_days": 15,
-              "average_confidence": 0.87,
+              "average_confidence": 0.868,
               "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
@@ -12683,11 +12707,11 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 30
+                  "detections": 37
                 },
                 {
                   "hour": 12,
-                  "detections": 48
+                  "detections": 74
                 },
                 {
                   "hour": 13,
@@ -12734,7 +12758,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -60.7
+              "change_percent": -57.6
             },
             {
               "common_name": "Blue-gray Tanager",
@@ -13765,9 +13789,9 @@
             {
               "common_name": "Social Flycatcher",
               "scientific_name": "Myiozetetes similis",
-              "detections": 415,
+              "detections": 448,
               "active_days": 15,
-              "average_confidence": 0.87,
+              "average_confidence": 0.868,
               "first_seen_date": "2026-05-28"
             },
             {
@@ -13899,20 +13923,20 @@
               "first_seen_date": "2026-08-13"
             },
             {
+              "common_name": "Crimson-fronted Parakeet",
+              "scientific_name": "Psittacara finschi",
+              "detections": 22,
+              "active_days": 10,
+              "average_confidence": 0.792,
+              "first_seen_date": "2026-05-29"
+            },
+            {
               "common_name": "Piratic Flycatcher",
               "scientific_name": "Legatus leucophaius",
               "detections": 22,
               "active_days": 1,
               "average_confidence": 0.902,
               "first_seen_date": "2026-05-28"
-            },
-            {
-              "common_name": "Crimson-fronted Parakeet",
-              "scientific_name": "Psittacara finschi",
-              "detections": 20,
-              "active_days": 9,
-              "average_confidence": 0.789,
-              "first_seen_date": "2026-05-29"
             },
             {
               "common_name": "Inca Dove",
@@ -13979,20 +14003,20 @@
               "first_seen_date": "2026-07-12"
             },
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 8,
+              "active_days": 4,
+              "average_confidence": 0.826,
+              "first_seen_date": "2026-06-02"
+            },
+            {
               "common_name": "Eastern Kingbird",
               "scientific_name": "Tyrannus tyrannus",
               "detections": 7,
               "active_days": 4,
               "average_confidence": 0.758,
               "first_seen_date": "2026-06-05"
-            },
-            {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 7,
-              "active_days": 4,
-              "average_confidence": 0.809,
-              "first_seen_date": "2026-06-02"
             },
             {
               "common_name": "Barn Owl",
@@ -14363,6 +14387,14 @@
               "first_seen_date": "2026-07-26"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.709,
+              "first_seen_date": "2026-05-30"
+            },
+            {
               "common_name": "Scrub Euphonia",
               "scientific_name": "Euphonia affinis",
               "detections": 1,
@@ -14424,7 +14456,7 @@
           "label": "All data",
           "start_date": "2025-12-03",
           "end_date": "2026-08-17",
-          "total_detections": 123880,
+          "total_detections": 123917,
           "species_count": 260,
           "active_days": 228,
           "average_confidence": 0.825,
@@ -15716,8 +15748,8 @@
             },
             {
               "date": "2026-08-17",
-              "detections": 145,
-              "species_count": 13
+              "detections": 182,
+              "species_count": 15
             }
           ],
           "hourly_activity": [
@@ -15778,13 +15810,13 @@
             },
             {
               "hour": 11,
-              "detections": 3938,
-              "species_count": 118
+              "detections": 3946,
+              "species_count": 119
             },
             {
               "hour": 12,
-              "detections": 2789,
-              "species_count": 105
+              "detections": 2818,
+              "species_count": 106
             },
             {
               "hour": 13,
@@ -15976,7 +16008,7 @@
             {
               "common_name": "Social Flycatcher",
               "scientific_name": "Myiozetetes similis",
-              "detections": 1952,
+              "detections": 1985,
               "first_seen_date": "2026-05-28",
               "average_confidence": 0.847,
               "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
@@ -17083,7 +17115,7 @@
             {
               "common_name": "Social Flycatcher",
               "scientific_name": "Myiozetetes similis",
-              "detections": 1952,
+              "detections": 1985,
               "active_days": 67,
               "average_confidence": 0.847,
               "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
@@ -17139,11 +17171,11 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 94
+                  "detections": 101
                 },
                 {
                   "hour": 12,
-                  "detections": 116
+                  "detections": 142
                 },
                 {
                   "hour": 13,
@@ -17493,7 +17525,7 @@
             {
               "common_name": "Social Flycatcher",
               "scientific_name": "Myiozetetes similis",
-              "detections": 1952,
+              "detections": 1985,
               "active_days": 67,
               "average_confidence": 0.847,
               "first_seen_date": "2026-05-28"
@@ -17755,20 +17787,20 @@
               "first_seen_date": "2026-01-15"
             },
             {
+              "common_name": "Crimson-fronted Parakeet",
+              "scientific_name": "Psittacara finschi",
+              "detections": 183,
+              "active_days": 55,
+              "average_confidence": 0.799,
+              "first_seen_date": "2026-05-29"
+            },
+            {
               "common_name": "Osprey",
               "scientific_name": "Pandion haliaetus",
               "detections": 183,
               "active_days": 21,
               "average_confidence": 0.838,
               "first_seen_date": "2026-03-10"
-            },
-            {
-              "common_name": "Crimson-fronted Parakeet",
-              "scientific_name": "Psittacara finschi",
-              "detections": 181,
-              "active_days": 54,
-              "average_confidence": 0.799,
-              "first_seen_date": "2026-05-29"
             },
             {
               "common_name": "Coal Tit",
@@ -18147,20 +18179,20 @@
               "first_seen_date": "2025-12-12"
             },
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 30,
+              "active_days": 16,
+              "average_confidence": 0.811,
+              "first_seen_date": "2026-06-02"
+            },
+            {
               "common_name": "Black-crowned Night-Heron",
               "scientific_name": "Nycticorax nycticorax",
               "detections": 29,
               "active_days": 18,
               "average_confidence": 0.857,
               "first_seen_date": "2026-05-01"
-            },
-            {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 29,
-              "active_days": 16,
-              "average_confidence": 0.806,
-              "first_seen_date": "2026-06-02"
             },
             {
               "common_name": "Common Ringed Plover",
@@ -18547,6 +18579,14 @@
               "first_seen_date": "2026-07-02"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 8,
+              "active_days": 4,
+              "average_confidence": 0.75,
+              "first_seen_date": "2026-05-30"
+            },
+            {
               "common_name": "Tropical Screech-Owl",
               "scientific_name": "Megascops choliba",
               "detections": 8,
@@ -18569,14 +18609,6 @@
               "active_days": 5,
               "average_confidence": 0.764,
               "first_seen_date": "2026-05-29"
-            },
-            {
-              "common_name": "Rufous-collared Sparrow",
-              "scientific_name": "Zonotrichia capensis",
-              "detections": 7,
-              "active_days": 3,
-              "average_confidence": 0.756,
-              "first_seen_date": "2026-05-30"
             },
             {
               "common_name": "Black-capped Pygmy-Tyrant",
@@ -20050,10 +20082,10 @@
           "label": "Last 7 days",
           "start_date": "2026-08-12",
           "end_date": "2026-08-17",
-          "total_detections": 1766,
-          "species_count": 47,
+          "total_detections": 1803,
+          "species_count": 48,
           "active_days": 6,
-          "average_confidence": 0.861,
+          "average_confidence": 0.86,
           "daily_activity": [
             {
               "date": "2026-08-12",
@@ -20082,8 +20114,8 @@
             },
             {
               "date": "2026-08-17",
-              "detections": 145,
-              "species_count": 13
+              "detections": 182,
+              "species_count": 15
             }
           ],
           "hourly_activity": [
@@ -20144,13 +20176,13 @@
             },
             {
               "hour": 11,
-              "detections": 27,
-              "species_count": 6
+              "detections": 35,
+              "species_count": 7
             },
             {
               "hour": 12,
-              "detections": 48,
-              "species_count": 9
+              "detections": 77,
+              "species_count": 11
             },
             {
               "hour": 13,
@@ -20218,9 +20250,9 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 47
+            "species_change": 48
           },
-          "new_species_count": 47,
+          "new_species_count": 48,
           "new_species": [
             {
               "common_name": "White-winged Dove",
@@ -20275,6 +20307,19 @@
               ]
             },
             {
+              "common_name": "Social Flycatcher",
+              "scientific_name": "Myiozetetes similis",
+              "detections": 83,
+              "first_seen_date": "2026-08-12",
+              "average_confidence": 0.859,
+              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
+              ]
+            },
+            {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
               "detections": 70,
@@ -20285,19 +20330,6 @@
                 "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
                 "https://media.birdweather.com/species/897/Orange-chinnedParakeet-png200-7d59a0f58540798895be6be2a6dcfe26.png",
                 "https://media.birdweather.com/species/897/Orange-chinnedParakeet-thumbnail-542c4a6c0820592c04275ed546d0c49a.jpg"
-              ]
-            },
-            {
-              "common_name": "Social Flycatcher",
-              "scientific_name": "Myiozetetes similis",
-              "detections": 50,
-              "first_seen_date": "2026-08-12",
-              "average_confidence": 0.866,
-              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
               ]
             },
             {
@@ -20395,6 +20427,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "average_confidence": 0.709,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Belted Kingfisher",
               "scientific_name": "Megaceryle alcyon",
               "detections": 1,
@@ -20427,13 +20466,6 @@
               "scientific_name": "Nycticorax nycticorax",
               "detections": 1,
               "average_confidence": 0.733,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Crimson-fronted Parakeet",
-              "scientific_name": "Psittacara finschi",
-              "detections": 1,
-              "average_confidence": 0.738,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -20887,6 +20919,118 @@
               "change_percent": null
             },
             {
+              "common_name": "Social Flycatcher",
+              "scientific_name": "Myiozetetes similis",
+              "detections": 83,
+              "active_days": 5,
+              "average_confidence": 0.859,
+              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 6
+                },
+                {
+                  "hour": 6,
+                  "detections": 12
+                },
+                {
+                  "hour": 7,
+                  "detections": 14
+                },
+                {
+                  "hour": 8,
+                  "detections": 0
+                },
+                {
+                  "hour": 9,
+                  "detections": 2
+                },
+                {
+                  "hour": 10,
+                  "detections": 2
+                },
+                {
+                  "hour": 11,
+                  "detections": 14
+                },
+                {
+                  "hour": 12,
+                  "detections": 28
+                },
+                {
+                  "hour": 13,
+                  "detections": 0
+                },
+                {
+                  "hour": 14,
+                  "detections": 3
+                },
+                {
+                  "hour": 15,
+                  "detections": 0
+                },
+                {
+                  "hour": 16,
+                  "detections": 0
+                },
+                {
+                  "hour": 17,
+                  "detections": 2
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": null
+            },
+            {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
               "detections": 70,
@@ -20970,118 +21114,6 @@
                 {
                   "hour": 17,
                   "detections": 0
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": null
-            },
-            {
-              "common_name": "Social Flycatcher",
-              "scientific_name": "Myiozetetes similis",
-              "detections": 50,
-              "active_days": 5,
-              "average_confidence": 0.866,
-              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 6
-                },
-                {
-                  "hour": 6,
-                  "detections": 12
-                },
-                {
-                  "hour": 7,
-                  "detections": 14
-                },
-                {
-                  "hour": 8,
-                  "detections": 0
-                },
-                {
-                  "hour": 9,
-                  "detections": 2
-                },
-                {
-                  "hour": 10,
-                  "detections": 2
-                },
-                {
-                  "hour": 11,
-                  "detections": 7
-                },
-                {
-                  "hour": 12,
-                  "detections": 2
-                },
-                {
-                  "hour": 13,
-                  "detections": 0
-                },
-                {
-                  "hour": 14,
-                  "detections": 3
-                },
-                {
-                  "hour": 15,
-                  "detections": 0
-                },
-                {
-                  "hour": 16,
-                  "detections": 0
-                },
-                {
-                  "hour": 17,
-                  "detections": 2
                 },
                 {
                   "hour": 18,
@@ -21817,19 +21849,19 @@
               "first_seen_date": "2026-08-12"
             },
             {
+              "common_name": "Social Flycatcher",
+              "scientific_name": "Myiozetetes similis",
+              "detections": 83,
+              "active_days": 5,
+              "average_confidence": 0.859,
+              "first_seen_date": "2026-08-12"
+            },
+            {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
               "detections": 70,
               "active_days": 5,
               "average_confidence": 0.906,
-              "first_seen_date": "2026-08-12"
-            },
-            {
-              "common_name": "Social Flycatcher",
-              "scientific_name": "Myiozetetes similis",
-              "detections": 50,
-              "active_days": 5,
-              "average_confidence": 0.866,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -21907,9 +21939,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 7,
+              "detections": 8,
               "active_days": 4,
-              "average_confidence": 0.809,
+              "average_confidence": 0.826,
               "first_seen_date": "2026-08-13"
             },
             {
@@ -21926,6 +21958,14 @@
               "detections": 3,
               "active_days": 2,
               "average_confidence": 0.895,
+              "first_seen_date": "2026-08-14"
+            },
+            {
+              "common_name": "Crimson-fronted Parakeet",
+              "scientific_name": "Psittacara finschi",
+              "detections": 3,
+              "active_days": 2,
+              "average_confidence": 0.796,
               "first_seen_date": "2026-08-14"
             },
             {
@@ -22049,14 +22089,6 @@
               "first_seen_date": "2026-08-15"
             },
             {
-              "common_name": "Crimson-fronted Parakeet",
-              "scientific_name": "Psittacara finschi",
-              "detections": 1,
-              "active_days": 1,
-              "average_confidence": 0.738,
-              "first_seen_date": "2026-08-14"
-            },
-            {
               "common_name": "Gray-breasted Martin",
               "scientific_name": "Progne chalybea",
               "detections": 1,
@@ -22135,6 +22167,14 @@
               "active_days": 1,
               "average_confidence": 0.902,
               "first_seen_date": "2026-08-15"
+            },
+            {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.709,
+              "first_seen_date": "2026-08-17"
             },
             {
               "common_name": "White-throated Magpie-Jay",
@@ -22166,10 +22206,10 @@
           "label": "Last 30 days",
           "start_date": "2026-08-12",
           "end_date": "2026-08-17",
-          "total_detections": 1766,
-          "species_count": 47,
+          "total_detections": 1803,
+          "species_count": 48,
           "active_days": 6,
-          "average_confidence": 0.861,
+          "average_confidence": 0.86,
           "daily_activity": [
             {
               "date": "2026-08-12",
@@ -22198,8 +22238,8 @@
             },
             {
               "date": "2026-08-17",
-              "detections": 145,
-              "species_count": 13
+              "detections": 182,
+              "species_count": 15
             }
           ],
           "hourly_activity": [
@@ -22260,13 +22300,13 @@
             },
             {
               "hour": 11,
-              "detections": 27,
-              "species_count": 6
+              "detections": 35,
+              "species_count": 7
             },
             {
               "hour": 12,
-              "detections": 48,
-              "species_count": 9
+              "detections": 77,
+              "species_count": 11
             },
             {
               "hour": 13,
@@ -22334,9 +22374,9 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 47
+            "species_change": 48
           },
-          "new_species_count": 47,
+          "new_species_count": 48,
           "new_species": [
             {
               "common_name": "White-winged Dove",
@@ -22391,6 +22431,19 @@
               ]
             },
             {
+              "common_name": "Social Flycatcher",
+              "scientific_name": "Myiozetetes similis",
+              "detections": 83,
+              "first_seen_date": "2026-08-12",
+              "average_confidence": 0.859,
+              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
+              ]
+            },
+            {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
               "detections": 70,
@@ -22401,19 +22454,6 @@
                 "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
                 "https://media.birdweather.com/species/897/Orange-chinnedParakeet-png200-7d59a0f58540798895be6be2a6dcfe26.png",
                 "https://media.birdweather.com/species/897/Orange-chinnedParakeet-thumbnail-542c4a6c0820592c04275ed546d0c49a.jpg"
-              ]
-            },
-            {
-              "common_name": "Social Flycatcher",
-              "scientific_name": "Myiozetetes similis",
-              "detections": 50,
-              "first_seen_date": "2026-08-12",
-              "average_confidence": 0.866,
-              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
               ]
             },
             {
@@ -22511,6 +22551,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "average_confidence": 0.709,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Belted Kingfisher",
               "scientific_name": "Megaceryle alcyon",
               "detections": 1,
@@ -22543,13 +22590,6 @@
               "scientific_name": "Nycticorax nycticorax",
               "detections": 1,
               "average_confidence": 0.733,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Crimson-fronted Parakeet",
-              "scientific_name": "Psittacara finschi",
-              "detections": 1,
-              "average_confidence": 0.738,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -23003,6 +23043,118 @@
               "change_percent": null
             },
             {
+              "common_name": "Social Flycatcher",
+              "scientific_name": "Myiozetetes similis",
+              "detections": 83,
+              "active_days": 5,
+              "average_confidence": 0.859,
+              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 6
+                },
+                {
+                  "hour": 6,
+                  "detections": 12
+                },
+                {
+                  "hour": 7,
+                  "detections": 14
+                },
+                {
+                  "hour": 8,
+                  "detections": 0
+                },
+                {
+                  "hour": 9,
+                  "detections": 2
+                },
+                {
+                  "hour": 10,
+                  "detections": 2
+                },
+                {
+                  "hour": 11,
+                  "detections": 14
+                },
+                {
+                  "hour": 12,
+                  "detections": 28
+                },
+                {
+                  "hour": 13,
+                  "detections": 0
+                },
+                {
+                  "hour": 14,
+                  "detections": 3
+                },
+                {
+                  "hour": 15,
+                  "detections": 0
+                },
+                {
+                  "hour": 16,
+                  "detections": 0
+                },
+                {
+                  "hour": 17,
+                  "detections": 2
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": null
+            },
+            {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
               "detections": 70,
@@ -23086,118 +23238,6 @@
                 {
                   "hour": 17,
                   "detections": 0
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": null
-            },
-            {
-              "common_name": "Social Flycatcher",
-              "scientific_name": "Myiozetetes similis",
-              "detections": 50,
-              "active_days": 5,
-              "average_confidence": 0.866,
-              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 6
-                },
-                {
-                  "hour": 6,
-                  "detections": 12
-                },
-                {
-                  "hour": 7,
-                  "detections": 14
-                },
-                {
-                  "hour": 8,
-                  "detections": 0
-                },
-                {
-                  "hour": 9,
-                  "detections": 2
-                },
-                {
-                  "hour": 10,
-                  "detections": 2
-                },
-                {
-                  "hour": 11,
-                  "detections": 7
-                },
-                {
-                  "hour": 12,
-                  "detections": 2
-                },
-                {
-                  "hour": 13,
-                  "detections": 0
-                },
-                {
-                  "hour": 14,
-                  "detections": 3
-                },
-                {
-                  "hour": 15,
-                  "detections": 0
-                },
-                {
-                  "hour": 16,
-                  "detections": 0
-                },
-                {
-                  "hour": 17,
-                  "detections": 2
                 },
                 {
                   "hour": 18,
@@ -23933,19 +23973,19 @@
               "first_seen_date": "2026-08-12"
             },
             {
+              "common_name": "Social Flycatcher",
+              "scientific_name": "Myiozetetes similis",
+              "detections": 83,
+              "active_days": 5,
+              "average_confidence": 0.859,
+              "first_seen_date": "2026-08-12"
+            },
+            {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
               "detections": 70,
               "active_days": 5,
               "average_confidence": 0.906,
-              "first_seen_date": "2026-08-12"
-            },
-            {
-              "common_name": "Social Flycatcher",
-              "scientific_name": "Myiozetetes similis",
-              "detections": 50,
-              "active_days": 5,
-              "average_confidence": 0.866,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -24023,9 +24063,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 7,
+              "detections": 8,
               "active_days": 4,
-              "average_confidence": 0.809,
+              "average_confidence": 0.826,
               "first_seen_date": "2026-08-13"
             },
             {
@@ -24042,6 +24082,14 @@
               "detections": 3,
               "active_days": 2,
               "average_confidence": 0.895,
+              "first_seen_date": "2026-08-14"
+            },
+            {
+              "common_name": "Crimson-fronted Parakeet",
+              "scientific_name": "Psittacara finschi",
+              "detections": 3,
+              "active_days": 2,
+              "average_confidence": 0.796,
               "first_seen_date": "2026-08-14"
             },
             {
@@ -24165,14 +24213,6 @@
               "first_seen_date": "2026-08-15"
             },
             {
-              "common_name": "Crimson-fronted Parakeet",
-              "scientific_name": "Psittacara finschi",
-              "detections": 1,
-              "active_days": 1,
-              "average_confidence": 0.738,
-              "first_seen_date": "2026-08-14"
-            },
-            {
               "common_name": "Gray-breasted Martin",
               "scientific_name": "Progne chalybea",
               "detections": 1,
@@ -24253,6 +24293,14 @@
               "first_seen_date": "2026-08-15"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.709,
+              "first_seen_date": "2026-08-17"
+            },
+            {
               "common_name": "White-throated Magpie-Jay",
               "scientific_name": "Calocitta formosa",
               "detections": 1,
@@ -24282,10 +24330,10 @@
           "label": "All data",
           "start_date": "2026-08-12",
           "end_date": "2026-08-17",
-          "total_detections": 1766,
-          "species_count": 47,
+          "total_detections": 1803,
+          "species_count": 48,
           "active_days": 6,
-          "average_confidence": 0.861,
+          "average_confidence": 0.86,
           "daily_activity": [
             {
               "date": "2026-08-12",
@@ -24314,8 +24362,8 @@
             },
             {
               "date": "2026-08-17",
-              "detections": 145,
-              "species_count": 13
+              "detections": 182,
+              "species_count": 15
             }
           ],
           "hourly_activity": [
@@ -24376,13 +24424,13 @@
             },
             {
               "hour": 11,
-              "detections": 27,
-              "species_count": 6
+              "detections": 35,
+              "species_count": 7
             },
             {
               "hour": 12,
-              "detections": 48,
-              "species_count": 9
+              "detections": 77,
+              "species_count": 11
             },
             {
               "hour": 13,
@@ -24452,7 +24500,7 @@
             "previous_species_count": null,
             "species_change": null
           },
-          "new_species_count": 47,
+          "new_species_count": 48,
           "new_species": [
             {
               "common_name": "White-winged Dove",
@@ -24507,6 +24555,19 @@
               ]
             },
             {
+              "common_name": "Social Flycatcher",
+              "scientific_name": "Myiozetetes similis",
+              "detections": 83,
+              "first_seen_date": "2026-08-12",
+              "average_confidence": 0.859,
+              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
+              ]
+            },
+            {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
               "detections": 70,
@@ -24517,19 +24578,6 @@
                 "https://media.birdweather.com/species/897/Orange-chinnedParakeet-standard-0bf0068f65faf91a77e897bad45dfb9c.jpg",
                 "https://media.birdweather.com/species/897/Orange-chinnedParakeet-png200-7d59a0f58540798895be6be2a6dcfe26.png",
                 "https://media.birdweather.com/species/897/Orange-chinnedParakeet-thumbnail-542c4a6c0820592c04275ed546d0c49a.jpg"
-              ]
-            },
-            {
-              "common_name": "Social Flycatcher",
-              "scientific_name": "Myiozetetes similis",
-              "detections": 50,
-              "first_seen_date": "2026-08-12",
-              "average_confidence": 0.866,
-              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
               ]
             },
             {
@@ -24627,6 +24675,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "average_confidence": 0.709,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Belted Kingfisher",
               "scientific_name": "Megaceryle alcyon",
               "detections": 1,
@@ -24659,13 +24714,6 @@
               "scientific_name": "Nycticorax nycticorax",
               "detections": 1,
               "average_confidence": 0.733,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Crimson-fronted Parakeet",
-              "scientific_name": "Psittacara finschi",
-              "detections": 1,
-              "average_confidence": 0.738,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -25119,6 +25167,118 @@
               "change_percent": null
             },
             {
+              "common_name": "Social Flycatcher",
+              "scientific_name": "Myiozetetes similis",
+              "detections": 83,
+              "active_days": 5,
+              "average_confidence": 0.859,
+              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
+                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 6
+                },
+                {
+                  "hour": 6,
+                  "detections": 12
+                },
+                {
+                  "hour": 7,
+                  "detections": 14
+                },
+                {
+                  "hour": 8,
+                  "detections": 0
+                },
+                {
+                  "hour": 9,
+                  "detections": 2
+                },
+                {
+                  "hour": 10,
+                  "detections": 2
+                },
+                {
+                  "hour": 11,
+                  "detections": 14
+                },
+                {
+                  "hour": 12,
+                  "detections": 28
+                },
+                {
+                  "hour": 13,
+                  "detections": 0
+                },
+                {
+                  "hour": 14,
+                  "detections": 3
+                },
+                {
+                  "hour": 15,
+                  "detections": 0
+                },
+                {
+                  "hour": 16,
+                  "detections": 0
+                },
+                {
+                  "hour": 17,
+                  "detections": 2
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": null
+            },
+            {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
               "detections": 70,
@@ -25202,118 +25362,6 @@
                 {
                   "hour": 17,
                   "detections": 0
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": null
-            },
-            {
-              "common_name": "Social Flycatcher",
-              "scientific_name": "Myiozetetes similis",
-              "detections": 50,
-              "active_days": 5,
-              "average_confidence": 0.866,
-              "photo_url": "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/121/SocialFlycatcher-standard-6e107581e61c9f556b3a0af5200f486a.jpg",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-png200-2f6dd485cf927db0dd7fd9abc239fb19.png",
-                "https://media.birdweather.com/species/121/SocialFlycatcher-thumbnail-87f640fcaf1441ecbbd56b57372185a8.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 6
-                },
-                {
-                  "hour": 6,
-                  "detections": 12
-                },
-                {
-                  "hour": 7,
-                  "detections": 14
-                },
-                {
-                  "hour": 8,
-                  "detections": 0
-                },
-                {
-                  "hour": 9,
-                  "detections": 2
-                },
-                {
-                  "hour": 10,
-                  "detections": 2
-                },
-                {
-                  "hour": 11,
-                  "detections": 7
-                },
-                {
-                  "hour": 12,
-                  "detections": 2
-                },
-                {
-                  "hour": 13,
-                  "detections": 0
-                },
-                {
-                  "hour": 14,
-                  "detections": 3
-                },
-                {
-                  "hour": 15,
-                  "detections": 0
-                },
-                {
-                  "hour": 16,
-                  "detections": 0
-                },
-                {
-                  "hour": 17,
-                  "detections": 2
                 },
                 {
                   "hour": 18,
@@ -26049,19 +26097,19 @@
               "first_seen_date": "2026-08-12"
             },
             {
+              "common_name": "Social Flycatcher",
+              "scientific_name": "Myiozetetes similis",
+              "detections": 83,
+              "active_days": 5,
+              "average_confidence": 0.859,
+              "first_seen_date": "2026-08-12"
+            },
+            {
               "common_name": "Orange-chinned Parakeet",
               "scientific_name": "Brotogeris jugularis",
               "detections": 70,
               "active_days": 5,
               "average_confidence": 0.906,
-              "first_seen_date": "2026-08-12"
-            },
-            {
-              "common_name": "Social Flycatcher",
-              "scientific_name": "Myiozetetes similis",
-              "detections": 50,
-              "active_days": 5,
-              "average_confidence": 0.866,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -26139,9 +26187,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 7,
+              "detections": 8,
               "active_days": 4,
-              "average_confidence": 0.809,
+              "average_confidence": 0.826,
               "first_seen_date": "2026-08-13"
             },
             {
@@ -26158,6 +26206,14 @@
               "detections": 3,
               "active_days": 2,
               "average_confidence": 0.895,
+              "first_seen_date": "2026-08-14"
+            },
+            {
+              "common_name": "Crimson-fronted Parakeet",
+              "scientific_name": "Psittacara finschi",
+              "detections": 3,
+              "active_days": 2,
+              "average_confidence": 0.796,
               "first_seen_date": "2026-08-14"
             },
             {
@@ -26281,14 +26337,6 @@
               "first_seen_date": "2026-08-15"
             },
             {
-              "common_name": "Crimson-fronted Parakeet",
-              "scientific_name": "Psittacara finschi",
-              "detections": 1,
-              "active_days": 1,
-              "average_confidence": 0.738,
-              "first_seen_date": "2026-08-14"
-            },
-            {
               "common_name": "Gray-breasted Martin",
               "scientific_name": "Progne chalybea",
               "detections": 1,
@@ -26367,6 +26415,14 @@
               "active_days": 1,
               "average_confidence": 0.902,
               "first_seen_date": "2026-08-15"
+            },
+            {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.709,
+              "first_seen_date": "2026-08-17"
             },
             {
               "common_name": "White-throated Magpie-Jay",
