@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "generated_date": "2026-08-19",
-  "generated_hour": 10,
+  "generated_hour": 11,
   "timezone": "America/Costa_Rica",
   "latest_observation_date": "2026-08-19",
   "default_period": "7d",
@@ -29,8 +29,8 @@
       "label": "Last 7 days",
       "start_date": "2026-08-13",
       "end_date": "2026-08-19",
-      "total_detections": 1901,
-      "species_count": 47,
+      "total_detections": 1903,
+      "species_count": 48,
       "active_days": 6,
       "average_confidence": 0.86,
       "daily_activity": [
@@ -66,8 +66,8 @@
         },
         {
           "date": "2026-08-19",
-          "detections": 156,
-          "species_count": 14
+          "detections": 158,
+          "species_count": 16
         }
       ],
       "hourly_activity": [
@@ -128,8 +128,8 @@
         },
         {
           "hour": 11,
-          "detections": 35,
-          "species_count": 7
+          "detections": 37,
+          "species_count": 9
         },
         {
           "hour": 12,
@@ -200,11 +200,11 @@
         "previous_start_date": "2026-08-06",
         "previous_end_date": "2026-08-12",
         "previous_detections": 179,
-        "detection_change_percent": 962.0,
+        "detection_change_percent": 963.1,
         "previous_species_count": 15,
-        "species_change": 32
+        "species_change": 33
       },
-      "new_species_count": 15,
+      "new_species_count": 16,
       "new_species": [
         {
           "common_name": "Black-headed Saltator",
@@ -259,6 +259,19 @@
           ]
         },
         {
+          "common_name": "Rose-breasted Grosbeak",
+          "scientific_name": "Pheucticus ludovicianus",
+          "detections": 3,
+          "first_seen_date": "2026-08-14",
+          "average_confidence": 0.805,
+          "photo_url": "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
+          "photo_urls": [
+            "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
+            "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-png200-04cb157bd64b214588ee2884b6c5fe4c.png",
+            "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-thumbnail-39b9a38037dd162c6215236a406c73ec.jpg"
+          ]
+        },
+        {
           "common_name": "Summer Tanager",
           "scientific_name": "Piranga rubra",
           "detections": 3,
@@ -282,19 +295,6 @@
             "https://media.birdweather.com/species/2503/Flame-coloredTanager-standard-49acd4ee1889f3bad7c62d9f478ce8fe.jpg",
             "https://media.birdweather.com/species/2503/Flame-coloredTanager-png200-f22d765d5a74179c1572ad166eb7ee47.png",
             "https://media.birdweather.com/species/2503/Flame-coloredTanager-thumbnail-ec5812902b5ef78490145b6f98ab344b.jpg"
-          ]
-        },
-        {
-          "common_name": "Rose-breasted Grosbeak",
-          "scientific_name": "Pheucticus ludovicianus",
-          "detections": 2,
-          "first_seen_date": "2026-08-14",
-          "average_confidence": 0.778,
-          "photo_url": "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
-          "photo_urls": [
-            "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
-            "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-png200-04cb157bd64b214588ee2884b6c5fe4c.png",
-            "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-thumbnail-39b9a38037dd162c6215236a406c73ec.jpg"
           ]
         },
         {
@@ -379,6 +379,13 @@
           "reason": "Lower aggregate confidence"
         },
         {
+          "common_name": "White-naped Brushfinch",
+          "scientific_name": "Atlapetes albinucha",
+          "detections": 1,
+          "average_confidence": 0.707,
+          "reason": "Lower aggregate confidence"
+        },
+        {
           "common_name": "Rufous-collared Sparrow",
           "scientific_name": "Zonotrichia capensis",
           "detections": 1,
@@ -411,13 +418,6 @@
           "scientific_name": "Megarynchus pitangua",
           "detections": 1,
           "average_confidence": 0.721,
-          "reason": "Lower aggregate confidence"
-        },
-        {
-          "common_name": "Olive-throated Parakeet",
-          "scientific_name": "Eupsittula nana",
-          "detections": 3,
-          "average_confidence": 0.731,
           "reason": "Lower aggregate confidence"
         }
       ],
@@ -1929,6 +1929,14 @@
           "first_seen_date": "2026-08-14"
         },
         {
+          "common_name": "Rose-breasted Grosbeak",
+          "scientific_name": "Pheucticus ludovicianus",
+          "detections": 3,
+          "active_days": 2,
+          "average_confidence": 0.805,
+          "first_seen_date": "2026-08-14"
+        },
+        {
           "common_name": "Summer Tanager",
           "scientific_name": "Piranga rubra",
           "detections": 3,
@@ -1943,14 +1951,6 @@
           "active_days": 1,
           "average_confidence": 0.91,
           "first_seen_date": "2026-08-15"
-        },
-        {
-          "common_name": "Rose-breasted Grosbeak",
-          "scientific_name": "Pheucticus ludovicianus",
-          "detections": 2,
-          "active_days": 1,
-          "average_confidence": 0.778,
-          "first_seen_date": "2026-08-14"
         },
         {
           "common_name": "Tropical Kingbird",
@@ -2121,6 +2121,14 @@
           "first_seen_date": "2026-05-30"
         },
         {
+          "common_name": "White-naped Brushfinch",
+          "scientific_name": "Atlapetes albinucha",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.707,
+          "first_seen_date": "2026-08-19"
+        },
+        {
           "common_name": "White-throated Magpie-Jay",
           "scientific_name": "Calocitta formosa",
           "detections": 1,
@@ -2150,8 +2158,8 @@
       "label": "Last 30 days",
       "start_date": "2026-07-21",
       "end_date": "2026-08-19",
-      "total_detections": 3585,
-      "species_count": 83,
+      "total_detections": 3587,
+      "species_count": 84,
       "active_days": 15,
       "average_confidence": 0.857,
       "daily_activity": [
@@ -2302,8 +2310,8 @@
         },
         {
           "date": "2026-08-19",
-          "detections": 156,
-          "species_count": 14
+          "detections": 158,
+          "species_count": 16
         }
       ],
       "hourly_activity": [
@@ -2364,8 +2372,8 @@
         },
         {
           "hour": 11,
-          "detections": 117,
-          "species_count": 16
+          "detections": 119,
+          "species_count": 18
         },
         {
           "hour": 12,
@@ -2438,9 +2446,9 @@
         "previous_detections": 8535,
         "detection_change_percent": -58.0,
         "previous_species_count": 80,
-        "species_change": 3
+        "species_change": 4
       },
-      "new_species_count": 26,
+      "new_species_count": 27,
       "new_species": [
         {
           "common_name": "Tropical Mockingbird",
@@ -2521,6 +2529,19 @@
           ]
         },
         {
+          "common_name": "Rose-breasted Grosbeak",
+          "scientific_name": "Pheucticus ludovicianus",
+          "detections": 3,
+          "first_seen_date": "2026-08-14",
+          "average_confidence": 0.805,
+          "photo_url": "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
+          "photo_urls": [
+            "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
+            "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-png200-04cb157bd64b214588ee2884b6c5fe4c.png",
+            "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-thumbnail-39b9a38037dd162c6215236a406c73ec.jpg"
+          ]
+        },
+        {
           "common_name": "Summer Tanager",
           "scientific_name": "Piranga rubra",
           "detections": 3,
@@ -2557,19 +2578,6 @@
             "https://media.birdweather.com/species/708/Fork-tailedFlycatcher-standard-794395ae2917bf9ea898f3791ae1f9f1.jpg",
             "https://media.birdweather.com/species/708/Fork-tailedFlycatcher-png200-ac99633fdac8c3d75d6303d489b231bc.png",
             "https://media.birdweather.com/species/708/Fork-tailedFlycatcher-thumbnail-19242eb09ab4bb4fbedaf54e78cbde9f.jpg"
-          ]
-        },
-        {
-          "common_name": "Rose-breasted Grosbeak",
-          "scientific_name": "Pheucticus ludovicianus",
-          "detections": 2,
-          "first_seen_date": "2026-08-14",
-          "average_confidence": 0.778,
-          "photo_url": "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
-          "photo_urls": [
-            "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
-            "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-png200-04cb157bd64b214588ee2884b6c5fe4c.png",
-            "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-thumbnail-39b9a38037dd162c6215236a406c73ec.jpg"
           ]
         },
         {
@@ -2622,6 +2630,13 @@
           "reason": "Lower aggregate confidence"
         },
         {
+          "common_name": "White-naped Brushfinch",
+          "scientific_name": "Atlapetes albinucha",
+          "detections": 1,
+          "average_confidence": 0.707,
+          "reason": "Lower aggregate confidence"
+        },
+        {
           "common_name": "Rufous-collared Sparrow",
           "scientific_name": "Zonotrichia capensis",
           "detections": 1,
@@ -2647,13 +2662,6 @@
           "scientific_name": "Progne chalybea",
           "detections": 1,
           "average_confidence": 0.716,
-          "reason": "Lower aggregate confidence"
-        },
-        {
-          "common_name": "Olive-throated Parakeet",
-          "scientific_name": "Eupsittula nana",
-          "detections": 3,
-          "average_confidence": 0.731,
           "reason": "Lower aggregate confidence"
         }
       ],
@@ -4325,6 +4333,14 @@
           "first_seen_date": "2026-08-14"
         },
         {
+          "common_name": "Rose-breasted Grosbeak",
+          "scientific_name": "Pheucticus ludovicianus",
+          "detections": 3,
+          "active_days": 2,
+          "average_confidence": 0.805,
+          "first_seen_date": "2026-08-14"
+        },
+        {
           "common_name": "Summer Tanager",
           "scientific_name": "Piranga rubra",
           "detections": 3,
@@ -4387,14 +4403,6 @@
           "active_days": 2,
           "average_confidence": 0.803,
           "first_seen_date": "2026-06-03"
-        },
-        {
-          "common_name": "Rose-breasted Grosbeak",
-          "scientific_name": "Pheucticus ludovicianus",
-          "detections": 2,
-          "active_days": 1,
-          "average_confidence": 0.778,
-          "first_seen_date": "2026-08-14"
         },
         {
           "common_name": "Ruddy-capped Nightingale-Thrush",
@@ -4645,6 +4653,14 @@
           "first_seen_date": "2026-06-20"
         },
         {
+          "common_name": "White-naped Brushfinch",
+          "scientific_name": "Atlapetes albinucha",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.707,
+          "first_seen_date": "2026-08-19"
+        },
+        {
           "common_name": "White-throated Magpie-Jay",
           "scientific_name": "Calocitta formosa",
           "detections": 1,
@@ -4674,8 +4690,8 @@
       "label": "All data",
       "start_date": "2025-12-03",
       "end_date": "2026-08-19",
-      "total_detections": 124194,
-      "species_count": 261,
+      "total_detections": 124196,
+      "species_count": 262,
       "active_days": 229,
       "average_confidence": 0.825,
       "daily_activity": [
@@ -5976,8 +5992,8 @@
         },
         {
           "date": "2026-08-19",
-          "detections": 156,
-          "species_count": 14
+          "detections": 158,
+          "species_count": 16
         }
       ],
       "hourly_activity": [
@@ -6038,8 +6054,8 @@
         },
         {
           "hour": 11,
-          "detections": 3946,
-          "species_count": 119
+          "detections": 3948,
+          "species_count": 121
         },
         {
           "hour": 12,
@@ -6114,7 +6130,7 @@
         "previous_species_count": null,
         "species_change": null
       },
-      "new_species_count": 261,
+      "new_species_count": 262,
       "new_species": [
         {
           "common_name": "European Robin",
@@ -9095,6 +9111,14 @@
           "first_seen_date": "2026-03-01"
         },
         {
+          "common_name": "Rose-breasted Grosbeak",
+          "scientific_name": "Pheucticus ludovicianus",
+          "detections": 3,
+          "active_days": 2,
+          "average_confidence": 0.805,
+          "first_seen_date": "2026-08-14"
+        },
+        {
           "common_name": "Rose-throated Becard",
           "scientific_name": "Pachyramphus aglaiae",
           "detections": 3,
@@ -9261,14 +9285,6 @@
           "active_days": 1,
           "average_confidence": 0.686,
           "first_seen_date": "2026-03-27"
-        },
-        {
-          "common_name": "Rose-breasted Grosbeak",
-          "scientific_name": "Pheucticus ludovicianus",
-          "detections": 2,
-          "active_days": 1,
-          "average_confidence": 0.778,
-          "first_seen_date": "2026-08-14"
         },
         {
           "common_name": "Ruddy-capped Nightingale-Thrush",
@@ -9727,6 +9743,14 @@
           "first_seen_date": "2026-01-18"
         },
         {
+          "common_name": "White-naped Brushfinch",
+          "scientific_name": "Atlapetes albinucha",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.707,
+          "first_seen_date": "2026-08-19"
+        },
+        {
           "common_name": "White-tailed Kite",
           "scientific_name": "Elanus leucurus",
           "detections": 1,
@@ -9781,8 +9805,8 @@
           "label": "Last 7 days",
           "start_date": "2026-08-13",
           "end_date": "2026-08-19",
-          "total_detections": 1901,
-          "species_count": 47,
+          "total_detections": 1903,
+          "species_count": 48,
           "active_days": 6,
           "average_confidence": 0.86,
           "daily_activity": [
@@ -9818,8 +9842,8 @@
             },
             {
               "date": "2026-08-19",
-              "detections": 156,
-              "species_count": 14
+              "detections": 158,
+              "species_count": 16
             }
           ],
           "hourly_activity": [
@@ -9880,8 +9904,8 @@
             },
             {
               "hour": 11,
-              "detections": 35,
-              "species_count": 7
+              "detections": 37,
+              "species_count": 9
             },
             {
               "hour": 12,
@@ -9952,11 +9976,11 @@
             "previous_start_date": "2026-08-06",
             "previous_end_date": "2026-08-12",
             "previous_detections": 179,
-            "detection_change_percent": 962.0,
+            "detection_change_percent": 963.1,
             "previous_species_count": 15,
-            "species_change": 32
+            "species_change": 33
           },
-          "new_species_count": 15,
+          "new_species_count": 16,
           "new_species": [
             {
               "common_name": "Black-headed Saltator",
@@ -10011,6 +10035,19 @@
               ]
             },
             {
+              "common_name": "Rose-breasted Grosbeak",
+              "scientific_name": "Pheucticus ludovicianus",
+              "detections": 3,
+              "first_seen_date": "2026-08-14",
+              "average_confidence": 0.805,
+              "photo_url": "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
+                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-png200-04cb157bd64b214588ee2884b6c5fe4c.png",
+                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-thumbnail-39b9a38037dd162c6215236a406c73ec.jpg"
+              ]
+            },
+            {
               "common_name": "Summer Tanager",
               "scientific_name": "Piranga rubra",
               "detections": 3,
@@ -10034,19 +10071,6 @@
                 "https://media.birdweather.com/species/2503/Flame-coloredTanager-standard-49acd4ee1889f3bad7c62d9f478ce8fe.jpg",
                 "https://media.birdweather.com/species/2503/Flame-coloredTanager-png200-f22d765d5a74179c1572ad166eb7ee47.png",
                 "https://media.birdweather.com/species/2503/Flame-coloredTanager-thumbnail-ec5812902b5ef78490145b6f98ab344b.jpg"
-              ]
-            },
-            {
-              "common_name": "Rose-breasted Grosbeak",
-              "scientific_name": "Pheucticus ludovicianus",
-              "detections": 2,
-              "first_seen_date": "2026-08-14",
-              "average_confidence": 0.778,
-              "photo_url": "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
-                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-png200-04cb157bd64b214588ee2884b6c5fe4c.png",
-                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-thumbnail-39b9a38037dd162c6215236a406c73ec.jpg"
               ]
             },
             {
@@ -10131,6 +10155,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "White-naped Brushfinch",
+              "scientific_name": "Atlapetes albinucha",
+              "detections": 1,
+              "average_confidence": 0.707,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Rufous-collared Sparrow",
               "scientific_name": "Zonotrichia capensis",
               "detections": 1,
@@ -10163,13 +10194,6 @@
               "scientific_name": "Megarynchus pitangua",
               "detections": 1,
               "average_confidence": 0.721,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Olive-throated Parakeet",
-              "scientific_name": "Eupsittula nana",
-              "detections": 3,
-              "average_confidence": 0.731,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -11681,6 +11705,14 @@
               "first_seen_date": "2026-08-14"
             },
             {
+              "common_name": "Rose-breasted Grosbeak",
+              "scientific_name": "Pheucticus ludovicianus",
+              "detections": 3,
+              "active_days": 2,
+              "average_confidence": 0.805,
+              "first_seen_date": "2026-08-14"
+            },
+            {
               "common_name": "Summer Tanager",
               "scientific_name": "Piranga rubra",
               "detections": 3,
@@ -11695,14 +11727,6 @@
               "active_days": 1,
               "average_confidence": 0.91,
               "first_seen_date": "2026-08-15"
-            },
-            {
-              "common_name": "Rose-breasted Grosbeak",
-              "scientific_name": "Pheucticus ludovicianus",
-              "detections": 2,
-              "active_days": 1,
-              "average_confidence": 0.778,
-              "first_seen_date": "2026-08-14"
             },
             {
               "common_name": "Tropical Kingbird",
@@ -11873,6 +11897,14 @@
               "first_seen_date": "2026-05-30"
             },
             {
+              "common_name": "White-naped Brushfinch",
+              "scientific_name": "Atlapetes albinucha",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.707,
+              "first_seen_date": "2026-08-19"
+            },
+            {
               "common_name": "White-throated Magpie-Jay",
               "scientific_name": "Calocitta formosa",
               "detections": 1,
@@ -11902,8 +11934,8 @@
           "label": "Last 30 days",
           "start_date": "2026-07-21",
           "end_date": "2026-08-19",
-          "total_detections": 3585,
-          "species_count": 83,
+          "total_detections": 3587,
+          "species_count": 84,
           "active_days": 15,
           "average_confidence": 0.857,
           "daily_activity": [
@@ -12054,8 +12086,8 @@
             },
             {
               "date": "2026-08-19",
-              "detections": 156,
-              "species_count": 14
+              "detections": 158,
+              "species_count": 16
             }
           ],
           "hourly_activity": [
@@ -12116,8 +12148,8 @@
             },
             {
               "hour": 11,
-              "detections": 117,
-              "species_count": 16
+              "detections": 119,
+              "species_count": 18
             },
             {
               "hour": 12,
@@ -12190,9 +12222,9 @@
             "previous_detections": 8535,
             "detection_change_percent": -58.0,
             "previous_species_count": 80,
-            "species_change": 3
+            "species_change": 4
           },
-          "new_species_count": 26,
+          "new_species_count": 27,
           "new_species": [
             {
               "common_name": "Tropical Mockingbird",
@@ -12273,6 +12305,19 @@
               ]
             },
             {
+              "common_name": "Rose-breasted Grosbeak",
+              "scientific_name": "Pheucticus ludovicianus",
+              "detections": 3,
+              "first_seen_date": "2026-08-14",
+              "average_confidence": 0.805,
+              "photo_url": "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
+                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-png200-04cb157bd64b214588ee2884b6c5fe4c.png",
+                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-thumbnail-39b9a38037dd162c6215236a406c73ec.jpg"
+              ]
+            },
+            {
               "common_name": "Summer Tanager",
               "scientific_name": "Piranga rubra",
               "detections": 3,
@@ -12309,19 +12354,6 @@
                 "https://media.birdweather.com/species/708/Fork-tailedFlycatcher-standard-794395ae2917bf9ea898f3791ae1f9f1.jpg",
                 "https://media.birdweather.com/species/708/Fork-tailedFlycatcher-png200-ac99633fdac8c3d75d6303d489b231bc.png",
                 "https://media.birdweather.com/species/708/Fork-tailedFlycatcher-thumbnail-19242eb09ab4bb4fbedaf54e78cbde9f.jpg"
-              ]
-            },
-            {
-              "common_name": "Rose-breasted Grosbeak",
-              "scientific_name": "Pheucticus ludovicianus",
-              "detections": 2,
-              "first_seen_date": "2026-08-14",
-              "average_confidence": 0.778,
-              "photo_url": "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
-                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-png200-04cb157bd64b214588ee2884b6c5fe4c.png",
-                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-thumbnail-39b9a38037dd162c6215236a406c73ec.jpg"
               ]
             },
             {
@@ -12374,6 +12406,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "White-naped Brushfinch",
+              "scientific_name": "Atlapetes albinucha",
+              "detections": 1,
+              "average_confidence": 0.707,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Rufous-collared Sparrow",
               "scientific_name": "Zonotrichia capensis",
               "detections": 1,
@@ -12399,13 +12438,6 @@
               "scientific_name": "Progne chalybea",
               "detections": 1,
               "average_confidence": 0.716,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Olive-throated Parakeet",
-              "scientific_name": "Eupsittula nana",
-              "detections": 3,
-              "average_confidence": 0.731,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -14077,6 +14109,14 @@
               "first_seen_date": "2026-08-14"
             },
             {
+              "common_name": "Rose-breasted Grosbeak",
+              "scientific_name": "Pheucticus ludovicianus",
+              "detections": 3,
+              "active_days": 2,
+              "average_confidence": 0.805,
+              "first_seen_date": "2026-08-14"
+            },
+            {
               "common_name": "Summer Tanager",
               "scientific_name": "Piranga rubra",
               "detections": 3,
@@ -14139,14 +14179,6 @@
               "active_days": 2,
               "average_confidence": 0.803,
               "first_seen_date": "2026-06-03"
-            },
-            {
-              "common_name": "Rose-breasted Grosbeak",
-              "scientific_name": "Pheucticus ludovicianus",
-              "detections": 2,
-              "active_days": 1,
-              "average_confidence": 0.778,
-              "first_seen_date": "2026-08-14"
             },
             {
               "common_name": "Ruddy-capped Nightingale-Thrush",
@@ -14397,6 +14429,14 @@
               "first_seen_date": "2026-06-20"
             },
             {
+              "common_name": "White-naped Brushfinch",
+              "scientific_name": "Atlapetes albinucha",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.707,
+              "first_seen_date": "2026-08-19"
+            },
+            {
               "common_name": "White-throated Magpie-Jay",
               "scientific_name": "Calocitta formosa",
               "detections": 1,
@@ -14426,8 +14466,8 @@
           "label": "All data",
           "start_date": "2025-12-03",
           "end_date": "2026-08-19",
-          "total_detections": 124194,
-          "species_count": 261,
+          "total_detections": 124196,
+          "species_count": 262,
           "active_days": 229,
           "average_confidence": 0.825,
           "daily_activity": [
@@ -15728,8 +15768,8 @@
             },
             {
               "date": "2026-08-19",
-              "detections": 156,
-              "species_count": 14
+              "detections": 158,
+              "species_count": 16
             }
           ],
           "hourly_activity": [
@@ -15790,8 +15830,8 @@
             },
             {
               "hour": 11,
-              "detections": 3946,
-              "species_count": 119
+              "detections": 3948,
+              "species_count": 121
             },
             {
               "hour": 12,
@@ -15866,7 +15906,7 @@
             "previous_species_count": null,
             "species_change": null
           },
-          "new_species_count": 261,
+          "new_species_count": 262,
           "new_species": [
             {
               "common_name": "European Robin",
@@ -18847,6 +18887,14 @@
               "first_seen_date": "2026-03-01"
             },
             {
+              "common_name": "Rose-breasted Grosbeak",
+              "scientific_name": "Pheucticus ludovicianus",
+              "detections": 3,
+              "active_days": 2,
+              "average_confidence": 0.805,
+              "first_seen_date": "2026-08-14"
+            },
+            {
               "common_name": "Rose-throated Becard",
               "scientific_name": "Pachyramphus aglaiae",
               "detections": 3,
@@ -19013,14 +19061,6 @@
               "active_days": 1,
               "average_confidence": 0.686,
               "first_seen_date": "2026-03-27"
-            },
-            {
-              "common_name": "Rose-breasted Grosbeak",
-              "scientific_name": "Pheucticus ludovicianus",
-              "detections": 2,
-              "active_days": 1,
-              "average_confidence": 0.778,
-              "first_seen_date": "2026-08-14"
             },
             {
               "common_name": "Ruddy-capped Nightingale-Thrush",
@@ -19477,6 +19517,14 @@
               "active_days": 1,
               "average_confidence": 0.626,
               "first_seen_date": "2026-01-18"
+            },
+            {
+              "common_name": "White-naped Brushfinch",
+              "scientific_name": "Atlapetes albinucha",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.707,
+              "first_seen_date": "2026-08-19"
             },
             {
               "common_name": "White-tailed Kite",
@@ -20070,8 +20118,8 @@
           "label": "Last 7 days",
           "start_date": "2026-08-13",
           "end_date": "2026-08-19",
-          "total_detections": 1901,
-          "species_count": 47,
+          "total_detections": 1903,
+          "species_count": 48,
           "active_days": 6,
           "average_confidence": 0.86,
           "daily_activity": [
@@ -20107,8 +20155,8 @@
             },
             {
               "date": "2026-08-19",
-              "detections": 156,
-              "species_count": 14
+              "detections": 158,
+              "species_count": 16
             }
           ],
           "hourly_activity": [
@@ -20169,8 +20217,8 @@
             },
             {
               "hour": 11,
-              "detections": 35,
-              "species_count": 7
+              "detections": 37,
+              "species_count": 9
             },
             {
               "hour": 12,
@@ -20241,11 +20289,11 @@
             "previous_start_date": "2026-08-06",
             "previous_end_date": "2026-08-12",
             "previous_detections": 179,
-            "detection_change_percent": 962.0,
+            "detection_change_percent": 963.1,
             "previous_species_count": 15,
-            "species_change": 32
+            "species_change": 33
           },
-          "new_species_count": 35,
+          "new_species_count": 36,
           "new_species": [
             {
               "common_name": "Black-headed Saltator",
@@ -20365,6 +20413,19 @@
               ]
             },
             {
+              "common_name": "Rose-breasted Grosbeak",
+              "scientific_name": "Pheucticus ludovicianus",
+              "detections": 3,
+              "first_seen_date": "2026-08-14",
+              "average_confidence": 0.805,
+              "photo_url": "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
+                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-png200-04cb157bd64b214588ee2884b6c5fe4c.png",
+                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-thumbnail-39b9a38037dd162c6215236a406c73ec.jpg"
+              ]
+            },
+            {
               "common_name": "Summer Tanager",
               "scientific_name": "Piranga rubra",
               "detections": 3,
@@ -20389,19 +20450,6 @@
                 "https://media.birdweather.com/species/2503/Flame-coloredTanager-png200-f22d765d5a74179c1572ad166eb7ee47.png",
                 "https://media.birdweather.com/species/2503/Flame-coloredTanager-thumbnail-ec5812902b5ef78490145b6f98ab344b.jpg"
               ]
-            },
-            {
-              "common_name": "Rose-breasted Grosbeak",
-              "scientific_name": "Pheucticus ludovicianus",
-              "detections": 2,
-              "first_seen_date": "2026-08-14",
-              "average_confidence": 0.778,
-              "photo_url": "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-standard-94c5c7a47bc0d3ccf8aacc8541a2958a.jpg",
-                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-png200-04cb157bd64b214588ee2884b6c5fe4c.png",
-                "https://media.birdweather.com/species/973/Rose-breastedGrosbeak-thumbnail-39b9a38037dd162c6215236a406c73ec.jpg"
-              ]
             }
           ],
           "review_candidates": [
@@ -20417,6 +20465,13 @@
               "scientific_name": "Patagioenas cayennensis",
               "detections": 1,
               "average_confidence": 0.706,
+              "reason": "Lower aggregate confidence"
+            },
+            {
+              "common_name": "White-naped Brushfinch",
+              "scientific_name": "Atlapetes albinucha",
+              "detections": 1,
+              "average_confidence": 0.707,
               "reason": "Lower aggregate confidence"
             },
             {
@@ -20452,13 +20507,6 @@
               "scientific_name": "Megarynchus pitangua",
               "detections": 1,
               "average_confidence": 0.721,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Olive-throated Parakeet",
-              "scientific_name": "Eupsittula nana",
-              "detections": 3,
-              "average_confidence": 0.731,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -21970,6 +22018,14 @@
               "first_seen_date": "2026-08-14"
             },
             {
+              "common_name": "Rose-breasted Grosbeak",
+              "scientific_name": "Pheucticus ludovicianus",
+              "detections": 3,
+              "active_days": 2,
+              "average_confidence": 0.805,
+              "first_seen_date": "2026-08-14"
+            },
+            {
               "common_name": "Summer Tanager",
               "scientific_name": "Piranga rubra",
               "detections": 3,
@@ -21984,14 +22040,6 @@
               "active_days": 1,
               "average_confidence": 0.91,
               "first_seen_date": "2026-08-15"
-            },
-            {
-              "common_name": "Rose-breasted Grosbeak",
-              "scientific_name": "Pheucticus ludovicianus",
-              "detections": 2,
-              "active_days": 1,
-              "average_confidence": 0.778,
-              "first_seen_date": "2026-08-14"
             },
             {
               "common_name": "Tropical Kingbird",
@@ -22162,6 +22210,14 @@
               "first_seen_date": "2026-08-17"
             },
             {
+              "common_name": "White-naped Brushfinch",
+              "scientific_name": "Atlapetes albinucha",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.707,
+              "first_seen_date": "2026-08-19"
+            },
+            {
               "common_name": "White-throated Magpie-Jay",
               "scientific_name": "Calocitta formosa",
               "detections": 1,
@@ -22191,8 +22247,8 @@
           "label": "Last 30 days",
           "start_date": "2026-08-12",
           "end_date": "2026-08-19",
-          "total_detections": 2080,
-          "species_count": 50,
+          "total_detections": 2082,
+          "species_count": 51,
           "active_days": 7,
           "average_confidence": 0.861,
           "daily_activity": [
@@ -22233,8 +22289,8 @@
             },
             {
               "date": "2026-08-19",
-              "detections": 156,
-              "species_count": 14
+              "detections": 158,
+              "species_count": 16
             }
           ],
           "hourly_activity": [
@@ -22295,8 +22351,8 @@
             },
             {
               "hour": 11,
-              "detections": 35,
-              "species_count": 7
+              "detections": 37,
+              "species_count": 9
             },
             {
               "hour": 12,
@@ -22369,9 +22425,9 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 50
+            "species_change": 51
           },
-          "new_species_count": 50,
+          "new_species_count": 51,
           "new_species": [
             {
               "common_name": "White-winged Dove",
@@ -22546,6 +22602,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "White-naped Brushfinch",
+              "scientific_name": "Atlapetes albinucha",
+              "detections": 1,
+              "average_confidence": 0.707,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Rufous-collared Sparrow",
               "scientific_name": "Zonotrichia capensis",
               "detections": 1,
@@ -22578,13 +22641,6 @@
               "scientific_name": "Eupsittula nana",
               "detections": 3,
               "average_confidence": 0.731,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Black-crowned Night-Heron",
-              "scientific_name": "Nycticorax nycticorax",
-              "detections": 1,
-              "average_confidence": 0.733,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -24096,6 +24152,14 @@
               "first_seen_date": "2026-08-14"
             },
             {
+              "common_name": "Rose-breasted Grosbeak",
+              "scientific_name": "Pheucticus ludovicianus",
+              "detections": 3,
+              "active_days": 2,
+              "average_confidence": 0.805,
+              "first_seen_date": "2026-08-14"
+            },
+            {
               "common_name": "Summer Tanager",
               "scientific_name": "Piranga rubra",
               "detections": 3,
@@ -24118,14 +24182,6 @@
               "active_days": 2,
               "average_confidence": 0.742,
               "first_seen_date": "2026-08-12"
-            },
-            {
-              "common_name": "Rose-breasted Grosbeak",
-              "scientific_name": "Pheucticus ludovicianus",
-              "detections": 2,
-              "active_days": 1,
-              "average_confidence": 0.778,
-              "first_seen_date": "2026-08-14"
             },
             {
               "common_name": "Tropical Kingbird",
@@ -24312,6 +24368,14 @@
               "first_seen_date": "2026-08-17"
             },
             {
+              "common_name": "White-naped Brushfinch",
+              "scientific_name": "Atlapetes albinucha",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.707,
+              "first_seen_date": "2026-08-19"
+            },
+            {
               "common_name": "White-throated Magpie-Jay",
               "scientific_name": "Calocitta formosa",
               "detections": 1,
@@ -24341,8 +24405,8 @@
           "label": "All data",
           "start_date": "2026-08-12",
           "end_date": "2026-08-19",
-          "total_detections": 2080,
-          "species_count": 50,
+          "total_detections": 2082,
+          "species_count": 51,
           "active_days": 7,
           "average_confidence": 0.861,
           "daily_activity": [
@@ -24383,8 +24447,8 @@
             },
             {
               "date": "2026-08-19",
-              "detections": 156,
-              "species_count": 14
+              "detections": 158,
+              "species_count": 16
             }
           ],
           "hourly_activity": [
@@ -24445,8 +24509,8 @@
             },
             {
               "hour": 11,
-              "detections": 35,
-              "species_count": 7
+              "detections": 37,
+              "species_count": 9
             },
             {
               "hour": 12,
@@ -24521,7 +24585,7 @@
             "previous_species_count": null,
             "species_change": null
           },
-          "new_species_count": 50,
+          "new_species_count": 51,
           "new_species": [
             {
               "common_name": "White-winged Dove",
@@ -24696,6 +24760,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "White-naped Brushfinch",
+              "scientific_name": "Atlapetes albinucha",
+              "detections": 1,
+              "average_confidence": 0.707,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Rufous-collared Sparrow",
               "scientific_name": "Zonotrichia capensis",
               "detections": 1,
@@ -24728,13 +24799,6 @@
               "scientific_name": "Eupsittula nana",
               "detections": 3,
               "average_confidence": 0.731,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Black-crowned Night-Heron",
-              "scientific_name": "Nycticorax nycticorax",
-              "detections": 1,
-              "average_confidence": 0.733,
               "reason": "Lower aggregate confidence"
             }
           ],
@@ -26246,6 +26310,14 @@
               "first_seen_date": "2026-08-14"
             },
             {
+              "common_name": "Rose-breasted Grosbeak",
+              "scientific_name": "Pheucticus ludovicianus",
+              "detections": 3,
+              "active_days": 2,
+              "average_confidence": 0.805,
+              "first_seen_date": "2026-08-14"
+            },
+            {
               "common_name": "Summer Tanager",
               "scientific_name": "Piranga rubra",
               "detections": 3,
@@ -26268,14 +26340,6 @@
               "active_days": 2,
               "average_confidence": 0.742,
               "first_seen_date": "2026-08-12"
-            },
-            {
-              "common_name": "Rose-breasted Grosbeak",
-              "scientific_name": "Pheucticus ludovicianus",
-              "detections": 2,
-              "active_days": 1,
-              "average_confidence": 0.778,
-              "first_seen_date": "2026-08-14"
             },
             {
               "common_name": "Tropical Kingbird",
@@ -26460,6 +26524,14 @@
               "active_days": 1,
               "average_confidence": 0.709,
               "first_seen_date": "2026-08-17"
+            },
+            {
+              "common_name": "White-naped Brushfinch",
+              "scientific_name": "Atlapetes albinucha",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.707,
+              "first_seen_date": "2026-08-19"
             },
             {
               "common_name": "White-throated Magpie-Jay",
