@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "generated_date": "2026-08-26",
-  "generated_hour": 4,
+  "generated_hour": 5,
   "timezone": "America/Costa_Rica",
   "latest_observation_date": "2026-08-26",
   "default_period": "7d",
@@ -29,8 +29,8 @@
       "label": "Last 7 days",
       "start_date": "2026-08-20",
       "end_date": "2026-08-26",
-      "total_detections": 1400,
-      "species_count": 43,
+      "total_detections": 1402,
+      "species_count": 44,
       "active_days": 7,
       "average_confidence": 0.844,
       "daily_activity": [
@@ -66,8 +66,8 @@
         },
         {
           "date": "2026-08-26",
-          "detections": 4,
-          "species_count": 2
+          "detections": 6,
+          "species_count": 4
         }
       ],
       "hourly_activity": [
@@ -93,13 +93,13 @@
         },
         {
           "hour": 4,
-          "detections": 13,
-          "species_count": 2
+          "detections": 14,
+          "species_count": 3
         },
         {
           "hour": 5,
-          "detections": 211,
-          "species_count": 13
+          "detections": 212,
+          "species_count": 14
         },
         {
           "hour": 6,
@@ -200,9 +200,9 @@
         "previous_start_date": "2026-08-13",
         "previous_end_date": "2026-08-19",
         "previous_detections": 2000,
-        "detection_change_percent": -30.0,
+        "detection_change_percent": -29.9,
         "previous_species_count": 50,
-        "species_change": -7
+        "species_change": -6
       },
       "new_species_count": 5,
       "new_species": [
@@ -274,6 +274,13 @@
       ],
       "review_candidates": [
         {
+          "common_name": "Rufous-collared Sparrow",
+          "scientific_name": "Zonotrichia capensis",
+          "detections": 1,
+          "average_confidence": 0.704,
+          "reason": "Lower aggregate confidence"
+        },
+        {
           "common_name": "Brown-crested Flycatcher",
           "scientific_name": "Myiarchus tyrannulus",
           "detections": 1,
@@ -295,6 +302,13 @@
           "reason": "Lower aggregate confidence"
         },
         {
+          "common_name": "Common Nighthawk",
+          "scientific_name": "Chordeiles minor",
+          "detections": 2,
+          "average_confidence": 0.762,
+          "reason": "Rare in this period"
+        },
+        {
           "common_name": "Ruddy-capped Nightingale-Thrush",
           "scientific_name": "Catharus frantzii",
           "detections": 1,
@@ -313,20 +327,6 @@
           "scientific_name": "Eupsittula nana",
           "detections": 3,
           "average_confidence": 0.792,
-          "reason": "Rare in this period"
-        },
-        {
-          "common_name": "Masked Tityra",
-          "scientific_name": "Tityra semifasciata",
-          "detections": 1,
-          "average_confidence": 0.806,
-          "reason": "Rare in this period"
-        },
-        {
-          "common_name": "Collared Forest-Falcon",
-          "scientific_name": "Micrastur semitorquatus",
-          "detections": 2,
-          "average_confidence": 0.814,
           "reason": "Rare in this period"
         }
       ],
@@ -1886,6 +1886,14 @@
           "first_seen_date": "2026-06-23"
         },
         {
+          "common_name": "Common Nighthawk",
+          "scientific_name": "Chordeiles minor",
+          "detections": 2,
+          "active_days": 2,
+          "average_confidence": 0.762,
+          "first_seen_date": "2026-06-17"
+        },
+        {
           "common_name": "Crimson-fronted Parakeet",
           "scientific_name": "Psittacara finschi",
           "detections": 2,
@@ -1924,14 +1932,6 @@
           "active_days": 1,
           "average_confidence": 0.706,
           "first_seen_date": "2026-07-12"
-        },
-        {
-          "common_name": "Common Nighthawk",
-          "scientific_name": "Chordeiles minor",
-          "detections": 1,
-          "active_days": 1,
-          "average_confidence": 0.816,
-          "first_seen_date": "2026-06-17"
         },
         {
           "common_name": "Flame-colored Tanager",
@@ -1990,6 +1990,14 @@
           "first_seen_date": "2026-07-28"
         },
         {
+          "common_name": "Rufous-collared Sparrow",
+          "scientific_name": "Zonotrichia capensis",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.704,
+          "first_seen_date": "2026-05-30"
+        },
+        {
           "common_name": "Tropical Kingbird",
           "scientific_name": "Tyrannus melancholicus",
           "detections": 1,
@@ -2027,7 +2035,7 @@
       "label": "Last 30 days",
       "start_date": "2026-07-28",
       "end_date": "2026-08-26",
-      "total_detections": 3680,
+      "total_detections": 3682,
       "species_count": 67,
       "active_days": 15,
       "average_confidence": 0.853,
@@ -2179,8 +2187,8 @@
         },
         {
           "date": "2026-08-26",
-          "detections": 4,
-          "species_count": 2
+          "detections": 6,
+          "species_count": 4
         }
       ],
       "hourly_activity": [
@@ -2206,13 +2214,13 @@
         },
         {
           "hour": 4,
-          "detections": 20,
-          "species_count": 3
+          "detections": 21,
+          "species_count": 4
         },
         {
           "hour": 5,
-          "detections": 433,
-          "species_count": 26
+          "detections": 434,
+          "species_count": 27
         },
         {
           "hour": 6,
@@ -2492,17 +2500,17 @@
           "reason": "Lower aggregate confidence"
         },
         {
+          "common_name": "Rufous-collared Sparrow",
+          "scientific_name": "Zonotrichia capensis",
+          "detections": 2,
+          "average_confidence": 0.706,
+          "reason": "Lower aggregate confidence"
+        },
+        {
           "common_name": "White-naped Brushfinch",
           "scientific_name": "Atlapetes albinucha",
           "detections": 1,
           "average_confidence": 0.707,
-          "reason": "Lower aggregate confidence"
-        },
-        {
-          "common_name": "Rufous-collared Sparrow",
-          "scientific_name": "Zonotrichia capensis",
-          "detections": 1,
-          "average_confidence": 0.709,
           "reason": "Lower aggregate confidence"
         },
         {
@@ -4122,6 +4130,14 @@
           "first_seen_date": "2026-08-22"
         },
         {
+          "common_name": "Common Nighthawk",
+          "scientific_name": "Chordeiles minor",
+          "detections": 3,
+          "active_days": 3,
+          "average_confidence": 0.759,
+          "first_seen_date": "2026-06-17"
+        },
+        {
           "common_name": "Flame-colored Tanager",
           "scientific_name": "Piranga bidentata",
           "detections": 3,
@@ -4186,14 +4202,6 @@
           "first_seen_date": "2026-06-23"
         },
         {
-          "common_name": "Common Nighthawk",
-          "scientific_name": "Chordeiles minor",
-          "detections": 2,
-          "active_days": 2,
-          "average_confidence": 0.785,
-          "first_seen_date": "2026-06-17"
-        },
-        {
           "common_name": "Crested Guan",
           "scientific_name": "Penelope purpurascens",
           "detections": 2,
@@ -4232,6 +4240,14 @@
           "active_days": 2,
           "average_confidence": 0.837,
           "first_seen_date": "2026-05-31"
+        },
+        {
+          "common_name": "Rufous-collared Sparrow",
+          "scientific_name": "Zonotrichia capensis",
+          "detections": 2,
+          "active_days": 2,
+          "average_confidence": 0.706,
+          "first_seen_date": "2026-05-30"
         },
         {
           "common_name": "White-throated Thrush",
@@ -4378,14 +4394,6 @@
           "first_seen_date": "2026-08-24"
         },
         {
-          "common_name": "Rufous-collared Sparrow",
-          "scientific_name": "Zonotrichia capensis",
-          "detections": 1,
-          "active_days": 1,
-          "average_confidence": 0.709,
-          "first_seen_date": "2026-05-30"
-        },
-        {
           "common_name": "Turquoise-browed Motmot",
           "scientific_name": "Eumomota superciliosa",
           "detections": 1,
@@ -4423,7 +4431,7 @@
       "label": "All data",
       "start_date": "2025-12-03",
       "end_date": "2026-08-26",
-      "total_detections": 125693,
+      "total_detections": 125695,
       "species_count": 267,
       "active_days": 236,
       "average_confidence": 0.825,
@@ -5760,8 +5768,8 @@
         },
         {
           "date": "2026-08-26",
-          "detections": 4,
-          "species_count": 2
+          "detections": 6,
+          "species_count": 4
         }
       ],
       "hourly_activity": [
@@ -5787,13 +5795,13 @@
         },
         {
           "hour": 4,
-          "detections": 5384,
-          "species_count": 89
+          "detections": 5385,
+          "species_count": 90
         },
         {
           "hour": 5,
-          "detections": 8926,
-          "species_count": 122
+          "detections": 8927,
+          "species_count": 123
         },
         {
           "hour": 6,
@@ -8409,9 +8417,9 @@
         {
           "common_name": "Common Nighthawk",
           "scientific_name": "Chordeiles minor",
-          "detections": 14,
-          "active_days": 12,
-          "average_confidence": 0.827,
+          "detections": 15,
+          "active_days": 13,
+          "average_confidence": 0.819,
           "first_seen_date": "2026-06-17"
         },
         {
@@ -8567,6 +8575,14 @@
           "first_seen_date": "2025-12-26"
         },
         {
+          "common_name": "Rufous-collared Sparrow",
+          "scientific_name": "Zonotrichia capensis",
+          "detections": 9,
+          "active_days": 5,
+          "average_confidence": 0.745,
+          "first_seen_date": "2026-05-30"
+        },
+        {
           "common_name": "Rufous-naped Wren",
           "scientific_name": "Campylorhynchus rufinucha",
           "detections": 9,
@@ -8621,14 +8637,6 @@
           "active_days": 2,
           "average_confidence": 0.769,
           "first_seen_date": "2026-07-02"
-        },
-        {
-          "common_name": "Rufous-collared Sparrow",
-          "scientific_name": "Zonotrichia capensis",
-          "detections": 8,
-          "active_days": 4,
-          "average_confidence": 0.75,
-          "first_seen_date": "2026-05-30"
         },
         {
           "common_name": "Tropical Screech-Owl",
@@ -9613,8 +9621,8 @@
           "label": "Last 7 days",
           "start_date": "2026-08-20",
           "end_date": "2026-08-26",
-          "total_detections": 1400,
-          "species_count": 43,
+          "total_detections": 1402,
+          "species_count": 44,
           "active_days": 7,
           "average_confidence": 0.844,
           "daily_activity": [
@@ -9650,8 +9658,8 @@
             },
             {
               "date": "2026-08-26",
-              "detections": 4,
-              "species_count": 2
+              "detections": 6,
+              "species_count": 4
             }
           ],
           "hourly_activity": [
@@ -9677,13 +9685,13 @@
             },
             {
               "hour": 4,
-              "detections": 13,
-              "species_count": 2
+              "detections": 14,
+              "species_count": 3
             },
             {
               "hour": 5,
-              "detections": 211,
-              "species_count": 13
+              "detections": 212,
+              "species_count": 14
             },
             {
               "hour": 6,
@@ -9784,9 +9792,9 @@
             "previous_start_date": "2026-08-13",
             "previous_end_date": "2026-08-19",
             "previous_detections": 2000,
-            "detection_change_percent": -30.0,
+            "detection_change_percent": -29.9,
             "previous_species_count": 50,
-            "species_change": -7
+            "species_change": -6
           },
           "new_species_count": 5,
           "new_species": [
@@ -9858,6 +9866,13 @@
           ],
           "review_candidates": [
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "average_confidence": 0.704,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Brown-crested Flycatcher",
               "scientific_name": "Myiarchus tyrannulus",
               "detections": 1,
@@ -9879,6 +9894,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Common Nighthawk",
+              "scientific_name": "Chordeiles minor",
+              "detections": 2,
+              "average_confidence": 0.762,
+              "reason": "Rare in this period"
+            },
+            {
               "common_name": "Ruddy-capped Nightingale-Thrush",
               "scientific_name": "Catharus frantzii",
               "detections": 1,
@@ -9897,20 +9919,6 @@
               "scientific_name": "Eupsittula nana",
               "detections": 3,
               "average_confidence": 0.792,
-              "reason": "Rare in this period"
-            },
-            {
-              "common_name": "Masked Tityra",
-              "scientific_name": "Tityra semifasciata",
-              "detections": 1,
-              "average_confidence": 0.806,
-              "reason": "Rare in this period"
-            },
-            {
-              "common_name": "Collared Forest-Falcon",
-              "scientific_name": "Micrastur semitorquatus",
-              "detections": 2,
-              "average_confidence": 0.814,
               "reason": "Rare in this period"
             }
           ],
@@ -11470,6 +11478,14 @@
               "first_seen_date": "2026-06-23"
             },
             {
+              "common_name": "Common Nighthawk",
+              "scientific_name": "Chordeiles minor",
+              "detections": 2,
+              "active_days": 2,
+              "average_confidence": 0.762,
+              "first_seen_date": "2026-06-17"
+            },
+            {
               "common_name": "Crimson-fronted Parakeet",
               "scientific_name": "Psittacara finschi",
               "detections": 2,
@@ -11508,14 +11524,6 @@
               "active_days": 1,
               "average_confidence": 0.706,
               "first_seen_date": "2026-07-12"
-            },
-            {
-              "common_name": "Common Nighthawk",
-              "scientific_name": "Chordeiles minor",
-              "detections": 1,
-              "active_days": 1,
-              "average_confidence": 0.816,
-              "first_seen_date": "2026-06-17"
             },
             {
               "common_name": "Flame-colored Tanager",
@@ -11574,6 +11582,14 @@
               "first_seen_date": "2026-07-28"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.704,
+              "first_seen_date": "2026-05-30"
+            },
+            {
               "common_name": "Tropical Kingbird",
               "scientific_name": "Tyrannus melancholicus",
               "detections": 1,
@@ -11611,7 +11627,7 @@
           "label": "Last 30 days",
           "start_date": "2026-07-28",
           "end_date": "2026-08-26",
-          "total_detections": 3680,
+          "total_detections": 3682,
           "species_count": 67,
           "active_days": 15,
           "average_confidence": 0.853,
@@ -11763,8 +11779,8 @@
             },
             {
               "date": "2026-08-26",
-              "detections": 4,
-              "species_count": 2
+              "detections": 6,
+              "species_count": 4
             }
           ],
           "hourly_activity": [
@@ -11790,13 +11806,13 @@
             },
             {
               "hour": 4,
-              "detections": 20,
-              "species_count": 3
+              "detections": 21,
+              "species_count": 4
             },
             {
               "hour": 5,
-              "detections": 433,
-              "species_count": 26
+              "detections": 434,
+              "species_count": 27
             },
             {
               "hour": 6,
@@ -12076,17 +12092,17 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 2,
+              "average_confidence": 0.706,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "White-naped Brushfinch",
               "scientific_name": "Atlapetes albinucha",
               "detections": 1,
               "average_confidence": 0.707,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Rufous-collared Sparrow",
-              "scientific_name": "Zonotrichia capensis",
-              "detections": 1,
-              "average_confidence": 0.709,
               "reason": "Lower aggregate confidence"
             },
             {
@@ -13706,6 +13722,14 @@
               "first_seen_date": "2026-08-22"
             },
             {
+              "common_name": "Common Nighthawk",
+              "scientific_name": "Chordeiles minor",
+              "detections": 3,
+              "active_days": 3,
+              "average_confidence": 0.759,
+              "first_seen_date": "2026-06-17"
+            },
+            {
               "common_name": "Flame-colored Tanager",
               "scientific_name": "Piranga bidentata",
               "detections": 3,
@@ -13770,14 +13794,6 @@
               "first_seen_date": "2026-06-23"
             },
             {
-              "common_name": "Common Nighthawk",
-              "scientific_name": "Chordeiles minor",
-              "detections": 2,
-              "active_days": 2,
-              "average_confidence": 0.785,
-              "first_seen_date": "2026-06-17"
-            },
-            {
               "common_name": "Crested Guan",
               "scientific_name": "Penelope purpurascens",
               "detections": 2,
@@ -13816,6 +13832,14 @@
               "active_days": 2,
               "average_confidence": 0.837,
               "first_seen_date": "2026-05-31"
+            },
+            {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 2,
+              "active_days": 2,
+              "average_confidence": 0.706,
+              "first_seen_date": "2026-05-30"
             },
             {
               "common_name": "White-throated Thrush",
@@ -13962,14 +13986,6 @@
               "first_seen_date": "2026-08-24"
             },
             {
-              "common_name": "Rufous-collared Sparrow",
-              "scientific_name": "Zonotrichia capensis",
-              "detections": 1,
-              "active_days": 1,
-              "average_confidence": 0.709,
-              "first_seen_date": "2026-05-30"
-            },
-            {
               "common_name": "Turquoise-browed Motmot",
               "scientific_name": "Eumomota superciliosa",
               "detections": 1,
@@ -14007,7 +14023,7 @@
           "label": "All data",
           "start_date": "2025-12-03",
           "end_date": "2026-08-26",
-          "total_detections": 125693,
+          "total_detections": 125695,
           "species_count": 267,
           "active_days": 236,
           "average_confidence": 0.825,
@@ -15344,8 +15360,8 @@
             },
             {
               "date": "2026-08-26",
-              "detections": 4,
-              "species_count": 2
+              "detections": 6,
+              "species_count": 4
             }
           ],
           "hourly_activity": [
@@ -15371,13 +15387,13 @@
             },
             {
               "hour": 4,
-              "detections": 5384,
-              "species_count": 89
+              "detections": 5385,
+              "species_count": 90
             },
             {
               "hour": 5,
-              "detections": 8926,
-              "species_count": 122
+              "detections": 8927,
+              "species_count": 123
             },
             {
               "hour": 6,
@@ -17993,9 +18009,9 @@
             {
               "common_name": "Common Nighthawk",
               "scientific_name": "Chordeiles minor",
-              "detections": 14,
-              "active_days": 12,
-              "average_confidence": 0.827,
+              "detections": 15,
+              "active_days": 13,
+              "average_confidence": 0.819,
               "first_seen_date": "2026-06-17"
             },
             {
@@ -18151,6 +18167,14 @@
               "first_seen_date": "2025-12-26"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 9,
+              "active_days": 5,
+              "average_confidence": 0.745,
+              "first_seen_date": "2026-05-30"
+            },
+            {
               "common_name": "Rufous-naped Wren",
               "scientific_name": "Campylorhynchus rufinucha",
               "detections": 9,
@@ -18205,14 +18229,6 @@
               "active_days": 2,
               "average_confidence": 0.769,
               "first_seen_date": "2026-07-02"
-            },
-            {
-              "common_name": "Rufous-collared Sparrow",
-              "scientific_name": "Zonotrichia capensis",
-              "detections": 8,
-              "active_days": 4,
-              "average_confidence": 0.75,
-              "first_seen_date": "2026-05-30"
             },
             {
               "common_name": "Tropical Screech-Owl",
@@ -19734,8 +19750,8 @@
           "label": "Last 7 days",
           "start_date": "2026-08-20",
           "end_date": "2026-08-26",
-          "total_detections": 1400,
-          "species_count": 43,
+          "total_detections": 1402,
+          "species_count": 44,
           "active_days": 7,
           "average_confidence": 0.844,
           "daily_activity": [
@@ -19771,8 +19787,8 @@
             },
             {
               "date": "2026-08-26",
-              "detections": 4,
-              "species_count": 2
+              "detections": 6,
+              "species_count": 4
             }
           ],
           "hourly_activity": [
@@ -19798,13 +19814,13 @@
             },
             {
               "hour": 4,
-              "detections": 13,
-              "species_count": 2
+              "detections": 14,
+              "species_count": 3
             },
             {
               "hour": 5,
-              "detections": 211,
-              "species_count": 13
+              "detections": 212,
+              "species_count": 14
             },
             {
               "hour": 6,
@@ -19905,9 +19921,9 @@
             "previous_start_date": "2026-08-13",
             "previous_end_date": "2026-08-19",
             "previous_detections": 2000,
-            "detection_change_percent": -30.0,
+            "detection_change_percent": -29.9,
             "previous_species_count": 50,
-            "species_change": -7
+            "species_change": -6
           },
           "new_species_count": 11,
           "new_species": [
@@ -20057,6 +20073,13 @@
           ],
           "review_candidates": [
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "average_confidence": 0.704,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Brown-crested Flycatcher",
               "scientific_name": "Myiarchus tyrannulus",
               "detections": 1,
@@ -20078,6 +20101,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Common Nighthawk",
+              "scientific_name": "Chordeiles minor",
+              "detections": 2,
+              "average_confidence": 0.762,
+              "reason": "Rare in this period"
+            },
+            {
               "common_name": "Ruddy-capped Nightingale-Thrush",
               "scientific_name": "Catharus frantzii",
               "detections": 1,
@@ -20096,20 +20126,6 @@
               "scientific_name": "Eupsittula nana",
               "detections": 3,
               "average_confidence": 0.792,
-              "reason": "Rare in this period"
-            },
-            {
-              "common_name": "Masked Tityra",
-              "scientific_name": "Tityra semifasciata",
-              "detections": 1,
-              "average_confidence": 0.806,
-              "reason": "Rare in this period"
-            },
-            {
-              "common_name": "Collared Forest-Falcon",
-              "scientific_name": "Micrastur semitorquatus",
-              "detections": 2,
-              "average_confidence": 0.814,
               "reason": "Rare in this period"
             }
           ],
@@ -21669,6 +21685,14 @@
               "first_seen_date": "2026-08-23"
             },
             {
+              "common_name": "Common Nighthawk",
+              "scientific_name": "Chordeiles minor",
+              "detections": 2,
+              "active_days": 2,
+              "average_confidence": 0.762,
+              "first_seen_date": "2026-08-19"
+            },
+            {
               "common_name": "Crimson-fronted Parakeet",
               "scientific_name": "Psittacara finschi",
               "detections": 2,
@@ -21707,14 +21731,6 @@
               "active_days": 1,
               "average_confidence": 0.706,
               "first_seen_date": "2026-08-22"
-            },
-            {
-              "common_name": "Common Nighthawk",
-              "scientific_name": "Chordeiles minor",
-              "detections": 1,
-              "active_days": 1,
-              "average_confidence": 0.816,
-              "first_seen_date": "2026-08-19"
             },
             {
               "common_name": "Flame-colored Tanager",
@@ -21773,6 +21789,14 @@
               "first_seen_date": "2026-08-15"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.704,
+              "first_seen_date": "2026-08-17"
+            },
+            {
               "common_name": "Tropical Kingbird",
               "scientific_name": "Tyrannus melancholicus",
               "detections": 1,
@@ -21810,7 +21834,7 @@
           "label": "Last 30 days",
           "start_date": "2026-08-12",
           "end_date": "2026-08-26",
-          "total_detections": 3579,
+          "total_detections": 3581,
           "species_count": 64,
           "active_days": 14,
           "average_confidence": 0.854,
@@ -21887,8 +21911,8 @@
             },
             {
               "date": "2026-08-26",
-              "detections": 4,
-              "species_count": 2
+              "detections": 6,
+              "species_count": 4
             }
           ],
           "hourly_activity": [
@@ -21914,13 +21938,13 @@
             },
             {
               "hour": 4,
-              "detections": 20,
-              "species_count": 3
+              "detections": 21,
+              "species_count": 4
             },
             {
               "hour": 5,
-              "detections": 384,
-              "species_count": 20
+              "detections": 385,
+              "species_count": 21
             },
             {
               "hour": 6,
@@ -22200,17 +22224,17 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 2,
+              "average_confidence": 0.706,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "White-naped Brushfinch",
               "scientific_name": "Atlapetes albinucha",
               "detections": 1,
               "average_confidence": 0.707,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Rufous-collared Sparrow",
-              "scientific_name": "Zonotrichia capensis",
-              "detections": 1,
-              "average_confidence": 0.709,
               "reason": "Lower aggregate confidence"
             },
             {
@@ -23822,6 +23846,14 @@
               "first_seen_date": "2026-08-22"
             },
             {
+              "common_name": "Common Nighthawk",
+              "scientific_name": "Chordeiles minor",
+              "detections": 3,
+              "active_days": 3,
+              "average_confidence": 0.759,
+              "first_seen_date": "2026-08-19"
+            },
+            {
               "common_name": "Flame-colored Tanager",
               "scientific_name": "Piranga bidentata",
               "detections": 3,
@@ -23878,14 +23910,6 @@
               "first_seen_date": "2026-08-23"
             },
             {
-              "common_name": "Common Nighthawk",
-              "scientific_name": "Chordeiles minor",
-              "detections": 2,
-              "active_days": 2,
-              "average_confidence": 0.785,
-              "first_seen_date": "2026-08-19"
-            },
-            {
               "common_name": "Crested Guan",
               "scientific_name": "Penelope purpurascens",
               "detections": 2,
@@ -23924,6 +23948,14 @@
               "active_days": 2,
               "average_confidence": 0.835,
               "first_seen_date": "2026-08-15"
+            },
+            {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 2,
+              "active_days": 2,
+              "average_confidence": 0.706,
+              "first_seen_date": "2026-08-17"
             },
             {
               "common_name": "White-throated Thrush",
@@ -24062,14 +24094,6 @@
               "first_seen_date": "2026-08-24"
             },
             {
-              "common_name": "Rufous-collared Sparrow",
-              "scientific_name": "Zonotrichia capensis",
-              "detections": 1,
-              "active_days": 1,
-              "average_confidence": 0.709,
-              "first_seen_date": "2026-08-17"
-            },
-            {
               "common_name": "Turquoise-browed Motmot",
               "scientific_name": "Eumomota superciliosa",
               "detections": 1,
@@ -24107,7 +24131,7 @@
           "label": "All data",
           "start_date": "2026-08-12",
           "end_date": "2026-08-26",
-          "total_detections": 3579,
+          "total_detections": 3581,
           "species_count": 64,
           "active_days": 14,
           "average_confidence": 0.854,
@@ -24184,8 +24208,8 @@
             },
             {
               "date": "2026-08-26",
-              "detections": 4,
-              "species_count": 2
+              "detections": 6,
+              "species_count": 4
             }
           ],
           "hourly_activity": [
@@ -24211,13 +24235,13 @@
             },
             {
               "hour": 4,
-              "detections": 20,
-              "species_count": 3
+              "detections": 21,
+              "species_count": 4
             },
             {
               "hour": 5,
-              "detections": 384,
-              "species_count": 20
+              "detections": 385,
+              "species_count": 21
             },
             {
               "hour": 6,
@@ -24497,17 +24521,17 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 2,
+              "average_confidence": 0.706,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "White-naped Brushfinch",
               "scientific_name": "Atlapetes albinucha",
               "detections": 1,
               "average_confidence": 0.707,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Rufous-collared Sparrow",
-              "scientific_name": "Zonotrichia capensis",
-              "detections": 1,
-              "average_confidence": 0.709,
               "reason": "Lower aggregate confidence"
             },
             {
@@ -26119,6 +26143,14 @@
               "first_seen_date": "2026-08-22"
             },
             {
+              "common_name": "Common Nighthawk",
+              "scientific_name": "Chordeiles minor",
+              "detections": 3,
+              "active_days": 3,
+              "average_confidence": 0.759,
+              "first_seen_date": "2026-08-19"
+            },
+            {
               "common_name": "Flame-colored Tanager",
               "scientific_name": "Piranga bidentata",
               "detections": 3,
@@ -26175,14 +26207,6 @@
               "first_seen_date": "2026-08-23"
             },
             {
-              "common_name": "Common Nighthawk",
-              "scientific_name": "Chordeiles minor",
-              "detections": 2,
-              "active_days": 2,
-              "average_confidence": 0.785,
-              "first_seen_date": "2026-08-19"
-            },
-            {
               "common_name": "Crested Guan",
               "scientific_name": "Penelope purpurascens",
               "detections": 2,
@@ -26221,6 +26245,14 @@
               "active_days": 2,
               "average_confidence": 0.835,
               "first_seen_date": "2026-08-15"
+            },
+            {
+              "common_name": "Rufous-collared Sparrow",
+              "scientific_name": "Zonotrichia capensis",
+              "detections": 2,
+              "active_days": 2,
+              "average_confidence": 0.706,
+              "first_seen_date": "2026-08-17"
             },
             {
               "common_name": "White-throated Thrush",
@@ -26357,14 +26389,6 @@
               "active_days": 1,
               "average_confidence": 0.84,
               "first_seen_date": "2026-08-24"
-            },
-            {
-              "common_name": "Rufous-collared Sparrow",
-              "scientific_name": "Zonotrichia capensis",
-              "detections": 1,
-              "active_days": 1,
-              "average_confidence": 0.709,
-              "first_seen_date": "2026-08-17"
             },
             {
               "common_name": "Turquoise-browed Motmot",
