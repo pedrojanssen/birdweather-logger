@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "generated_date": "2026-08-29",
-  "generated_hour": 9,
+  "generated_hour": 12,
   "timezone": "America/Costa_Rica",
   "latest_observation_date": "2026-08-29",
   "default_period": "7d",
@@ -29,10 +29,10 @@
       "label": "Last 7 days",
       "start_date": "2026-08-23",
       "end_date": "2026-08-29",
-      "total_detections": 973,
-      "species_count": 44,
+      "total_detections": 984,
+      "species_count": 45,
       "active_days": 7,
-      "average_confidence": 0.841,
+      "average_confidence": 0.842,
       "daily_activity": [
         {
           "date": "2026-08-23",
@@ -66,8 +66,8 @@
         },
         {
           "date": "2026-08-29",
-          "detections": 66,
-          "species_count": 10
+          "detections": 77,
+          "species_count": 12
         }
       ],
       "hourly_activity": [
@@ -123,13 +123,13 @@
         },
         {
           "hour": 10,
-          "detections": 96,
-          "species_count": 10
+          "detections": 103,
+          "species_count": 12
         },
         {
           "hour": 11,
-          "detections": 36,
-          "species_count": 8
+          "detections": 40,
+          "species_count": 11
         },
         {
           "hour": 12,
@@ -200,11 +200,11 @@
         "previous_start_date": "2026-08-16",
         "previous_end_date": "2026-08-22",
         "previous_detections": 1507,
-        "detection_change_percent": -35.4,
+        "detection_change_percent": -34.7,
         "previous_species_count": 42,
-        "species_change": 2
+        "species_change": 3
       },
-      "new_species_count": 5,
+      "new_species_count": 6,
       "new_species": [
         {
           "common_name": "Gray-capped Flycatcher",
@@ -230,6 +230,19 @@
             "https://media.birdweather.com/species/389/Ruby-throatedHummingbird-standard-0de709133d10e84d4f359b410ad74f88.jpg",
             "https://media.birdweather.com/species/389/Ruby-throatedHummingbird-png200-e4eed6e5ab7b67287c42212fb8045f30.png",
             "https://media.birdweather.com/species/389/Ruby-throatedHummingbird-thumbnail-90592342137be60a59391e2137c0f72f.jpg"
+          ]
+        },
+        {
+          "common_name": "Barred Forest-Falcon",
+          "scientific_name": "Micrastur ruficollis",
+          "detections": 1,
+          "first_seen_date": "2026-08-29",
+          "average_confidence": 0.87,
+          "photo_url": "https://media.birdweather.com/species/556/BarredForest-Falcon-standard-ed652e6f19b09465e5ca6739e02ed091.jpg",
+          "photo_urls": [
+            "https://media.birdweather.com/species/556/BarredForest-Falcon-standard-ed652e6f19b09465e5ca6739e02ed091.jpg",
+            "https://media.birdweather.com/species/556/BarredForest-Falcon-png200-97f7a9f4187d84cbef01a7814a809a04.png",
+            "https://media.birdweather.com/species/556/BarredForest-Falcon-thumbnail-fe797db2b4fd01b407cc2fa030dad78d.jpg"
           ]
         },
         {
@@ -780,6 +793,118 @@
           "change_percent": -54.1
         },
         {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 26,
+          "active_days": 6,
+          "average_confidence": 0.81,
+          "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+          "photo_urls": [
+            "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+            "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
+            "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
+          ],
+          "hourly_activity": [
+            {
+              "hour": 0,
+              "detections": 0
+            },
+            {
+              "hour": 1,
+              "detections": 0
+            },
+            {
+              "hour": 2,
+              "detections": 0
+            },
+            {
+              "hour": 3,
+              "detections": 0
+            },
+            {
+              "hour": 4,
+              "detections": 0
+            },
+            {
+              "hour": 5,
+              "detections": 2
+            },
+            {
+              "hour": 6,
+              "detections": 5
+            },
+            {
+              "hour": 7,
+              "detections": 5
+            },
+            {
+              "hour": 8,
+              "detections": 3
+            },
+            {
+              "hour": 9,
+              "detections": 2
+            },
+            {
+              "hour": 10,
+              "detections": 3
+            },
+            {
+              "hour": 11,
+              "detections": 2
+            },
+            {
+              "hour": 12,
+              "detections": 0
+            },
+            {
+              "hour": 13,
+              "detections": 1
+            },
+            {
+              "hour": 14,
+              "detections": 0
+            },
+            {
+              "hour": 15,
+              "detections": 2
+            },
+            {
+              "hour": 16,
+              "detections": 0
+            },
+            {
+              "hour": 17,
+              "detections": 1
+            },
+            {
+              "hour": 18,
+              "detections": 0
+            },
+            {
+              "hour": 19,
+              "detections": 0
+            },
+            {
+              "hour": 20,
+              "detections": 0
+            },
+            {
+              "hour": 21,
+              "detections": 0
+            },
+            {
+              "hour": 22,
+              "detections": 0
+            },
+            {
+              "hour": 23,
+              "detections": 0
+            }
+          ],
+          "change_percent": 100.0
+        },
+        {
           "common_name": "Scale-crested Pygmy-Tyrant",
           "scientific_name": "Lophotriccus pileatus",
           "detections": 26,
@@ -892,123 +1017,11 @@
           "change_percent": 52.9
         },
         {
-          "common_name": "Rufous-tailed Hummingbird",
-          "scientific_name": "Amazilia tzacatl",
-          "detections": 21,
-          "active_days": 6,
-          "average_confidence": 0.807,
-          "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
-          "photo_urls": [
-            "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
-            "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
-            "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
-          ],
-          "hourly_activity": [
-            {
-              "hour": 0,
-              "detections": 0
-            },
-            {
-              "hour": 1,
-              "detections": 0
-            },
-            {
-              "hour": 2,
-              "detections": 0
-            },
-            {
-              "hour": 3,
-              "detections": 0
-            },
-            {
-              "hour": 4,
-              "detections": 0
-            },
-            {
-              "hour": 5,
-              "detections": 2
-            },
-            {
-              "hour": 6,
-              "detections": 5
-            },
-            {
-              "hour": 7,
-              "detections": 5
-            },
-            {
-              "hour": 8,
-              "detections": 3
-            },
-            {
-              "hour": 9,
-              "detections": 2
-            },
-            {
-              "hour": 10,
-              "detections": 0
-            },
-            {
-              "hour": 11,
-              "detections": 0
-            },
-            {
-              "hour": 12,
-              "detections": 0
-            },
-            {
-              "hour": 13,
-              "detections": 1
-            },
-            {
-              "hour": 14,
-              "detections": 0
-            },
-            {
-              "hour": 15,
-              "detections": 2
-            },
-            {
-              "hour": 16,
-              "detections": 0
-            },
-            {
-              "hour": 17,
-              "detections": 1
-            },
-            {
-              "hour": 18,
-              "detections": 0
-            },
-            {
-              "hour": 19,
-              "detections": 0
-            },
-            {
-              "hour": 20,
-              "detections": 0
-            },
-            {
-              "hour": 21,
-              "detections": 0
-            },
-            {
-              "hour": 22,
-              "detections": 0
-            },
-            {
-              "hour": 23,
-              "detections": 0
-            }
-          ],
-          "change_percent": 61.5
-        },
-        {
           "common_name": "Yellow-billed Cuckoo",
           "scientific_name": "Coccyzus americanus",
-          "detections": 21,
+          "detections": 22,
           "active_days": 5,
-          "average_confidence": 0.81,
+          "average_confidence": 0.815,
           "photo_url": "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
@@ -1062,7 +1075,7 @@
             },
             {
               "hour": 11,
-              "detections": 0
+              "detections": 1
             },
             {
               "hour": 12,
@@ -1113,7 +1126,7 @@
               "detections": 3
             }
           ],
-          "change_percent": 110.0
+          "change_percent": 120.0
         },
         {
           "common_name": "Cinnamon-bellied Saltator",
@@ -1226,6 +1239,118 @@
             }
           ],
           "change_percent": -5.9
+        },
+        {
+          "common_name": "Southern Lapwing",
+          "scientific_name": "Vanellus chilensis",
+          "detections": 14,
+          "active_days": 4,
+          "average_confidence": 0.897,
+          "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
+          "photo_urls": [
+            "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
+            "https://media.birdweather.com/species/349/SouthernLapwing-png200-1801892688cffe6fb6fd8c00fbf91764.png",
+            "https://media.birdweather.com/species/349/SouthernLapwing-thumbnail-33b4d17a45224d79dbf2a0a3aa5ea2c7.jpg"
+          ],
+          "hourly_activity": [
+            {
+              "hour": 0,
+              "detections": 0
+            },
+            {
+              "hour": 1,
+              "detections": 0
+            },
+            {
+              "hour": 2,
+              "detections": 0
+            },
+            {
+              "hour": 3,
+              "detections": 0
+            },
+            {
+              "hour": 4,
+              "detections": 0
+            },
+            {
+              "hour": 5,
+              "detections": 0
+            },
+            {
+              "hour": 6,
+              "detections": 3
+            },
+            {
+              "hour": 7,
+              "detections": 2
+            },
+            {
+              "hour": 8,
+              "detections": 1
+            },
+            {
+              "hour": 9,
+              "detections": 0
+            },
+            {
+              "hour": 10,
+              "detections": 4
+            },
+            {
+              "hour": 11,
+              "detections": 0
+            },
+            {
+              "hour": 12,
+              "detections": 0
+            },
+            {
+              "hour": 13,
+              "detections": 0
+            },
+            {
+              "hour": 14,
+              "detections": 0
+            },
+            {
+              "hour": 15,
+              "detections": 0
+            },
+            {
+              "hour": 16,
+              "detections": 4
+            },
+            {
+              "hour": 17,
+              "detections": 0
+            },
+            {
+              "hour": 18,
+              "detections": 0
+            },
+            {
+              "hour": 19,
+              "detections": 0
+            },
+            {
+              "hour": 20,
+              "detections": 0
+            },
+            {
+              "hour": 21,
+              "detections": 0
+            },
+            {
+              "hour": 22,
+              "detections": 0
+            },
+            {
+              "hour": 23,
+              "detections": 0
+            }
+          ],
+          "change_percent": 16.7
         },
         {
           "common_name": "Great-tailed Grackle",
@@ -1452,118 +1577,6 @@
           "change_percent": -44.4
         },
         {
-          "common_name": "Southern Lapwing",
-          "scientific_name": "Vanellus chilensis",
-          "detections": 10,
-          "active_days": 3,
-          "average_confidence": 0.87,
-          "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
-          "photo_urls": [
-            "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
-            "https://media.birdweather.com/species/349/SouthernLapwing-png200-1801892688cffe6fb6fd8c00fbf91764.png",
-            "https://media.birdweather.com/species/349/SouthernLapwing-thumbnail-33b4d17a45224d79dbf2a0a3aa5ea2c7.jpg"
-          ],
-          "hourly_activity": [
-            {
-              "hour": 0,
-              "detections": 0
-            },
-            {
-              "hour": 1,
-              "detections": 0
-            },
-            {
-              "hour": 2,
-              "detections": 0
-            },
-            {
-              "hour": 3,
-              "detections": 0
-            },
-            {
-              "hour": 4,
-              "detections": 0
-            },
-            {
-              "hour": 5,
-              "detections": 0
-            },
-            {
-              "hour": 6,
-              "detections": 3
-            },
-            {
-              "hour": 7,
-              "detections": 2
-            },
-            {
-              "hour": 8,
-              "detections": 1
-            },
-            {
-              "hour": 9,
-              "detections": 0
-            },
-            {
-              "hour": 10,
-              "detections": 0
-            },
-            {
-              "hour": 11,
-              "detections": 0
-            },
-            {
-              "hour": 12,
-              "detections": 0
-            },
-            {
-              "hour": 13,
-              "detections": 0
-            },
-            {
-              "hour": 14,
-              "detections": 0
-            },
-            {
-              "hour": 15,
-              "detections": 0
-            },
-            {
-              "hour": 16,
-              "detections": 4
-            },
-            {
-              "hour": 17,
-              "detections": 0
-            },
-            {
-              "hour": 18,
-              "detections": 0
-            },
-            {
-              "hour": 19,
-              "detections": 0
-            },
-            {
-              "hour": 20,
-              "detections": 0
-            },
-            {
-              "hour": 21,
-              "detections": 0
-            },
-            {
-              "hour": 22,
-              "detections": 0
-            },
-            {
-              "hour": 23,
-              "detections": 0
-            }
-          ],
-          "change_percent": -16.7
-        },
-        {
           "common_name": "Barn Owl",
           "scientific_name": "Tyto alba",
           "detections": 9,
@@ -1710,6 +1723,14 @@
           "first_seen_date": "2026-05-28"
         },
         {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 26,
+          "active_days": 6,
+          "average_confidence": 0.81,
+          "first_seen_date": "2026-06-02"
+        },
+        {
           "common_name": "Scale-crested Pygmy-Tyrant",
           "scientific_name": "Lophotriccus pileatus",
           "detections": 26,
@@ -1718,19 +1739,11 @@
           "first_seen_date": "2026-08-13"
         },
         {
-          "common_name": "Rufous-tailed Hummingbird",
-          "scientific_name": "Amazilia tzacatl",
-          "detections": 21,
-          "active_days": 6,
-          "average_confidence": 0.807,
-          "first_seen_date": "2026-06-02"
-        },
-        {
           "common_name": "Yellow-billed Cuckoo",
           "scientific_name": "Coccyzus americanus",
-          "detections": 21,
+          "detections": 22,
           "active_days": 5,
-          "average_confidence": 0.81,
+          "average_confidence": 0.815,
           "first_seen_date": "2026-05-29"
         },
         {
@@ -1740,6 +1753,14 @@
           "active_days": 3,
           "average_confidence": 0.843,
           "first_seen_date": "2026-05-28"
+        },
+        {
+          "common_name": "Southern Lapwing",
+          "scientific_name": "Vanellus chilensis",
+          "detections": 14,
+          "active_days": 4,
+          "average_confidence": 0.897,
+          "first_seen_date": "2026-05-31"
         },
         {
           "common_name": "Great-tailed Grackle",
@@ -1756,14 +1777,6 @@
           "active_days": 4,
           "average_confidence": 0.801,
           "first_seen_date": "2026-05-28"
-        },
-        {
-          "common_name": "Southern Lapwing",
-          "scientific_name": "Vanellus chilensis",
-          "detections": 10,
-          "active_days": 3,
-          "average_confidence": 0.87,
-          "first_seen_date": "2026-05-31"
         },
         {
           "common_name": "Barn Owl",
@@ -1918,6 +1931,14 @@
           "first_seen_date": "2026-07-02"
         },
         {
+          "common_name": "Barred Forest-Falcon",
+          "scientific_name": "Micrastur ruficollis",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.87,
+          "first_seen_date": "2026-08-29"
+        },
+        {
           "common_name": "Black-crowned Night-Heron",
           "scientific_name": "Nycticorax nycticorax",
           "detections": 1,
@@ -2035,8 +2056,8 @@
       "label": "Last 30 days",
       "start_date": "2026-07-31",
       "end_date": "2026-08-29",
-      "total_detections": 4047,
-      "species_count": 67,
+      "total_detections": 4058,
+      "species_count": 68,
       "active_days": 17,
       "average_confidence": 0.853,
       "daily_activity": [
@@ -2187,8 +2208,8 @@
         },
         {
           "date": "2026-08-29",
-          "detections": 66,
-          "species_count": 10
+          "detections": 77,
+          "species_count": 12
         }
       ],
       "hourly_activity": [
@@ -2244,13 +2265,13 @@
         },
         {
           "hour": 10,
-          "detections": 264,
+          "detections": 271,
           "species_count": 17
         },
         {
           "hour": 11,
-          "detections": 176,
-          "species_count": 17
+          "detections": 180,
+          "species_count": 18
         },
         {
           "hour": 12,
@@ -2321,11 +2342,11 @@
         "previous_start_date": "2026-07-01",
         "previous_end_date": "2026-07-30",
         "previous_detections": 6154,
-        "detection_change_percent": -34.2,
+        "detection_change_percent": -34.1,
         "previous_species_count": 79,
-        "species_change": -12
+        "species_change": -11
       },
-      "new_species_count": 26,
+      "new_species_count": 27,
       "new_species": [
         {
           "common_name": "Ruddy Ground Dove",
@@ -3442,9 +3463,9 @@
         {
           "common_name": "Yellow-billed Cuckoo",
           "scientific_name": "Coccyzus americanus",
-          "detections": 51,
+          "detections": 52,
           "active_days": 12,
-          "average_confidence": 0.818,
+          "average_confidence": 0.82,
           "photo_url": "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
@@ -3498,7 +3519,7 @@
             },
             {
               "hour": 11,
-              "detections": 4
+              "detections": 5
             },
             {
               "hour": 12,
@@ -3549,14 +3570,14 @@
               "detections": 3
             }
           ],
-          "change_percent": 264.3
+          "change_percent": 271.4
         },
         {
           "common_name": "Southern Lapwing",
           "scientific_name": "Vanellus chilensis",
-          "detections": 44,
-          "active_days": 11,
-          "average_confidence": 0.84,
+          "detections": 48,
+          "active_days": 12,
+          "average_confidence": 0.851,
           "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
@@ -3606,7 +3627,7 @@
             },
             {
               "hour": 10,
-              "detections": 3
+              "detections": 7
             },
             {
               "hour": 11,
@@ -3661,7 +3682,119 @@
               "detections": 0
             }
           ],
-          "change_percent": 15.8
+          "change_percent": 26.3
+        },
+        {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 42,
+          "active_days": 14,
+          "average_confidence": 0.818,
+          "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+          "photo_urls": [
+            "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+            "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
+            "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
+          ],
+          "hourly_activity": [
+            {
+              "hour": 0,
+              "detections": 0
+            },
+            {
+              "hour": 1,
+              "detections": 0
+            },
+            {
+              "hour": 2,
+              "detections": 0
+            },
+            {
+              "hour": 3,
+              "detections": 0
+            },
+            {
+              "hour": 4,
+              "detections": 0
+            },
+            {
+              "hour": 5,
+              "detections": 4
+            },
+            {
+              "hour": 6,
+              "detections": 9
+            },
+            {
+              "hour": 7,
+              "detections": 6
+            },
+            {
+              "hour": 8,
+              "detections": 5
+            },
+            {
+              "hour": 9,
+              "detections": 2
+            },
+            {
+              "hour": 10,
+              "detections": 4
+            },
+            {
+              "hour": 11,
+              "detections": 3
+            },
+            {
+              "hour": 12,
+              "detections": 1
+            },
+            {
+              "hour": 13,
+              "detections": 2
+            },
+            {
+              "hour": 14,
+              "detections": 0
+            },
+            {
+              "hour": 15,
+              "detections": 2
+            },
+            {
+              "hour": 16,
+              "detections": 1
+            },
+            {
+              "hour": 17,
+              "detections": 3
+            },
+            {
+              "hour": 18,
+              "detections": 0
+            },
+            {
+              "hour": 19,
+              "detections": 0
+            },
+            {
+              "hour": 20,
+              "detections": 0
+            },
+            {
+              "hour": 21,
+              "detections": 0
+            },
+            {
+              "hour": 22,
+              "detections": 0
+            },
+            {
+              "hour": 23,
+              "detections": 0
+            }
+          ],
+          "change_percent": 950.0
         },
         {
           "common_name": "Great-tailed Grackle",
@@ -3774,118 +3907,6 @@
             }
           ],
           "change_percent": 31.0
-        },
-        {
-          "common_name": "Blue-gray Tanager",
-          "scientific_name": "Thraupis episcopus",
-          "detections": 37,
-          "active_days": 11,
-          "average_confidence": 0.82,
-          "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-          "photo_urls": [
-            "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-            "https://media.birdweather.com/species/451/Blue-grayTanager-png200-be5418cb49793536e5c09e1af73aefe1.png",
-            "https://media.birdweather.com/species/451/Blue-grayTanager-thumbnail-dc3af9565dbd849047cf157316f7ef59.jpg"
-          ],
-          "hourly_activity": [
-            {
-              "hour": 0,
-              "detections": 0
-            },
-            {
-              "hour": 1,
-              "detections": 0
-            },
-            {
-              "hour": 2,
-              "detections": 0
-            },
-            {
-              "hour": 3,
-              "detections": 0
-            },
-            {
-              "hour": 4,
-              "detections": 0
-            },
-            {
-              "hour": 5,
-              "detections": 0
-            },
-            {
-              "hour": 6,
-              "detections": 13
-            },
-            {
-              "hour": 7,
-              "detections": 1
-            },
-            {
-              "hour": 8,
-              "detections": 6
-            },
-            {
-              "hour": 9,
-              "detections": 8
-            },
-            {
-              "hour": 10,
-              "detections": 2
-            },
-            {
-              "hour": 11,
-              "detections": 1
-            },
-            {
-              "hour": 12,
-              "detections": 0
-            },
-            {
-              "hour": 13,
-              "detections": 0
-            },
-            {
-              "hour": 14,
-              "detections": 4
-            },
-            {
-              "hour": 15,
-              "detections": 2
-            },
-            {
-              "hour": 16,
-              "detections": 0
-            },
-            {
-              "hour": 17,
-              "detections": 0
-            },
-            {
-              "hour": 18,
-              "detections": 0
-            },
-            {
-              "hour": 19,
-              "detections": 0
-            },
-            {
-              "hour": 20,
-              "detections": 0
-            },
-            {
-              "hour": 21,
-              "detections": 0
-            },
-            {
-              "hour": 22,
-              "detections": 0
-            },
-            {
-              "hour": 23,
-              "detections": 0
-            }
-          ],
-          "change_percent": -98.0
         }
       ],
       "species": [
@@ -3956,18 +3977,26 @@
         {
           "common_name": "Yellow-billed Cuckoo",
           "scientific_name": "Coccyzus americanus",
-          "detections": 51,
+          "detections": 52,
           "active_days": 12,
-          "average_confidence": 0.818,
+          "average_confidence": 0.82,
           "first_seen_date": "2026-05-29"
         },
         {
           "common_name": "Southern Lapwing",
           "scientific_name": "Vanellus chilensis",
-          "detections": 44,
-          "active_days": 11,
-          "average_confidence": 0.84,
+          "detections": 48,
+          "active_days": 12,
+          "average_confidence": 0.851,
           "first_seen_date": "2026-05-31"
+        },
+        {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 42,
+          "active_days": 14,
+          "average_confidence": 0.818,
+          "first_seen_date": "2026-06-02"
         },
         {
           "common_name": "Great-tailed Grackle",
@@ -3984,14 +4013,6 @@
           "active_days": 11,
           "average_confidence": 0.82,
           "first_seen_date": "2026-05-28"
-        },
-        {
-          "common_name": "Rufous-tailed Hummingbird",
-          "scientific_name": "Amazilia tzacatl",
-          "detections": 37,
-          "active_days": 14,
-          "average_confidence": 0.817,
-          "first_seen_date": "2026-06-02"
         },
         {
           "common_name": "Black-headed Saltator",
@@ -4290,6 +4311,14 @@
           "first_seen_date": "2026-07-02"
         },
         {
+          "common_name": "Barred Forest-Falcon",
+          "scientific_name": "Micrastur ruficollis",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.87,
+          "first_seen_date": "2026-08-29"
+        },
+        {
           "common_name": "Black Phoebe",
           "scientific_name": "Sayornis nigricans",
           "detections": 1,
@@ -4431,8 +4460,8 @@
       "label": "All data",
       "start_date": "2025-12-03",
       "end_date": "2026-08-29",
-      "total_detections": 126161,
-      "species_count": 269,
+      "total_detections": 126172,
+      "species_count": 270,
       "active_days": 239,
       "average_confidence": 0.826,
       "daily_activity": [
@@ -5783,8 +5812,8 @@
         },
         {
           "date": "2026-08-29",
-          "detections": 66,
-          "species_count": 10
+          "detections": 77,
+          "species_count": 12
         }
       ],
       "hourly_activity": [
@@ -5840,13 +5869,13 @@
         },
         {
           "hour": 10,
-          "detections": 3783,
+          "detections": 3790,
           "species_count": 108
         },
         {
           "hour": 11,
-          "detections": 4087,
-          "species_count": 123
+          "detections": 4091,
+          "species_count": 124
         },
         {
           "hour": 12,
@@ -5921,7 +5950,7 @@
         "previous_species_count": null,
         "species_change": null
       },
-      "new_species_count": 269,
+      "new_species_count": 270,
       "new_species": [
         {
           "common_name": "European Robin",
@@ -7928,9 +7957,9 @@
         {
           "common_name": "Southern Lapwing",
           "scientific_name": "Vanellus chilensis",
-          "detections": 108,
-          "active_days": 23,
-          "average_confidence": 0.849,
+          "detections": 112,
+          "active_days": 24,
+          "average_confidence": 0.853,
           "first_seen_date": "2026-05-31"
         },
         {
@@ -8000,9 +8029,9 @@
         {
           "common_name": "Yellow-billed Cuckoo",
           "scientific_name": "Coccyzus americanus",
-          "detections": 92,
+          "detections": 93,
           "active_days": 35,
-          "average_confidence": 0.83,
+          "average_confidence": 0.831,
           "first_seen_date": "2026-05-29"
         },
         {
@@ -8078,6 +8107,14 @@
           "first_seen_date": "2026-05-31"
         },
         {
+          "common_name": "Rufous-tailed Hummingbird",
+          "scientific_name": "Amazilia tzacatl",
+          "detections": 64,
+          "active_days": 26,
+          "average_confidence": 0.814,
+          "first_seen_date": "2026-06-02"
+        },
+        {
           "common_name": "Eurasian Bullfinch",
           "scientific_name": "Pyrrhula pyrrhula",
           "detections": 63,
@@ -8100,14 +8137,6 @@
           "active_days": 25,
           "average_confidence": 0.837,
           "first_seen_date": "2026-01-21"
-        },
-        {
-          "common_name": "Rufous-tailed Hummingbird",
-          "scientific_name": "Amazilia tzacatl",
-          "detections": 59,
-          "active_days": 26,
-          "average_confidence": 0.813,
-          "first_seen_date": "2026-06-02"
         },
         {
           "common_name": "Scale-crested Pygmy-Tyrant",
@@ -9254,6 +9283,14 @@
           "first_seen_date": "2026-07-20"
         },
         {
+          "common_name": "Barred Forest-Falcon",
+          "scientific_name": "Micrastur ruficollis",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.87,
+          "first_seen_date": "2026-08-29"
+        },
+        {
           "common_name": "Black Tern",
           "scientific_name": "Chlidonias niger",
           "detections": 1,
@@ -9652,10 +9689,10 @@
           "label": "Last 7 days",
           "start_date": "2026-08-23",
           "end_date": "2026-08-29",
-          "total_detections": 973,
-          "species_count": 44,
+          "total_detections": 984,
+          "species_count": 45,
           "active_days": 7,
-          "average_confidence": 0.841,
+          "average_confidence": 0.842,
           "daily_activity": [
             {
               "date": "2026-08-23",
@@ -9689,8 +9726,8 @@
             },
             {
               "date": "2026-08-29",
-              "detections": 66,
-              "species_count": 10
+              "detections": 77,
+              "species_count": 12
             }
           ],
           "hourly_activity": [
@@ -9746,13 +9783,13 @@
             },
             {
               "hour": 10,
-              "detections": 96,
-              "species_count": 10
+              "detections": 103,
+              "species_count": 12
             },
             {
               "hour": 11,
-              "detections": 36,
-              "species_count": 8
+              "detections": 40,
+              "species_count": 11
             },
             {
               "hour": 12,
@@ -9823,11 +9860,11 @@
             "previous_start_date": "2026-08-16",
             "previous_end_date": "2026-08-22",
             "previous_detections": 1507,
-            "detection_change_percent": -35.4,
+            "detection_change_percent": -34.7,
             "previous_species_count": 42,
-            "species_change": 2
+            "species_change": 3
           },
-          "new_species_count": 5,
+          "new_species_count": 6,
           "new_species": [
             {
               "common_name": "Gray-capped Flycatcher",
@@ -9853,6 +9890,19 @@
                 "https://media.birdweather.com/species/389/Ruby-throatedHummingbird-standard-0de709133d10e84d4f359b410ad74f88.jpg",
                 "https://media.birdweather.com/species/389/Ruby-throatedHummingbird-png200-e4eed6e5ab7b67287c42212fb8045f30.png",
                 "https://media.birdweather.com/species/389/Ruby-throatedHummingbird-thumbnail-90592342137be60a59391e2137c0f72f.jpg"
+              ]
+            },
+            {
+              "common_name": "Barred Forest-Falcon",
+              "scientific_name": "Micrastur ruficollis",
+              "detections": 1,
+              "first_seen_date": "2026-08-29",
+              "average_confidence": 0.87,
+              "photo_url": "https://media.birdweather.com/species/556/BarredForest-Falcon-standard-ed652e6f19b09465e5ca6739e02ed091.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/556/BarredForest-Falcon-standard-ed652e6f19b09465e5ca6739e02ed091.jpg",
+                "https://media.birdweather.com/species/556/BarredForest-Falcon-png200-97f7a9f4187d84cbef01a7814a809a04.png",
+                "https://media.birdweather.com/species/556/BarredForest-Falcon-thumbnail-fe797db2b4fd01b407cc2fa030dad78d.jpg"
               ]
             },
             {
@@ -10403,6 +10453,118 @@
               "change_percent": -54.1
             },
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 26,
+              "active_days": 6,
+              "average_confidence": 0.81,
+              "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 2
+                },
+                {
+                  "hour": 6,
+                  "detections": 5
+                },
+                {
+                  "hour": 7,
+                  "detections": 5
+                },
+                {
+                  "hour": 8,
+                  "detections": 3
+                },
+                {
+                  "hour": 9,
+                  "detections": 2
+                },
+                {
+                  "hour": 10,
+                  "detections": 3
+                },
+                {
+                  "hour": 11,
+                  "detections": 2
+                },
+                {
+                  "hour": 12,
+                  "detections": 0
+                },
+                {
+                  "hour": 13,
+                  "detections": 1
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 2
+                },
+                {
+                  "hour": 16,
+                  "detections": 0
+                },
+                {
+                  "hour": 17,
+                  "detections": 1
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": 100.0
+            },
+            {
               "common_name": "Scale-crested Pygmy-Tyrant",
               "scientific_name": "Lophotriccus pileatus",
               "detections": 26,
@@ -10515,123 +10677,11 @@
               "change_percent": 52.9
             },
             {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 21,
-              "active_days": 6,
-              "average_confidence": 0.807,
-              "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
-                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
-                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 2
-                },
-                {
-                  "hour": 6,
-                  "detections": 5
-                },
-                {
-                  "hour": 7,
-                  "detections": 5
-                },
-                {
-                  "hour": 8,
-                  "detections": 3
-                },
-                {
-                  "hour": 9,
-                  "detections": 2
-                },
-                {
-                  "hour": 10,
-                  "detections": 0
-                },
-                {
-                  "hour": 11,
-                  "detections": 0
-                },
-                {
-                  "hour": 12,
-                  "detections": 0
-                },
-                {
-                  "hour": 13,
-                  "detections": 1
-                },
-                {
-                  "hour": 14,
-                  "detections": 0
-                },
-                {
-                  "hour": 15,
-                  "detections": 2
-                },
-                {
-                  "hour": 16,
-                  "detections": 0
-                },
-                {
-                  "hour": 17,
-                  "detections": 1
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": 61.5
-            },
-            {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 21,
+              "detections": 22,
               "active_days": 5,
-              "average_confidence": 0.81,
+              "average_confidence": 0.815,
               "photo_url": "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
@@ -10685,7 +10735,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 12,
@@ -10736,7 +10786,7 @@
                   "detections": 3
                 }
               ],
-              "change_percent": 110.0
+              "change_percent": 120.0
             },
             {
               "common_name": "Cinnamon-bellied Saltator",
@@ -10849,6 +10899,118 @@
                 }
               ],
               "change_percent": -5.9
+            },
+            {
+              "common_name": "Southern Lapwing",
+              "scientific_name": "Vanellus chilensis",
+              "detections": 14,
+              "active_days": 4,
+              "average_confidence": 0.897,
+              "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
+                "https://media.birdweather.com/species/349/SouthernLapwing-png200-1801892688cffe6fb6fd8c00fbf91764.png",
+                "https://media.birdweather.com/species/349/SouthernLapwing-thumbnail-33b4d17a45224d79dbf2a0a3aa5ea2c7.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 0
+                },
+                {
+                  "hour": 6,
+                  "detections": 3
+                },
+                {
+                  "hour": 7,
+                  "detections": 2
+                },
+                {
+                  "hour": 8,
+                  "detections": 1
+                },
+                {
+                  "hour": 9,
+                  "detections": 0
+                },
+                {
+                  "hour": 10,
+                  "detections": 4
+                },
+                {
+                  "hour": 11,
+                  "detections": 0
+                },
+                {
+                  "hour": 12,
+                  "detections": 0
+                },
+                {
+                  "hour": 13,
+                  "detections": 0
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 0
+                },
+                {
+                  "hour": 16,
+                  "detections": 4
+                },
+                {
+                  "hour": 17,
+                  "detections": 0
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": 16.7
             },
             {
               "common_name": "Great-tailed Grackle",
@@ -11075,118 +11237,6 @@
               "change_percent": -44.4
             },
             {
-              "common_name": "Southern Lapwing",
-              "scientific_name": "Vanellus chilensis",
-              "detections": 10,
-              "active_days": 3,
-              "average_confidence": 0.87,
-              "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
-                "https://media.birdweather.com/species/349/SouthernLapwing-png200-1801892688cffe6fb6fd8c00fbf91764.png",
-                "https://media.birdweather.com/species/349/SouthernLapwing-thumbnail-33b4d17a45224d79dbf2a0a3aa5ea2c7.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 0
-                },
-                {
-                  "hour": 6,
-                  "detections": 3
-                },
-                {
-                  "hour": 7,
-                  "detections": 2
-                },
-                {
-                  "hour": 8,
-                  "detections": 1
-                },
-                {
-                  "hour": 9,
-                  "detections": 0
-                },
-                {
-                  "hour": 10,
-                  "detections": 0
-                },
-                {
-                  "hour": 11,
-                  "detections": 0
-                },
-                {
-                  "hour": 12,
-                  "detections": 0
-                },
-                {
-                  "hour": 13,
-                  "detections": 0
-                },
-                {
-                  "hour": 14,
-                  "detections": 0
-                },
-                {
-                  "hour": 15,
-                  "detections": 0
-                },
-                {
-                  "hour": 16,
-                  "detections": 4
-                },
-                {
-                  "hour": 17,
-                  "detections": 0
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": -16.7
-            },
-            {
               "common_name": "Barn Owl",
               "scientific_name": "Tyto alba",
               "detections": 9,
@@ -11333,6 +11383,14 @@
               "first_seen_date": "2026-05-28"
             },
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 26,
+              "active_days": 6,
+              "average_confidence": 0.81,
+              "first_seen_date": "2026-06-02"
+            },
+            {
               "common_name": "Scale-crested Pygmy-Tyrant",
               "scientific_name": "Lophotriccus pileatus",
               "detections": 26,
@@ -11341,19 +11399,11 @@
               "first_seen_date": "2026-08-13"
             },
             {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 21,
-              "active_days": 6,
-              "average_confidence": 0.807,
-              "first_seen_date": "2026-06-02"
-            },
-            {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 21,
+              "detections": 22,
               "active_days": 5,
-              "average_confidence": 0.81,
+              "average_confidence": 0.815,
               "first_seen_date": "2026-05-29"
             },
             {
@@ -11363,6 +11413,14 @@
               "active_days": 3,
               "average_confidence": 0.843,
               "first_seen_date": "2026-05-28"
+            },
+            {
+              "common_name": "Southern Lapwing",
+              "scientific_name": "Vanellus chilensis",
+              "detections": 14,
+              "active_days": 4,
+              "average_confidence": 0.897,
+              "first_seen_date": "2026-05-31"
             },
             {
               "common_name": "Great-tailed Grackle",
@@ -11379,14 +11437,6 @@
               "active_days": 4,
               "average_confidence": 0.801,
               "first_seen_date": "2026-05-28"
-            },
-            {
-              "common_name": "Southern Lapwing",
-              "scientific_name": "Vanellus chilensis",
-              "detections": 10,
-              "active_days": 3,
-              "average_confidence": 0.87,
-              "first_seen_date": "2026-05-31"
             },
             {
               "common_name": "Barn Owl",
@@ -11541,6 +11591,14 @@
               "first_seen_date": "2026-07-02"
             },
             {
+              "common_name": "Barred Forest-Falcon",
+              "scientific_name": "Micrastur ruficollis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.87,
+              "first_seen_date": "2026-08-29"
+            },
+            {
               "common_name": "Black-crowned Night-Heron",
               "scientific_name": "Nycticorax nycticorax",
               "detections": 1,
@@ -11658,8 +11716,8 @@
           "label": "Last 30 days",
           "start_date": "2026-07-31",
           "end_date": "2026-08-29",
-          "total_detections": 4047,
-          "species_count": 67,
+          "total_detections": 4058,
+          "species_count": 68,
           "active_days": 17,
           "average_confidence": 0.853,
           "daily_activity": [
@@ -11810,8 +11868,8 @@
             },
             {
               "date": "2026-08-29",
-              "detections": 66,
-              "species_count": 10
+              "detections": 77,
+              "species_count": 12
             }
           ],
           "hourly_activity": [
@@ -11867,13 +11925,13 @@
             },
             {
               "hour": 10,
-              "detections": 264,
+              "detections": 271,
               "species_count": 17
             },
             {
               "hour": 11,
-              "detections": 176,
-              "species_count": 17
+              "detections": 180,
+              "species_count": 18
             },
             {
               "hour": 12,
@@ -11944,11 +12002,11 @@
             "previous_start_date": "2026-07-01",
             "previous_end_date": "2026-07-30",
             "previous_detections": 6154,
-            "detection_change_percent": -34.2,
+            "detection_change_percent": -34.1,
             "previous_species_count": 79,
-            "species_change": -12
+            "species_change": -11
           },
-          "new_species_count": 26,
+          "new_species_count": 27,
           "new_species": [
             {
               "common_name": "Ruddy Ground Dove",
@@ -13065,9 +13123,9 @@
             {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 51,
+              "detections": 52,
               "active_days": 12,
-              "average_confidence": 0.818,
+              "average_confidence": 0.82,
               "photo_url": "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
@@ -13121,7 +13179,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 4
+                  "detections": 5
                 },
                 {
                   "hour": 12,
@@ -13172,14 +13230,14 @@
                   "detections": 3
                 }
               ],
-              "change_percent": 264.3
+              "change_percent": 271.4
             },
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 44,
-              "active_days": 11,
-              "average_confidence": 0.84,
+              "detections": 48,
+              "active_days": 12,
+              "average_confidence": 0.851,
               "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
@@ -13229,7 +13287,7 @@
                 },
                 {
                   "hour": 10,
-                  "detections": 3
+                  "detections": 7
                 },
                 {
                   "hour": 11,
@@ -13284,7 +13342,119 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 15.8
+              "change_percent": 26.3
+            },
+            {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 42,
+              "active_days": 14,
+              "average_confidence": 0.818,
+              "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 4
+                },
+                {
+                  "hour": 6,
+                  "detections": 9
+                },
+                {
+                  "hour": 7,
+                  "detections": 6
+                },
+                {
+                  "hour": 8,
+                  "detections": 5
+                },
+                {
+                  "hour": 9,
+                  "detections": 2
+                },
+                {
+                  "hour": 10,
+                  "detections": 4
+                },
+                {
+                  "hour": 11,
+                  "detections": 3
+                },
+                {
+                  "hour": 12,
+                  "detections": 1
+                },
+                {
+                  "hour": 13,
+                  "detections": 2
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 2
+                },
+                {
+                  "hour": 16,
+                  "detections": 1
+                },
+                {
+                  "hour": 17,
+                  "detections": 3
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": 950.0
             },
             {
               "common_name": "Great-tailed Grackle",
@@ -13397,118 +13567,6 @@
                 }
               ],
               "change_percent": 31.0
-            },
-            {
-              "common_name": "Blue-gray Tanager",
-              "scientific_name": "Thraupis episcopus",
-              "detections": 37,
-              "active_days": 11,
-              "average_confidence": 0.82,
-              "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-png200-be5418cb49793536e5c09e1af73aefe1.png",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-thumbnail-dc3af9565dbd849047cf157316f7ef59.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 0
-                },
-                {
-                  "hour": 6,
-                  "detections": 13
-                },
-                {
-                  "hour": 7,
-                  "detections": 1
-                },
-                {
-                  "hour": 8,
-                  "detections": 6
-                },
-                {
-                  "hour": 9,
-                  "detections": 8
-                },
-                {
-                  "hour": 10,
-                  "detections": 2
-                },
-                {
-                  "hour": 11,
-                  "detections": 1
-                },
-                {
-                  "hour": 12,
-                  "detections": 0
-                },
-                {
-                  "hour": 13,
-                  "detections": 0
-                },
-                {
-                  "hour": 14,
-                  "detections": 4
-                },
-                {
-                  "hour": 15,
-                  "detections": 2
-                },
-                {
-                  "hour": 16,
-                  "detections": 0
-                },
-                {
-                  "hour": 17,
-                  "detections": 0
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": -98.0
             }
           ],
           "species": [
@@ -13579,18 +13637,26 @@
             {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 51,
+              "detections": 52,
               "active_days": 12,
-              "average_confidence": 0.818,
+              "average_confidence": 0.82,
               "first_seen_date": "2026-05-29"
             },
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 44,
-              "active_days": 11,
-              "average_confidence": 0.84,
+              "detections": 48,
+              "active_days": 12,
+              "average_confidence": 0.851,
               "first_seen_date": "2026-05-31"
+            },
+            {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 42,
+              "active_days": 14,
+              "average_confidence": 0.818,
+              "first_seen_date": "2026-06-02"
             },
             {
               "common_name": "Great-tailed Grackle",
@@ -13607,14 +13673,6 @@
               "active_days": 11,
               "average_confidence": 0.82,
               "first_seen_date": "2026-05-28"
-            },
-            {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 37,
-              "active_days": 14,
-              "average_confidence": 0.817,
-              "first_seen_date": "2026-06-02"
             },
             {
               "common_name": "Black-headed Saltator",
@@ -13913,6 +13971,14 @@
               "first_seen_date": "2026-07-02"
             },
             {
+              "common_name": "Barred Forest-Falcon",
+              "scientific_name": "Micrastur ruficollis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.87,
+              "first_seen_date": "2026-08-29"
+            },
+            {
               "common_name": "Black Phoebe",
               "scientific_name": "Sayornis nigricans",
               "detections": 1,
@@ -14054,8 +14120,8 @@
           "label": "All data",
           "start_date": "2025-12-03",
           "end_date": "2026-08-29",
-          "total_detections": 126161,
-          "species_count": 269,
+          "total_detections": 126172,
+          "species_count": 270,
           "active_days": 239,
           "average_confidence": 0.826,
           "daily_activity": [
@@ -15406,8 +15472,8 @@
             },
             {
               "date": "2026-08-29",
-              "detections": 66,
-              "species_count": 10
+              "detections": 77,
+              "species_count": 12
             }
           ],
           "hourly_activity": [
@@ -15463,13 +15529,13 @@
             },
             {
               "hour": 10,
-              "detections": 3783,
+              "detections": 3790,
               "species_count": 108
             },
             {
               "hour": 11,
-              "detections": 4087,
-              "species_count": 123
+              "detections": 4091,
+              "species_count": 124
             },
             {
               "hour": 12,
@@ -15544,7 +15610,7 @@
             "previous_species_count": null,
             "species_change": null
           },
-          "new_species_count": 269,
+          "new_species_count": 270,
           "new_species": [
             {
               "common_name": "European Robin",
@@ -17551,9 +17617,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 108,
-              "active_days": 23,
-              "average_confidence": 0.849,
+              "detections": 112,
+              "active_days": 24,
+              "average_confidence": 0.853,
               "first_seen_date": "2026-05-31"
             },
             {
@@ -17623,9 +17689,9 @@
             {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 92,
+              "detections": 93,
               "active_days": 35,
-              "average_confidence": 0.83,
+              "average_confidence": 0.831,
               "first_seen_date": "2026-05-29"
             },
             {
@@ -17701,6 +17767,14 @@
               "first_seen_date": "2026-05-31"
             },
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 64,
+              "active_days": 26,
+              "average_confidence": 0.814,
+              "first_seen_date": "2026-06-02"
+            },
+            {
               "common_name": "Eurasian Bullfinch",
               "scientific_name": "Pyrrhula pyrrhula",
               "detections": 63,
@@ -17723,14 +17797,6 @@
               "active_days": 25,
               "average_confidence": 0.837,
               "first_seen_date": "2026-01-21"
-            },
-            {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 59,
-              "active_days": 26,
-              "average_confidence": 0.813,
-              "first_seen_date": "2026-06-02"
             },
             {
               "common_name": "Scale-crested Pygmy-Tyrant",
@@ -18877,6 +18943,14 @@
               "first_seen_date": "2026-07-20"
             },
             {
+              "common_name": "Barred Forest-Falcon",
+              "scientific_name": "Micrastur ruficollis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.87,
+              "first_seen_date": "2026-08-29"
+            },
+            {
               "common_name": "Black Tern",
               "scientific_name": "Chlidonias niger",
               "detections": 1,
@@ -19812,10 +19886,10 @@
           "label": "Last 7 days",
           "start_date": "2026-08-23",
           "end_date": "2026-08-29",
-          "total_detections": 973,
-          "species_count": 44,
+          "total_detections": 984,
+          "species_count": 45,
           "active_days": 7,
-          "average_confidence": 0.841,
+          "average_confidence": 0.842,
           "daily_activity": [
             {
               "date": "2026-08-23",
@@ -19849,8 +19923,8 @@
             },
             {
               "date": "2026-08-29",
-              "detections": 66,
-              "species_count": 10
+              "detections": 77,
+              "species_count": 12
             }
           ],
           "hourly_activity": [
@@ -19906,13 +19980,13 @@
             },
             {
               "hour": 10,
-              "detections": 96,
-              "species_count": 10
+              "detections": 103,
+              "species_count": 12
             },
             {
               "hour": 11,
-              "detections": 36,
-              "species_count": 8
+              "detections": 40,
+              "species_count": 11
             },
             {
               "hour": 12,
@@ -19983,11 +20057,11 @@
             "previous_start_date": "2026-08-16",
             "previous_end_date": "2026-08-22",
             "previous_detections": 1507,
-            "detection_change_percent": -35.4,
+            "detection_change_percent": -34.7,
             "previous_species_count": 42,
-            "species_change": 2
+            "species_change": 3
           },
-          "new_species_count": 10,
+          "new_species_count": 11,
           "new_species": [
             {
               "common_name": "Eastern Kingbird",
@@ -20065,6 +20139,19 @@
                 "https://media.birdweather.com/species/222/Bananaquit-standard-a16e4b555ce6fe110e0ea3e295e68e74.jpg",
                 "https://media.birdweather.com/species/222/Bananaquit-png200-3beb1a4e237abe823f29a93736520e05.png",
                 "https://media.birdweather.com/species/222/Bananaquit-thumbnail-6b66bb0bc4f508638a491570cc83d076.jpg"
+              ]
+            },
+            {
+              "common_name": "Barred Forest-Falcon",
+              "scientific_name": "Micrastur ruficollis",
+              "detections": 1,
+              "first_seen_date": "2026-08-29",
+              "average_confidence": 0.87,
+              "photo_url": "https://media.birdweather.com/species/556/BarredForest-Falcon-standard-ed652e6f19b09465e5ca6739e02ed091.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/556/BarredForest-Falcon-standard-ed652e6f19b09465e5ca6739e02ed091.jpg",
+                "https://media.birdweather.com/species/556/BarredForest-Falcon-png200-97f7a9f4187d84cbef01a7814a809a04.png",
+                "https://media.birdweather.com/species/556/BarredForest-Falcon-thumbnail-fe797db2b4fd01b407cc2fa030dad78d.jpg"
               ]
             },
             {
@@ -20628,6 +20715,118 @@
               "change_percent": -54.1
             },
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 26,
+              "active_days": 6,
+              "average_confidence": 0.81,
+              "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 2
+                },
+                {
+                  "hour": 6,
+                  "detections": 5
+                },
+                {
+                  "hour": 7,
+                  "detections": 5
+                },
+                {
+                  "hour": 8,
+                  "detections": 3
+                },
+                {
+                  "hour": 9,
+                  "detections": 2
+                },
+                {
+                  "hour": 10,
+                  "detections": 3
+                },
+                {
+                  "hour": 11,
+                  "detections": 2
+                },
+                {
+                  "hour": 12,
+                  "detections": 0
+                },
+                {
+                  "hour": 13,
+                  "detections": 1
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 2
+                },
+                {
+                  "hour": 16,
+                  "detections": 0
+                },
+                {
+                  "hour": 17,
+                  "detections": 1
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": 100.0
+            },
+            {
               "common_name": "Scale-crested Pygmy-Tyrant",
               "scientific_name": "Lophotriccus pileatus",
               "detections": 26,
@@ -20740,123 +20939,11 @@
               "change_percent": 52.9
             },
             {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 21,
-              "active_days": 6,
-              "average_confidence": 0.807,
-              "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
-                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
-                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 2
-                },
-                {
-                  "hour": 6,
-                  "detections": 5
-                },
-                {
-                  "hour": 7,
-                  "detections": 5
-                },
-                {
-                  "hour": 8,
-                  "detections": 3
-                },
-                {
-                  "hour": 9,
-                  "detections": 2
-                },
-                {
-                  "hour": 10,
-                  "detections": 0
-                },
-                {
-                  "hour": 11,
-                  "detections": 0
-                },
-                {
-                  "hour": 12,
-                  "detections": 0
-                },
-                {
-                  "hour": 13,
-                  "detections": 1
-                },
-                {
-                  "hour": 14,
-                  "detections": 0
-                },
-                {
-                  "hour": 15,
-                  "detections": 2
-                },
-                {
-                  "hour": 16,
-                  "detections": 0
-                },
-                {
-                  "hour": 17,
-                  "detections": 1
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": 61.5
-            },
-            {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 21,
+              "detections": 22,
               "active_days": 5,
-              "average_confidence": 0.81,
+              "average_confidence": 0.815,
               "photo_url": "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
@@ -20910,7 +20997,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 12,
@@ -20961,7 +21048,7 @@
                   "detections": 3
                 }
               ],
-              "change_percent": 110.0
+              "change_percent": 120.0
             },
             {
               "common_name": "Cinnamon-bellied Saltator",
@@ -21074,6 +21161,118 @@
                 }
               ],
               "change_percent": -5.9
+            },
+            {
+              "common_name": "Southern Lapwing",
+              "scientific_name": "Vanellus chilensis",
+              "detections": 14,
+              "active_days": 4,
+              "average_confidence": 0.897,
+              "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
+                "https://media.birdweather.com/species/349/SouthernLapwing-png200-1801892688cffe6fb6fd8c00fbf91764.png",
+                "https://media.birdweather.com/species/349/SouthernLapwing-thumbnail-33b4d17a45224d79dbf2a0a3aa5ea2c7.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 0
+                },
+                {
+                  "hour": 6,
+                  "detections": 3
+                },
+                {
+                  "hour": 7,
+                  "detections": 2
+                },
+                {
+                  "hour": 8,
+                  "detections": 1
+                },
+                {
+                  "hour": 9,
+                  "detections": 0
+                },
+                {
+                  "hour": 10,
+                  "detections": 4
+                },
+                {
+                  "hour": 11,
+                  "detections": 0
+                },
+                {
+                  "hour": 12,
+                  "detections": 0
+                },
+                {
+                  "hour": 13,
+                  "detections": 0
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 0
+                },
+                {
+                  "hour": 16,
+                  "detections": 4
+                },
+                {
+                  "hour": 17,
+                  "detections": 0
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": 16.7
             },
             {
               "common_name": "Great-tailed Grackle",
@@ -21300,118 +21499,6 @@
               "change_percent": -44.4
             },
             {
-              "common_name": "Southern Lapwing",
-              "scientific_name": "Vanellus chilensis",
-              "detections": 10,
-              "active_days": 3,
-              "average_confidence": 0.87,
-              "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
-                "https://media.birdweather.com/species/349/SouthernLapwing-png200-1801892688cffe6fb6fd8c00fbf91764.png",
-                "https://media.birdweather.com/species/349/SouthernLapwing-thumbnail-33b4d17a45224d79dbf2a0a3aa5ea2c7.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 0
-                },
-                {
-                  "hour": 6,
-                  "detections": 3
-                },
-                {
-                  "hour": 7,
-                  "detections": 2
-                },
-                {
-                  "hour": 8,
-                  "detections": 1
-                },
-                {
-                  "hour": 9,
-                  "detections": 0
-                },
-                {
-                  "hour": 10,
-                  "detections": 0
-                },
-                {
-                  "hour": 11,
-                  "detections": 0
-                },
-                {
-                  "hour": 12,
-                  "detections": 0
-                },
-                {
-                  "hour": 13,
-                  "detections": 0
-                },
-                {
-                  "hour": 14,
-                  "detections": 0
-                },
-                {
-                  "hour": 15,
-                  "detections": 0
-                },
-                {
-                  "hour": 16,
-                  "detections": 4
-                },
-                {
-                  "hour": 17,
-                  "detections": 0
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": -16.7
-            },
-            {
               "common_name": "Barn Owl",
               "scientific_name": "Tyto alba",
               "detections": 9,
@@ -21558,6 +21645,14 @@
               "first_seen_date": "2026-08-12"
             },
             {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 26,
+              "active_days": 6,
+              "average_confidence": 0.81,
+              "first_seen_date": "2026-08-13"
+            },
+            {
               "common_name": "Scale-crested Pygmy-Tyrant",
               "scientific_name": "Lophotriccus pileatus",
               "detections": 26,
@@ -21566,19 +21661,11 @@
               "first_seen_date": "2026-08-13"
             },
             {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 21,
-              "active_days": 6,
-              "average_confidence": 0.807,
-              "first_seen_date": "2026-08-13"
-            },
-            {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 21,
+              "detections": 22,
               "active_days": 5,
-              "average_confidence": 0.81,
+              "average_confidence": 0.815,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -21587,6 +21674,14 @@
               "detections": 16,
               "active_days": 3,
               "average_confidence": 0.843,
+              "first_seen_date": "2026-08-12"
+            },
+            {
+              "common_name": "Southern Lapwing",
+              "scientific_name": "Vanellus chilensis",
+              "detections": 14,
+              "active_days": 4,
+              "average_confidence": 0.897,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -21604,14 +21699,6 @@
               "active_days": 4,
               "average_confidence": 0.801,
               "first_seen_date": "2026-08-13"
-            },
-            {
-              "common_name": "Southern Lapwing",
-              "scientific_name": "Vanellus chilensis",
-              "detections": 10,
-              "active_days": 3,
-              "average_confidence": 0.87,
-              "first_seen_date": "2026-08-12"
             },
             {
               "common_name": "Barn Owl",
@@ -21766,6 +21853,14 @@
               "first_seen_date": "2026-08-24"
             },
             {
+              "common_name": "Barred Forest-Falcon",
+              "scientific_name": "Micrastur ruficollis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.87,
+              "first_seen_date": "2026-08-29"
+            },
+            {
               "common_name": "Black-crowned Night-Heron",
               "scientific_name": "Nycticorax nycticorax",
               "detections": 1,
@@ -21883,8 +21978,8 @@
           "label": "Last 30 days",
           "start_date": "2026-08-12",
           "end_date": "2026-08-29",
-          "total_detections": 4047,
-          "species_count": 67,
+          "total_detections": 4058,
+          "species_count": 68,
           "active_days": 17,
           "average_confidence": 0.853,
           "daily_activity": [
@@ -21975,8 +22070,8 @@
             },
             {
               "date": "2026-08-29",
-              "detections": 66,
-              "species_count": 10
+              "detections": 77,
+              "species_count": 12
             }
           ],
           "hourly_activity": [
@@ -22032,13 +22127,13 @@
             },
             {
               "hour": 10,
-              "detections": 264,
+              "detections": 271,
               "species_count": 17
             },
             {
               "hour": 11,
-              "detections": 176,
-              "species_count": 17
+              "detections": 180,
+              "species_count": 18
             },
             {
               "hour": 12,
@@ -22111,9 +22206,9 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 67
+            "species_change": 68
           },
-          "new_species_count": 67,
+          "new_species_count": 68,
           "new_species": [
             {
               "common_name": "White-winged Dove",
@@ -22222,9 +22317,9 @@
             {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 51,
+              "detections": 52,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.818,
+              "average_confidence": 0.82,
               "photo_url": "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
@@ -22235,14 +22330,27 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 44,
+              "detections": 48,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.84,
+              "average_confidence": 0.851,
               "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
                 "https://media.birdweather.com/species/349/SouthernLapwing-png200-1801892688cffe6fb6fd8c00fbf91764.png",
                 "https://media.birdweather.com/species/349/SouthernLapwing-thumbnail-33b4d17a45224d79dbf2a0a3aa5ea2c7.jpg"
+              ]
+            },
+            {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 42,
+              "first_seen_date": "2026-08-13",
+              "average_confidence": 0.818,
+              "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
               ]
             },
             {
@@ -22256,19 +22364,6 @@
                 "https://media.birdweather.com/species/254/Great-tailedGrackle-standard-84167b7e46a2aae7f30286e714478461.jpg",
                 "https://media.birdweather.com/species/254/Great-tailedGrackle-png200-ca2dc12559d8d2db107eefc8eff73513.png",
                 "https://media.birdweather.com/species/254/Great-tailedGrackle-thumbnail-388529862f53a8a975b80daf9e76e3ac.jpg"
-              ]
-            },
-            {
-              "common_name": "Blue-gray Tanager",
-              "scientific_name": "Thraupis episcopus",
-              "detections": 37,
-              "first_seen_date": "2026-08-13",
-              "average_confidence": 0.82,
-              "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-png200-be5418cb49793536e5c09e1af73aefe1.png",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-thumbnail-dc3af9565dbd849047cf157316f7ef59.jpg"
               ]
             }
           ],
@@ -23230,9 +23325,9 @@
             {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 51,
+              "detections": 52,
               "active_days": 12,
-              "average_confidence": 0.818,
+              "average_confidence": 0.82,
               "photo_url": "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
@@ -23286,7 +23381,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 4
+                  "detections": 5
                 },
                 {
                   "hour": 12,
@@ -23342,9 +23437,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 44,
-              "active_days": 11,
-              "average_confidence": 0.84,
+              "detections": 48,
+              "active_days": 12,
+              "average_confidence": 0.851,
               "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
@@ -23394,7 +23489,7 @@
                 },
                 {
                   "hour": 10,
-                  "detections": 3
+                  "detections": 7
                 },
                 {
                   "hour": 11,
@@ -23423,6 +23518,118 @@
                 {
                   "hour": 17,
                   "detections": 0
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": null
+            },
+            {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 42,
+              "active_days": 14,
+              "average_confidence": 0.818,
+              "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 4
+                },
+                {
+                  "hour": 6,
+                  "detections": 9
+                },
+                {
+                  "hour": 7,
+                  "detections": 6
+                },
+                {
+                  "hour": 8,
+                  "detections": 5
+                },
+                {
+                  "hour": 9,
+                  "detections": 2
+                },
+                {
+                  "hour": 10,
+                  "detections": 4
+                },
+                {
+                  "hour": 11,
+                  "detections": 3
+                },
+                {
+                  "hour": 12,
+                  "detections": 1
+                },
+                {
+                  "hour": 13,
+                  "detections": 2
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 2
+                },
+                {
+                  "hour": 16,
+                  "detections": 1
+                },
+                {
+                  "hour": 17,
+                  "detections": 3
                 },
                 {
                   "hour": 18,
@@ -23562,118 +23769,6 @@
                 }
               ],
               "change_percent": null
-            },
-            {
-              "common_name": "Blue-gray Tanager",
-              "scientific_name": "Thraupis episcopus",
-              "detections": 37,
-              "active_days": 11,
-              "average_confidence": 0.82,
-              "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-png200-be5418cb49793536e5c09e1af73aefe1.png",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-thumbnail-dc3af9565dbd849047cf157316f7ef59.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 0
-                },
-                {
-                  "hour": 6,
-                  "detections": 13
-                },
-                {
-                  "hour": 7,
-                  "detections": 1
-                },
-                {
-                  "hour": 8,
-                  "detections": 6
-                },
-                {
-                  "hour": 9,
-                  "detections": 8
-                },
-                {
-                  "hour": 10,
-                  "detections": 2
-                },
-                {
-                  "hour": 11,
-                  "detections": 1
-                },
-                {
-                  "hour": 12,
-                  "detections": 0
-                },
-                {
-                  "hour": 13,
-                  "detections": 0
-                },
-                {
-                  "hour": 14,
-                  "detections": 4
-                },
-                {
-                  "hour": 15,
-                  "detections": 2
-                },
-                {
-                  "hour": 16,
-                  "detections": 0
-                },
-                {
-                  "hour": 17,
-                  "detections": 0
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": null
             }
           ],
           "species": [
@@ -23744,18 +23839,26 @@
             {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 51,
+              "detections": 52,
               "active_days": 12,
-              "average_confidence": 0.818,
+              "average_confidence": 0.82,
               "first_seen_date": "2026-08-12"
             },
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 44,
-              "active_days": 11,
-              "average_confidence": 0.84,
+              "detections": 48,
+              "active_days": 12,
+              "average_confidence": 0.851,
               "first_seen_date": "2026-08-12"
+            },
+            {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 42,
+              "active_days": 14,
+              "average_confidence": 0.818,
+              "first_seen_date": "2026-08-13"
             },
             {
               "common_name": "Great-tailed Grackle",
@@ -23771,14 +23874,6 @@
               "detections": 37,
               "active_days": 11,
               "average_confidence": 0.82,
-              "first_seen_date": "2026-08-13"
-            },
-            {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 37,
-              "active_days": 14,
-              "average_confidence": 0.817,
               "first_seen_date": "2026-08-13"
             },
             {
@@ -24076,6 +24171,14 @@
               "active_days": 1,
               "average_confidence": 0.942,
               "first_seen_date": "2026-08-24"
+            },
+            {
+              "common_name": "Barred Forest-Falcon",
+              "scientific_name": "Micrastur ruficollis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.87,
+              "first_seen_date": "2026-08-29"
             },
             {
               "common_name": "Black Phoebe",
@@ -24219,8 +24322,8 @@
           "label": "All data",
           "start_date": "2026-08-12",
           "end_date": "2026-08-29",
-          "total_detections": 4047,
-          "species_count": 67,
+          "total_detections": 4058,
+          "species_count": 68,
           "active_days": 17,
           "average_confidence": 0.853,
           "daily_activity": [
@@ -24311,8 +24414,8 @@
             },
             {
               "date": "2026-08-29",
-              "detections": 66,
-              "species_count": 10
+              "detections": 77,
+              "species_count": 12
             }
           ],
           "hourly_activity": [
@@ -24368,13 +24471,13 @@
             },
             {
               "hour": 10,
-              "detections": 264,
+              "detections": 271,
               "species_count": 17
             },
             {
               "hour": 11,
-              "detections": 176,
-              "species_count": 17
+              "detections": 180,
+              "species_count": 18
             },
             {
               "hour": 12,
@@ -24449,7 +24552,7 @@
             "previous_species_count": null,
             "species_change": null
           },
-          "new_species_count": 67,
+          "new_species_count": 68,
           "new_species": [
             {
               "common_name": "White-winged Dove",
@@ -24558,9 +24661,9 @@
             {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 51,
+              "detections": 52,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.818,
+              "average_confidence": 0.82,
               "photo_url": "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
@@ -24571,14 +24674,27 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 44,
+              "detections": 48,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.84,
+              "average_confidence": 0.851,
               "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
                 "https://media.birdweather.com/species/349/SouthernLapwing-png200-1801892688cffe6fb6fd8c00fbf91764.png",
                 "https://media.birdweather.com/species/349/SouthernLapwing-thumbnail-33b4d17a45224d79dbf2a0a3aa5ea2c7.jpg"
+              ]
+            },
+            {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 42,
+              "first_seen_date": "2026-08-13",
+              "average_confidence": 0.818,
+              "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
               ]
             },
             {
@@ -24592,19 +24708,6 @@
                 "https://media.birdweather.com/species/254/Great-tailedGrackle-standard-84167b7e46a2aae7f30286e714478461.jpg",
                 "https://media.birdweather.com/species/254/Great-tailedGrackle-png200-ca2dc12559d8d2db107eefc8eff73513.png",
                 "https://media.birdweather.com/species/254/Great-tailedGrackle-thumbnail-388529862f53a8a975b80daf9e76e3ac.jpg"
-              ]
-            },
-            {
-              "common_name": "Blue-gray Tanager",
-              "scientific_name": "Thraupis episcopus",
-              "detections": 37,
-              "first_seen_date": "2026-08-13",
-              "average_confidence": 0.82,
-              "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-png200-be5418cb49793536e5c09e1af73aefe1.png",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-thumbnail-dc3af9565dbd849047cf157316f7ef59.jpg"
               ]
             }
           ],
@@ -25566,9 +25669,9 @@
             {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 51,
+              "detections": 52,
               "active_days": 12,
-              "average_confidence": 0.818,
+              "average_confidence": 0.82,
               "photo_url": "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/610/Yellow-billedCuckoo-standard-882f68a7a9fd2d56463209cebd11666a.jpg",
@@ -25622,7 +25725,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 4
+                  "detections": 5
                 },
                 {
                   "hour": 12,
@@ -25678,9 +25781,9 @@
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 44,
-              "active_days": 11,
-              "average_confidence": 0.84,
+              "detections": 48,
+              "active_days": 12,
+              "average_confidence": 0.851,
               "photo_url": "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/349/SouthernLapwing-standard-02014dbe85174d8ed1a9e83d1367f600.jpg",
@@ -25730,7 +25833,7 @@
                 },
                 {
                   "hour": 10,
-                  "detections": 3
+                  "detections": 7
                 },
                 {
                   "hour": 11,
@@ -25759,6 +25862,118 @@
                 {
                   "hour": 17,
                   "detections": 0
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": null
+            },
+            {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 42,
+              "active_days": 14,
+              "average_confidence": 0.818,
+              "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
+                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 4
+                },
+                {
+                  "hour": 6,
+                  "detections": 9
+                },
+                {
+                  "hour": 7,
+                  "detections": 6
+                },
+                {
+                  "hour": 8,
+                  "detections": 5
+                },
+                {
+                  "hour": 9,
+                  "detections": 2
+                },
+                {
+                  "hour": 10,
+                  "detections": 4
+                },
+                {
+                  "hour": 11,
+                  "detections": 3
+                },
+                {
+                  "hour": 12,
+                  "detections": 1
+                },
+                {
+                  "hour": 13,
+                  "detections": 2
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 2
+                },
+                {
+                  "hour": 16,
+                  "detections": 1
+                },
+                {
+                  "hour": 17,
+                  "detections": 3
                 },
                 {
                   "hour": 18,
@@ -25898,118 +26113,6 @@
                 }
               ],
               "change_percent": null
-            },
-            {
-              "common_name": "Blue-gray Tanager",
-              "scientific_name": "Thraupis episcopus",
-              "detections": 37,
-              "active_days": 11,
-              "average_confidence": 0.82,
-              "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-png200-be5418cb49793536e5c09e1af73aefe1.png",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-thumbnail-dc3af9565dbd849047cf157316f7ef59.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 0
-                },
-                {
-                  "hour": 6,
-                  "detections": 13
-                },
-                {
-                  "hour": 7,
-                  "detections": 1
-                },
-                {
-                  "hour": 8,
-                  "detections": 6
-                },
-                {
-                  "hour": 9,
-                  "detections": 8
-                },
-                {
-                  "hour": 10,
-                  "detections": 2
-                },
-                {
-                  "hour": 11,
-                  "detections": 1
-                },
-                {
-                  "hour": 12,
-                  "detections": 0
-                },
-                {
-                  "hour": 13,
-                  "detections": 0
-                },
-                {
-                  "hour": 14,
-                  "detections": 4
-                },
-                {
-                  "hour": 15,
-                  "detections": 2
-                },
-                {
-                  "hour": 16,
-                  "detections": 0
-                },
-                {
-                  "hour": 17,
-                  "detections": 0
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": null
             }
           ],
           "species": [
@@ -26080,18 +26183,26 @@
             {
               "common_name": "Yellow-billed Cuckoo",
               "scientific_name": "Coccyzus americanus",
-              "detections": 51,
+              "detections": 52,
               "active_days": 12,
-              "average_confidence": 0.818,
+              "average_confidence": 0.82,
               "first_seen_date": "2026-08-12"
             },
             {
               "common_name": "Southern Lapwing",
               "scientific_name": "Vanellus chilensis",
-              "detections": 44,
-              "active_days": 11,
-              "average_confidence": 0.84,
+              "detections": 48,
+              "active_days": 12,
+              "average_confidence": 0.851,
               "first_seen_date": "2026-08-12"
+            },
+            {
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 42,
+              "active_days": 14,
+              "average_confidence": 0.818,
+              "first_seen_date": "2026-08-13"
             },
             {
               "common_name": "Great-tailed Grackle",
@@ -26107,14 +26218,6 @@
               "detections": 37,
               "active_days": 11,
               "average_confidence": 0.82,
-              "first_seen_date": "2026-08-13"
-            },
-            {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 37,
-              "active_days": 14,
-              "average_confidence": 0.817,
               "first_seen_date": "2026-08-13"
             },
             {
@@ -26412,6 +26515,14 @@
               "active_days": 1,
               "average_confidence": 0.942,
               "first_seen_date": "2026-08-24"
+            },
+            {
+              "common_name": "Barred Forest-Falcon",
+              "scientific_name": "Micrastur ruficollis",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.87,
+              "first_seen_date": "2026-08-29"
             },
             {
               "common_name": "Black Phoebe",
