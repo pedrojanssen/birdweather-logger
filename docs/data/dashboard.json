@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "generated_date": "2026-09-01",
-  "generated_hour": 8,
+  "generated_hour": 12,
   "timezone": "America/Costa_Rica",
   "latest_observation_date": "2026-09-01",
   "default_period": "7d",
@@ -29,8 +29,8 @@
       "label": "Last 7 days",
       "start_date": "2026-08-26",
       "end_date": "2026-09-01",
-      "total_detections": 987,
-      "species_count": 45,
+      "total_detections": 1034,
+      "species_count": 46,
       "active_days": 7,
       "average_confidence": 0.843,
       "daily_activity": [
@@ -66,8 +66,8 @@
         },
         {
           "date": "2026-09-01",
-          "detections": 88,
-          "species_count": 14
+          "detections": 135,
+          "species_count": 16
         }
       ],
       "hourly_activity": [
@@ -118,18 +118,18 @@
         },
         {
           "hour": 9,
-          "detections": 72,
-          "species_count": 9
+          "detections": 101,
+          "species_count": 10
         },
         {
           "hour": 10,
-          "detections": 41,
+          "detections": 49,
           "species_count": 8
         },
         {
           "hour": 11,
-          "detections": 9,
-          "species_count": 6
+          "detections": 19,
+          "species_count": 8
         },
         {
           "hour": 12,
@@ -200,9 +200,9 @@
         "previous_start_date": "2026-08-19",
         "previous_end_date": "2026-08-25",
         "previous_detections": 1651,
-        "detection_change_percent": -40.2,
+        "detection_change_percent": -37.4,
         "previous_species_count": 49,
-        "species_change": -4
+        "species_change": -3
       },
       "new_species_count": 5,
       "new_species": [
@@ -288,6 +288,13 @@
           "reason": "Lower aggregate confidence"
         },
         {
+          "common_name": "Osprey",
+          "scientific_name": "Pandion haliaetus",
+          "detections": 1,
+          "average_confidence": 0.713,
+          "reason": "Lower aggregate confidence"
+        },
+        {
           "common_name": "Melodious Blackbird",
           "scientific_name": "Dives dives",
           "detections": 1,
@@ -321,22 +328,15 @@
           "detections": 1,
           "average_confidence": 0.749,
           "reason": "Lower aggregate confidence"
-        },
-        {
-          "common_name": "Orange-collared Manakin",
-          "scientific_name": "Manacus aurantiacus",
-          "detections": 1,
-          "average_confidence": 0.767,
-          "reason": "Rare in this period"
         }
       ],
       "top_species": [
         {
           "common_name": "Tropical Mockingbird",
           "scientific_name": "Mimus gilvus",
-          "detections": 281,
+          "detections": 316,
           "active_days": 6,
-          "average_confidence": 0.849,
+          "average_confidence": 0.847,
           "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -382,15 +382,15 @@
             },
             {
               "hour": 9,
-              "detections": 5
+              "detections": 29
             },
             {
               "hour": 10,
-              "detections": 5
+              "detections": 7
             },
             {
               "hour": 11,
-              "detections": 0
+              "detections": 9
             },
             {
               "hour": 12,
@@ -441,14 +441,14 @@
               "detections": 0
             }
           ],
-          "change_percent": -0.7
+          "change_percent": 11.7
         },
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 247,
+          "detections": 257,
           "active_days": 7,
-          "average_confidence": 0.847,
+          "average_confidence": 0.849,
           "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -494,15 +494,15 @@
             },
             {
               "hour": 9,
-              "detections": 22
+              "detections": 25
             },
             {
               "hour": 10,
-              "detections": 18
+              "detections": 24
             },
             {
               "hour": 11,
-              "detections": 0
+              "detections": 1
             },
             {
               "hour": 12,
@@ -553,7 +553,7 @@
               "detections": 0
             }
           ],
-          "change_percent": -36.0
+          "change_percent": -33.4
         },
         {
           "common_name": "White-winged Dove",
@@ -1566,9 +1566,9 @@
         {
           "common_name": "Palm Tanager",
           "scientific_name": "Thraupis palmarum",
-          "detections": 9,
-          "active_days": 3,
-          "average_confidence": 0.831,
+          "detections": 10,
+          "active_days": 4,
+          "average_confidence": 0.821,
           "photo_url": "https://media.birdweather.com/species/321/PalmTanager-standard-cbade2e4973d8cb57c4014568207591d.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/321/PalmTanager-standard-cbade2e4973d8cb57c4014568207591d.jpg",
@@ -1614,7 +1614,7 @@
             },
             {
               "hour": 9,
-              "detections": 1
+              "detections": 2
             },
             {
               "hour": 10,
@@ -1673,24 +1673,24 @@
               "detections": 0
             }
           ],
-          "change_percent": 0.0
+          "change_percent": 11.1
         }
       ],
       "species": [
         {
           "common_name": "Tropical Mockingbird",
           "scientific_name": "Mimus gilvus",
-          "detections": 281,
+          "detections": 316,
           "active_days": 6,
-          "average_confidence": 0.849,
+          "average_confidence": 0.847,
           "first_seen_date": "2026-07-23"
         },
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 247,
+          "detections": 257,
           "active_days": 7,
-          "average_confidence": 0.847,
+          "average_confidence": 0.849,
           "first_seen_date": "2026-05-30"
         },
         {
@@ -1768,9 +1768,9 @@
         {
           "common_name": "Palm Tanager",
           "scientific_name": "Thraupis palmarum",
-          "detections": 9,
-          "active_days": 3,
-          "average_confidence": 0.831,
+          "detections": 10,
+          "active_days": 4,
+          "average_confidence": 0.821,
           "first_seen_date": "2026-05-29"
         },
         {
@@ -1974,6 +1974,14 @@
           "first_seen_date": "2026-06-21"
         },
         {
+          "common_name": "Osprey",
+          "scientific_name": "Pandion haliaetus",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.713,
+          "first_seen_date": "2026-03-10"
+        },
+        {
           "common_name": "Ruby-throated Hummingbird",
           "scientific_name": "Archilochus colubris",
           "detections": 1,
@@ -2043,8 +2051,8 @@
       "label": "Last 30 days",
       "start_date": "2026-08-03",
       "end_date": "2026-09-01",
-      "total_detections": 4562,
-      "species_count": 71,
+      "total_detections": 4609,
+      "species_count": 72,
       "active_days": 20,
       "average_confidence": 0.852,
       "daily_activity": [
@@ -2195,8 +2203,8 @@
         },
         {
           "date": "2026-09-01",
-          "detections": 88,
-          "species_count": 14
+          "detections": 135,
+          "species_count": 16
         }
       ],
       "hourly_activity": [
@@ -2247,17 +2255,17 @@
         },
         {
           "hour": 9,
-          "detections": 449,
-          "species_count": 21
+          "detections": 478,
+          "species_count": 22
         },
         {
           "hour": 10,
-          "detections": 285,
+          "detections": 293,
           "species_count": 17
         },
         {
           "hour": 11,
-          "detections": 181,
+          "detections": 191,
           "species_count": 18
         },
         {
@@ -2329,9 +2337,9 @@
         "previous_start_date": "2026-07-04",
         "previous_end_date": "2026-08-02",
         "previous_detections": 5688,
-        "detection_change_percent": -19.8,
+        "detection_change_percent": -19.0,
         "previous_species_count": 77,
-        "species_change": -6
+        "species_change": -5
       },
       "new_species_count": 29,
       "new_species": [
@@ -2522,6 +2530,13 @@
           "reason": "Lower aggregate confidence"
         },
         {
+          "common_name": "Osprey",
+          "scientific_name": "Pandion haliaetus",
+          "detections": 1,
+          "average_confidence": 0.713,
+          "reason": "Lower aggregate confidence"
+        },
+        {
           "common_name": "Gray-breasted Martin",
           "scientific_name": "Progne chalybea",
           "detections": 1,
@@ -2541,13 +2556,6 @@
           "detections": 4,
           "average_confidence": 0.743,
           "reason": "Lower aggregate confidence"
-        },
-        {
-          "common_name": "Melodious Blackbird",
-          "scientific_name": "Dives dives",
-          "detections": 2,
-          "average_confidence": 0.752,
-          "reason": "Rare in this period"
         }
       ],
       "top_species": [
@@ -2666,7 +2674,7 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 1088,
+          "detections": 1098,
           "active_days": 20,
           "average_confidence": 0.86,
           "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -2714,15 +2722,15 @@
             },
             {
               "hour": 9,
-              "detections": 80
+              "detections": 83
             },
             {
               "hour": 10,
-              "detections": 100
+              "detections": 106
             },
             {
               "hour": 11,
-              "detections": 38
+              "detections": 39
             },
             {
               "hour": 12,
@@ -2773,14 +2781,14 @@
               "detections": 0
             }
           ],
-          "change_percent": 371.0
+          "change_percent": 375.3
         },
         {
           "common_name": "Tropical Mockingbird",
           "scientific_name": "Mimus gilvus",
-          "detections": 757,
+          "detections": 792,
           "active_days": 19,
-          "average_confidence": 0.851,
+          "average_confidence": 0.85,
           "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -2826,15 +2834,15 @@
             },
             {
               "hour": 9,
-              "detections": 73
+              "detections": 97
             },
             {
               "hour": 10,
-              "detections": 117
+              "detections": 119
             },
             {
               "hour": 11,
-              "detections": 15
+              "detections": 24
             },
             {
               "hour": 12,
@@ -2885,7 +2893,7 @@
               "detections": 0
             }
           ],
-          "change_percent": 3884.2
+          "change_percent": 4068.4
         },
         {
           "common_name": "Social Flycatcher",
@@ -3908,7 +3916,7 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 1088,
+          "detections": 1098,
           "active_days": 20,
           "average_confidence": 0.86,
           "first_seen_date": "2026-05-30"
@@ -3916,9 +3924,9 @@
         {
           "common_name": "Tropical Mockingbird",
           "scientific_name": "Mimus gilvus",
-          "detections": 757,
+          "detections": 792,
           "active_days": 19,
-          "average_confidence": 0.851,
+          "average_confidence": 0.85,
           "first_seen_date": "2026-07-23"
         },
         {
@@ -4020,9 +4028,9 @@
         {
           "common_name": "Palm Tanager",
           "scientific_name": "Thraupis palmarum",
-          "detections": 26,
-          "active_days": 13,
-          "average_confidence": 0.809,
+          "detections": 27,
+          "active_days": 14,
+          "average_confidence": 0.806,
           "first_seen_date": "2026-05-29"
         },
         {
@@ -4434,6 +4442,14 @@
           "first_seen_date": "2026-08-20"
         },
         {
+          "common_name": "Osprey",
+          "scientific_name": "Pandion haliaetus",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.713,
+          "first_seen_date": "2026-03-10"
+        },
+        {
           "common_name": "Red-crowned Woodpecker",
           "scientific_name": "Melanerpes rubricapillus",
           "detections": 1,
@@ -4471,7 +4487,7 @@
       "label": "All data",
       "start_date": "2025-12-03",
       "end_date": "2026-09-01",
-      "total_detections": 126676,
+      "total_detections": 126723,
       "species_count": 272,
       "active_days": 242,
       "average_confidence": 0.826,
@@ -5838,8 +5854,8 @@
         },
         {
           "date": "2026-09-01",
-          "detections": 88,
-          "species_count": 14
+          "detections": 135,
+          "species_count": 16
         }
       ],
       "hourly_activity": [
@@ -5890,17 +5906,17 @@
         },
         {
           "hour": 9,
-          "detections": 5617,
+          "detections": 5646,
           "species_count": 130
         },
         {
           "hour": 10,
-          "detections": 3804,
+          "detections": 3812,
           "species_count": 108
         },
         {
           "hour": 11,
-          "detections": 4092,
+          "detections": 4102,
           "species_count": 124
         },
         {
@@ -6124,7 +6140,7 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 1389,
+          "detections": 1399,
           "first_seen_date": "2026-05-30",
           "average_confidence": 0.864,
           "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -7429,7 +7445,7 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 1389,
+          "detections": 1399,
           "active_days": 52,
           "average_confidence": 0.864,
           "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -7477,15 +7493,15 @@
             },
             {
               "hour": 9,
-              "detections": 103
+              "detections": 106
             },
             {
               "hour": 10,
-              "detections": 108
+              "detections": 114
             },
             {
               "hour": 11,
-              "detections": 45
+              "detections": 46
             },
             {
               "hour": 12,
@@ -7631,7 +7647,7 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 1389,
+          "detections": 1399,
           "active_days": 52,
           "average_confidence": 0.864,
           "first_seen_date": "2026-05-30"
@@ -7679,9 +7695,9 @@
         {
           "common_name": "Tropical Mockingbird",
           "scientific_name": "Mimus gilvus",
-          "detections": 776,
+          "detections": 811,
           "active_days": 22,
-          "average_confidence": 0.851,
+          "average_confidence": 0.85,
           "first_seen_date": "2026-07-23"
         },
         {
@@ -7823,9 +7839,9 @@
         {
           "common_name": "Palm Tanager",
           "scientific_name": "Thraupis palmarum",
-          "detections": 215,
-          "active_days": 59,
-          "average_confidence": 0.808,
+          "detections": 216,
+          "active_days": 60,
+          "average_confidence": 0.807,
           "first_seen_date": "2026-05-29"
         },
         {
@@ -7895,8 +7911,8 @@
         {
           "common_name": "Osprey",
           "scientific_name": "Pandion haliaetus",
-          "detections": 183,
-          "active_days": 21,
+          "detections": 184,
+          "active_days": 22,
           "average_confidence": 0.838,
           "first_seen_date": "2026-03-10"
         },
@@ -9731,8 +9747,8 @@
           "label": "Last 7 days",
           "start_date": "2026-08-26",
           "end_date": "2026-09-01",
-          "total_detections": 987,
-          "species_count": 45,
+          "total_detections": 1034,
+          "species_count": 46,
           "active_days": 7,
           "average_confidence": 0.843,
           "daily_activity": [
@@ -9768,8 +9784,8 @@
             },
             {
               "date": "2026-09-01",
-              "detections": 88,
-              "species_count": 14
+              "detections": 135,
+              "species_count": 16
             }
           ],
           "hourly_activity": [
@@ -9820,18 +9836,18 @@
             },
             {
               "hour": 9,
-              "detections": 72,
-              "species_count": 9
+              "detections": 101,
+              "species_count": 10
             },
             {
               "hour": 10,
-              "detections": 41,
+              "detections": 49,
               "species_count": 8
             },
             {
               "hour": 11,
-              "detections": 9,
-              "species_count": 6
+              "detections": 19,
+              "species_count": 8
             },
             {
               "hour": 12,
@@ -9902,9 +9918,9 @@
             "previous_start_date": "2026-08-19",
             "previous_end_date": "2026-08-25",
             "previous_detections": 1651,
-            "detection_change_percent": -40.2,
+            "detection_change_percent": -37.4,
             "previous_species_count": 49,
-            "species_change": -4
+            "species_change": -3
           },
           "new_species_count": 5,
           "new_species": [
@@ -9990,6 +10006,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Osprey",
+              "scientific_name": "Pandion haliaetus",
+              "detections": 1,
+              "average_confidence": 0.713,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Melodious Blackbird",
               "scientific_name": "Dives dives",
               "detections": 1,
@@ -10023,22 +10046,15 @@
               "detections": 1,
               "average_confidence": 0.749,
               "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Orange-collared Manakin",
-              "scientific_name": "Manacus aurantiacus",
-              "detections": 1,
-              "average_confidence": 0.767,
-              "reason": "Rare in this period"
             }
           ],
           "top_species": [
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 281,
+              "detections": 316,
               "active_days": 6,
-              "average_confidence": 0.849,
+              "average_confidence": 0.847,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -10084,15 +10100,15 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 5
+                  "detections": 29
                 },
                 {
                   "hour": 10,
-                  "detections": 5
+                  "detections": 7
                 },
                 {
                   "hour": 11,
-                  "detections": 0
+                  "detections": 9
                 },
                 {
                   "hour": 12,
@@ -10143,14 +10159,14 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -0.7
+              "change_percent": 11.7
             },
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 247,
+              "detections": 257,
               "active_days": 7,
-              "average_confidence": 0.847,
+              "average_confidence": 0.849,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -10196,15 +10212,15 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 22
+                  "detections": 25
                 },
                 {
                   "hour": 10,
-                  "detections": 18
+                  "detections": 24
                 },
                 {
                   "hour": 11,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 12,
@@ -10255,7 +10271,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -36.0
+              "change_percent": -33.4
             },
             {
               "common_name": "White-winged Dove",
@@ -11268,9 +11284,9 @@
             {
               "common_name": "Palm Tanager",
               "scientific_name": "Thraupis palmarum",
-              "detections": 9,
-              "active_days": 3,
-              "average_confidence": 0.831,
+              "detections": 10,
+              "active_days": 4,
+              "average_confidence": 0.821,
               "photo_url": "https://media.birdweather.com/species/321/PalmTanager-standard-cbade2e4973d8cb57c4014568207591d.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/321/PalmTanager-standard-cbade2e4973d8cb57c4014568207591d.jpg",
@@ -11316,7 +11332,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 1
+                  "detections": 2
                 },
                 {
                   "hour": 10,
@@ -11375,24 +11391,24 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 0.0
+              "change_percent": 11.1
             }
           ],
           "species": [
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 281,
+              "detections": 316,
               "active_days": 6,
-              "average_confidence": 0.849,
+              "average_confidence": 0.847,
               "first_seen_date": "2026-07-23"
             },
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 247,
+              "detections": 257,
               "active_days": 7,
-              "average_confidence": 0.847,
+              "average_confidence": 0.849,
               "first_seen_date": "2026-05-30"
             },
             {
@@ -11470,9 +11486,9 @@
             {
               "common_name": "Palm Tanager",
               "scientific_name": "Thraupis palmarum",
-              "detections": 9,
-              "active_days": 3,
-              "average_confidence": 0.831,
+              "detections": 10,
+              "active_days": 4,
+              "average_confidence": 0.821,
               "first_seen_date": "2026-05-29"
             },
             {
@@ -11676,6 +11692,14 @@
               "first_seen_date": "2026-06-21"
             },
             {
+              "common_name": "Osprey",
+              "scientific_name": "Pandion haliaetus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.713,
+              "first_seen_date": "2026-03-10"
+            },
+            {
               "common_name": "Ruby-throated Hummingbird",
               "scientific_name": "Archilochus colubris",
               "detections": 1,
@@ -11745,8 +11769,8 @@
           "label": "Last 30 days",
           "start_date": "2026-08-03",
           "end_date": "2026-09-01",
-          "total_detections": 4562,
-          "species_count": 71,
+          "total_detections": 4609,
+          "species_count": 72,
           "active_days": 20,
           "average_confidence": 0.852,
           "daily_activity": [
@@ -11897,8 +11921,8 @@
             },
             {
               "date": "2026-09-01",
-              "detections": 88,
-              "species_count": 14
+              "detections": 135,
+              "species_count": 16
             }
           ],
           "hourly_activity": [
@@ -11949,17 +11973,17 @@
             },
             {
               "hour": 9,
-              "detections": 449,
-              "species_count": 21
+              "detections": 478,
+              "species_count": 22
             },
             {
               "hour": 10,
-              "detections": 285,
+              "detections": 293,
               "species_count": 17
             },
             {
               "hour": 11,
-              "detections": 181,
+              "detections": 191,
               "species_count": 18
             },
             {
@@ -12031,9 +12055,9 @@
             "previous_start_date": "2026-07-04",
             "previous_end_date": "2026-08-02",
             "previous_detections": 5688,
-            "detection_change_percent": -19.8,
+            "detection_change_percent": -19.0,
             "previous_species_count": 77,
-            "species_change": -6
+            "species_change": -5
           },
           "new_species_count": 29,
           "new_species": [
@@ -12224,6 +12248,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Osprey",
+              "scientific_name": "Pandion haliaetus",
+              "detections": 1,
+              "average_confidence": 0.713,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Gray-breasted Martin",
               "scientific_name": "Progne chalybea",
               "detections": 1,
@@ -12243,13 +12274,6 @@
               "detections": 4,
               "average_confidence": 0.743,
               "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Melodious Blackbird",
-              "scientific_name": "Dives dives",
-              "detections": 2,
-              "average_confidence": 0.752,
-              "reason": "Rare in this period"
             }
           ],
           "top_species": [
@@ -12368,7 +12392,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1088,
+              "detections": 1098,
               "active_days": 20,
               "average_confidence": 0.86,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -12416,15 +12440,15 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 80
+                  "detections": 83
                 },
                 {
                   "hour": 10,
-                  "detections": 100
+                  "detections": 106
                 },
                 {
                   "hour": 11,
-                  "detections": 38
+                  "detections": 39
                 },
                 {
                   "hour": 12,
@@ -12475,14 +12499,14 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 371.0
+              "change_percent": 375.3
             },
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 757,
+              "detections": 792,
               "active_days": 19,
-              "average_confidence": 0.851,
+              "average_confidence": 0.85,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -12528,15 +12552,15 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 73
+                  "detections": 97
                 },
                 {
                   "hour": 10,
-                  "detections": 117
+                  "detections": 119
                 },
                 {
                   "hour": 11,
-                  "detections": 15
+                  "detections": 24
                 },
                 {
                   "hour": 12,
@@ -12587,7 +12611,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 3884.2
+              "change_percent": 4068.4
             },
             {
               "common_name": "Social Flycatcher",
@@ -13610,7 +13634,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1088,
+              "detections": 1098,
               "active_days": 20,
               "average_confidence": 0.86,
               "first_seen_date": "2026-05-30"
@@ -13618,9 +13642,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 757,
+              "detections": 792,
               "active_days": 19,
-              "average_confidence": 0.851,
+              "average_confidence": 0.85,
               "first_seen_date": "2026-07-23"
             },
             {
@@ -13722,9 +13746,9 @@
             {
               "common_name": "Palm Tanager",
               "scientific_name": "Thraupis palmarum",
-              "detections": 26,
-              "active_days": 13,
-              "average_confidence": 0.809,
+              "detections": 27,
+              "active_days": 14,
+              "average_confidence": 0.806,
               "first_seen_date": "2026-05-29"
             },
             {
@@ -14136,6 +14160,14 @@
               "first_seen_date": "2026-08-20"
             },
             {
+              "common_name": "Osprey",
+              "scientific_name": "Pandion haliaetus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.713,
+              "first_seen_date": "2026-03-10"
+            },
+            {
               "common_name": "Red-crowned Woodpecker",
               "scientific_name": "Melanerpes rubricapillus",
               "detections": 1,
@@ -14173,7 +14205,7 @@
           "label": "All data",
           "start_date": "2025-12-03",
           "end_date": "2026-09-01",
-          "total_detections": 126676,
+          "total_detections": 126723,
           "species_count": 272,
           "active_days": 242,
           "average_confidence": 0.826,
@@ -15540,8 +15572,8 @@
             },
             {
               "date": "2026-09-01",
-              "detections": 88,
-              "species_count": 14
+              "detections": 135,
+              "species_count": 16
             }
           ],
           "hourly_activity": [
@@ -15592,17 +15624,17 @@
             },
             {
               "hour": 9,
-              "detections": 5617,
+              "detections": 5646,
               "species_count": 130
             },
             {
               "hour": 10,
-              "detections": 3804,
+              "detections": 3812,
               "species_count": 108
             },
             {
               "hour": 11,
-              "detections": 4092,
+              "detections": 4102,
               "species_count": 124
             },
             {
@@ -15826,7 +15858,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1389,
+              "detections": 1399,
               "first_seen_date": "2026-05-30",
               "average_confidence": 0.864,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -17131,7 +17163,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1389,
+              "detections": 1399,
               "active_days": 52,
               "average_confidence": 0.864,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -17179,15 +17211,15 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 103
+                  "detections": 106
                 },
                 {
                   "hour": 10,
-                  "detections": 108
+                  "detections": 114
                 },
                 {
                   "hour": 11,
-                  "detections": 45
+                  "detections": 46
                 },
                 {
                   "hour": 12,
@@ -17333,7 +17365,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1389,
+              "detections": 1399,
               "active_days": 52,
               "average_confidence": 0.864,
               "first_seen_date": "2026-05-30"
@@ -17381,9 +17413,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 776,
+              "detections": 811,
               "active_days": 22,
-              "average_confidence": 0.851,
+              "average_confidence": 0.85,
               "first_seen_date": "2026-07-23"
             },
             {
@@ -17525,9 +17557,9 @@
             {
               "common_name": "Palm Tanager",
               "scientific_name": "Thraupis palmarum",
-              "detections": 215,
-              "active_days": 59,
-              "average_confidence": 0.808,
+              "detections": 216,
+              "active_days": 60,
+              "average_confidence": 0.807,
               "first_seen_date": "2026-05-29"
             },
             {
@@ -17597,8 +17629,8 @@
             {
               "common_name": "Osprey",
               "scientific_name": "Pandion haliaetus",
-              "detections": 183,
-              "active_days": 21,
+              "detections": 184,
+              "active_days": 22,
               "average_confidence": 0.838,
               "first_seen_date": "2026-03-10"
             },
@@ -19970,8 +20002,8 @@
           "label": "Last 7 days",
           "start_date": "2026-08-26",
           "end_date": "2026-09-01",
-          "total_detections": 987,
-          "species_count": 45,
+          "total_detections": 1034,
+          "species_count": 46,
           "active_days": 7,
           "average_confidence": 0.843,
           "daily_activity": [
@@ -20007,8 +20039,8 @@
             },
             {
               "date": "2026-09-01",
-              "detections": 88,
-              "species_count": 14
+              "detections": 135,
+              "species_count": 16
             }
           ],
           "hourly_activity": [
@@ -20059,18 +20091,18 @@
             },
             {
               "hour": 9,
-              "detections": 72,
-              "species_count": 9
+              "detections": 101,
+              "species_count": 10
             },
             {
               "hour": 10,
-              "detections": 41,
+              "detections": 49,
               "species_count": 8
             },
             {
               "hour": 11,
-              "detections": 9,
-              "species_count": 6
+              "detections": 19,
+              "species_count": 8
             },
             {
               "hour": 12,
@@ -20141,11 +20173,11 @@
             "previous_start_date": "2026-08-19",
             "previous_end_date": "2026-08-25",
             "previous_detections": 1651,
-            "detection_change_percent": -40.2,
+            "detection_change_percent": -37.4,
             "previous_species_count": 49,
-            "species_change": -4
+            "species_change": -3
           },
-          "new_species_count": 7,
+          "new_species_count": 8,
           "new_species": [
             {
               "common_name": "Roadside Hawk",
@@ -20226,6 +20258,19 @@
               ]
             },
             {
+              "common_name": "Osprey",
+              "scientific_name": "Pandion haliaetus",
+              "detections": 1,
+              "first_seen_date": "2026-09-01",
+              "average_confidence": 0.713,
+              "photo_url": "https://media.birdweather.com/species/375/Osprey-standard-86c8030b42ef1e93b509a463813c8687.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/375/Osprey-standard-86c8030b42ef1e93b509a463813c8687.jpg",
+                "https://media.birdweather.com/species/375/Osprey-png200-13b20673a5ded4772a43109283ea4db3.png",
+                "https://media.birdweather.com/species/375/Osprey-thumbnail-bb14caf333e22c1b44befe2ed6c78026.jpg"
+              ]
+            },
+            {
               "common_name": "Scarlet-rumped Tanager",
               "scientific_name": "Ramphocelus passerinii",
               "detections": 1,
@@ -20252,6 +20297,13 @@
               "scientific_name": "Ramphocelus passerinii",
               "detections": 1,
               "average_confidence": 0.706,
+              "reason": "Lower aggregate confidence"
+            },
+            {
+              "common_name": "Osprey",
+              "scientific_name": "Pandion haliaetus",
+              "detections": 1,
+              "average_confidence": 0.713,
               "reason": "Lower aggregate confidence"
             },
             {
@@ -20288,22 +20340,15 @@
               "detections": 1,
               "average_confidence": 0.749,
               "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Orange-collared Manakin",
-              "scientific_name": "Manacus aurantiacus",
-              "detections": 1,
-              "average_confidence": 0.767,
-              "reason": "Rare in this period"
             }
           ],
           "top_species": [
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 281,
+              "detections": 316,
               "active_days": 6,
-              "average_confidence": 0.849,
+              "average_confidence": 0.847,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -20349,15 +20394,15 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 5
+                  "detections": 29
                 },
                 {
                   "hour": 10,
-                  "detections": 5
+                  "detections": 7
                 },
                 {
                   "hour": 11,
-                  "detections": 0
+                  "detections": 9
                 },
                 {
                   "hour": 12,
@@ -20408,14 +20453,14 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -0.7
+              "change_percent": 11.7
             },
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 247,
+              "detections": 257,
               "active_days": 7,
-              "average_confidence": 0.847,
+              "average_confidence": 0.849,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -20461,15 +20506,15 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 22
+                  "detections": 25
                 },
                 {
                   "hour": 10,
-                  "detections": 18
+                  "detections": 24
                 },
                 {
                   "hour": 11,
-                  "detections": 0
+                  "detections": 1
                 },
                 {
                   "hour": 12,
@@ -20520,7 +20565,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -36.0
+              "change_percent": -33.4
             },
             {
               "common_name": "White-winged Dove",
@@ -21533,9 +21578,9 @@
             {
               "common_name": "Palm Tanager",
               "scientific_name": "Thraupis palmarum",
-              "detections": 9,
-              "active_days": 3,
-              "average_confidence": 0.831,
+              "detections": 10,
+              "active_days": 4,
+              "average_confidence": 0.821,
               "photo_url": "https://media.birdweather.com/species/321/PalmTanager-standard-cbade2e4973d8cb57c4014568207591d.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/321/PalmTanager-standard-cbade2e4973d8cb57c4014568207591d.jpg",
@@ -21581,7 +21626,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 1
+                  "detections": 2
                 },
                 {
                   "hour": 10,
@@ -21640,24 +21685,24 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 0.0
+              "change_percent": 11.1
             }
           ],
           "species": [
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 281,
+              "detections": 316,
               "active_days": 6,
-              "average_confidence": 0.849,
+              "average_confidence": 0.847,
               "first_seen_date": "2026-08-12"
             },
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 247,
+              "detections": 257,
               "active_days": 7,
-              "average_confidence": 0.847,
+              "average_confidence": 0.849,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -21735,9 +21780,9 @@
             {
               "common_name": "Palm Tanager",
               "scientific_name": "Thraupis palmarum",
-              "detections": 9,
-              "active_days": 3,
-              "average_confidence": 0.831,
+              "detections": 10,
+              "active_days": 4,
+              "average_confidence": 0.821,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -21941,6 +21986,14 @@
               "first_seen_date": "2026-08-13"
             },
             {
+              "common_name": "Osprey",
+              "scientific_name": "Pandion haliaetus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.713,
+              "first_seen_date": "2026-09-01"
+            },
+            {
               "common_name": "Ruby-throated Hummingbird",
               "scientific_name": "Archilochus colubris",
               "detections": 1,
@@ -22010,8 +22063,8 @@
           "label": "Last 30 days",
           "start_date": "2026-08-12",
           "end_date": "2026-09-01",
-          "total_detections": 4562,
-          "species_count": 71,
+          "total_detections": 4609,
+          "species_count": 72,
           "active_days": 20,
           "average_confidence": 0.852,
           "daily_activity": [
@@ -22117,8 +22170,8 @@
             },
             {
               "date": "2026-09-01",
-              "detections": 88,
-              "species_count": 14
+              "detections": 135,
+              "species_count": 16
             }
           ],
           "hourly_activity": [
@@ -22169,17 +22222,17 @@
             },
             {
               "hour": 9,
-              "detections": 449,
-              "species_count": 21
+              "detections": 478,
+              "species_count": 22
             },
             {
               "hour": 10,
-              "detections": 285,
+              "detections": 293,
               "species_count": 17
             },
             {
               "hour": 11,
-              "detections": 181,
+              "detections": 191,
               "species_count": 18
             },
             {
@@ -22253,9 +22306,9 @@
             "previous_detections": 0,
             "detection_change_percent": null,
             "previous_species_count": 0,
-            "species_change": 71
+            "species_change": 72
           },
-          "new_species_count": 71,
+          "new_species_count": 72,
           "new_species": [
             {
               "common_name": "White-winged Dove",
@@ -22273,7 +22326,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1088,
+              "detections": 1098,
               "first_seen_date": "2026-08-12",
               "average_confidence": 0.86,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -22286,9 +22339,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 757,
+              "detections": 792,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.851,
+              "average_confidence": 0.85,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -22444,6 +22497,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Osprey",
+              "scientific_name": "Pandion haliaetus",
+              "detections": 1,
+              "average_confidence": 0.713,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Gray-breasted Martin",
               "scientific_name": "Progne chalybea",
               "detections": 1,
@@ -22463,13 +22523,6 @@
               "detections": 4,
               "average_confidence": 0.743,
               "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Melodious Blackbird",
-              "scientific_name": "Dives dives",
-              "detections": 2,
-              "average_confidence": 0.752,
-              "reason": "Rare in this period"
             }
           ],
           "top_species": [
@@ -22588,7 +22641,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1088,
+              "detections": 1098,
               "active_days": 20,
               "average_confidence": 0.86,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -22636,15 +22689,15 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 80
+                  "detections": 83
                 },
                 {
                   "hour": 10,
-                  "detections": 100
+                  "detections": 106
                 },
                 {
                   "hour": 11,
-                  "detections": 38
+                  "detections": 39
                 },
                 {
                   "hour": 12,
@@ -22700,9 +22753,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 757,
+              "detections": 792,
               "active_days": 19,
-              "average_confidence": 0.851,
+              "average_confidence": 0.85,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -22748,15 +22801,15 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 73
+                  "detections": 97
                 },
                 {
                   "hour": 10,
-                  "detections": 117
+                  "detections": 119
                 },
                 {
                   "hour": 11,
-                  "detections": 15
+                  "detections": 24
                 },
                 {
                   "hour": 12,
@@ -23830,7 +23883,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1088,
+              "detections": 1098,
               "active_days": 20,
               "average_confidence": 0.86,
               "first_seen_date": "2026-08-12"
@@ -23838,9 +23891,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 757,
+              "detections": 792,
               "active_days": 19,
-              "average_confidence": 0.851,
+              "average_confidence": 0.85,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -23942,9 +23995,9 @@
             {
               "common_name": "Palm Tanager",
               "scientific_name": "Thraupis palmarum",
-              "detections": 26,
-              "active_days": 13,
-              "average_confidence": 0.809,
+              "detections": 27,
+              "active_days": 14,
+              "average_confidence": 0.806,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -24356,6 +24409,14 @@
               "first_seen_date": "2026-08-20"
             },
             {
+              "common_name": "Osprey",
+              "scientific_name": "Pandion haliaetus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.713,
+              "first_seen_date": "2026-09-01"
+            },
+            {
               "common_name": "Red-crowned Woodpecker",
               "scientific_name": "Melanerpes rubricapillus",
               "detections": 1,
@@ -24393,8 +24454,8 @@
           "label": "All data",
           "start_date": "2026-08-12",
           "end_date": "2026-09-01",
-          "total_detections": 4562,
-          "species_count": 71,
+          "total_detections": 4609,
+          "species_count": 72,
           "active_days": 20,
           "average_confidence": 0.852,
           "daily_activity": [
@@ -24500,8 +24561,8 @@
             },
             {
               "date": "2026-09-01",
-              "detections": 88,
-              "species_count": 14
+              "detections": 135,
+              "species_count": 16
             }
           ],
           "hourly_activity": [
@@ -24552,17 +24613,17 @@
             },
             {
               "hour": 9,
-              "detections": 449,
-              "species_count": 21
+              "detections": 478,
+              "species_count": 22
             },
             {
               "hour": 10,
-              "detections": 285,
+              "detections": 293,
               "species_count": 17
             },
             {
               "hour": 11,
-              "detections": 181,
+              "detections": 191,
               "species_count": 18
             },
             {
@@ -24638,7 +24699,7 @@
             "previous_species_count": null,
             "species_change": null
           },
-          "new_species_count": 71,
+          "new_species_count": 72,
           "new_species": [
             {
               "common_name": "White-winged Dove",
@@ -24656,7 +24717,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1088,
+              "detections": 1098,
               "first_seen_date": "2026-08-12",
               "average_confidence": 0.86,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -24669,9 +24730,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 757,
+              "detections": 792,
               "first_seen_date": "2026-08-12",
-              "average_confidence": 0.851,
+              "average_confidence": 0.85,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -24827,6 +24888,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Osprey",
+              "scientific_name": "Pandion haliaetus",
+              "detections": 1,
+              "average_confidence": 0.713,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Gray-breasted Martin",
               "scientific_name": "Progne chalybea",
               "detections": 1,
@@ -24846,13 +24914,6 @@
               "detections": 4,
               "average_confidence": 0.743,
               "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Melodious Blackbird",
-              "scientific_name": "Dives dives",
-              "detections": 2,
-              "average_confidence": 0.752,
-              "reason": "Rare in this period"
             }
           ],
           "top_species": [
@@ -24971,7 +25032,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1088,
+              "detections": 1098,
               "active_days": 20,
               "average_confidence": 0.86,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -25019,15 +25080,15 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 80
+                  "detections": 83
                 },
                 {
                   "hour": 10,
-                  "detections": 100
+                  "detections": 106
                 },
                 {
                   "hour": 11,
-                  "detections": 38
+                  "detections": 39
                 },
                 {
                   "hour": 12,
@@ -25083,9 +25144,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 757,
+              "detections": 792,
               "active_days": 19,
-              "average_confidence": 0.851,
+              "average_confidence": 0.85,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -25131,15 +25192,15 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 73
+                  "detections": 97
                 },
                 {
                   "hour": 10,
-                  "detections": 117
+                  "detections": 119
                 },
                 {
                   "hour": 11,
-                  "detections": 15
+                  "detections": 24
                 },
                 {
                   "hour": 12,
@@ -26213,7 +26274,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1088,
+              "detections": 1098,
               "active_days": 20,
               "average_confidence": 0.86,
               "first_seen_date": "2026-08-12"
@@ -26221,9 +26282,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 757,
+              "detections": 792,
               "active_days": 19,
-              "average_confidence": 0.851,
+              "average_confidence": 0.85,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -26325,9 +26386,9 @@
             {
               "common_name": "Palm Tanager",
               "scientific_name": "Thraupis palmarum",
-              "detections": 26,
-              "active_days": 13,
-              "average_confidence": 0.809,
+              "detections": 27,
+              "active_days": 14,
+              "average_confidence": 0.806,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -26737,6 +26798,14 @@
               "active_days": 1,
               "average_confidence": 0.898,
               "first_seen_date": "2026-08-20"
+            },
+            {
+              "common_name": "Osprey",
+              "scientific_name": "Pandion haliaetus",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.713,
+              "first_seen_date": "2026-09-01"
             },
             {
               "common_name": "Red-crowned Woodpecker",
