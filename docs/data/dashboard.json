@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "generated_date": "2026-11-01",
-  "generated_hour": 9,
+  "generated_hour": 13,
   "timezone": "America/Costa_Rica",
   "latest_observation_date": "2026-11-01",
   "default_period": "7d",
@@ -29,10 +29,10 @@
       "label": "Last 7 days",
       "start_date": "2026-10-26",
       "end_date": "2026-11-01",
-      "total_detections": 3121,
-      "species_count": 39,
+      "total_detections": 3283,
+      "species_count": 42,
       "active_days": 7,
-      "average_confidence": 0.873,
+      "average_confidence": 0.872,
       "daily_activity": [
         {
           "date": "2026-10-26",
@@ -66,8 +66,8 @@
         },
         {
           "date": "2026-11-01",
-          "detections": 324,
-          "species_count": 13
+          "detections": 486,
+          "species_count": 17
         }
       ],
       "hourly_activity": [
@@ -118,27 +118,27 @@
         },
         {
           "hour": 9,
-          "detections": 130,
-          "species_count": 10
+          "detections": 230,
+          "species_count": 12
         },
         {
           "hour": 10,
-          "detections": 112,
-          "species_count": 7
-        },
-        {
-          "hour": 11,
-          "detections": 56,
+          "detections": 116,
           "species_count": 8
         },
         {
+          "hour": 11,
+          "detections": 65,
+          "species_count": 10
+        },
+        {
           "hour": 12,
-          "detections": 107,
-          "species_count": 5
+          "detections": 155,
+          "species_count": 7
         },
         {
           "hour": 13,
-          "detections": 95,
+          "detections": 96,
           "species_count": 8
         },
         {
@@ -200,9 +200,9 @@
         "previous_start_date": "2026-10-19",
         "previous_end_date": "2026-10-25",
         "previous_detections": 2721,
-        "detection_change_percent": 14.7,
+        "detection_change_percent": 20.7,
         "previous_species_count": 36,
-        "species_change": 3
+        "species_change": 6
       },
       "new_species_count": 3,
       "new_species": [
@@ -262,6 +262,13 @@
           "reason": "Lower aggregate confidence"
         },
         {
+          "common_name": "Hoffmann's Woodpecker",
+          "scientific_name": "Melanerpes hoffmannii",
+          "detections": 1,
+          "average_confidence": 0.706,
+          "reason": "Lower aggregate confidence"
+        },
+        {
           "common_name": "Sharp-shinned Hawk",
           "scientific_name": "Accipiter striatus",
           "detections": 1,
@@ -295,20 +302,13 @@
           "detections": 1,
           "average_confidence": 0.75,
           "reason": "Rare in this period"
-        },
-        {
-          "common_name": "Scarlet-rumped Tanager",
-          "scientific_name": "Ramphocelus passerinii",
-          "detections": 3,
-          "average_confidence": 0.751,
-          "reason": "Rare in this period"
         }
       ],
       "top_species": [
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 1634,
+          "detections": 1763,
           "active_days": 7,
           "average_confidence": 0.871,
           "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -356,19 +356,19 @@
             },
             {
               "hour": 9,
-              "detections": 81
+              "detections": 172
             },
             {
               "hour": 10,
-              "detections": 86
+              "detections": 88
             },
             {
               "hour": 11,
-              "detections": 42
+              "detections": 45
             },
             {
               "hour": 12,
-              "detections": 81
+              "detections": 114
             },
             {
               "hour": 13,
@@ -415,12 +415,12 @@
               "detections": 0
             }
           ],
-          "change_percent": 39.5
+          "change_percent": 50.6
         },
         {
           "common_name": "White-winged Dove",
           "scientific_name": "Zenaida asiatica",
-          "detections": 999,
+          "detections": 1005,
           "active_days": 7,
           "average_confidence": 0.866,
           "photo_url": "https://media.birdweather.com/species/501/White-wingedDove-standard-6528ef689b07d5a91f1c2275cdef19c9.jpg",
@@ -468,7 +468,7 @@
             },
             {
               "hour": 9,
-              "detections": 12
+              "detections": 17
             },
             {
               "hour": 10,
@@ -484,7 +484,7 @@
             },
             {
               "hour": 13,
-              "detections": 49
+              "detections": 50
             },
             {
               "hour": 14,
@@ -527,7 +527,7 @@
               "detections": 0
             }
           ],
-          "change_percent": 9.2
+          "change_percent": 9.8
         },
         {
           "common_name": "Bats",
@@ -644,9 +644,9 @@
         {
           "common_name": "Gray-capped Flycatcher",
           "scientific_name": "Myiozetetes granadensis",
-          "detections": 61,
+          "detections": 69,
           "active_days": 6,
-          "average_confidence": 0.845,
+          "average_confidence": 0.84,
           "photo_url": "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
@@ -696,7 +696,7 @@
             },
             {
               "hour": 10,
-              "detections": 3
+              "detections": 4
             },
             {
               "hour": 11,
@@ -704,7 +704,7 @@
             },
             {
               "hour": 12,
-              "detections": 19
+              "detections": 26
             },
             {
               "hour": 13,
@@ -751,7 +751,7 @@
               "detections": 0
             }
           ],
-          "change_percent": -36.5
+          "change_percent": -28.1
         },
         {
           "common_name": "Great-tailed Grackle",
@@ -868,7 +868,7 @@
         {
           "common_name": "Blue-gray Tanager",
           "scientific_name": "Thraupis episcopus",
-          "detections": 47,
+          "detections": 51,
           "active_days": 7,
           "average_confidence": 0.85,
           "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
@@ -916,7 +916,7 @@
             },
             {
               "hour": 9,
-              "detections": 16
+              "detections": 18
             },
             {
               "hour": 10,
@@ -924,7 +924,7 @@
             },
             {
               "hour": 11,
-              "detections": 0
+              "detections": 2
             },
             {
               "hour": 12,
@@ -975,14 +975,14 @@
               "detections": 0
             }
           ],
-          "change_percent": 17.5
+          "change_percent": 27.5
         },
         {
           "common_name": "Tropical Mockingbird",
           "scientific_name": "Mimus gilvus",
-          "detections": 22,
-          "active_days": 5,
-          "average_confidence": 0.835,
+          "detections": 26,
+          "active_days": 6,
+          "average_confidence": 0.821,
           "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -1036,7 +1036,7 @@
             },
             {
               "hour": 11,
-              "detections": 0
+              "detections": 4
             },
             {
               "hour": 12,
@@ -1087,7 +1087,7 @@
               "detections": 0
             }
           ],
-          "change_percent": -42.1
+          "change_percent": -31.6
         },
         {
           "common_name": "Streaked Flycatcher",
@@ -1314,6 +1314,118 @@
           "change_percent": -70.5
         },
         {
+          "common_name": "Palm Tanager",
+          "scientific_name": "Thraupis palmarum",
+          "detections": 13,
+          "active_days": 4,
+          "average_confidence": 0.839,
+          "photo_url": "https://media.birdweather.com/species/321/PalmTanager-standard-cbade2e4973d8cb57c4014568207591d.jpg",
+          "photo_urls": [
+            "https://media.birdweather.com/species/321/PalmTanager-standard-cbade2e4973d8cb57c4014568207591d.jpg",
+            "https://media.birdweather.com/species/321/PalmTanager-png200-100c123f8e9a99aad801e3e79a865873.png",
+            "https://media.birdweather.com/species/321/PalmTanager-thumbnail-66ffacacc3b9c5f5dad0cf97c949e40f.jpg"
+          ],
+          "hourly_activity": [
+            {
+              "hour": 0,
+              "detections": 0
+            },
+            {
+              "hour": 1,
+              "detections": 0
+            },
+            {
+              "hour": 2,
+              "detections": 0
+            },
+            {
+              "hour": 3,
+              "detections": 0
+            },
+            {
+              "hour": 4,
+              "detections": 0
+            },
+            {
+              "hour": 5,
+              "detections": 0
+            },
+            {
+              "hour": 6,
+              "detections": 1
+            },
+            {
+              "hour": 7,
+              "detections": 2
+            },
+            {
+              "hour": 8,
+              "detections": 4
+            },
+            {
+              "hour": 9,
+              "detections": 0
+            },
+            {
+              "hour": 10,
+              "detections": 0
+            },
+            {
+              "hour": 11,
+              "detections": 1
+            },
+            {
+              "hour": 12,
+              "detections": 5
+            },
+            {
+              "hour": 13,
+              "detections": 0
+            },
+            {
+              "hour": 14,
+              "detections": 0
+            },
+            {
+              "hour": 15,
+              "detections": 0
+            },
+            {
+              "hour": 16,
+              "detections": 0
+            },
+            {
+              "hour": 17,
+              "detections": 0
+            },
+            {
+              "hour": 18,
+              "detections": 0
+            },
+            {
+              "hour": 19,
+              "detections": 0
+            },
+            {
+              "hour": 20,
+              "detections": 0
+            },
+            {
+              "hour": 21,
+              "detections": 0
+            },
+            {
+              "hour": 22,
+              "detections": 0
+            },
+            {
+              "hour": 23,
+              "detections": 0
+            }
+          ],
+          "change_percent": -7.1
+        },
+        {
           "common_name": "Social Flycatcher",
           "scientific_name": "Myiozetetes similis",
           "detections": 13,
@@ -1536,125 +1648,13 @@
             }
           ],
           "change_percent": -58.6
-        },
-        {
-          "common_name": "Rufous-tailed Hummingbird",
-          "scientific_name": "Amazilia tzacatl",
-          "detections": 11,
-          "active_days": 6,
-          "average_confidence": 0.812,
-          "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
-          "photo_urls": [
-            "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
-            "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
-            "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
-          ],
-          "hourly_activity": [
-            {
-              "hour": 0,
-              "detections": 0
-            },
-            {
-              "hour": 1,
-              "detections": 0
-            },
-            {
-              "hour": 2,
-              "detections": 0
-            },
-            {
-              "hour": 3,
-              "detections": 0
-            },
-            {
-              "hour": 4,
-              "detections": 0
-            },
-            {
-              "hour": 5,
-              "detections": 3
-            },
-            {
-              "hour": 6,
-              "detections": 1
-            },
-            {
-              "hour": 7,
-              "detections": 4
-            },
-            {
-              "hour": 8,
-              "detections": 0
-            },
-            {
-              "hour": 9,
-              "detections": 0
-            },
-            {
-              "hour": 10,
-              "detections": 1
-            },
-            {
-              "hour": 11,
-              "detections": 1
-            },
-            {
-              "hour": 12,
-              "detections": 0
-            },
-            {
-              "hour": 13,
-              "detections": 0
-            },
-            {
-              "hour": 14,
-              "detections": 1
-            },
-            {
-              "hour": 15,
-              "detections": 0
-            },
-            {
-              "hour": 16,
-              "detections": 0
-            },
-            {
-              "hour": 17,
-              "detections": 0
-            },
-            {
-              "hour": 18,
-              "detections": 0
-            },
-            {
-              "hour": 19,
-              "detections": 0
-            },
-            {
-              "hour": 20,
-              "detections": 0
-            },
-            {
-              "hour": 21,
-              "detections": 0
-            },
-            {
-              "hour": 22,
-              "detections": 0
-            },
-            {
-              "hour": 23,
-              "detections": 0
-            }
-          ],
-          "change_percent": -31.2
         }
       ],
       "species": [
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 1634,
+          "detections": 1763,
           "active_days": 7,
           "average_confidence": 0.871,
           "first_seen_date": "2026-05-30"
@@ -1662,7 +1662,7 @@
         {
           "common_name": "White-winged Dove",
           "scientific_name": "Zenaida asiatica",
-          "detections": 999,
+          "detections": 1005,
           "active_days": 7,
           "average_confidence": 0.866,
           "first_seen_date": "2026-05-28"
@@ -1678,9 +1678,9 @@
         {
           "common_name": "Gray-capped Flycatcher",
           "scientific_name": "Myiozetetes granadensis",
-          "detections": 61,
+          "detections": 69,
           "active_days": 6,
-          "average_confidence": 0.845,
+          "average_confidence": 0.84,
           "first_seen_date": "2026-08-23"
         },
         {
@@ -1694,7 +1694,7 @@
         {
           "common_name": "Blue-gray Tanager",
           "scientific_name": "Thraupis episcopus",
-          "detections": 47,
+          "detections": 51,
           "active_days": 7,
           "average_confidence": 0.85,
           "first_seen_date": "2026-05-28"
@@ -1702,9 +1702,9 @@
         {
           "common_name": "Tropical Mockingbird",
           "scientific_name": "Mimus gilvus",
-          "detections": 22,
-          "active_days": 5,
-          "average_confidence": 0.835,
+          "detections": 26,
+          "active_days": 6,
+          "average_confidence": 0.821,
           "first_seen_date": "2026-07-23"
         },
         {
@@ -1722,6 +1722,14 @@
           "active_days": 5,
           "average_confidence": 0.807,
           "first_seen_date": "2026-05-28"
+        },
+        {
+          "common_name": "Palm Tanager",
+          "scientific_name": "Thraupis palmarum",
+          "detections": 13,
+          "active_days": 4,
+          "average_confidence": 0.839,
+          "first_seen_date": "2026-05-29"
         },
         {
           "common_name": "Social Flycatcher",
@@ -1742,18 +1750,10 @@
         {
           "common_name": "Rufous-tailed Hummingbird",
           "scientific_name": "Amazilia tzacatl",
-          "detections": 11,
+          "detections": 12,
           "active_days": 6,
-          "average_confidence": 0.812,
+          "average_confidence": 0.806,
           "first_seen_date": "2026-06-02"
-        },
-        {
-          "common_name": "Palm Tanager",
-          "scientific_name": "Thraupis palmarum",
-          "detections": 8,
-          "active_days": 4,
-          "average_confidence": 0.828,
-          "first_seen_date": "2026-05-29"
         },
         {
           "common_name": "Boat-billed Flycatcher",
@@ -1794,6 +1794,14 @@
           "active_days": 1,
           "average_confidence": 0.861,
           "first_seen_date": "2025-12-11"
+        },
+        {
+          "common_name": "Rose-breasted Grosbeak",
+          "scientific_name": "Pheucticus ludovicianus",
+          "detections": 3,
+          "active_days": 1,
+          "average_confidence": 0.842,
+          "first_seen_date": "2026-08-14"
         },
         {
           "common_name": "Scarlet-rumped Tanager",
@@ -1874,6 +1882,22 @@
           "active_days": 1,
           "average_confidence": 0.836,
           "first_seen_date": "2026-05-28"
+        },
+        {
+          "common_name": "Great Antshrike",
+          "scientific_name": "Taraba major",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.793,
+          "first_seen_date": "2026-09-20"
+        },
+        {
+          "common_name": "Hoffmann's Woodpecker",
+          "scientific_name": "Melanerpes hoffmannii",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.706,
+          "first_seen_date": "2026-06-03"
         },
         {
           "common_name": "Merlin",
@@ -1969,8 +1993,8 @@
       "label": "Last 30 days",
       "start_date": "2026-10-03",
       "end_date": "2026-11-01",
-      "total_detections": 16512,
-      "species_count": 80,
+      "total_detections": 16674,
+      "species_count": 81,
       "active_days": 30,
       "average_confidence": 0.873,
       "daily_activity": [
@@ -2121,8 +2145,8 @@
         },
         {
           "date": "2026-11-01",
-          "detections": 324,
-          "species_count": 13
+          "detections": 486,
+          "species_count": 17
         }
       ],
       "hourly_activity": [
@@ -2173,27 +2197,27 @@
         },
         {
           "hour": 9,
-          "detections": 832,
-          "species_count": 30
+          "detections": 932,
+          "species_count": 31
         },
         {
           "hour": 10,
-          "detections": 802,
-          "species_count": 25
+          "detections": 806,
+          "species_count": 26
         },
         {
           "hour": 11,
-          "detections": 883,
+          "detections": 892,
           "species_count": 26
         },
         {
           "hour": 12,
-          "detections": 779,
-          "species_count": 21
+          "detections": 827,
+          "species_count": 22
         },
         {
           "hour": 13,
-          "detections": 975,
+          "detections": 976,
           "species_count": 26
         },
         {
@@ -2255,9 +2279,9 @@
         "previous_start_date": "2026-09-03",
         "previous_end_date": "2026-10-02",
         "previous_detections": 8480,
-        "detection_change_percent": 94.7,
+        "detection_change_percent": 96.6,
         "previous_species_count": 100,
-        "species_change": -20
+        "species_change": -19
       },
       "new_species_count": 15,
       "new_species": [
@@ -2420,17 +2444,17 @@
       ],
       "review_candidates": [
         {
+          "common_name": "Hoffmann's Woodpecker",
+          "scientific_name": "Melanerpes hoffmannii",
+          "detections": 1,
+          "average_confidence": 0.706,
+          "reason": "Lower aggregate confidence"
+        },
+        {
           "common_name": "Black Phoebe",
           "scientific_name": "Sayornis nigricans",
           "detections": 1,
           "average_confidence": 0.717,
-          "reason": "Lower aggregate confidence"
-        },
-        {
-          "common_name": "Great Antshrike",
-          "scientific_name": "Taraba major",
-          "detections": 1,
-          "average_confidence": 0.721,
           "reason": "Lower aggregate confidence"
         },
         {
@@ -2480,7 +2504,7 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 9695,
+          "detections": 9824,
           "active_days": 30,
           "average_confidence": 0.875,
           "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -2528,19 +2552,19 @@
             },
             {
               "hour": 9,
-              "detections": 537
+              "detections": 628
             },
             {
               "hour": 10,
-              "detections": 484
+              "detections": 486
             },
             {
               "hour": 11,
-              "detections": 718
+              "detections": 721
             },
             {
               "hour": 12,
-              "detections": 572
+              "detections": 605
             },
             {
               "hour": 13,
@@ -2587,12 +2611,12 @@
               "detections": 0
             }
           ],
-          "change_percent": 174.4
+          "change_percent": 178.1
         },
         {
           "common_name": "White-winged Dove",
           "scientific_name": "Zenaida asiatica",
-          "detections": 3699,
+          "detections": 3705,
           "active_days": 30,
           "average_confidence": 0.857,
           "photo_url": "https://media.birdweather.com/species/501/White-wingedDove-standard-6528ef689b07d5a91f1c2275cdef19c9.jpg",
@@ -2640,7 +2664,7 @@
             },
             {
               "hour": 9,
-              "detections": 107
+              "detections": 112
             },
             {
               "hour": 10,
@@ -2656,7 +2680,7 @@
             },
             {
               "hour": 13,
-              "detections": 167
+              "detections": 168
             },
             {
               "hour": 14,
@@ -2699,7 +2723,7 @@
               "detections": 0
             }
           ],
-          "change_percent": 52.0
+          "change_percent": 52.2
         },
         {
           "common_name": "Bats",
@@ -2816,9 +2840,9 @@
         {
           "common_name": "Gray-capped Flycatcher",
           "scientific_name": "Myiozetetes granadensis",
-          "detections": 269,
+          "detections": 277,
           "active_days": 19,
-          "average_confidence": 0.842,
+          "average_confidence": 0.84,
           "photo_url": "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
@@ -2868,7 +2892,7 @@
             },
             {
               "hour": 10,
-              "detections": 31
+              "detections": 32
             },
             {
               "hour": 11,
@@ -2876,7 +2900,7 @@
             },
             {
               "hour": 12,
-              "detections": 20
+              "detections": 27
             },
             {
               "hour": 13,
@@ -2923,7 +2947,7 @@
               "detections": 0
             }
           ],
-          "change_percent": 6625.0
+          "change_percent": 6825.0
         },
         {
           "common_name": "Social Flycatcher",
@@ -3152,9 +3176,9 @@
         {
           "common_name": "Tropical Mockingbird",
           "scientific_name": "Mimus gilvus",
-          "detections": 185,
-          "active_days": 26,
-          "average_confidence": 0.821,
+          "detections": 189,
+          "active_days": 27,
+          "average_confidence": 0.819,
           "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -3208,7 +3232,7 @@
             },
             {
               "hour": 11,
-              "detections": 6
+              "detections": 10
             },
             {
               "hour": 12,
@@ -3259,14 +3283,14 @@
               "detections": 0
             }
           ],
-          "change_percent": -55.2
+          "change_percent": -54.2
         },
         {
           "common_name": "Blue-gray Tanager",
           "scientific_name": "Thraupis episcopus",
-          "detections": 171,
+          "detections": 175,
           "active_days": 27,
-          "average_confidence": 0.827,
+          "average_confidence": 0.828,
           "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
@@ -3312,7 +3336,7 @@
             },
             {
               "hour": 9,
-              "detections": 38
+              "detections": 40
             },
             {
               "hour": 10,
@@ -3320,7 +3344,7 @@
             },
             {
               "hour": 11,
-              "detections": 9
+              "detections": 11
             },
             {
               "hour": 12,
@@ -3371,7 +3395,7 @@
               "detections": 0
             }
           ],
-          "change_percent": 80.0
+          "change_percent": 84.2
         },
         {
           "common_name": "Great-tailed Grackle",
@@ -3600,9 +3624,9 @@
         {
           "common_name": "Rufous-tailed Hummingbird",
           "scientific_name": "Amazilia tzacatl",
-          "detections": 119,
+          "detections": 120,
           "active_days": 26,
-          "average_confidence": 0.819,
+          "average_confidence": 0.818,
           "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
@@ -3648,7 +3672,7 @@
             },
             {
               "hour": 9,
-              "detections": 7
+              "detections": 8
             },
             {
               "hour": 10,
@@ -3707,7 +3731,7 @@
               "detections": 0
             }
           ],
-          "change_percent": -15.0
+          "change_percent": -14.3
         },
         {
           "common_name": "Clay-colored Thrush",
@@ -3826,7 +3850,7 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 9695,
+          "detections": 9824,
           "active_days": 30,
           "average_confidence": 0.875,
           "first_seen_date": "2026-05-30"
@@ -3834,7 +3858,7 @@
         {
           "common_name": "White-winged Dove",
           "scientific_name": "Zenaida asiatica",
-          "detections": 3699,
+          "detections": 3705,
           "active_days": 30,
           "average_confidence": 0.857,
           "first_seen_date": "2026-05-28"
@@ -3850,9 +3874,9 @@
         {
           "common_name": "Gray-capped Flycatcher",
           "scientific_name": "Myiozetetes granadensis",
-          "detections": 269,
+          "detections": 277,
           "active_days": 19,
-          "average_confidence": 0.842,
+          "average_confidence": 0.84,
           "first_seen_date": "2026-08-23"
         },
         {
@@ -3874,17 +3898,17 @@
         {
           "common_name": "Tropical Mockingbird",
           "scientific_name": "Mimus gilvus",
-          "detections": 185,
-          "active_days": 26,
-          "average_confidence": 0.821,
+          "detections": 189,
+          "active_days": 27,
+          "average_confidence": 0.819,
           "first_seen_date": "2026-07-23"
         },
         {
           "common_name": "Blue-gray Tanager",
           "scientific_name": "Thraupis episcopus",
-          "detections": 171,
+          "detections": 175,
           "active_days": 27,
-          "average_confidence": 0.827,
+          "average_confidence": 0.828,
           "first_seen_date": "2026-05-28"
         },
         {
@@ -3906,9 +3930,9 @@
         {
           "common_name": "Rufous-tailed Hummingbird",
           "scientific_name": "Amazilia tzacatl",
-          "detections": 119,
+          "detections": 120,
           "active_days": 26,
-          "average_confidence": 0.819,
+          "average_confidence": 0.818,
           "first_seen_date": "2026-06-02"
         },
         {
@@ -3918,6 +3942,14 @@
           "active_days": 16,
           "average_confidence": 0.849,
           "first_seen_date": "2026-05-28"
+        },
+        {
+          "common_name": "Palm Tanager",
+          "scientific_name": "Thraupis palmarum",
+          "detections": 69,
+          "active_days": 20,
+          "average_confidence": 0.823,
+          "first_seen_date": "2026-05-29"
         },
         {
           "common_name": "Gray-headed Chachalaca",
@@ -3934,14 +3966,6 @@
           "active_days": 11,
           "average_confidence": 0.845,
           "first_seen_date": "2026-05-28"
-        },
-        {
-          "common_name": "Palm Tanager",
-          "scientific_name": "Thraupis palmarum",
-          "detections": 64,
-          "active_days": 20,
-          "average_confidence": 0.821,
-          "first_seen_date": "2026-05-29"
         },
         {
           "common_name": "Tropical Kingbird",
@@ -4058,9 +4082,9 @@
         {
           "common_name": "Rose-breasted Grosbeak",
           "scientific_name": "Pheucticus ludovicianus",
-          "detections": 12,
-          "active_days": 4,
-          "average_confidence": 0.845,
+          "detections": 15,
+          "active_days": 5,
+          "average_confidence": 0.844,
           "first_seen_date": "2026-08-14"
         },
         {
@@ -4232,6 +4256,14 @@
           "first_seen_date": "2026-10-03"
         },
         {
+          "common_name": "Great Antshrike",
+          "scientific_name": "Taraba major",
+          "detections": 2,
+          "active_days": 2,
+          "average_confidence": 0.757,
+          "first_seen_date": "2026-09-20"
+        },
+        {
           "common_name": "House Wren",
           "scientific_name": "Troglodytes aedon",
           "detections": 2,
@@ -4360,20 +4392,20 @@
           "first_seen_date": "2026-06-05"
         },
         {
-          "common_name": "Great Antshrike",
-          "scientific_name": "Taraba major",
-          "detections": 1,
-          "active_days": 1,
-          "average_confidence": 0.721,
-          "first_seen_date": "2026-09-20"
-        },
-        {
           "common_name": "Great Horned Owl",
           "scientific_name": "Bubo virginianus",
           "detections": 1,
           "active_days": 1,
           "average_confidence": 0.735,
           "first_seen_date": "2026-06-28"
+        },
+        {
+          "common_name": "Hoffmann's Woodpecker",
+          "scientific_name": "Melanerpes hoffmannii",
+          "detections": 1,
+          "active_days": 1,
+          "average_confidence": 0.706,
+          "first_seen_date": "2026-06-03"
         },
         {
           "common_name": "Mississippi Kite",
@@ -4469,7 +4501,7 @@
       "label": "All data",
       "start_date": "2025-12-03",
       "end_date": "2026-11-01",
-      "total_detections": 151937,
+      "total_detections": 152099,
       "species_count": 311,
       "active_days": 303,
       "average_confidence": 0.833,
@@ -6141,8 +6173,8 @@
         },
         {
           "date": "2026-11-01",
-          "detections": 324,
-          "species_count": 13
+          "detections": 486,
+          "species_count": 17
         }
       ],
       "hourly_activity": [
@@ -6193,27 +6225,27 @@
         },
         {
           "hour": 9,
-          "detections": 7053,
-          "species_count": 149
+          "detections": 7153,
+          "species_count": 150
         },
         {
           "hour": 10,
-          "detections": 5170,
-          "species_count": 126
+          "detections": 5174,
+          "species_count": 127
         },
         {
           "hour": 11,
-          "detections": 5560,
+          "detections": 5569,
           "species_count": 141
         },
         {
           "hour": 12,
-          "detections": 4057,
+          "detections": 4105,
           "species_count": 122
         },
         {
           "hour": 13,
-          "detections": 3674,
+          "detections": 3675,
           "species_count": 107
         },
         {
@@ -6323,9 +6355,9 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 14666,
+          "detections": 14795,
           "first_seen_date": "2026-05-30",
-          "average_confidence": 0.871,
+          "average_confidence": 0.872,
           "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -6362,7 +6394,7 @@
         {
           "common_name": "White-winged Dove",
           "scientific_name": "Zenaida asiatica",
-          "detections": 8672,
+          "detections": 8678,
           "first_seen_date": "2026-05-28",
           "average_confidence": 0.852,
           "photo_url": "https://media.birdweather.com/species/501/White-wingedDove-standard-6528ef689b07d5a91f1c2275cdef19c9.jpg",
@@ -6388,7 +6420,7 @@
         {
           "common_name": "Blue-gray Tanager",
           "scientific_name": "Thraupis episcopus",
-          "detections": 4977,
+          "detections": 4981,
           "first_seen_date": "2026-05-28",
           "average_confidence": 0.853,
           "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
@@ -6836,9 +6868,9 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 14666,
+          "detections": 14795,
           "active_days": 113,
-          "average_confidence": 0.871,
+          "average_confidence": 0.872,
           "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
           "photo_urls": [
             "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -6884,19 +6916,19 @@
             },
             {
               "hour": 9,
-              "detections": 860
+              "detections": 951
             },
             {
               "hour": 10,
-              "detections": 877
+              "detections": 879
             },
             {
               "hour": 11,
-              "detections": 1086
+              "detections": 1089
             },
             {
               "hour": 12,
-              "detections": 855
+              "detections": 888
             },
             {
               "hour": 13,
@@ -7172,7 +7204,7 @@
         {
           "common_name": "White-winged Dove",
           "scientific_name": "Zenaida asiatica",
-          "detections": 8672,
+          "detections": 8678,
           "active_days": 132,
           "average_confidence": 0.852,
           "photo_url": "https://media.birdweather.com/species/501/White-wingedDove-standard-6528ef689b07d5a91f1c2275cdef19c9.jpg",
@@ -7220,7 +7252,7 @@
             },
             {
               "hour": 9,
-              "detections": 321
+              "detections": 326
             },
             {
               "hour": 10,
@@ -7236,7 +7268,7 @@
             },
             {
               "hour": 13,
-              "detections": 379
+              "detections": 380
             },
             {
               "hour": 14,
@@ -7396,7 +7428,7 @@
         {
           "common_name": "Blue-gray Tanager",
           "scientific_name": "Thraupis episcopus",
-          "detections": 4977,
+          "detections": 4981,
           "active_days": 121,
           "average_confidence": 0.853,
           "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
@@ -7444,7 +7476,7 @@
             },
             {
               "hour": 9,
-              "detections": 326
+              "detections": 328
             },
             {
               "hour": 10,
@@ -7452,7 +7484,7 @@
             },
             {
               "hour": 11,
-              "detections": 198
+              "detections": 200
             },
             {
               "hour": 12,
@@ -7870,9 +7902,9 @@
         {
           "common_name": "Great Kiskadee",
           "scientific_name": "Pitangus sulphuratus",
-          "detections": 14666,
+          "detections": 14795,
           "active_days": 113,
-          "average_confidence": 0.871,
+          "average_confidence": 0.872,
           "first_seen_date": "2026-05-30"
         },
         {
@@ -7894,7 +7926,7 @@
         {
           "common_name": "White-winged Dove",
           "scientific_name": "Zenaida asiatica",
-          "detections": 8672,
+          "detections": 8678,
           "active_days": 132,
           "average_confidence": 0.852,
           "first_seen_date": "2026-05-28"
@@ -7910,7 +7942,7 @@
         {
           "common_name": "Blue-gray Tanager",
           "scientific_name": "Thraupis episcopus",
-          "detections": 4977,
+          "detections": 4981,
           "active_days": 121,
           "average_confidence": 0.853,
           "first_seen_date": "2026-05-28"
@@ -7942,9 +7974,9 @@
         {
           "common_name": "Tropical Mockingbird",
           "scientific_name": "Mimus gilvus",
-          "detections": 1447,
-          "active_days": 71,
-          "average_confidence": 0.846,
+          "detections": 1451,
+          "active_days": 72,
+          "average_confidence": 0.845,
           "first_seen_date": "2026-07-23"
         },
         {
@@ -8070,7 +8102,7 @@
         {
           "common_name": "Palm Tanager",
           "scientific_name": "Thraupis palmarum",
-          "detections": 383,
+          "detections": 388,
           "active_days": 102,
           "average_confidence": 0.815,
           "first_seen_date": "2026-05-29"
@@ -8102,9 +8134,9 @@
         {
           "common_name": "Rufous-tailed Hummingbird",
           "scientific_name": "Amazilia tzacatl",
-          "detections": 335,
+          "detections": 336,
           "active_days": 83,
-          "average_confidence": 0.822,
+          "average_confidence": 0.821,
           "first_seen_date": "2026-06-02"
         },
         {
@@ -8142,9 +8174,9 @@
         {
           "common_name": "Gray-capped Flycatcher",
           "scientific_name": "Myiozetetes granadensis",
-          "detections": 277,
+          "detections": 285,
           "active_days": 22,
-          "average_confidence": 0.839,
+          "average_confidence": 0.838,
           "first_seen_date": "2026-08-23"
         },
         {
@@ -8732,6 +8764,14 @@
           "first_seen_date": "2026-06-03"
         },
         {
+          "common_name": "Rose-breasted Grosbeak",
+          "scientific_name": "Pheucticus ludovicianus",
+          "detections": 27,
+          "active_days": 14,
+          "average_confidence": 0.834,
+          "first_seen_date": "2026-08-14"
+        },
+        {
           "common_name": "Ruddy Turnstone",
           "scientific_name": "Arenaria interpres",
           "detections": 27,
@@ -8778,14 +8818,6 @@
           "active_days": 18,
           "average_confidence": 0.816,
           "first_seen_date": "2026-05-31"
-        },
-        {
-          "common_name": "Rose-breasted Grosbeak",
-          "scientific_name": "Pheucticus ludovicianus",
-          "detections": 24,
-          "active_days": 13,
-          "average_confidence": 0.833,
-          "first_seen_date": "2026-08-14"
         },
         {
           "common_name": "White-crowned Parrot",
@@ -8908,6 +8940,14 @@
           "first_seen_date": "2026-07-09"
         },
         {
+          "common_name": "Hoffmann's Woodpecker",
+          "scientific_name": "Melanerpes hoffmannii",
+          "detections": 16,
+          "active_days": 9,
+          "average_confidence": 0.787,
+          "first_seen_date": "2026-06-03"
+        },
+        {
           "common_name": "Marsh Tit",
           "scientific_name": "Poecile palustris",
           "detections": 16,
@@ -8922,14 +8962,6 @@
           "active_days": 8,
           "average_confidence": 0.777,
           "first_seen_date": "2026-06-01"
-        },
-        {
-          "common_name": "Hoffmann's Woodpecker",
-          "scientific_name": "Melanerpes hoffmannii",
-          "detections": 15,
-          "active_days": 8,
-          "average_confidence": 0.793,
-          "first_seen_date": "2026-06-03"
         },
         {
           "common_name": "Orange-fronted Parakeet",
@@ -9428,6 +9460,14 @@
           "first_seen_date": "2025-12-26"
         },
         {
+          "common_name": "Great Antshrike",
+          "scientific_name": "Taraba major",
+          "detections": 4,
+          "active_days": 4,
+          "average_confidence": 0.81,
+          "first_seen_date": "2026-09-20"
+        },
+        {
           "common_name": "Rose-throated Becard",
           "scientific_name": "Pachyramphus aglaiae",
           "detections": 4,
@@ -9522,14 +9562,6 @@
           "active_days": 2,
           "average_confidence": 0.845,
           "first_seen_date": "2026-08-15"
-        },
-        {
-          "common_name": "Great Antshrike",
-          "scientific_name": "Taraba major",
-          "detections": 3,
-          "active_days": 3,
-          "average_confidence": 0.816,
-          "first_seen_date": "2026-09-20"
         },
         {
           "common_name": "Green Heron",
@@ -10346,10 +10378,10 @@
           "label": "Last 7 days",
           "start_date": "2026-10-26",
           "end_date": "2026-11-01",
-          "total_detections": 3121,
-          "species_count": 39,
+          "total_detections": 3283,
+          "species_count": 42,
           "active_days": 7,
-          "average_confidence": 0.873,
+          "average_confidence": 0.872,
           "daily_activity": [
             {
               "date": "2026-10-26",
@@ -10383,8 +10415,8 @@
             },
             {
               "date": "2026-11-01",
-              "detections": 324,
-              "species_count": 13
+              "detections": 486,
+              "species_count": 17
             }
           ],
           "hourly_activity": [
@@ -10435,27 +10467,27 @@
             },
             {
               "hour": 9,
-              "detections": 130,
-              "species_count": 10
+              "detections": 230,
+              "species_count": 12
             },
             {
               "hour": 10,
-              "detections": 112,
-              "species_count": 7
-            },
-            {
-              "hour": 11,
-              "detections": 56,
+              "detections": 116,
               "species_count": 8
             },
             {
+              "hour": 11,
+              "detections": 65,
+              "species_count": 10
+            },
+            {
               "hour": 12,
-              "detections": 107,
-              "species_count": 5
+              "detections": 155,
+              "species_count": 7
             },
             {
               "hour": 13,
-              "detections": 95,
+              "detections": 96,
               "species_count": 8
             },
             {
@@ -10517,9 +10549,9 @@
             "previous_start_date": "2026-10-19",
             "previous_end_date": "2026-10-25",
             "previous_detections": 2721,
-            "detection_change_percent": 14.7,
+            "detection_change_percent": 20.7,
             "previous_species_count": 36,
-            "species_change": 3
+            "species_change": 6
           },
           "new_species_count": 3,
           "new_species": [
@@ -10579,6 +10611,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Hoffmann's Woodpecker",
+              "scientific_name": "Melanerpes hoffmannii",
+              "detections": 1,
+              "average_confidence": 0.706,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Sharp-shinned Hawk",
               "scientific_name": "Accipiter striatus",
               "detections": 1,
@@ -10612,20 +10651,13 @@
               "detections": 1,
               "average_confidence": 0.75,
               "reason": "Rare in this period"
-            },
-            {
-              "common_name": "Scarlet-rumped Tanager",
-              "scientific_name": "Ramphocelus passerinii",
-              "detections": 3,
-              "average_confidence": 0.751,
-              "reason": "Rare in this period"
             }
           ],
           "top_species": [
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1634,
+              "detections": 1763,
               "active_days": 7,
               "average_confidence": 0.871,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -10673,19 +10705,19 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 81
+                  "detections": 172
                 },
                 {
                   "hour": 10,
-                  "detections": 86
+                  "detections": 88
                 },
                 {
                   "hour": 11,
-                  "detections": 42
+                  "detections": 45
                 },
                 {
                   "hour": 12,
-                  "detections": 81
+                  "detections": 114
                 },
                 {
                   "hour": 13,
@@ -10732,12 +10764,12 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 39.5
+              "change_percent": 50.6
             },
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 999,
+              "detections": 1005,
               "active_days": 7,
               "average_confidence": 0.866,
               "photo_url": "https://media.birdweather.com/species/501/White-wingedDove-standard-6528ef689b07d5a91f1c2275cdef19c9.jpg",
@@ -10785,7 +10817,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 12
+                  "detections": 17
                 },
                 {
                   "hour": 10,
@@ -10801,7 +10833,7 @@
                 },
                 {
                   "hour": 13,
-                  "detections": 49
+                  "detections": 50
                 },
                 {
                   "hour": 14,
@@ -10844,7 +10876,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 9.2
+              "change_percent": 9.8
             },
             {
               "common_name": "Bats",
@@ -10961,9 +10993,9 @@
             {
               "common_name": "Gray-capped Flycatcher",
               "scientific_name": "Myiozetetes granadensis",
-              "detections": 61,
+              "detections": 69,
               "active_days": 6,
-              "average_confidence": 0.845,
+              "average_confidence": 0.84,
               "photo_url": "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
@@ -11013,7 +11045,7 @@
                 },
                 {
                   "hour": 10,
-                  "detections": 3
+                  "detections": 4
                 },
                 {
                   "hour": 11,
@@ -11021,7 +11053,7 @@
                 },
                 {
                   "hour": 12,
-                  "detections": 19
+                  "detections": 26
                 },
                 {
                   "hour": 13,
@@ -11068,7 +11100,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -36.5
+              "change_percent": -28.1
             },
             {
               "common_name": "Great-tailed Grackle",
@@ -11185,7 +11217,7 @@
             {
               "common_name": "Blue-gray Tanager",
               "scientific_name": "Thraupis episcopus",
-              "detections": 47,
+              "detections": 51,
               "active_days": 7,
               "average_confidence": 0.85,
               "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
@@ -11233,7 +11265,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 16
+                  "detections": 18
                 },
                 {
                   "hour": 10,
@@ -11241,7 +11273,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 0
+                  "detections": 2
                 },
                 {
                   "hour": 12,
@@ -11292,14 +11324,14 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 17.5
+              "change_percent": 27.5
             },
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 22,
-              "active_days": 5,
-              "average_confidence": 0.835,
+              "detections": 26,
+              "active_days": 6,
+              "average_confidence": 0.821,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -11353,7 +11385,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 0
+                  "detections": 4
                 },
                 {
                   "hour": 12,
@@ -11404,7 +11436,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -42.1
+              "change_percent": -31.6
             },
             {
               "common_name": "Streaked Flycatcher",
@@ -11631,6 +11663,118 @@
               "change_percent": -70.5
             },
             {
+              "common_name": "Palm Tanager",
+              "scientific_name": "Thraupis palmarum",
+              "detections": 13,
+              "active_days": 4,
+              "average_confidence": 0.839,
+              "photo_url": "https://media.birdweather.com/species/321/PalmTanager-standard-cbade2e4973d8cb57c4014568207591d.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/321/PalmTanager-standard-cbade2e4973d8cb57c4014568207591d.jpg",
+                "https://media.birdweather.com/species/321/PalmTanager-png200-100c123f8e9a99aad801e3e79a865873.png",
+                "https://media.birdweather.com/species/321/PalmTanager-thumbnail-66ffacacc3b9c5f5dad0cf97c949e40f.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 0
+                },
+                {
+                  "hour": 6,
+                  "detections": 1
+                },
+                {
+                  "hour": 7,
+                  "detections": 2
+                },
+                {
+                  "hour": 8,
+                  "detections": 4
+                },
+                {
+                  "hour": 9,
+                  "detections": 0
+                },
+                {
+                  "hour": 10,
+                  "detections": 0
+                },
+                {
+                  "hour": 11,
+                  "detections": 1
+                },
+                {
+                  "hour": 12,
+                  "detections": 5
+                },
+                {
+                  "hour": 13,
+                  "detections": 0
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 0
+                },
+                {
+                  "hour": 16,
+                  "detections": 0
+                },
+                {
+                  "hour": 17,
+                  "detections": 0
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": -7.1
+            },
+            {
               "common_name": "Social Flycatcher",
               "scientific_name": "Myiozetetes similis",
               "detections": 13,
@@ -11853,125 +11997,13 @@
                 }
               ],
               "change_percent": -58.6
-            },
-            {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 11,
-              "active_days": 6,
-              "average_confidence": 0.812,
-              "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
-                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
-                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 3
-                },
-                {
-                  "hour": 6,
-                  "detections": 1
-                },
-                {
-                  "hour": 7,
-                  "detections": 4
-                },
-                {
-                  "hour": 8,
-                  "detections": 0
-                },
-                {
-                  "hour": 9,
-                  "detections": 0
-                },
-                {
-                  "hour": 10,
-                  "detections": 1
-                },
-                {
-                  "hour": 11,
-                  "detections": 1
-                },
-                {
-                  "hour": 12,
-                  "detections": 0
-                },
-                {
-                  "hour": 13,
-                  "detections": 0
-                },
-                {
-                  "hour": 14,
-                  "detections": 1
-                },
-                {
-                  "hour": 15,
-                  "detections": 0
-                },
-                {
-                  "hour": 16,
-                  "detections": 0
-                },
-                {
-                  "hour": 17,
-                  "detections": 0
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": -31.2
             }
           ],
           "species": [
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1634,
+              "detections": 1763,
               "active_days": 7,
               "average_confidence": 0.871,
               "first_seen_date": "2026-05-30"
@@ -11979,7 +12011,7 @@
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 999,
+              "detections": 1005,
               "active_days": 7,
               "average_confidence": 0.866,
               "first_seen_date": "2026-05-28"
@@ -11995,9 +12027,9 @@
             {
               "common_name": "Gray-capped Flycatcher",
               "scientific_name": "Myiozetetes granadensis",
-              "detections": 61,
+              "detections": 69,
               "active_days": 6,
-              "average_confidence": 0.845,
+              "average_confidence": 0.84,
               "first_seen_date": "2026-08-23"
             },
             {
@@ -12011,7 +12043,7 @@
             {
               "common_name": "Blue-gray Tanager",
               "scientific_name": "Thraupis episcopus",
-              "detections": 47,
+              "detections": 51,
               "active_days": 7,
               "average_confidence": 0.85,
               "first_seen_date": "2026-05-28"
@@ -12019,9 +12051,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 22,
-              "active_days": 5,
-              "average_confidence": 0.835,
+              "detections": 26,
+              "active_days": 6,
+              "average_confidence": 0.821,
               "first_seen_date": "2026-07-23"
             },
             {
@@ -12039,6 +12071,14 @@
               "active_days": 5,
               "average_confidence": 0.807,
               "first_seen_date": "2026-05-28"
+            },
+            {
+              "common_name": "Palm Tanager",
+              "scientific_name": "Thraupis palmarum",
+              "detections": 13,
+              "active_days": 4,
+              "average_confidence": 0.839,
+              "first_seen_date": "2026-05-29"
             },
             {
               "common_name": "Social Flycatcher",
@@ -12059,18 +12099,10 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 11,
+              "detections": 12,
               "active_days": 6,
-              "average_confidence": 0.812,
+              "average_confidence": 0.806,
               "first_seen_date": "2026-06-02"
-            },
-            {
-              "common_name": "Palm Tanager",
-              "scientific_name": "Thraupis palmarum",
-              "detections": 8,
-              "active_days": 4,
-              "average_confidence": 0.828,
-              "first_seen_date": "2026-05-29"
             },
             {
               "common_name": "Boat-billed Flycatcher",
@@ -12111,6 +12143,14 @@
               "active_days": 1,
               "average_confidence": 0.861,
               "first_seen_date": "2025-12-11"
+            },
+            {
+              "common_name": "Rose-breasted Grosbeak",
+              "scientific_name": "Pheucticus ludovicianus",
+              "detections": 3,
+              "active_days": 1,
+              "average_confidence": 0.842,
+              "first_seen_date": "2026-08-14"
             },
             {
               "common_name": "Scarlet-rumped Tanager",
@@ -12191,6 +12231,22 @@
               "active_days": 1,
               "average_confidence": 0.836,
               "first_seen_date": "2026-05-28"
+            },
+            {
+              "common_name": "Great Antshrike",
+              "scientific_name": "Taraba major",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.793,
+              "first_seen_date": "2026-09-20"
+            },
+            {
+              "common_name": "Hoffmann's Woodpecker",
+              "scientific_name": "Melanerpes hoffmannii",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.706,
+              "first_seen_date": "2026-06-03"
             },
             {
               "common_name": "Merlin",
@@ -12286,8 +12342,8 @@
           "label": "Last 30 days",
           "start_date": "2026-10-03",
           "end_date": "2026-11-01",
-          "total_detections": 16512,
-          "species_count": 80,
+          "total_detections": 16674,
+          "species_count": 81,
           "active_days": 30,
           "average_confidence": 0.873,
           "daily_activity": [
@@ -12438,8 +12494,8 @@
             },
             {
               "date": "2026-11-01",
-              "detections": 324,
-              "species_count": 13
+              "detections": 486,
+              "species_count": 17
             }
           ],
           "hourly_activity": [
@@ -12490,27 +12546,27 @@
             },
             {
               "hour": 9,
-              "detections": 832,
-              "species_count": 30
+              "detections": 932,
+              "species_count": 31
             },
             {
               "hour": 10,
-              "detections": 802,
-              "species_count": 25
+              "detections": 806,
+              "species_count": 26
             },
             {
               "hour": 11,
-              "detections": 883,
+              "detections": 892,
               "species_count": 26
             },
             {
               "hour": 12,
-              "detections": 779,
-              "species_count": 21
+              "detections": 827,
+              "species_count": 22
             },
             {
               "hour": 13,
-              "detections": 975,
+              "detections": 976,
               "species_count": 26
             },
             {
@@ -12572,9 +12628,9 @@
             "previous_start_date": "2026-09-03",
             "previous_end_date": "2026-10-02",
             "previous_detections": 8480,
-            "detection_change_percent": 94.7,
+            "detection_change_percent": 96.6,
             "previous_species_count": 100,
-            "species_change": -20
+            "species_change": -19
           },
           "new_species_count": 15,
           "new_species": [
@@ -12737,17 +12793,17 @@
           ],
           "review_candidates": [
             {
+              "common_name": "Hoffmann's Woodpecker",
+              "scientific_name": "Melanerpes hoffmannii",
+              "detections": 1,
+              "average_confidence": 0.706,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Black Phoebe",
               "scientific_name": "Sayornis nigricans",
               "detections": 1,
               "average_confidence": 0.717,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Great Antshrike",
-              "scientific_name": "Taraba major",
-              "detections": 1,
-              "average_confidence": 0.721,
               "reason": "Lower aggregate confidence"
             },
             {
@@ -12797,7 +12853,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 9695,
+              "detections": 9824,
               "active_days": 30,
               "average_confidence": 0.875,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -12845,19 +12901,19 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 537
+                  "detections": 628
                 },
                 {
                   "hour": 10,
-                  "detections": 484
+                  "detections": 486
                 },
                 {
                   "hour": 11,
-                  "detections": 718
+                  "detections": 721
                 },
                 {
                   "hour": 12,
-                  "detections": 572
+                  "detections": 605
                 },
                 {
                   "hour": 13,
@@ -12904,12 +12960,12 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 174.4
+              "change_percent": 178.1
             },
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 3699,
+              "detections": 3705,
               "active_days": 30,
               "average_confidence": 0.857,
               "photo_url": "https://media.birdweather.com/species/501/White-wingedDove-standard-6528ef689b07d5a91f1c2275cdef19c9.jpg",
@@ -12957,7 +13013,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 107
+                  "detections": 112
                 },
                 {
                   "hour": 10,
@@ -12973,7 +13029,7 @@
                 },
                 {
                   "hour": 13,
-                  "detections": 167
+                  "detections": 168
                 },
                 {
                   "hour": 14,
@@ -13016,7 +13072,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 52.0
+              "change_percent": 52.2
             },
             {
               "common_name": "Bats",
@@ -13133,9 +13189,9 @@
             {
               "common_name": "Gray-capped Flycatcher",
               "scientific_name": "Myiozetetes granadensis",
-              "detections": 269,
+              "detections": 277,
               "active_days": 19,
-              "average_confidence": 0.842,
+              "average_confidence": 0.84,
               "photo_url": "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
@@ -13185,7 +13241,7 @@
                 },
                 {
                   "hour": 10,
-                  "detections": 31
+                  "detections": 32
                 },
                 {
                   "hour": 11,
@@ -13193,7 +13249,7 @@
                 },
                 {
                   "hour": 12,
-                  "detections": 20
+                  "detections": 27
                 },
                 {
                   "hour": 13,
@@ -13240,7 +13296,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 6625.0
+              "change_percent": 6825.0
             },
             {
               "common_name": "Social Flycatcher",
@@ -13469,9 +13525,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 185,
-              "active_days": 26,
-              "average_confidence": 0.821,
+              "detections": 189,
+              "active_days": 27,
+              "average_confidence": 0.819,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -13525,7 +13581,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 6
+                  "detections": 10
                 },
                 {
                   "hour": 12,
@@ -13576,14 +13632,14 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -55.2
+              "change_percent": -54.2
             },
             {
               "common_name": "Blue-gray Tanager",
               "scientific_name": "Thraupis episcopus",
-              "detections": 171,
+              "detections": 175,
               "active_days": 27,
-              "average_confidence": 0.827,
+              "average_confidence": 0.828,
               "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
@@ -13629,7 +13685,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 38
+                  "detections": 40
                 },
                 {
                   "hour": 10,
@@ -13637,7 +13693,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 9
+                  "detections": 11
                 },
                 {
                   "hour": 12,
@@ -13688,7 +13744,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 80.0
+              "change_percent": 84.2
             },
             {
               "common_name": "Great-tailed Grackle",
@@ -13917,9 +13973,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 119,
+              "detections": 120,
               "active_days": 26,
-              "average_confidence": 0.819,
+              "average_confidence": 0.818,
               "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
@@ -13965,7 +14021,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 7
+                  "detections": 8
                 },
                 {
                   "hour": 10,
@@ -14024,7 +14080,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -15.0
+              "change_percent": -14.3
             },
             {
               "common_name": "Clay-colored Thrush",
@@ -14143,7 +14199,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 9695,
+              "detections": 9824,
               "active_days": 30,
               "average_confidence": 0.875,
               "first_seen_date": "2026-05-30"
@@ -14151,7 +14207,7 @@
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 3699,
+              "detections": 3705,
               "active_days": 30,
               "average_confidence": 0.857,
               "first_seen_date": "2026-05-28"
@@ -14167,9 +14223,9 @@
             {
               "common_name": "Gray-capped Flycatcher",
               "scientific_name": "Myiozetetes granadensis",
-              "detections": 269,
+              "detections": 277,
               "active_days": 19,
-              "average_confidence": 0.842,
+              "average_confidence": 0.84,
               "first_seen_date": "2026-08-23"
             },
             {
@@ -14191,17 +14247,17 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 185,
-              "active_days": 26,
-              "average_confidence": 0.821,
+              "detections": 189,
+              "active_days": 27,
+              "average_confidence": 0.819,
               "first_seen_date": "2026-07-23"
             },
             {
               "common_name": "Blue-gray Tanager",
               "scientific_name": "Thraupis episcopus",
-              "detections": 171,
+              "detections": 175,
               "active_days": 27,
-              "average_confidence": 0.827,
+              "average_confidence": 0.828,
               "first_seen_date": "2026-05-28"
             },
             {
@@ -14223,9 +14279,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 119,
+              "detections": 120,
               "active_days": 26,
-              "average_confidence": 0.819,
+              "average_confidence": 0.818,
               "first_seen_date": "2026-06-02"
             },
             {
@@ -14235,6 +14291,14 @@
               "active_days": 16,
               "average_confidence": 0.849,
               "first_seen_date": "2026-05-28"
+            },
+            {
+              "common_name": "Palm Tanager",
+              "scientific_name": "Thraupis palmarum",
+              "detections": 69,
+              "active_days": 20,
+              "average_confidence": 0.823,
+              "first_seen_date": "2026-05-29"
             },
             {
               "common_name": "Gray-headed Chachalaca",
@@ -14251,14 +14315,6 @@
               "active_days": 11,
               "average_confidence": 0.845,
               "first_seen_date": "2026-05-28"
-            },
-            {
-              "common_name": "Palm Tanager",
-              "scientific_name": "Thraupis palmarum",
-              "detections": 64,
-              "active_days": 20,
-              "average_confidence": 0.821,
-              "first_seen_date": "2026-05-29"
             },
             {
               "common_name": "Tropical Kingbird",
@@ -14375,9 +14431,9 @@
             {
               "common_name": "Rose-breasted Grosbeak",
               "scientific_name": "Pheucticus ludovicianus",
-              "detections": 12,
-              "active_days": 4,
-              "average_confidence": 0.845,
+              "detections": 15,
+              "active_days": 5,
+              "average_confidence": 0.844,
               "first_seen_date": "2026-08-14"
             },
             {
@@ -14549,6 +14605,14 @@
               "first_seen_date": "2026-10-03"
             },
             {
+              "common_name": "Great Antshrike",
+              "scientific_name": "Taraba major",
+              "detections": 2,
+              "active_days": 2,
+              "average_confidence": 0.757,
+              "first_seen_date": "2026-09-20"
+            },
+            {
               "common_name": "House Wren",
               "scientific_name": "Troglodytes aedon",
               "detections": 2,
@@ -14677,20 +14741,20 @@
               "first_seen_date": "2026-06-05"
             },
             {
-              "common_name": "Great Antshrike",
-              "scientific_name": "Taraba major",
-              "detections": 1,
-              "active_days": 1,
-              "average_confidence": 0.721,
-              "first_seen_date": "2026-09-20"
-            },
-            {
               "common_name": "Great Horned Owl",
               "scientific_name": "Bubo virginianus",
               "detections": 1,
               "active_days": 1,
               "average_confidence": 0.735,
               "first_seen_date": "2026-06-28"
+            },
+            {
+              "common_name": "Hoffmann's Woodpecker",
+              "scientific_name": "Melanerpes hoffmannii",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.706,
+              "first_seen_date": "2026-06-03"
             },
             {
               "common_name": "Mississippi Kite",
@@ -14786,7 +14850,7 @@
           "label": "All data",
           "start_date": "2025-12-03",
           "end_date": "2026-11-01",
-          "total_detections": 151937,
+          "total_detections": 152099,
           "species_count": 311,
           "active_days": 303,
           "average_confidence": 0.833,
@@ -16458,8 +16522,8 @@
             },
             {
               "date": "2026-11-01",
-              "detections": 324,
-              "species_count": 13
+              "detections": 486,
+              "species_count": 17
             }
           ],
           "hourly_activity": [
@@ -16510,27 +16574,27 @@
             },
             {
               "hour": 9,
-              "detections": 7053,
-              "species_count": 149
+              "detections": 7153,
+              "species_count": 150
             },
             {
               "hour": 10,
-              "detections": 5170,
-              "species_count": 126
+              "detections": 5174,
+              "species_count": 127
             },
             {
               "hour": 11,
-              "detections": 5560,
+              "detections": 5569,
               "species_count": 141
             },
             {
               "hour": 12,
-              "detections": 4057,
+              "detections": 4105,
               "species_count": 122
             },
             {
               "hour": 13,
-              "detections": 3674,
+              "detections": 3675,
               "species_count": 107
             },
             {
@@ -16640,9 +16704,9 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 14666,
+              "detections": 14795,
               "first_seen_date": "2026-05-30",
-              "average_confidence": 0.871,
+              "average_confidence": 0.872,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -16679,7 +16743,7 @@
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 8672,
+              "detections": 8678,
               "first_seen_date": "2026-05-28",
               "average_confidence": 0.852,
               "photo_url": "https://media.birdweather.com/species/501/White-wingedDove-standard-6528ef689b07d5a91f1c2275cdef19c9.jpg",
@@ -16705,7 +16769,7 @@
             {
               "common_name": "Blue-gray Tanager",
               "scientific_name": "Thraupis episcopus",
-              "detections": 4977,
+              "detections": 4981,
               "first_seen_date": "2026-05-28",
               "average_confidence": 0.853,
               "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
@@ -17153,9 +17217,9 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 14666,
+              "detections": 14795,
               "active_days": 113,
-              "average_confidence": 0.871,
+              "average_confidence": 0.872,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -17201,19 +17265,19 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 860
+                  "detections": 951
                 },
                 {
                   "hour": 10,
-                  "detections": 877
+                  "detections": 879
                 },
                 {
                   "hour": 11,
-                  "detections": 1086
+                  "detections": 1089
                 },
                 {
                   "hour": 12,
-                  "detections": 855
+                  "detections": 888
                 },
                 {
                   "hour": 13,
@@ -17489,7 +17553,7 @@
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 8672,
+              "detections": 8678,
               "active_days": 132,
               "average_confidence": 0.852,
               "photo_url": "https://media.birdweather.com/species/501/White-wingedDove-standard-6528ef689b07d5a91f1c2275cdef19c9.jpg",
@@ -17537,7 +17601,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 321
+                  "detections": 326
                 },
                 {
                   "hour": 10,
@@ -17553,7 +17617,7 @@
                 },
                 {
                   "hour": 13,
-                  "detections": 379
+                  "detections": 380
                 },
                 {
                   "hour": 14,
@@ -17713,7 +17777,7 @@
             {
               "common_name": "Blue-gray Tanager",
               "scientific_name": "Thraupis episcopus",
-              "detections": 4977,
+              "detections": 4981,
               "active_days": 121,
               "average_confidence": 0.853,
               "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
@@ -17761,7 +17825,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 326
+                  "detections": 328
                 },
                 {
                   "hour": 10,
@@ -17769,7 +17833,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 198
+                  "detections": 200
                 },
                 {
                   "hour": 12,
@@ -18187,9 +18251,9 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 14666,
+              "detections": 14795,
               "active_days": 113,
-              "average_confidence": 0.871,
+              "average_confidence": 0.872,
               "first_seen_date": "2026-05-30"
             },
             {
@@ -18211,7 +18275,7 @@
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 8672,
+              "detections": 8678,
               "active_days": 132,
               "average_confidence": 0.852,
               "first_seen_date": "2026-05-28"
@@ -18227,7 +18291,7 @@
             {
               "common_name": "Blue-gray Tanager",
               "scientific_name": "Thraupis episcopus",
-              "detections": 4977,
+              "detections": 4981,
               "active_days": 121,
               "average_confidence": 0.853,
               "first_seen_date": "2026-05-28"
@@ -18259,9 +18323,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 1447,
-              "active_days": 71,
-              "average_confidence": 0.846,
+              "detections": 1451,
+              "active_days": 72,
+              "average_confidence": 0.845,
               "first_seen_date": "2026-07-23"
             },
             {
@@ -18387,7 +18451,7 @@
             {
               "common_name": "Palm Tanager",
               "scientific_name": "Thraupis palmarum",
-              "detections": 383,
+              "detections": 388,
               "active_days": 102,
               "average_confidence": 0.815,
               "first_seen_date": "2026-05-29"
@@ -18419,9 +18483,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 335,
+              "detections": 336,
               "active_days": 83,
-              "average_confidence": 0.822,
+              "average_confidence": 0.821,
               "first_seen_date": "2026-06-02"
             },
             {
@@ -18459,9 +18523,9 @@
             {
               "common_name": "Gray-capped Flycatcher",
               "scientific_name": "Myiozetetes granadensis",
-              "detections": 277,
+              "detections": 285,
               "active_days": 22,
-              "average_confidence": 0.839,
+              "average_confidence": 0.838,
               "first_seen_date": "2026-08-23"
             },
             {
@@ -19049,6 +19113,14 @@
               "first_seen_date": "2026-06-03"
             },
             {
+              "common_name": "Rose-breasted Grosbeak",
+              "scientific_name": "Pheucticus ludovicianus",
+              "detections": 27,
+              "active_days": 14,
+              "average_confidence": 0.834,
+              "first_seen_date": "2026-08-14"
+            },
+            {
               "common_name": "Ruddy Turnstone",
               "scientific_name": "Arenaria interpres",
               "detections": 27,
@@ -19095,14 +19167,6 @@
               "active_days": 18,
               "average_confidence": 0.816,
               "first_seen_date": "2026-05-31"
-            },
-            {
-              "common_name": "Rose-breasted Grosbeak",
-              "scientific_name": "Pheucticus ludovicianus",
-              "detections": 24,
-              "active_days": 13,
-              "average_confidence": 0.833,
-              "first_seen_date": "2026-08-14"
             },
             {
               "common_name": "White-crowned Parrot",
@@ -19225,6 +19289,14 @@
               "first_seen_date": "2026-07-09"
             },
             {
+              "common_name": "Hoffmann's Woodpecker",
+              "scientific_name": "Melanerpes hoffmannii",
+              "detections": 16,
+              "active_days": 9,
+              "average_confidence": 0.787,
+              "first_seen_date": "2026-06-03"
+            },
+            {
               "common_name": "Marsh Tit",
               "scientific_name": "Poecile palustris",
               "detections": 16,
@@ -19239,14 +19311,6 @@
               "active_days": 8,
               "average_confidence": 0.777,
               "first_seen_date": "2026-06-01"
-            },
-            {
-              "common_name": "Hoffmann's Woodpecker",
-              "scientific_name": "Melanerpes hoffmannii",
-              "detections": 15,
-              "active_days": 8,
-              "average_confidence": 0.793,
-              "first_seen_date": "2026-06-03"
             },
             {
               "common_name": "Orange-fronted Parakeet",
@@ -19745,6 +19809,14 @@
               "first_seen_date": "2025-12-26"
             },
             {
+              "common_name": "Great Antshrike",
+              "scientific_name": "Taraba major",
+              "detections": 4,
+              "active_days": 4,
+              "average_confidence": 0.81,
+              "first_seen_date": "2026-09-20"
+            },
+            {
               "common_name": "Rose-throated Becard",
               "scientific_name": "Pachyramphus aglaiae",
               "detections": 4,
@@ -19839,14 +19911,6 @@
               "active_days": 2,
               "average_confidence": 0.845,
               "first_seen_date": "2026-08-15"
-            },
-            {
-              "common_name": "Great Antshrike",
-              "scientific_name": "Taraba major",
-              "detections": 3,
-              "active_days": 3,
-              "average_confidence": 0.816,
-              "first_seen_date": "2026-09-20"
             },
             {
               "common_name": "Green Heron",
@@ -20663,10 +20727,10 @@
           "label": "Last 7 days",
           "start_date": "2026-10-26",
           "end_date": "2026-11-01",
-          "total_detections": 3121,
-          "species_count": 39,
+          "total_detections": 3283,
+          "species_count": 42,
           "active_days": 7,
-          "average_confidence": 0.873,
+          "average_confidence": 0.872,
           "daily_activity": [
             {
               "date": "2026-10-26",
@@ -20700,8 +20764,8 @@
             },
             {
               "date": "2026-11-01",
-              "detections": 324,
-              "species_count": 13
+              "detections": 486,
+              "species_count": 17
             }
           ],
           "hourly_activity": [
@@ -20752,27 +20816,27 @@
             },
             {
               "hour": 9,
-              "detections": 130,
-              "species_count": 10
+              "detections": 230,
+              "species_count": 12
             },
             {
               "hour": 10,
-              "detections": 112,
-              "species_count": 7
-            },
-            {
-              "hour": 11,
-              "detections": 56,
+              "detections": 116,
               "species_count": 8
             },
             {
+              "hour": 11,
+              "detections": 65,
+              "species_count": 10
+            },
+            {
               "hour": 12,
-              "detections": 107,
-              "species_count": 5
+              "detections": 155,
+              "species_count": 7
             },
             {
               "hour": 13,
-              "detections": 95,
+              "detections": 96,
               "species_count": 8
             },
             {
@@ -20834,9 +20898,9 @@
             "previous_start_date": "2026-10-19",
             "previous_end_date": "2026-10-25",
             "previous_detections": 2721,
-            "detection_change_percent": 14.7,
+            "detection_change_percent": 20.7,
             "previous_species_count": 36,
-            "species_change": 3
+            "species_change": 6
           },
           "new_species_count": 3,
           "new_species": [
@@ -20896,6 +20960,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Hoffmann's Woodpecker",
+              "scientific_name": "Melanerpes hoffmannii",
+              "detections": 1,
+              "average_confidence": 0.706,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Sharp-shinned Hawk",
               "scientific_name": "Accipiter striatus",
               "detections": 1,
@@ -20929,20 +21000,13 @@
               "detections": 1,
               "average_confidence": 0.75,
               "reason": "Rare in this period"
-            },
-            {
-              "common_name": "Scarlet-rumped Tanager",
-              "scientific_name": "Ramphocelus passerinii",
-              "detections": 3,
-              "average_confidence": 0.751,
-              "reason": "Rare in this period"
             }
           ],
           "top_species": [
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1634,
+              "detections": 1763,
               "active_days": 7,
               "average_confidence": 0.871,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -20990,19 +21054,19 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 81
+                  "detections": 172
                 },
                 {
                   "hour": 10,
-                  "detections": 86
+                  "detections": 88
                 },
                 {
                   "hour": 11,
-                  "detections": 42
+                  "detections": 45
                 },
                 {
                   "hour": 12,
-                  "detections": 81
+                  "detections": 114
                 },
                 {
                   "hour": 13,
@@ -21049,12 +21113,12 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 39.5
+              "change_percent": 50.6
             },
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 999,
+              "detections": 1005,
               "active_days": 7,
               "average_confidence": 0.866,
               "photo_url": "https://media.birdweather.com/species/501/White-wingedDove-standard-6528ef689b07d5a91f1c2275cdef19c9.jpg",
@@ -21102,7 +21166,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 12
+                  "detections": 17
                 },
                 {
                   "hour": 10,
@@ -21118,7 +21182,7 @@
                 },
                 {
                   "hour": 13,
-                  "detections": 49
+                  "detections": 50
                 },
                 {
                   "hour": 14,
@@ -21161,7 +21225,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 9.2
+              "change_percent": 9.8
             },
             {
               "common_name": "Bats",
@@ -21278,9 +21342,9 @@
             {
               "common_name": "Gray-capped Flycatcher",
               "scientific_name": "Myiozetetes granadensis",
-              "detections": 61,
+              "detections": 69,
               "active_days": 6,
-              "average_confidence": 0.845,
+              "average_confidence": 0.84,
               "photo_url": "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
@@ -21330,7 +21394,7 @@
                 },
                 {
                   "hour": 10,
-                  "detections": 3
+                  "detections": 4
                 },
                 {
                   "hour": 11,
@@ -21338,7 +21402,7 @@
                 },
                 {
                   "hour": 12,
-                  "detections": 19
+                  "detections": 26
                 },
                 {
                   "hour": 13,
@@ -21385,7 +21449,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -36.5
+              "change_percent": -28.1
             },
             {
               "common_name": "Great-tailed Grackle",
@@ -21502,7 +21566,7 @@
             {
               "common_name": "Blue-gray Tanager",
               "scientific_name": "Thraupis episcopus",
-              "detections": 47,
+              "detections": 51,
               "active_days": 7,
               "average_confidence": 0.85,
               "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
@@ -21550,7 +21614,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 16
+                  "detections": 18
                 },
                 {
                   "hour": 10,
@@ -21558,7 +21622,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 0
+                  "detections": 2
                 },
                 {
                   "hour": 12,
@@ -21609,14 +21673,14 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 17.5
+              "change_percent": 27.5
             },
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 22,
-              "active_days": 5,
-              "average_confidence": 0.835,
+              "detections": 26,
+              "active_days": 6,
+              "average_confidence": 0.821,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -21670,7 +21734,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 0
+                  "detections": 4
                 },
                 {
                   "hour": 12,
@@ -21721,7 +21785,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -42.1
+              "change_percent": -31.6
             },
             {
               "common_name": "Streaked Flycatcher",
@@ -21948,6 +22012,118 @@
               "change_percent": -70.5
             },
             {
+              "common_name": "Palm Tanager",
+              "scientific_name": "Thraupis palmarum",
+              "detections": 13,
+              "active_days": 4,
+              "average_confidence": 0.839,
+              "photo_url": "https://media.birdweather.com/species/321/PalmTanager-standard-cbade2e4973d8cb57c4014568207591d.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/321/PalmTanager-standard-cbade2e4973d8cb57c4014568207591d.jpg",
+                "https://media.birdweather.com/species/321/PalmTanager-png200-100c123f8e9a99aad801e3e79a865873.png",
+                "https://media.birdweather.com/species/321/PalmTanager-thumbnail-66ffacacc3b9c5f5dad0cf97c949e40f.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 0
+                },
+                {
+                  "hour": 6,
+                  "detections": 1
+                },
+                {
+                  "hour": 7,
+                  "detections": 2
+                },
+                {
+                  "hour": 8,
+                  "detections": 4
+                },
+                {
+                  "hour": 9,
+                  "detections": 0
+                },
+                {
+                  "hour": 10,
+                  "detections": 0
+                },
+                {
+                  "hour": 11,
+                  "detections": 1
+                },
+                {
+                  "hour": 12,
+                  "detections": 5
+                },
+                {
+                  "hour": 13,
+                  "detections": 0
+                },
+                {
+                  "hour": 14,
+                  "detections": 0
+                },
+                {
+                  "hour": 15,
+                  "detections": 0
+                },
+                {
+                  "hour": 16,
+                  "detections": 0
+                },
+                {
+                  "hour": 17,
+                  "detections": 0
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": -7.1
+            },
+            {
               "common_name": "Social Flycatcher",
               "scientific_name": "Myiozetetes similis",
               "detections": 13,
@@ -22170,125 +22346,13 @@
                 }
               ],
               "change_percent": -58.6
-            },
-            {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 11,
-              "active_days": 6,
-              "average_confidence": 0.812,
-              "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
-                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
-                "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 3
-                },
-                {
-                  "hour": 6,
-                  "detections": 1
-                },
-                {
-                  "hour": 7,
-                  "detections": 4
-                },
-                {
-                  "hour": 8,
-                  "detections": 0
-                },
-                {
-                  "hour": 9,
-                  "detections": 0
-                },
-                {
-                  "hour": 10,
-                  "detections": 1
-                },
-                {
-                  "hour": 11,
-                  "detections": 1
-                },
-                {
-                  "hour": 12,
-                  "detections": 0
-                },
-                {
-                  "hour": 13,
-                  "detections": 0
-                },
-                {
-                  "hour": 14,
-                  "detections": 1
-                },
-                {
-                  "hour": 15,
-                  "detections": 0
-                },
-                {
-                  "hour": 16,
-                  "detections": 0
-                },
-                {
-                  "hour": 17,
-                  "detections": 0
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": -31.2
             }
           ],
           "species": [
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 1634,
+              "detections": 1763,
               "active_days": 7,
               "average_confidence": 0.871,
               "first_seen_date": "2026-08-12"
@@ -22296,7 +22360,7 @@
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 999,
+              "detections": 1005,
               "active_days": 7,
               "average_confidence": 0.866,
               "first_seen_date": "2026-08-12"
@@ -22312,9 +22376,9 @@
             {
               "common_name": "Gray-capped Flycatcher",
               "scientific_name": "Myiozetetes granadensis",
-              "detections": 61,
+              "detections": 69,
               "active_days": 6,
-              "average_confidence": 0.845,
+              "average_confidence": 0.84,
               "first_seen_date": "2026-08-23"
             },
             {
@@ -22328,7 +22392,7 @@
             {
               "common_name": "Blue-gray Tanager",
               "scientific_name": "Thraupis episcopus",
-              "detections": 47,
+              "detections": 51,
               "active_days": 7,
               "average_confidence": 0.85,
               "first_seen_date": "2026-08-13"
@@ -22336,9 +22400,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 22,
-              "active_days": 5,
-              "average_confidence": 0.835,
+              "detections": 26,
+              "active_days": 6,
+              "average_confidence": 0.821,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -22356,6 +22420,14 @@
               "active_days": 5,
               "average_confidence": 0.807,
               "first_seen_date": "2026-08-21"
+            },
+            {
+              "common_name": "Palm Tanager",
+              "scientific_name": "Thraupis palmarum",
+              "detections": 13,
+              "active_days": 4,
+              "average_confidence": 0.839,
+              "first_seen_date": "2026-08-12"
             },
             {
               "common_name": "Social Flycatcher",
@@ -22376,18 +22448,10 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 11,
+              "detections": 12,
               "active_days": 6,
-              "average_confidence": 0.812,
+              "average_confidence": 0.806,
               "first_seen_date": "2026-08-13"
-            },
-            {
-              "common_name": "Palm Tanager",
-              "scientific_name": "Thraupis palmarum",
-              "detections": 8,
-              "active_days": 4,
-              "average_confidence": 0.828,
-              "first_seen_date": "2026-08-12"
             },
             {
               "common_name": "Boat-billed Flycatcher",
@@ -22427,6 +22491,14 @@
               "detections": 3,
               "active_days": 1,
               "average_confidence": 0.861,
+              "first_seen_date": "2026-08-14"
+            },
+            {
+              "common_name": "Rose-breasted Grosbeak",
+              "scientific_name": "Pheucticus ludovicianus",
+              "detections": 3,
+              "active_days": 1,
+              "average_confidence": 0.842,
               "first_seen_date": "2026-08-14"
             },
             {
@@ -22508,6 +22580,22 @@
               "active_days": 1,
               "average_confidence": 0.836,
               "first_seen_date": "2026-08-15"
+            },
+            {
+              "common_name": "Great Antshrike",
+              "scientific_name": "Taraba major",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.793,
+              "first_seen_date": "2026-09-20"
+            },
+            {
+              "common_name": "Hoffmann's Woodpecker",
+              "scientific_name": "Melanerpes hoffmannii",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.706,
+              "first_seen_date": "2026-09-09"
             },
             {
               "common_name": "Merlin",
@@ -22603,8 +22691,8 @@
           "label": "Last 30 days",
           "start_date": "2026-10-03",
           "end_date": "2026-11-01",
-          "total_detections": 16512,
-          "species_count": 80,
+          "total_detections": 16674,
+          "species_count": 81,
           "active_days": 30,
           "average_confidence": 0.873,
           "daily_activity": [
@@ -22755,8 +22843,8 @@
             },
             {
               "date": "2026-11-01",
-              "detections": 324,
-              "species_count": 13
+              "detections": 486,
+              "species_count": 17
             }
           ],
           "hourly_activity": [
@@ -22807,27 +22895,27 @@
             },
             {
               "hour": 9,
-              "detections": 832,
-              "species_count": 30
+              "detections": 932,
+              "species_count": 31
             },
             {
               "hour": 10,
-              "detections": 802,
-              "species_count": 25
+              "detections": 806,
+              "species_count": 26
             },
             {
               "hour": 11,
-              "detections": 883,
+              "detections": 892,
               "species_count": 26
             },
             {
               "hour": 12,
-              "detections": 779,
-              "species_count": 21
+              "detections": 827,
+              "species_count": 22
             },
             {
               "hour": 13,
-              "detections": 975,
+              "detections": 976,
               "species_count": 26
             },
             {
@@ -22889,9 +22977,9 @@
             "previous_start_date": "2026-09-03",
             "previous_end_date": "2026-10-02",
             "previous_detections": 8480,
-            "detection_change_percent": 94.7,
+            "detection_change_percent": 96.6,
             "previous_species_count": 100,
-            "species_change": -20
+            "species_change": -19
           },
           "new_species_count": 16,
           "new_species": [
@@ -23054,17 +23142,17 @@
           ],
           "review_candidates": [
             {
+              "common_name": "Hoffmann's Woodpecker",
+              "scientific_name": "Melanerpes hoffmannii",
+              "detections": 1,
+              "average_confidence": 0.706,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Black Phoebe",
               "scientific_name": "Sayornis nigricans",
               "detections": 1,
               "average_confidence": 0.717,
-              "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Great Antshrike",
-              "scientific_name": "Taraba major",
-              "detections": 1,
-              "average_confidence": 0.721,
               "reason": "Lower aggregate confidence"
             },
             {
@@ -23114,7 +23202,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 9695,
+              "detections": 9824,
               "active_days": 30,
               "average_confidence": 0.875,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -23162,19 +23250,19 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 537
+                  "detections": 628
                 },
                 {
                   "hour": 10,
-                  "detections": 484
+                  "detections": 486
                 },
                 {
                   "hour": 11,
-                  "detections": 718
+                  "detections": 721
                 },
                 {
                   "hour": 12,
-                  "detections": 572
+                  "detections": 605
                 },
                 {
                   "hour": 13,
@@ -23221,12 +23309,12 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 174.4
+              "change_percent": 178.1
             },
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 3699,
+              "detections": 3705,
               "active_days": 30,
               "average_confidence": 0.857,
               "photo_url": "https://media.birdweather.com/species/501/White-wingedDove-standard-6528ef689b07d5a91f1c2275cdef19c9.jpg",
@@ -23274,7 +23362,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 107
+                  "detections": 112
                 },
                 {
                   "hour": 10,
@@ -23290,7 +23378,7 @@
                 },
                 {
                   "hour": 13,
-                  "detections": 167
+                  "detections": 168
                 },
                 {
                   "hour": 14,
@@ -23333,7 +23421,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 52.0
+              "change_percent": 52.2
             },
             {
               "common_name": "Bats",
@@ -23450,9 +23538,9 @@
             {
               "common_name": "Gray-capped Flycatcher",
               "scientific_name": "Myiozetetes granadensis",
-              "detections": 269,
+              "detections": 277,
               "active_days": 19,
-              "average_confidence": 0.842,
+              "average_confidence": 0.84,
               "photo_url": "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
@@ -23502,7 +23590,7 @@
                 },
                 {
                   "hour": 10,
-                  "detections": 31
+                  "detections": 32
                 },
                 {
                   "hour": 11,
@@ -23510,7 +23598,7 @@
                 },
                 {
                   "hour": 12,
-                  "detections": 20
+                  "detections": 27
                 },
                 {
                   "hour": 13,
@@ -23557,7 +23645,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 6625.0
+              "change_percent": 6825.0
             },
             {
               "common_name": "Social Flycatcher",
@@ -23786,9 +23874,9 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 185,
-              "active_days": 26,
-              "average_confidence": 0.821,
+              "detections": 189,
+              "active_days": 27,
+              "average_confidence": 0.819,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -23842,7 +23930,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 6
+                  "detections": 10
                 },
                 {
                   "hour": 12,
@@ -23893,14 +23981,14 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -55.2
+              "change_percent": -54.2
             },
             {
               "common_name": "Blue-gray Tanager",
               "scientific_name": "Thraupis episcopus",
-              "detections": 171,
+              "detections": 175,
               "active_days": 27,
-              "average_confidence": 0.827,
+              "average_confidence": 0.828,
               "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
@@ -23946,7 +24034,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 38
+                  "detections": 40
                 },
                 {
                   "hour": 10,
@@ -23954,7 +24042,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 9
+                  "detections": 11
                 },
                 {
                   "hour": 12,
@@ -24005,7 +24093,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": 80.0
+              "change_percent": 84.2
             },
             {
               "common_name": "Great-tailed Grackle",
@@ -24234,9 +24322,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 119,
+              "detections": 120,
               "active_days": 26,
-              "average_confidence": 0.819,
+              "average_confidence": 0.818,
               "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
@@ -24282,7 +24370,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 7
+                  "detections": 8
                 },
                 {
                   "hour": 10,
@@ -24341,7 +24429,7 @@
                   "detections": 0
                 }
               ],
-              "change_percent": -15.0
+              "change_percent": -14.3
             },
             {
               "common_name": "Clay-colored Thrush",
@@ -24460,7 +24548,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 9695,
+              "detections": 9824,
               "active_days": 30,
               "average_confidence": 0.875,
               "first_seen_date": "2026-08-12"
@@ -24468,7 +24556,7 @@
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 3699,
+              "detections": 3705,
               "active_days": 30,
               "average_confidence": 0.857,
               "first_seen_date": "2026-08-12"
@@ -24484,9 +24572,9 @@
             {
               "common_name": "Gray-capped Flycatcher",
               "scientific_name": "Myiozetetes granadensis",
-              "detections": 269,
+              "detections": 277,
               "active_days": 19,
-              "average_confidence": 0.842,
+              "average_confidence": 0.84,
               "first_seen_date": "2026-08-23"
             },
             {
@@ -24508,17 +24596,17 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 185,
-              "active_days": 26,
-              "average_confidence": 0.821,
+              "detections": 189,
+              "active_days": 27,
+              "average_confidence": 0.819,
               "first_seen_date": "2026-08-12"
             },
             {
               "common_name": "Blue-gray Tanager",
               "scientific_name": "Thraupis episcopus",
-              "detections": 171,
+              "detections": 175,
               "active_days": 27,
-              "average_confidence": 0.827,
+              "average_confidence": 0.828,
               "first_seen_date": "2026-08-13"
             },
             {
@@ -24540,9 +24628,9 @@
             {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 119,
+              "detections": 120,
               "active_days": 26,
-              "average_confidence": 0.819,
+              "average_confidence": 0.818,
               "first_seen_date": "2026-08-13"
             },
             {
@@ -24552,6 +24640,14 @@
               "active_days": 16,
               "average_confidence": 0.849,
               "first_seen_date": "2026-08-21"
+            },
+            {
+              "common_name": "Palm Tanager",
+              "scientific_name": "Thraupis palmarum",
+              "detections": 69,
+              "active_days": 20,
+              "average_confidence": 0.823,
+              "first_seen_date": "2026-08-12"
             },
             {
               "common_name": "Gray-headed Chachalaca",
@@ -24567,14 +24663,6 @@
               "detections": 66,
               "active_days": 11,
               "average_confidence": 0.845,
-              "first_seen_date": "2026-08-12"
-            },
-            {
-              "common_name": "Palm Tanager",
-              "scientific_name": "Thraupis palmarum",
-              "detections": 64,
-              "active_days": 20,
-              "average_confidence": 0.821,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -24692,9 +24780,9 @@
             {
               "common_name": "Rose-breasted Grosbeak",
               "scientific_name": "Pheucticus ludovicianus",
-              "detections": 12,
-              "active_days": 4,
-              "average_confidence": 0.845,
+              "detections": 15,
+              "active_days": 5,
+              "average_confidence": 0.844,
               "first_seen_date": "2026-08-14"
             },
             {
@@ -24866,6 +24954,14 @@
               "first_seen_date": "2026-10-03"
             },
             {
+              "common_name": "Great Antshrike",
+              "scientific_name": "Taraba major",
+              "detections": 2,
+              "active_days": 2,
+              "average_confidence": 0.757,
+              "first_seen_date": "2026-09-20"
+            },
+            {
               "common_name": "House Wren",
               "scientific_name": "Troglodytes aedon",
               "detections": 2,
@@ -24994,20 +25090,20 @@
               "first_seen_date": "2026-08-23"
             },
             {
-              "common_name": "Great Antshrike",
-              "scientific_name": "Taraba major",
-              "detections": 1,
-              "active_days": 1,
-              "average_confidence": 0.721,
-              "first_seen_date": "2026-09-20"
-            },
-            {
               "common_name": "Great Horned Owl",
               "scientific_name": "Bubo virginianus",
               "detections": 1,
               "active_days": 1,
               "average_confidence": 0.735,
               "first_seen_date": "2026-08-13"
+            },
+            {
+              "common_name": "Hoffmann's Woodpecker",
+              "scientific_name": "Melanerpes hoffmannii",
+              "detections": 1,
+              "active_days": 1,
+              "average_confidence": 0.706,
+              "first_seen_date": "2026-09-09"
             },
             {
               "common_name": "Mississippi Kite",
@@ -25103,7 +25199,7 @@
           "label": "All data",
           "start_date": "2026-08-12",
           "end_date": "2026-11-01",
-          "total_detections": 29823,
+          "total_detections": 29985,
           "species_count": 130,
           "active_days": 81,
           "average_confidence": 0.865,
@@ -25515,8 +25611,8 @@
             },
             {
               "date": "2026-11-01",
-              "detections": 324,
-              "species_count": 13
+              "detections": 486,
+              "species_count": 17
             }
           ],
           "hourly_activity": [
@@ -25567,27 +25663,27 @@
             },
             {
               "hour": 9,
-              "detections": 1885,
-              "species_count": 48
+              "detections": 1985,
+              "species_count": 49
             },
             {
               "hour": 10,
-              "detections": 1651,
-              "species_count": 41
+              "detections": 1655,
+              "species_count": 42
             },
             {
               "hour": 11,
-              "detections": 1649,
+              "detections": 1658,
               "species_count": 43
             },
             {
               "hour": 12,
-              "detections": 1316,
+              "detections": 1364,
               "species_count": 38
             },
             {
               "hour": 13,
-              "detections": 1779,
+              "detections": 1780,
               "species_count": 39
             },
             {
@@ -25658,7 +25754,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 14365,
+              "detections": 14494,
               "first_seen_date": "2026-08-12",
               "average_confidence": 0.871,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -25671,7 +25767,7 @@
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 7683,
+              "detections": 7689,
               "first_seen_date": "2026-08-12",
               "average_confidence": 0.856,
               "photo_url": "https://media.birdweather.com/species/501/White-wingedDove-standard-6528ef689b07d5a91f1c2275cdef19c9.jpg",
@@ -25684,7 +25780,7 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 1428,
+              "detections": 1432,
               "first_seen_date": "2026-08-12",
               "average_confidence": 0.845,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
@@ -25734,9 +25830,22 @@
               ]
             },
             {
+              "common_name": "Blue-gray Tanager",
+              "scientific_name": "Thraupis episcopus",
+              "detections": 316,
+              "first_seen_date": "2026-08-13",
+              "average_confidence": 0.821,
+              "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
+                "https://media.birdweather.com/species/451/Blue-grayTanager-png200-be5418cb49793536e5c09e1af73aefe1.png",
+                "https://media.birdweather.com/species/451/Blue-grayTanager-thumbnail-dc3af9565dbd849047cf157316f7ef59.jpg"
+              ]
+            },
+            {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 313,
+              "detections": 314,
               "first_seen_date": "2026-08-13",
               "average_confidence": 0.823,
               "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
@@ -25744,19 +25853,6 @@
                 "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
                 "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-png200-8ea431c9893cfe027e92471791a8c256.png",
                 "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-thumbnail-fbf17400c31564f70aa45927c5d75f5e.jpg"
-              ]
-            },
-            {
-              "common_name": "Blue-gray Tanager",
-              "scientific_name": "Thraupis episcopus",
-              "detections": 312,
-              "first_seen_date": "2026-08-13",
-              "average_confidence": 0.82,
-              "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-png200-be5418cb49793536e5c09e1af73aefe1.png",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-thumbnail-dc3af9565dbd849047cf157316f7ef59.jpg"
               ]
             },
             {
@@ -25775,9 +25871,9 @@
             {
               "common_name": "Gray-capped Flycatcher",
               "scientific_name": "Myiozetetes granadensis",
-              "detections": 277,
+              "detections": 285,
               "first_seen_date": "2026-08-23",
-              "average_confidence": 0.839,
+              "average_confidence": 0.838,
               "photo_url": "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
@@ -25849,6 +25945,13 @@
               "reason": "Lower aggregate confidence"
             },
             {
+              "common_name": "Hoffmann's Woodpecker",
+              "scientific_name": "Melanerpes hoffmannii",
+              "detections": 2,
+              "average_confidence": 0.722,
+              "reason": "Lower aggregate confidence"
+            },
+            {
               "common_name": "Common Ground Dove",
               "scientific_name": "Columbina passerina",
               "detections": 2,
@@ -25861,20 +25964,13 @@
               "detections": 2,
               "average_confidence": 0.724,
               "reason": "Lower aggregate confidence"
-            },
-            {
-              "common_name": "Yellow-bellied Sapsucker",
-              "scientific_name": "Sphyrapicus varius",
-              "detections": 5,
-              "average_confidence": 0.725,
-              "reason": "Lower aggregate confidence"
             }
           ],
           "top_species": [
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 14365,
+              "detections": 14494,
               "active_days": 81,
               "average_confidence": 0.871,
               "photo_url": "https://media.birdweather.com/species/229/GreatKiskadee-standard-cd28a1b8e8b8e5aed433e809c229004e.jpg",
@@ -25922,19 +26018,19 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 837
+                  "detections": 928
                 },
                 {
                   "hour": 10,
-                  "detections": 869
+                  "detections": 871
                 },
                 {
                   "hour": 11,
-                  "detections": 1079
+                  "detections": 1082
                 },
                 {
                   "hour": 12,
-                  "detections": 821
+                  "detections": 854
                 },
                 {
                   "hour": 13,
@@ -25986,7 +26082,7 @@
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 7683,
+              "detections": 7689,
               "active_days": 80,
               "average_confidence": 0.856,
               "photo_url": "https://media.birdweather.com/species/501/White-wingedDove-standard-6528ef689b07d5a91f1c2275cdef19c9.jpg",
@@ -26034,7 +26130,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 305
+                  "detections": 310
                 },
                 {
                   "hour": 10,
@@ -26050,7 +26146,7 @@
                 },
                 {
                   "hour": 13,
-                  "detections": 375
+                  "detections": 376
                 },
                 {
                   "hour": 14,
@@ -26098,8 +26194,8 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 1428,
-              "active_days": 68,
+              "detections": 1432,
+              "active_days": 69,
               "average_confidence": 0.845,
               "photo_url": "https://media.birdweather.com/species/603/TropicalMockingbird-standard-33be42788a38707b12f757d28526a492.jpg",
               "photo_urls": [
@@ -26154,7 +26250,7 @@
                 },
                 {
                   "hour": 11,
-                  "detections": 65
+                  "detections": 69
                 },
                 {
                   "hour": 12,
@@ -26544,9 +26640,121 @@
               "change_percent": null
             },
             {
+              "common_name": "Blue-gray Tanager",
+              "scientific_name": "Thraupis episcopus",
+              "detections": 316,
+              "active_days": 59,
+              "average_confidence": 0.821,
+              "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
+              "photo_urls": [
+                "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
+                "https://media.birdweather.com/species/451/Blue-grayTanager-png200-be5418cb49793536e5c09e1af73aefe1.png",
+                "https://media.birdweather.com/species/451/Blue-grayTanager-thumbnail-dc3af9565dbd849047cf157316f7ef59.jpg"
+              ],
+              "hourly_activity": [
+                {
+                  "hour": 0,
+                  "detections": 0
+                },
+                {
+                  "hour": 1,
+                  "detections": 0
+                },
+                {
+                  "hour": 2,
+                  "detections": 0
+                },
+                {
+                  "hour": 3,
+                  "detections": 0
+                },
+                {
+                  "hour": 4,
+                  "detections": 0
+                },
+                {
+                  "hour": 5,
+                  "detections": 15
+                },
+                {
+                  "hour": 6,
+                  "detections": 26
+                },
+                {
+                  "hour": 7,
+                  "detections": 42
+                },
+                {
+                  "hour": 8,
+                  "detections": 49
+                },
+                {
+                  "hour": 9,
+                  "detections": 67
+                },
+                {
+                  "hour": 10,
+                  "detections": 18
+                },
+                {
+                  "hour": 11,
+                  "detections": 20
+                },
+                {
+                  "hour": 12,
+                  "detections": 21
+                },
+                {
+                  "hour": 13,
+                  "detections": 21
+                },
+                {
+                  "hour": 14,
+                  "detections": 13
+                },
+                {
+                  "hour": 15,
+                  "detections": 18
+                },
+                {
+                  "hour": 16,
+                  "detections": 5
+                },
+                {
+                  "hour": 17,
+                  "detections": 1
+                },
+                {
+                  "hour": 18,
+                  "detections": 0
+                },
+                {
+                  "hour": 19,
+                  "detections": 0
+                },
+                {
+                  "hour": 20,
+                  "detections": 0
+                },
+                {
+                  "hour": 21,
+                  "detections": 0
+                },
+                {
+                  "hour": 22,
+                  "detections": 0
+                },
+                {
+                  "hour": 23,
+                  "detections": 0
+                }
+              ],
+              "change_percent": null
+            },
+            {
               "common_name": "Rufous-tailed Hummingbird",
               "scientific_name": "Amazilia tzacatl",
-              "detections": 313,
+              "detections": 314,
               "active_days": 71,
               "average_confidence": 0.823,
               "photo_url": "https://media.birdweather.com/species/802/Rufous-tailedHummingbird-standard-4d0209b50ad0c35c6d8337f5c0c16b55.jpg",
@@ -26594,7 +26802,7 @@
                 },
                 {
                   "hour": 9,
-                  "detections": 17
+                  "detections": 18
                 },
                 {
                   "hour": 10,
@@ -26627,118 +26835,6 @@
                 {
                   "hour": 17,
                   "detections": 7
-                },
-                {
-                  "hour": 18,
-                  "detections": 0
-                },
-                {
-                  "hour": 19,
-                  "detections": 0
-                },
-                {
-                  "hour": 20,
-                  "detections": 0
-                },
-                {
-                  "hour": 21,
-                  "detections": 0
-                },
-                {
-                  "hour": 22,
-                  "detections": 0
-                },
-                {
-                  "hour": 23,
-                  "detections": 0
-                }
-              ],
-              "change_percent": null
-            },
-            {
-              "common_name": "Blue-gray Tanager",
-              "scientific_name": "Thraupis episcopus",
-              "detections": 312,
-              "active_days": 59,
-              "average_confidence": 0.82,
-              "photo_url": "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-              "photo_urls": [
-                "https://media.birdweather.com/species/451/Blue-grayTanager-standard-04bc83ed9930251b50b0a08bf40fec04.jpg",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-png200-be5418cb49793536e5c09e1af73aefe1.png",
-                "https://media.birdweather.com/species/451/Blue-grayTanager-thumbnail-dc3af9565dbd849047cf157316f7ef59.jpg"
-              ],
-              "hourly_activity": [
-                {
-                  "hour": 0,
-                  "detections": 0
-                },
-                {
-                  "hour": 1,
-                  "detections": 0
-                },
-                {
-                  "hour": 2,
-                  "detections": 0
-                },
-                {
-                  "hour": 3,
-                  "detections": 0
-                },
-                {
-                  "hour": 4,
-                  "detections": 0
-                },
-                {
-                  "hour": 5,
-                  "detections": 15
-                },
-                {
-                  "hour": 6,
-                  "detections": 26
-                },
-                {
-                  "hour": 7,
-                  "detections": 42
-                },
-                {
-                  "hour": 8,
-                  "detections": 49
-                },
-                {
-                  "hour": 9,
-                  "detections": 65
-                },
-                {
-                  "hour": 10,
-                  "detections": 18
-                },
-                {
-                  "hour": 11,
-                  "detections": 18
-                },
-                {
-                  "hour": 12,
-                  "detections": 21
-                },
-                {
-                  "hour": 13,
-                  "detections": 21
-                },
-                {
-                  "hour": 14,
-                  "detections": 13
-                },
-                {
-                  "hour": 15,
-                  "detections": 18
-                },
-                {
-                  "hour": 16,
-                  "detections": 5
-                },
-                {
-                  "hour": 17,
-                  "detections": 1
                 },
                 {
                   "hour": 18,
@@ -26882,9 +26978,9 @@
             {
               "common_name": "Gray-capped Flycatcher",
               "scientific_name": "Myiozetetes granadensis",
-              "detections": 277,
+              "detections": 285,
               "active_days": 22,
-              "average_confidence": 0.839,
+              "average_confidence": 0.838,
               "photo_url": "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
               "photo_urls": [
                 "https://media.birdweather.com/species/2254/Gray-cappedFlycatcher-standard-2b1d2e6068e69e7cc4d888a3eda49237.jpg",
@@ -26934,7 +27030,7 @@
                 },
                 {
                   "hour": 10,
-                  "detections": 31
+                  "detections": 32
                 },
                 {
                   "hour": 11,
@@ -26942,7 +27038,7 @@
                 },
                 {
                   "hour": 12,
-                  "detections": 21
+                  "detections": 28
                 },
                 {
                   "hour": 13,
@@ -27220,7 +27316,7 @@
             {
               "common_name": "Great Kiskadee",
               "scientific_name": "Pitangus sulphuratus",
-              "detections": 14365,
+              "detections": 14494,
               "active_days": 81,
               "average_confidence": 0.871,
               "first_seen_date": "2026-08-12"
@@ -27228,7 +27324,7 @@
             {
               "common_name": "White-winged Dove",
               "scientific_name": "Zenaida asiatica",
-              "detections": 7683,
+              "detections": 7689,
               "active_days": 80,
               "average_confidence": 0.856,
               "first_seen_date": "2026-08-12"
@@ -27236,8 +27332,8 @@
             {
               "common_name": "Tropical Mockingbird",
               "scientific_name": "Mimus gilvus",
-              "detections": 1428,
-              "active_days": 68,
+              "detections": 1432,
+              "active_days": 69,
               "average_confidence": 0.845,
               "first_seen_date": "2026-08-12"
             },
@@ -27266,19 +27362,19 @@
               "first_seen_date": "2026-08-21"
             },
             {
-              "common_name": "Rufous-tailed Hummingbird",
-              "scientific_name": "Amazilia tzacatl",
-              "detections": 313,
-              "active_days": 71,
-              "average_confidence": 0.823,
+              "common_name": "Blue-gray Tanager",
+              "scientific_name": "Thraupis episcopus",
+              "detections": 316,
+              "active_days": 59,
+              "average_confidence": 0.821,
               "first_seen_date": "2026-08-13"
             },
             {
-              "common_name": "Blue-gray Tanager",
-              "scientific_name": "Thraupis episcopus",
-              "detections": 312,
-              "active_days": 59,
-              "average_confidence": 0.82,
+              "common_name": "Rufous-tailed Hummingbird",
+              "scientific_name": "Amazilia tzacatl",
+              "detections": 314,
+              "active_days": 71,
+              "average_confidence": 0.823,
               "first_seen_date": "2026-08-13"
             },
             {
@@ -27292,9 +27388,9 @@
             {
               "common_name": "Gray-capped Flycatcher",
               "scientific_name": "Myiozetetes granadensis",
-              "detections": 277,
+              "detections": 285,
               "active_days": 22,
-              "average_confidence": 0.839,
+              "average_confidence": 0.838,
               "first_seen_date": "2026-08-23"
             },
             {
@@ -27340,9 +27436,9 @@
             {
               "common_name": "Palm Tanager",
               "scientific_name": "Thraupis palmarum",
-              "detections": 194,
+              "detections": 199,
               "active_days": 56,
-              "average_confidence": 0.822,
+              "average_confidence": 0.823,
               "first_seen_date": "2026-08-12"
             },
             {
@@ -27484,9 +27580,9 @@
             {
               "common_name": "Rose-breasted Grosbeak",
               "scientific_name": "Pheucticus ludovicianus",
-              "detections": 24,
-              "active_days": 13,
-              "average_confidence": 0.833,
+              "detections": 27,
+              "active_days": 14,
+              "average_confidence": 0.834,
               "first_seen_date": "2026-08-14"
             },
             {
@@ -27730,6 +27826,14 @@
               "first_seen_date": "2026-09-22"
             },
             {
+              "common_name": "Great Antshrike",
+              "scientific_name": "Taraba major",
+              "detections": 4,
+              "active_days": 4,
+              "average_confidence": 0.81,
+              "first_seen_date": "2026-09-20"
+            },
+            {
               "common_name": "Osprey",
               "scientific_name": "Pandion haliaetus",
               "detections": 4,
@@ -27800,14 +27904,6 @@
               "active_days": 2,
               "average_confidence": 0.822,
               "first_seen_date": "2026-09-03"
-            },
-            {
-              "common_name": "Great Antshrike",
-              "scientific_name": "Taraba major",
-              "detections": 3,
-              "active_days": 3,
-              "average_confidence": 0.816,
-              "first_seen_date": "2026-09-20"
             },
             {
               "common_name": "Green Heron",
@@ -27928,6 +28024,14 @@
               "active_days": 1,
               "average_confidence": 0.945,
               "first_seen_date": "2026-09-01"
+            },
+            {
+              "common_name": "Hoffmann's Woodpecker",
+              "scientific_name": "Melanerpes hoffmannii",
+              "detections": 2,
+              "active_days": 2,
+              "average_confidence": 0.722,
+              "first_seen_date": "2026-09-09"
             },
             {
               "common_name": "Inca Dove",
@@ -28104,14 +28208,6 @@
               "active_days": 1,
               "average_confidence": 0.956,
               "first_seen_date": "2026-09-13"
-            },
-            {
-              "common_name": "Hoffmann's Woodpecker",
-              "scientific_name": "Melanerpes hoffmannii",
-              "detections": 1,
-              "active_days": 1,
-              "average_confidence": 0.739,
-              "first_seen_date": "2026-09-09"
             },
             {
               "common_name": "Kentucky Warbler",
